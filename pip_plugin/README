@@ -1,0 +1,65 @@
+PIP is a plugin for Postgres (being incorporated into MayBMS) that implements a
+probabilistic database with continuous distributions.  
+
+PIP itself is a standard Postgres plugin.  However, much of PIP's query
+rewriting functionality requires changes to Postgres.  If you want PIP to
+automatically rewrite deterministic queries so you can (mostly) ignore the
+probabilistic nature of your data until the end, follow the instructions for
+building and INSTALLING Postgres-CType.  Otherwise install Postgres (or MayBMS)
+normally, and skip directly to INSTALLING PIP.
+
+==== INSTALLING Postgres-CType ====
+
+Create and patch Postgres by running the patch script. 
+
+$> pip_plugin/scripts/patch_postgres.sh
+
+Build and install the patched Postgres as normal (summarized below)
+
+$> cd postgresql-ctype
+$> ./configure
+$> make
+$> sudo make install
+
+You will now need to set up your database.  Select a directory for Postgresql to store its data.  Replace /usr/share/postgres_db with your choice of data directory.
+
+$> export PGDATA=[/usr/share/postgres_db]
+$> export PATH=$PATH:/usr/local/postgres/bin
+$> mkdir $PGDATA
+
+make sure your .bashrc, .profile, or equivalent includes the export commands.  Now, run the postgres setup script.
+
+$> initdb
+
+==== INSTALLING PIP ====
+
+Compile PIP using the following commands:
+
+$> cd pip_plugin
+$> make
+$> sudo make install
+
+By default, PIP installs the pip library into /usr/local/lib/pgsql/.  To change the default install directory, modify the INSTALL_DIR variable in the Makefile.
+
+Finally, Postgres needs to be configured to use PIP.  For each database you intend to use PIP with, run the commands in install.sql, or install.noctype.sql (depending on whether or not you are running a CTYPE modified postgres).  Replace my_database with the name of the database you want to configure to use PIP.
+
+$> psql [my_database] -f install[.ctype].sql
+
+The database template_1 is a special database that is used to initialize all subsequently created databases.  To have Postgres automatically configure future datbaases to use PIP:
+
+$> psql template_1 -f install[.ctype].sql
+
+
+==== Errors compiling Postgres-CType under Snow Leopard ====
+
+Due to changes in OS X 10.6, Postgres no longer compiles properly out of the
+box.  If the following error occurs during compilation:
+
+  In file included from preproc.y:7015:
+  pgc.c:288: error: conflicting types for ÔyylengÕ
+  extern.h:42: error: previous declaration of ÔyylengÕ was here
+
+you can fix it with the following script.
+
+$> scripts/fix_snow_leopard.sh
+

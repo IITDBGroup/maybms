@@ -1,0 +1,214 @@
+\chapter{Probabilistic TPC-H Queries} 
+\label{app:tpch}
+
+\textbf{\large{Query 1:}}
+
+\begin{verbatim}
+select 
+    l_returnflag, 
+    l_linestatus, 
+    conf() 
+from 
+    lineitem 
+where 
+    l_shipdate <= date '1998-09-01' 
+group by 
+    l_returnflag, 
+    l_linestatus;
+\end{verbatim}
+
+\noindent
+\textbf{\large{Query 4:}}
+
+\begin{verbatim}
+select
+    o_orderpriority,
+    conf()
+from
+    orders,
+    lineitem
+where
+    o_orderdate >= date '1993-07-01'
+    and o_orderdate < date '1993-10-01'
+    and l_orderkey = o_orderkey
+    and l_commitdate < l_receiptdate
+group by
+    o_orderpriority;
+\end{verbatim}
+
+\noindent
+\textbf{\large{Query 12:}}
+
+\begin{verbatim}
+select
+    l_shipmode,
+    conf()
+from
+    orders,
+    lineitem
+where
+    orders.o_orderkey = lineitem.l_orderkey
+      and (l_shipmode = 'MAIL' 
+        or l_shipmode = 'SHIP')
+       and l_commitdate < l_receiptdate
+       and l_shipdate < l_commitdate
+       and l_receiptdate >= '1992-01-01'
+       and l_receiptdate < '1999-01-01'
+group by
+    l_shipmode;
+
+\end{verbatim}
+
+\noindent
+\textbf{\large{Query 15:}}
+
+\begin{verbatim}
+select
+    s_suppkey,
+    s_name,
+    s_address,
+    s_phone,
+    conf()
+from
+    supplier,
+    lineitem
+where
+    s_suppkey = l_suppkey
+    and l_shipdate >= date '1991-10-10'
+    and l_shipdate < date '1992-01-10'
+group by
+    s_suppkey,
+    s_name,
+    s_address,
+    s_phone;
+
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 1:}}
+
+\begin{verbatim}
+select 
+    conf()
+from 
+    lineitem 
+where 
+    l_shipdate <= date '1998-09-01';
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 4:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    orders,
+    lineitem
+where
+    o_orderdate >= date '1993-07-01'
+    and o_orderdate < date '1993-10-01'
+    and l_orderkey = o_orderkey
+    and l_commitdate < l_receiptdate
+group by
+    o_orderpriority;
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 6:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    lineitem
+where
+    l_shipdate >= '1994-01-01'
+    and l_shipdate < '1995-01-01'
+    and l_discount >= 0.05 
+    and l_discount <= 0.07
+    and l_quantity < 24;
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 12:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    orders,
+    lineitem
+where
+    orders.o_orderkey = lineitem.l_orderkey
+      and (l_shipmode = 'MAIL' 
+        or l_shipmode = 'SHIP')
+       and l_commitdate < l_receiptdate
+       and l_shipdate < l_commitdate
+       and l_receiptdate >= '1992-01-01'
+       and l_receiptdate < '1999-01-01'
+group by
+    l_shipmode;
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 14:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    lineitem,
+    part
+where
+    l_partkey = p_partkey
+    and l_shipdate >= date '1995-09-01'
+    and l_shipdate < date '1995-10-01';
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 15:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    supplier,
+    lineitem
+where
+    s_suppkey = l_suppkey
+    and l_shipdate >= date '1991-10-10'
+    and l_shipdate < date '1992-01-10';
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 16:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    partsupp,
+    part
+where
+    p_partkey = ps_partkey
+    and p_brand <> 'Brand#45'
+    and p_type like 'MEDIUM POLISHED%';
+\end{verbatim}
+
+\noindent
+\textbf{\large{Boolean Version of Query 17:}}
+
+\begin{verbatim}
+select
+    conf()
+from
+    lineitem,
+    part
+where
+    p_partkey = l_partkey
+    and p_brand = 'Brand#23'
+     and p_container = 'MED BOX';
+\end{verbatim}
+
+\newpage

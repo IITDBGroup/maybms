@@ -1,0 +1,41 @@
+--test for weights in repair-key
+create table r(a int, b int, c int, w int);
+insert into r values (1,1,1,0); /* This should not be selected */
+insert into r values (2,1,1,1);
+insert into r values (2,1,2,1);
+insert into r values (3,1,1,0); /* This should not be selected */
+insert into r values (1,1,2,2);
+repair key a,b in r weight by w;
+ a | b | c | w | _v0 | _d0 | _p0 
+---+---+---+---+-----+-----+-----
+ 2 | 1 | 1 | 1 |   2 |   3 | 0.5
+ 2 | 1 | 2 | 1 |   2 |   1 | 0.5
+ 1 | 1 | 2 | 2 |   1 |   2 |   1
+(3 rows)
+
+drop table r;
+create table r(a int, b int, c int, w real);
+insert into r values (1,1,1,0.0); /* This should not be selected */
+insert into r values (1,1,2,0.5);
+insert into r values (2,1,1,0);   /* This should not be selected */
+insert into r values (1,1,1,1);
+insert into r values (1,1,1,0.000); /* This should not be selected */
+insert into r values (1,1,1,-0.000); /* This should not be selected */
+repair key a,b in r weight by w;
+ a | b | c |  w  | _v0 | _d0 |   _p0    
+---+---+---+-----+-----+-----+----------
+ 1 | 1 | 2 | 0.5 |   3 |   5 | 0.333333
+ 1 | 1 | 1 |   1 |   3 |   4 | 0.666667
+(2 rows)
+
+drop table r;
+create table r(a int, b int, c int, w real);
+insert into r values (1,1,1,0.1);
+insert into r values (1,1,2,0.5);
+insert into r values (2,1,1,0);
+insert into r values (1,1,1,-1); /* This will cause an error message */
+insert into r values (1,1,1,0.000);
+insert into r values (1,1,1,-0.000);
+repair key a,b in r weight by w;
+ERROR:  Negative weight:-1.000000. Weight must have a non-negative value
+drop table r;

@@ -1,0 +1,240 @@
+LA Lakers
+3  	  Trevor Ariza  	 F  	 6-8  	 210  	 06/30/1985  	   UCLA  	 4
+12 	Shannon Brown 	G 	6-4 	211 	11/29/1985 	  Michigan State 	2
+24 	Kobe Bryant 	G 	6-6 	205 	08/23/1978 	  Lower Merion HS (PA) 	12
+17 	Andrew Bynum 	C 	7-0 	285 	10/27/1987 	  St. Joseph HS (NJ) 	3
+5 	Jordan Farmar 	G 	6-2 	180 	11/30/1986 	  UCLA 	2
+2 	Derek Fisher 	G 	6-1 	210 	08/09/1974 	  Arkansas-Little Rock 	12
+16 	Pau Gasol 	F-C 	7-0 	250 	07/06/1980 	  Spain 	7
+28 	Didier Ilunga-Mbenga 	C 	7-0 	255 	12/30/1980 	  Congo 	4
+6 	Adam Morrison 	F 	6-8 	205 	07/19/1984 	  Gonzaga 	1
+7 	Lamar Odom 	F 	6-10 	230 	11/06/1979 	  Rhode Island 	9
+21 	Josh Powell 	F-C 	6-9 	240 	01/25/1983 	  North Carolina State 	3
+18 	Sasha Vujacic 	G 	6-7 	205 	03/08/1984 	  Slovenia 	4
+4 	Luke Walton 	F 	6-8 	235 	03/28/1980 	  Arizona 	5
+9 	Sun Yue 	G 	6-9 	205 	11/06/1985 	  China 	R
+Boston Celtics
+20  	  Ray Allen  	 G  	 6-5  	 205  	 07/20/1975  	    	 12
+42 	Tony Allen 	G 	6-4 	213 	01/11/1982 	  	4
+11 	Glen Davis 	F 	6-9 	289 	01/01/1986 	   	1
+5 	Kevin Garnett 	F 	6-11 	253 	05/19/1976 	   	13
+4 	J.R. Giddens 	G 	6-5 	215 	02/13/1985 	   	R
+50 	Eddie House 	G 	6-1 	175 	05/14/1978 	   	8
+7 	Mikki Moore 	F-C 	7-0 	225 	11/04/1975 	   	10
+43 	Kendrick Perkins 	C 	6-10 	280 	11/10/1984 	   	5
+34 	Paul Pierce  	F 	6-7 	235 	10/13/1977 	   	10
+0 	Leon Powe 	F 	6-8 	240 	01/22/1984 	   	2
+9 	Rajon Rondo 	G 	6-1 	171 	02/22/1986 	   	2
+44 	Brian Scalabrine 	C-F 	6-9 	235 	03/18/1978 	   	7
+8  	  Stephon Marbury  	 G  	 6-2  	 205  	 02/20/1977  	   Georgia Tech  	 12
+Dallas Mavericks
+11  	  Jose Barea  	 G  	 6-0  	 175  	 06/26/1984  	     	 2
+32 	Brandon Bass 	F 	6-8 	250 	04/30/1985 	   	3
+13 	Matt Carroll 	G 	6-6 	212 	08/28/1980 	   	5
+25 	Erick Dampier 	C 	6-11 	265 	07/14/1975 	   	12
+40 	Devean George 	F 	6-8 	235 	08/29/1977 	   	9
+1 	Ryan Hollins 	C 	7-0 	230 	10/10/1984 	   	2
+5 	Josh Howard 	F-G 	6-7 	210 	04/28/1980 	   	5
+2 	Jason Kidd  	G 	6-4 	210 	03/23/1973 	   	14
+41 	Dirk Nowitzki  	F 	7-0 	245 	06/19/1978 	   	10
+33 	James Singleton 	F 	6-8 	230 	07/20/1981 	   	4
+31 	Jason Terry 	G 	6-2 	180 	09/15/1977 	   	9
+21 	Antoine Wright 	G-F 	6-7 	215 	02/06/1984 	 	3
+New Jersey Nets
+20 	Ryan Anderson 	F 	6-10 	240 	05/06/1988 	   	R
+2 	Josh Boone 	C 	6-10 	237 	11/21/1984 	   	2
+15 	Vince Carter 	G 	6-6 	220 	01/26/1977 	   	10
+55 	Keyon Dooling 	G 	6-3 	195 	05/08/1980 	   	8
+17 	Chris Douglas-Roberts 	G 	6-7 	200 	01/08/1987 	   	R
+34 	Devin Harris 	G 	6-3 	185 	02/27/1983 	   	4
+44 	Trenton Hassell 	F 	6-5 	233 	03/04/1979 	   	7
+22 	Jarvis Hayes 	F 	6-8 	228 	08/09/1981 	   	5
+11 	Brook Lopez 	C 	7-0 	260 	04/01/1988 	   	R
+14 	Eduardo Najera 	F 	6-8 	235 	07/11/1976 	   	8
+21 	Bobby Simmons 	F 	6-6 	230 	06/02/1980 	   	6
+9 	Yi Jianlian 	F 	7-0 	238 	10/27/1987 	   	1
+Houston Rockets
+96  	  Ron Artest  	 F  	 6-7  	 260  	 11/13/1979  	     	 9
+17 	Brent Barry 	G 	6-7 	210 	12/31/1971 	   	13
+31 	Shane Battier 	F 	6-8 	220 	09/09/1978 	   	7
+0 	Aaron Brooks 	G 	6-0 	161 	01/14/1985 	   	1
+43 	Brian Cook 	F 	6-9 	250 	12/04/1980 	   	5
+44 	Chuck Hayes 	F 	6-6 	238 	06/11/1983 	   	3
+14 	Carl Landry 	F 	6-9 	248 	09/19/1983 	   	1
+7 	Kyle Lowry 	G 	6-0 	205 	03/25/1986 	   	2
+1 	Tracy McGrady 	G 	6-8 	223 	05/24/1979 	   	11
+4 	Luis Scola 	F-C 	6-9 	245 	04/30/1980 	   	1
+13 	Von Wafer 	G 	6-5 	210 	07/21/1985 	   	3
+11 	Yao Ming 	C 	7-6 	310 	09/12/1980 	   	6
+New York Knicks
+21  	  Wilson Chandler  	 F  	 6-8  	 220  	 05/10/1987  	     	 1
+5 	Joe Crawford 	G 	6-5 	210 	06/17/1986 	   	R
+34 	Eddy Curry 	C 	6-11 	285 	12/05/1982 	  	7
+1 	Chris Duhon 	G 	6-1 	185 	08/31/1982 	   	4
+8 	Danilo Gallinari 	F 	6-10 	225 	08/08/1988 	   	R
+7 	Al Harrington 	F 	6-9 	250 	02/17/1980 	   	10
+0 	Larry Hughes 	F 	6-5 	185 	01/23/1979 	   	10
+31 	Chris Hunter 	F-C 	6-11 	240 	07/07/1984 	   	R
+20 	Jared Jeffries 	C-F 	6-11 	240 	11/25/1981 	   	6
+42 	David Lee 	F-C 	6-9 	240 	04/29/1983 	   	3
+32 	Cuttino Mobley 	G 	6-4 	215 	09/01/1975 	   	10
+23 	Quentin Richardson 	G-F 	6-6 	235 	04/13/1980 	   	8
+4 	Nate Robinson 	G 	5-9 	180 	05/31/1984 	   	3
+18 	Cheikh Samb 	C 	6-11 	230 	05/12/1986 	   	2
+44 	Courtney Sims 	C 	6-11 	245 	10/21/1983 	   	1
+9 	Chris Wilcox 	C 	6-10 	235 	09/03/1982 	   	6
+Memphis Grizzlies
+00  	  Darrell Arthur  	 F  	 6-9  	 225  	 03/25/1988  	   Kansas  	 R
+7 	Greg Buckner 	G 	6-4 	210 	09/16/1976 	  Clemson 	9
+11 	Mike Conley 	G 	6-1 	180 	10/11/1987 	  Ohio State 	1
+33 	Marc Gasol 	C 	7-1 	265 	01/29/1985 	  Spain 	R
+22 	Rudy Gay 	F 	6-8 	222 	08/17/1986 	  Connecticut 	2
+15 	Hamed Haddadi 	C 	7-2 	254 	05/19/1985 	  I.R. of Iran 	R
+55 	Marko Jaric 	G 	6-7 	224 	10/12/1978 	  Serbia 	6
+32 	OJ Mayo 	G 	6-4 	210 	11/05/1987 	  USC 	R
+4 	Chris Mihm 	C 	7-0 	265 	07/16/1979 	  Texas 	8
+3 	Darius Miles 	F 	6-9 	235 	10/09/1981 	  East St. Louis HS (IL) 	6
+31 	Darko Milicic 	C-F 	7-0 	275 	06/20/1985 	  Serbia 	5
+13 	Quinton Ross 	F-G 	6-6 	193 	04/30/1981 	  Southern Methodist 	4
+21 	Hakim Warrick 	F 	6-9 	219 	07/08/1982 	  Syracuse 	3
+29 	Mike Wilks 	G 	5-10 	180 	05/07/1979 	  Rice 	6
+Philadelphia 76ers
+42  	  Elton Brand  	 F  	 6-9  	 254  	 03/11/1979  	   Duke  	 9
+1 	Samuel Dalembert 	C 	6-11 	250 	05/10/1981 	  Seton Hall 	6
+30 	Reggie Evans 	F 	6-8 	245 	05/18/1980 	  Iowa 	6
+33 	Willie Green 	G 	6-3 	201 	07/28/1981 	  Detroit Mercy 	5
+9 	Andre Iguodala  	G-F 	6-6 	207 	01/28/1984 	  Arizona 	4
+12 	Royal Ivey 	G 	6-4 	215 	12/20/1981 	  Texas 	4
+8 	Donyell Marshall 	F 	6-9 	245 	05/18/1973 	  Connecticut 	14
+7 	Andre Miller  	G 	6-2 	200 	03/19/1976 	  Utah 	9
+50 	Theo Ratliff  	C 	6-10 	235 	04/17/1973 	  Wyoming 	13
+4 	Kareem Rush 	G 	6-6 	215 	10/30/1980 	  Missouri 	5
+14 	Jason Smith 	F 	7-0 	240 	03/02/1986 	  Colorado State 	1
+16 	Marreese Speights 	F-C 	6-10 	245 	08/04/1987 	  Florida 	R
+23 	Louis Williams 	G 	6-2 	175 	10/27/1986 	  South Gwinnett HS (Snellville, GA) 	3
+21 	Thaddeus Young 	F 	6-8 	220 	06/21/1988 	  Georgia Tech 	1
+New Orleans Hornets
+12  	  Hilton Armstrong  	 C-F  	 6-11  	 235  	 11/11/1984  	   Connecticut  	 2
+40 	Ryan Bowen 	F 	6-9 	218 	11/20/1975 	  Iowa 	8
+23 	Devin Brown 	G-F 	6-5 	210 	12/30/1978 	  Texas-San Antonio 	6
+45 	Rasual Butler 	G-F 	6-7 	205 	05/23/1979 	  La Salle 	6
+6 	Tyson Chandler 	C 	7-1 	235 	10/02/1982 	  Dominguez HS (CA) 	7
+50 	Antonio Daniels 	G 	6-4 	205 	03/19/1975 	  Bowling Green 	11
+33 	Melvin Ely 	C-F 	6-10 	261 	05/02/1978 	  Fresno State 	6
+4 	Sean Marks 	F-C 	6-10 	250 	08/23/1975 	  California 	8
+3 	Chris Paul 	G 	6-0 	175 	05/06/1985 	  Wake Forest 	3
+9 	Morris Peterson 	G 	6-7 	220 	08/26/1977 	  Michigan State 	8
+41 	James Posey 	F 	6-8 	217 	01/13/1977 	  Xavier (Ohio) 	9
+16 	Predrag Stojakovic 	F 	6-10 	229 	06/09/1977 	  Serbia 	10
+30 	David West 	F 	6-9 	240 	08/29/1980 	  Xavier (Ohio) 	5
+32 	Julian Wright 	F 	6-8 	225 	05/20/1987 	  Kansas 	1
+San Antonio Spurs
+18 	Malik Hairston  	 F  	 6-6  	 220  	 02/23/1987  	   Florida  	 R
+15  Matt Bonner  	 F  	 6-10  	 240  	 04/05/1980  	   Florida  	 4
+12 	Bruce Bowen 	G-F 	6-7 	200 	06/14/1971 	  Cal State Fullerton 	12
+21 	Tim Duncan 	F 	6-11 	260 	04/25/1976 	  Wake Forest 	11
+4 	Michael Finley 	F-G 	6-7 	225 	03/06/1973 	  Wisconsin 	13
+20 	Manu Ginobili 	G 	6-6 	205 	07/28/1977 	  Argentina 	6
+90 	Drew Gooden 	F-C 	6-10 	250 	09/24/1981 	  Kansas 	6
+3 	George Hill 	G 	6-2 	180 	05/04/1986 	  IUPUI 	R
+28 	Ian Mahinmi 	C 	6-11 	230 	11/05/1986 	  France 	1
+8 	Roger Mason 	G 	6-5 	212 	09/10/1980 	  Virginia 	4
+7 	Fabricio Oberto 	C-F 	6-10 	245 	03/21/1975 	  Argentina 	3
+9 	Tony Parker 	G 	6-2 	180 	05/17/1982 	  France 	7
+40 	Kurt Thomas 	C-F 	6-9 	235 	10/04/1972 	  Texas Christian 	13
+5 	Ime Udoka 	F-G 	6-5 	220 	08/09/1977 	  Portland State 	4
+11 	Jacque Vaughn 	G 	6-1 	190 	02/11/1975 	  Kansas 	11
+2 	Marcus Williams 	G 	6-7 	207 	11/18/1986 	  Arizona 	1
+Chicago Bulls
+9  	  Luol Deng   	 F  	 6-9  	 220  	 04/16/1985  	   Duke  	 4
+7 	Ben Gordon 	G 	6-3 	200 	04/04/1983 	  Connecticut 	4
+34 	Aaron Gray 	C 	7-0 	270 	12/07/1984 	  Pittsburgh 	1
+12 	Kirk Hinrich  	G 	6-3 	190 	01/02/1981 	  Kansas 	5
+11 	Lindsey Hunter 	G 	6-2 	195 	12/03/1970 	  Jackson State 	15
+31 	Jerome James 	C 	7-1 	285 	11/17/1975 	  Florida A&M 	8
+54 	Linton Johnson III 	F 	6-8 	205 	06/13/1980 	  Tulane 	5
+52 	Brad Miller 	C 	7-0 	261 	04/12/1976 	  Purdue 	10
+21 	DeMarcus Nelson 	G 	6-4 	200 	11/02/1985 	  Duke 	R
+13 	Joakim Noah 	C-F 	6-11 	232 	02/25/1985 	  Florida 	1
+5 	Anthony Roberson 	G 	6-2 	180 	02/14/1983 	  Florida 	2
+1 	Derrick Rose 	G 	6-3 	190 	10/04/1988 	  Memphis 	R
+15 	John Salmons 	F-G 	6-6 	207 	12/12/1979 	  Miami (Fla.) 	6
+2 	Tim Thomas 	F 	6-10 	240 	02/26/1977 	  Villanova 	11
+24 	Tyrus Thomas 	F 	6-9 	215 	08/17/1986 	  Louisiana State 	2
+Denver Nuggets
+11  	  Chris Andersen  	 F-C  	 6-10  	 228  	 07/07/1978  	   Blinn Coll. TX (JC)  	 6
+15 	Carmelo Anthony 	F 	6-8 	230 	05/29/1984 	  Syracuse 	5
+32 	Renaldo Balkman 	F 	6-8 	208 	07/14/1984 	  South Carolina 	2
+7 	Chauncey Billups 	G 	6-3 	202 	09/25/1976 	  Colorado 	11
+25 	Anthony Carter 	G 	6-2 	195 	06/16/1975 	  Hawaii 	9
+6 	Jason Hart 	G 	6-3 	180 	04/29/1978 	  Syracuse 	7
+45 	Steven Hunter 	F-C 	7-0 	240 	10/31/1981 	  DePaul 	7
+30 	Dahntay Jones 	G-F 	6-6 	210 	12/27/1980 	  Duke 	5
+43 	Linas Kleiza 	F-G 	6-8 	245 	01/03/1985 	  Missouri 	3
+4 	Kenyon Martin 	F 	6-9 	240 	12/30/1977 	  Cincinnati 	8
+31 	Nene Nene 	C-F 	6-11 	250 	09/13/1982 	  Brazil 	6
+27 	Johan Petro 	C 	7-0 	247 	01/27/1986 	  France 	3
+1 	JR Smith 	G 	6-6 	220 	09/09/1985 	  St. Benedict's Prep (Newark, NJ) 	4
+13 	Sonny Weems 	G-F 	6-6 	203 	07/08/1986 	  Arkansas 	R
+Minnesota Timberwolves
+22  	  Corey Brewer  	 F-G  	 6-9  	 188  	 03/05/1986  	   Florida  	 1
+1 	Bobby Brown 	G 	6-2 	175 	09/24/1984 	  Cal State-Fullerton 	R
+14 	Brian Cardinal 	F 	6-8 	240 	05/02/1977 	  Purdue 	8
+10 	Rodney Carney 	F 	6-7 	201 	04/05/1984 	  Memphis 	2
+34 	Jason Collins 	C 	7-0 	255 	12/02/1978 	  Stanford 	7
+4 	Randy Foye 	G 	6-4 	213 	09/24/1983 	  Villanova 	2
+8 	Ryan Gomes 	F 	6-7 	245 	09/01/1982 	  Providence 	3
+25 	Al Jefferson 	C-F 	6-10 	265 	01/04/1985 	  Prentiss HS (MS) 	4
+42 	Kevin Love 	F 	6-10 	260 	09/07/1988 	  UCLA 	R
+35 	Mark Madsen 	F 	6-9 	255 	01/28/1976 	  Stanford 	8
+33 	Mike Miller 	G-F 	6-8 	218 	02/19/1980 	  Florida 	8
+12 	Kevin Ollie  	G 	6-2 	195 	12/27/1972 	  Connecticut 	11
+5 	Craig Smith 	F 	6-7 	250 	11/10/1983 	  Boston College 	2
+3 	Sebastian Telfair 	G 	6-0 	175 	06/09/1985 	  Abraham Lincoln HS (Brooklyn, NY) 	4
+23 	Shelden Williams 	F-C 	6-9 	250 	10/21/1983 	  Duke 	2
+Detroit Pistons
+28  	  Arron Afflalo  	 G  	 6-5  	 215  	 10/15/1985  	   UCLA  	 1
+38 	Kwame Brown 	C 	6-11 	270 	03/10/1982 	  Glynn Academy HS (GA) 	7
+12 	Will Bynum 	G 	6-0 	185 	01/04/1983 	  Georgia Tech 	1
+32 	Richard Hamilton 	G 	6-7 	193 	02/14/1978 	  Connecticut 	9
+5 	Walter Herrmann 	F 	6-9 	225 	06/26/1979 	  Argentina 	2
+1 	Allen Iverson 	G 	6-0 	180 	06/07/1975 	  Georgetown 	12
+25 	Amir Johnson 	F 	6-9 	210 	05/01/1987 	  Westchester HS (Los Angeles, CA) 	3
+54 	Jason Maxiell 	F 	6-7 	260 	02/18/1983 	  Cincinnati 	3
+24 	Antonio McDyess 	F-C 	6-9 	245 	09/07/1974 	  Alabama 	12
+22 	Tayshaun Prince 	F 	6-9 	215 	02/28/1980 	  Kentucky 	6
+42 	Walter Sharpe 	F 	6-9 	245 	07/18/1986 	  Alabama-Birmingham 	R
+3 	Rodney Stuckey 	G 	6-5 	205 	04/21/1986 	  Eastern Washington 	1
+30 	Rasheed Wallace 	C-F 	6-11 	230 	09/17/1974 	  North Carolina 	13
+Portland Trail Blazers
+12  	  LaMarcus Aldridge  	 F-C  	 6-11  	 240  	 07/19/1985  	   Texas  	 2
+88 	Nicolas Batum 	F 	6-8 	200 	12/14/1988 	  France 	R
+4 	Jerryd Bayless 	G 	6-3 	200 	08/20/1988 	  Arizona 	R
+2 	Steve Blake 	G 	6-3 	172 	02/26/1980 	  Maryland 	5
+5 	Rudy Fernandez 	G-F 	6-6 	185 	04/04/1985 	  Spain 	R
+44 	Channing Frye 	F-C 	6-11 	245 	05/17/1983 	  Arizona 	3
+9 	Raef LaFrentz 	C-F 	6-11 	240 	05/29/1976 	  Kansas 	10
+52 	Greg Oden 	C 	7-0 	285 	01/22/1988 	  Ohio State 	R
+25 	Travis Outlaw 	F 	6-9 	207 	09/18/1984 	  Starkville HS (MS) 	5
+10 	Joel Przybilla 	C 	7-1 	245 	10/10/1979 	  Minnesota 	8
+42 	Shavlik Randolph 	F 	6-10 	240 	11/24/1983 	  Duke 	3
+11 	Sergio Rodriguez 	G 	6-3 	176 	06/12/1986 	  Spain 	2
+7 	Brandon Roy 	G 	6-6 	211 	07/23/1984 	  Washington 	2
+51 	Michael Ruffin 	F-C 	6-8 	248 	01/21/1977 	  Tulsa 	8
+8 	Martell Webster 	G-F 	6-7 	235 	12/04/1986 	  Seattle Prep HS (WA) 	3
+Indiana Pacers
+9  	  Maceo Baston  	 F  	 6-10  	 230  	 05/26/1976  	   Michigan  	 3
+6 	Marquis Daniels 	G 	6-6 	200 	01/07/1981 	  Auburn 	5
+12 	Travis Diener 	G 	6-1 	175 	03/01/1982 	  Marquette 	3
+17 	Mike Dunleavy 	F-G 	6-9 	230 	09/15/1980 	  Duke 	6
+5 	T.J. Ford 	G 	6-0 	165 	03/24/1983 	  Texas 	4
+10 	Jeff Foster 	C 	6-11 	250 	01/16/1977 	  Texas State 	9
+23 	Stephen Graham 	F 	6-6 	215 	06/11/1982 	  Oklahoma State 	3
+33 	Danny Granger 	F-G 	6-8 	228 	04/20/1983 	  New Mexico 	3
+55 	Roy Hibbert 	C 	7-2 	278 	12/11/1986 	  Georgetown 	R
+1 	Jarrett Jack 	G 	6-3 	197 	10/28/1983 	  Georgia Tech 	3
+32 	Josh McRoberts 	F 	6-10 	240 	02/28/1987 	  Duke 	1
+3 	Troy Murphy 	F-C 	6-11 	245 	05/02/1980 	  Notre Dame 	7
+8 	Rasho Nesterovic 	C 	7-0 	255 	05/30/1976 	  Slovenia 	10
+25 	Brandon Rush 	G 	6-6 	210 	07/07/1985 	  Kansas 	R
+11 	Jamaal Tinsley 	G 	6-3 	185 	02/28/1978 	  Iowa State 	7

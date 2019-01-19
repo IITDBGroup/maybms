@@ -1,0 +1,292 @@
+<html><head>
+<title>Postgres Indecisiveness Plugin</title>
+</head><body>
+
+<h2>Postgres Indecisiveness Plugin</h2>
+<p>PIP is a plugin for Postgres (being incorporated into MayBMS) that implements a probabilistic database supporting continuous distributions.  PIP implements a hybrid of the C-Tables and VG-Functions approaches to probabilistic databases, allowing it to employ a sampling optimizer to ensure that statistical metrics are computed as efficiently as possible.  More details on PIP's implementation can be found in our <a href="../papers/pip.pdf">ICDE 2010 paper</a></p>
+
+<p>This document is structured as follows:
+<ul>
+  <li><a href="#installing_pip">Installing PIP</a></li>
+  <li><a href="#using_pip">Using PIP</a></li><ul>
+    <li><a href="#using_pip_creating">Creating Probabilistic Data</a></li>
+    <li><a href="#using_pip_withctype">Writing Probabilistic Queries - With CType Extensions</a></li>
+    <li><a href="#using_pip_withoutctype">Writing Probabilistic Queries - Without CType Extensions</a></li>
+    <li><a href="#using_pip_distributions">Defining Probability Distributions</a></li>
+  </ul>
+  <li><a href="#reference_expectation">Reference: Expectation Operators</a></li>
+  <li><a href="#reference_dist_list">Reference: Predefined Distributions</a></li>
+  <li><a href="#reference_dist_components">Reference: Distribution Components</a></li>
+  <li><a href="#reference_dist_utiltiy">Reference: Distribution Utility Functions</a></li>
+</ul></p>
+
+<h2><a name="installing_pip">Installing PIP</a></h2>
+<p>PIP is included as part of the MayBMS Distribution.  </p>
+
+<p><pre><a href="http://maybms.sourceforge.net">http://maybms.sourceforge.net</a></pre></p>
+
+<p>PIP's core functionality is embedded in a standard Postgres plugin and may be used with any compatible installation of Postgres (it has been verified to work under Postgres 8.4).  PIP also includes query-rewriting functionality that makes it possible to write queries that treat probabilistic data as regular data -- this allows for nearly seamless integration of probabilistic data into existing workflows.  However, this rewriting functionality requires building a copy of Postgres with PIP's CType extensions.  If you do not wish to use these extensions, skip directly to <a href="#installing_pip_plugin">Installing the PIP Library</a>.</p>
+
+<h3><a name="installing_pip_ctype">Installing Postgres-CType</a></h3>
+<ul>
+<li>Create a copy of MayBMS with the CType extensions by running the patch script.
+<pre>
+$> cd maybms
+$> ./pip_plugin/scripts/patch_postgres.sh
+</pre></li>
+<li>Build, install, and set up the patched MayBMS as normal.  For example, on a standard configuration:
+<pre>
+$> cd postgresql-ctype
+$> ./configure
+$> make
+$> sudo make install
+$> export PGDATA=[/usr/share/postgres_db]
+$> export PATH=$PATH:/usr/local/postgres/bin
+$> mkdir $PGDATA
+$> initdb
+</pre></li>
+</ul>
+
+<h3><a name="installing_pip_plugin">Installing the PIP Library</a></h3>
+<ul>
+<li>Compile PIP.  
+<pre>
+$> cd pip_plugin
+$> make
+</pre></li>
+<li>Install PIP.  By default, PIP Installs the PIP library into /usr/local/lib/pgsql.  To change the default install directory, modify the INSTALL_DIR variable in the Makefile.
+<pre>
+$> sudo make_install
+</pre></li>
+<li>Configure Postgres to use PIP.  This step needs to be run once for each database that you intend to use PIP with.  The makefile generates two scripts to automate this process: install.sql and install.ctype.sql, for use with standard postgres installations and installs with the CType patch described above, respectively.
+<pre>
+$> psql [my_database] -f install[.ctype].sql
+</pre></li>
+<li>To add PIP functionality to all databases created in the future, run the setup script (as above) on the database 'template_1'.  Note that this does not affect any existing databases.
+<pre>
+$> psql template_1 -f install[.ctype].sql
+</pre>
+</li>
+</ul>
+
+<h2><a name="using_pip">Using PIP</a></h2>
+
+<h3><a name="using_pip_creating">Creating Probabilistic Data</a></h3>
+
+<p>All probabilistic data in PIP is expressed using the <code>pip_eqn</code> datatype.  New probabilistic data is introduced through the <code>CREATE_VARIABLE</code> function.  This function takes 2 parameters: the name of a distribution, and a vector of parameters to that distribution.  </p>
+
+<p>For example:
+<pre>
+CREATE TABLE my_probabilistic_data(
+  name varchar(100), 
+  data pip_eqn
+);
+INSERT INTO my_probabilistic_data
+  SELECT input.name, 
+         CREATE_VARIABLE("Normal", vector(input.mean, input.stddev))
+  FROM   input;
+</pre>
+This example creates a random variable by iterating over each row of the table 'input'.  The Normal distribution requires two parameters: a mean and a standard deviation, both of which are drawn from the corresponding row of the input table.<p>
+
+PIP comes with several probability distributions predefined, described <a href="reference_dist_list">below</a>.  The name of the distribution is passed as the first parameter to the CREATE_VARIABLE function.</p>
+
+<h3><a name="using_pip_withctype">Writing Probabilistic Queries - With CType Extensions</a></h3>
+<p>Queries over probabilistic data fall into two stages.  With the CType extensions, the first stage is nearly identical to querying normal data -- write your queries as you would for deterministic data.  For example:
+<pre>
+CREATE TABLE source_1(int id, measurement double precision, data pip_eqn);
+CREATE TABLE source_2(int id, data pip_eqn);
+CREATE TABLE source_3(int id, data pip_eqn);
+-- fill source_1, 2, and 3
+CREATE TABLE results AS
+  SELECT source_1.id, source_1.measurement, source_3.data
+  FROM   source_1, source_2, source_3
+  WHERE  source_1.id = source_2.id
+    AND  source_2.id = source_3.id
+    AND  source_1.data > source_2.data + source_3.data;
+</pre></p>
+
+<p>However, the result of this query will not be a numerical result, but rather a compressed representation of the probabilistic formula that defines each cell of the result.  PIP provides several operators to transform the result into a comprehendable form.  These are defined <a href="#reference_expectation">below</a>.
+</p>
+
+
+<h3><a name="using_pip_withoutctype">Writing Probabilistic Queries - Without CType Extensions</a></h3>
+<p>Without using the CType extensions, users must be aware of some of PIP's inner workings.  Specifically, constraints over probabilistic data (e.g., <code>source_1.data > source_2.data + source_3.data</code>) can not be reduced to booleans (as the result of the inequality is itself probabilistic), and must be included in the query result as data.  The CType extensions rewrite queries so that the the query results are modified automatically, but without them you must write your queries accordingly.
+
+These comparisons are of type <code>pip_atom</code>.  </p>
+
+<p><b>What this means for you:</b> Without the CType extensions, queries must be written with comparisons over probabilistic data in the <code>SELECT</code> clause and not the <code>WHERE</code> clause.  For example, the exampe query above must be rewritten as:
+<pre>
+CREATE TABLE source_1(int id, measurement double precision, data pip_eqn);
+CREATE TABLE source_2(int id, data pip_eqn);
+CREATE TABLE source_3(int id, data pip_eqn);
+-- fill source_1, 2, and 3
+CREATE TABLE results AS
+  SELECT source_1.id, source_1.measurement, source_3.data,
+         <b>source_1.data > source_2.data + source_3.data</b>
+  FROM   source_1, source_2, source_3
+  WHERE  source_1.id = source_2.id
+    AND  source_2.id = source_3.id;
+</pre>
+
+
+<h3><a name="using_pip_distributions">Defining Probability Distributions</a></h3>
+<p>Users define new probability distributions by declaring a function (in C) for generating samples from the distribution, as well as several metadata functions that the PIP sampling optimizer can use to improve sampling efficiency.  New distributions can be introduced as follows:
+
+<ul>
+<li>Create a new <code>.c</code> file in <code>pip_plugin/src/dist</code>, which should <code>#include "#pip.h"</code>.</li>
+<li>Add the following code to the file:<pre>
+DECLARE_PIP_DISTRIBUTION([shortname]) = {
+  .name = [stringname],
+  .size = [paramsize],
+  .init = [init_fn],
+  .gen =  [gen_fn],
+  .pdf =  [pdf_fn],
+  .cdf =  [cdf_fn],
+  .icdf=  [icdf_fn],
+  .out =  [output_fn],
+  .in  =  [input_fn],
+  .joint= false
+}</pre>
+See <a href="#reference_dist_components">below</a> for definitions of each bracketed term.</li>
+<li>Define the necessary functions as described below.</li>
+<li>Compile and install PIP as normal.  You may be prompted to upgrade your PIP install.</li>
+</ul></p>
+
+<hr />
+<h2><a name="reference_expectation">Reference: Expectation Operators</a></h2>
+<dl>
+<dt><code>expectation(var, row)</code></dt>
+<dd>Compute the expectation of the specified variable.  For technical reasons, you must also provide a reference to the table that the variable appears in.<pre>
+SELECT results.id, expectation(results.data, results)
+FROM   results;</pre>
+As a shorthand for the expectation function, you may use double angle brackets.
+<pre>
+SELECT results.id, &lt;&lt; results.data @ results &gt;&gt
+FROM   results;</pre></dd>
+
+<dt><code>conf_one(row)</code><dt>
+<dd>Compute the confidence of a row, or probability that the row is present in the database; Such nondeterminism can arise as the result of comparisons involving probabilistic data (e.g. <code>source_1.data > source_2.data + source_3.data</code>).<pre>
+SELECT results.id, conf_one(results)
+FROM   results;</pre></dd>
+
+<dt><code>expectation_sum(var, row)</code></dt>
+<dd>Compute the expectation of the sum aggregate over the specified probabilistic data column.  For technical reasons, you must also provide a reference to the table that the column appears in.<pre>
+SELECT expectation_sum(results.data, results)
+FROM   results;</pre>
+
+<dt><code>sum(value, row)</code></dt>
+<dd>Compute the expectation of the sum aggregate over the specified non-probabilistic data column.  This function should replace use of the standard sum aggregate.  For technical reasons, you must also provide a reference to the table that the column appears in.<pre>
+SELECT sum(results.measurement, results)
+FROM   results;</pre>
+
+<dt><code>expectation_max(var, row)</code></dt>
+<dd>Compute the expectation of the max aggregate over the specified column.  For technical reasons, you must also provide a reference to the table that the column appears in.<pre>
+SELECT expectation_max(results.data, results)
+FROM   results;</pre>
+
+<dt><code>max(value, row)</code></dt>
+<dd>Compute the expectation of the max aggregate over the specified non-probabilistic data column.  This function should replace use of the standard max aggregate.  For technical reasons, you must also provide a reference to the table that the column appears in.<pre>
+SELECT max(results.measurement, results)
+FROM   results;</pre>
+</dl>
+<hr />
+<dl>
+<h2><a name="reference_dist_list">Reference: Predefined Distributions</a></h2>
+<dt>Zero</dt>
+<dd>A distribution that is always zero (i.e., the <a href="http://en.wikipedia.org/wiki/Dirac_delta">Dirac Delta</a> as a distribution).
+<pre>CREATE_VARIABLE("Zero", vector())</pre></dd>
+
+<dt>Exponential</dt>
+<dd><a href="http://en.wikipedia.org/wiki/Exponential_distribution">The Exponential Distribution</a>.  The Exponential Distribution takes one parameter, lambda: the <b>inverse</b> of the expectation of the variable being created.
+<pre>CREATE_VARIABLE("Exponential", vector(lambda))</pre></dd>
+
+<dt>Normal</dt>
+<dd><a href="http://en.wikipedia.org/wiki/Normal_distribution">The Normal Distribution</a>.  The Normal Distribution takes two parameters, the mean, and the standard deviation of the variable being created.
+<pre>CREATE_VARIABLE("Normal", vector(mean, stddev))</pre></dd>
+
+<dt>Poisson</dt>
+<dd><a href="http://en.wikipedia.org/wiki/Poisson_distribution">The Poisson Distribution</a>.  The Poisson distribution takes one parameter, lambda: the expectation of the variable being created.
+<pre>CREATE_VARIABLE("Poisson", vector(lambda))</pre></dd>
+
+<dt>Uniform</dt>
+<dd><a href="http://en.wikipedia.org/wiki/Uniform_distribution_(continuous)">The Uniform Distribution</a>.  The uniform distribution takes two parameters, the endpoints of the distribution; The endpoints may be provided in any order.
+<pre>CREATE_VARIABLE("Uniform", vector(low, high))</pre></dd>
+</dl>
+
+<hr />
+<h2><a name="reference_dist_components">Reference: Distribution Components</a></h2>
+<p>
+The components of a PIP distribution are as follows:
+<dl>
+<dt><code>shortname</code></dt>
+<dd>A short, unique, one-word name for the distribution.  The short name must be a valid c identifier</dd>
+
+<dt><code>stringname</code></dt>
+<dd>A C string containing a human-readable name for the distribution.  This is the same name that will be used when an end-user calls <code>CREATE_VARIABLE</code>.</dd>
+
+<dt><code>paramsize</code></dt>
+<dd>The number of bytes required to store this distribution's parameters.  For example, if your distribution is parametereized by two floats, this parameter should be <code>2 * sizeof(float)</code>.</dd>
+
+<dt><code>init_fn</code></dt>
+<dd>A pointer to a constructor function for your distribution with the following schema:<pre>
+void init_fn(pip_var *var, HeapTupleHeader params)</pre>
+When your initializer is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>params</code> is a pointer to the postgres vector() of parameters.  See below for information on utility functions for parsing the parameter vector.</dd>
+
+<dt><code>gen_fn</code></dt>
+<dd>A pointer to a generator function for your distribution with the following schema: <pre>
+float8 gen_fn(pip_var *var, int64 seed)</pre>
+The generator function returns a value sampled from the distribution being defined, with parameters stored in <code>var->group_state</code> (as defined above).  This function <b>MUST</b> be deterministic; Randomness is obtained from the randomly selected <code>seed</code> parameter.  See below for information on utility functions for generating random  numbers from this seed value.</dd>
+
+<dt><code>pdf_fn</code></dt>
+<dd>NULL, or a pointer to a function for computing the probability density function of the distribution being defined, with the following schema:<pre>
+float8 pdf_fn(pip_var *var, float8 point)</pre>
+The pdf function returns the probability density at the indicated <code>point</code> of the distribution being defined, with parameters stored in <code>var->group_state</code> (as defined above).  If this pointer is NULL, optimizations involving the distribution's PDF will be ignored by PIP's sampling optimizer.</dd>
+
+<dt><code>cdf_fn</code></dt>
+<dd>NULL, or a pointer to a function for computing the cumulative distribution function of the distribution being defined, with the following schema:<pre>
+float8 cdf_fn(pip_var *var, float8 point)</pre>
+The cdf function returns the probability of selecting a sample less than or equal to the indicated <code>point</code>, given the parameters stored in <code>var->group_state</code> (as defined above).  If this pointer is NULL, optimizations involving the distribution's CDF will be ignored by PIP's sampling optimizer.</dd>
+
+<dt><code>icdf_fn</code></dt>
+<dd>NULL, or a pointer to a function for computing the inverse of the cumulative distribution function of the distribution being defined, with the following schema:<pre>
+float8 icdf_fn(pip_var *var, float8 probability)</pre>
+The inverse cdf function returns a point in the domain of the distribution such that the likelihood of sampling a value less than or equal to the point is equal to the indicated <code>probability</code> (which is guaranteed to be between 0 and 1, inclusive), given the parameters stored in <code>var->group_state</code> (as defined above).  If both [cdf_fn] and [icdf_fn] are provided, then it <b>MUST</b> be true that <pre>
+x = cdf_fn(var, icdf_fn(var, x));</pre>
+If this pointer is NULL, optimizations involving the distribution's inverse CDF will be ignored by PIP's sampling optimizer.</dd>
+
+<dt><code>output_fn</code></dt>
+<dd>NULL, or a pointer to a function for generating a human-readable representation of the distribution's parameters, with the following schema:<pre>
+int input_fn(pip_var *var, int len, char *str)</pre>
+When invoked, <code>str</code> will contain a pointer to a (large) allocated, but uninitialized block of memory of size <code>len</code> this function should fill with a C string containing a human-readable representation of the distribution's parameters (e.g., using snprintf), which should be stored in <code>var->group_state</code> (as defined above).  The function should return the length of the string, not counting the trailing null character (as snprintf).  <b>Note:</b> Although this function is optional, be aware that not including it will prevent users from being able to export data defined in terms of this distribution in the more commonly compatible text format, potentially preventing you from being able to upgrade your PIP install.  Consequently, this function <b>MUST</b> be included in any production system.
+
+<dt><code>input_fn</code></dt>
+<dd>NULL, or a pointer to a function for parsing a human-readable representation of the distribution's parameters, with the following schema:<pre>
+int input_fn(pip_var *var, char *str)</pre>
+When the input function is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>str</code> references a C string containing a human-readable representation of this distribution's parameters, as used in [output_fn].  The input function should parse this string (e.g., using sscanf) and initialize <code>var->group_state</code> in the same way as [init_fn].  <b>Note:</b> Although this function is optional, be aware that not including it will prevent users from being able to import data defined in terms of this distribution.  
+</dl>
+</p>
+<hr />
+<h2><a name="reference_dist_utility">Reference: Distribution Utility Functions</a></h2>
+<p>
+PIP includes a library of utility functions for use in defining distributions.  These methods are defined in <code>pip_plugin/src/include/dist.h</code> (which will be included as part of <code>"pip.h"</code>)
+
+<dl>
+<dt><code>float8 dist_param_float8(HeapTupleHeader params, int n, float8 default)</code></dt>
+<dd>Utility function for parsing a Postgres vector (e.g., in [init_fn]).  Returns the <code>n</code>th element (starting with 0) of <code>params</code>, cast and/or translated into a float8.  If the <code>params</code> has fewer than <code>n</code>+1 elements, the <code>default</code> value will be returned instead.</dd>
+
+<dt><code>int64 pip_prng_step(int64 seed)</code></dt>
+<dd>The central operation for generating random numbers, for use in a distribution's generator function.  Takes a <code>seed</code> value and returns the next (random but deterministic) seed value.</dd>
+
+<dt><code>int64 pip_prng_int(int64 *seed)</code></dt>
+<dd>The canonical way to generate a random integer in a distribution's generator function.  Takes a seed value, and returns a random (but deterministic based on <code>seed</code>) integer value between 0 and 2^63-1.  The <code>seed</code> value is passed by reference, and is stepped to its next value automatically.
+</dd>
+
+<dt><code>float8 pip_prng_float(int64 *seed)</code></dt>
+<dd>The canonical way to generate a random float in a distribution's generator function.  Takes a seed value, and returns a random (but deterministic based on <code>seed</code>) float value between 0 and 1.  The <code>seed</code> value is passed by reference, and is stepped to its next value automatically.
+</dd>
+
+<dt><code>void pip_box_muller(float8 *X, float8 *Y, int64 *seed)</code></dt>
+<dd>Generate two random (but deterministic based on <code>seed</code>), independent, normally distributed floating point numbers (with mean of 0 and standard deviation of 1) using the <a href="http://en.wikipedia.org/wiki/Box-Muller_transform">Box-Muller method</a>.  The <b>independent</b> variables will be stored in <code>X</code> and <code>Y</code> -- either or both may be used.  The <code>seed</code> value is passed by reference, and is stepped to its next value automatically (note that the Box-Muller method requires two random numbers as input and as a consequence, <code>seed</code> is actually stepped twice). 
+</dd>
+
+</body></html>

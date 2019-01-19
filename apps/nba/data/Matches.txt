@@ -1,0 +1,80 @@
+LA Lakers|@ Milwaukee
+LA Lakers|vs Houston
+LA Lakers|vs LA Clippers
+LA Lakers|@ Sacramento
+LA Lakers|vs Denver
+Boston Celtics|vs Charlotte
+Boston Celtics|vs Atlanta
+Boston Celtics|vs New Jersey
+Boston Celtics|vs Miami
+Boston Celtics|@ Cleveland
+Dallas Mavericks|vs Miami
+Dallas Mavericks|@ Memphis
+Dallas Mavericks|vs Phoenix
+Dallas Mavericks|vs Utah
+Dallas Mavericks|vs New Orleans
+New Jersey Nets|vs Detroit
+New Jersey Nets|@ Chicago
+New Jersey Nets|vs Philadelphia
+New Jersey Nets|@ Boston
+New Jersey Nets|@ Detroit
+Houston Rockets|@ Phoenix
+Houston Rockets|@ LA Lakers
+Houston Rockets|vs Portland
+Houston Rockets|vs Orlando
+Houston Rockets|@ Sacramento
+New York Knicks|vs Toronto
+New York Knicks|@ Toronto
+New York Knicks|@ Chicago
+New York Knicks|vs Detroit
+New York Knicks|@ Orlando
+Memphis Grizzlies|vs Washington
+Memphis Grizzlies|vs Dallas
+Memphis Grizzlies|@ Milwaukee
+Memphis Grizzlies|vs Portland
+Memphis Grizzlies|@ Orlando
+Philadelphia 76ers|vs Milwaukee
+Philadelphia 76ers|vs Detroit
+Philadelphia 76ers|@ New Jersey
+Philadelphia 76ers|@ Charlotte
+Philadelphia 76ers|@ Chicago
+New Orleans Hornets|@ LA Clippers
+New Orleans Hornets|@ Golden State
+New Orleans Hornets|vs Utah
+New Orleans Hornets|@ Miami
+New Orleans Hornets|vs Phoenix
+San Antonio Spurs|@ Indiana
+San Antonio Spurs|@ Cleveland
+San Antonio Spurs|@ Oklahoma City
+San Antonio Spurs|vs Portland
+San Antonio Spurs|vs Utah
+Chicago Bulls|vs New Jersey
+Chicago Bulls|vs New York
+Chicago Bulls|vs Philadelphia
+Chicago Bulls|vs Charlotte
+Chicago Bulls|@ Detroit
+Denver Nuggets|vs Utah
+Denver Nuggets|vs LA Clippers
+Denver Nuggets|@ Minnesota
+Denver Nuggets|vs Oklahoma City
+Denver Nuggets|@ LA Lakers
+Minnesota Timberwolves|vs Houston
+Minnesota Timberwolves|vs Golden State
+Minnesota Timberwolves|@ LA Lakers
+Minnesota Timberwolves|@ Portland
+Minnesota Timberwolves|vs Washington
+Detroit Pistons|@ New Jersey
+Detroit Pistons|@ Philadelphia
+Detroit Pistons|vs Charlotte
+Detroit Pistons|@ New York
+Detroit Pistons|vs New Jersey
+Portland Trail Blazers|@ Oklahoma City
+Portland Trail Blazers|@ Houston
+Portland Trail Blazers|@ Memphis
+Portland Trail Blazers|@ San Antonio
+Portland Trail Blazers|vs LA Lakers
+Indiana Pacers|vs Denver
+Indiana Pacers|@ Sacramento
+Indiana Pacers|@ Portland
+Indiana Pacers|@ LA Clippers
+Indiana Pacers|vs Utah

@@ -1,0 +1,63 @@
+--test for expanding stars
+create table r(a int, b int);
+create table r1 as repair key a in r; 
+create table r2 as select a as c, b as d from (pick tuples from r) r0;
+create table r3 as select a as d, b as e, c as f, d as g from r1, r2;
+create table r4(h int);
+select * from r1;
+ a | b | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+(0 rows)
+
+select * from r1, r2;
+ a | b | c | d | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 
+---+---+---+---+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select * from r1, r4;
+ a | b | h | _v0 | _d0 | _p0 
+---+---+---+-----+-----+-----
+(0 rows)
+
+select r1.* from r1, r2;
+ a | b | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 
+---+---+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select r2.*, r1.* from r1, r2, r3;
+ c | d | a | b | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 
+---+---+---+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select r2.*, r1.*, r3.* from r1, r2, r3;
+ c | d | a | b | d | e | f | g | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 
+---+---+---+---+---+---+---+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select r4.* from r1, r2, r3, r4;
+ h | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 
+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select r1.a from r1, r2, r3;
+ a | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 
+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select * from 
+( select * from r1, r2 where r1.a = r2.c ) s1, ( select g from r1, r3, r4  ) s2;
+ a | b | c | d | g | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 | _v4 | _d4 | _p4 
+---+---+---+---+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+select * from 
+( select a as new_a, * from r1, r2 where r1.a = r2.c ) s1, ( select e as new_e from r1, r3  ) s2;
+ new_a | a | b | c | d | new_e | _v0 | _d0 | _p0 | _v1 | _d1 | _p1 | _v2 | _d2 | _p2 | _v3 | _d3 | _p3 | _v4 | _d4 | _p4 
+-------+---+---+---+---+-------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+(0 rows)
+
+drop table r;
+drop table r1;
+drop table r2;
+drop table r3;
+drop table r4;

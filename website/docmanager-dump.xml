@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE docmanager [
+<!ELEMENT docmanager (docgroup+)>
+<!ELEMENT docgroup (doc_group_id,groupname,documents)>
+<!ELEMENT doc_group_id (#PCDATA)>
+<!ELEMENT groupname (#PCDATA)>
+<!ELEMENT documents (document*)>
+<!ELEMENT document (url,docid,title,data,state,updatedate,createdate,description,language,creator)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT docid (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT updatedate (#PCDATA)>
+<!ELEMENT createdate (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT creator (#PCDATA)>
+]>
+<docmanager>
+<docgroup>
+<doc_group_id>204277</doc_group_id>
+<groupname>Manual</groupname>
+<documents>
+<document>
+<url>https://sourceforge.net/docman/display_doc.php?docid=163831&amp;#x26;group_id=235754</url>
+<docid>163831</docid>
+<title>MayBMS Manual</title>
+<data>The MayBMS manual can be found &amp;#x26;lt;a href=&amp;#x26;quot;http://maybms.sourceforge.net/manual/maybms_manual.pdf&amp;#x26;quot;&amp;#x26;gt;here&amp;#x26;lt;/a&amp;#x26;gt;.</data>
+<state>active</state>
+<updatedate>1236664933</updatedate>
+<createdate>1236664905</createdate>
+<description>Manual</description>
+<language>en</language>
+<creator>nobody</creator>
+</document>
+</documents>
+</docgroup>
+<docgroup>
+<doc_group_id>204276</doc_group_id>
+<groupname>Overview paper for researchers</groupname>
+<documents>
+<document>
+<url>https://sourceforge.net/docman/display_doc.php?docid=132794&amp;#x26;group_id=235754</url>
+<docid>132794</docid>
+<title>MayBMS: A System for Managing Large Uncertain and Probabilistic Databases </title>
+<data>The paper &amp;#x26;quot;MayBMS: A System for Managing Large Uncertain and Probabilistic Databases &amp;#x26;quot; can be downloaded &amp;#x26;lt;a href=&amp;#x26;quot;http://www.cs.cornell.edu/bigreddata/maybms/maybms.pdf&amp;#x26;quot;&amp;#x26;gt;&amp;#x26;lt;b&amp;#x26;gt;here&amp;#x26;lt;/b&amp;#x26;gt;&amp;#x26;lt;/a&amp;#x26;gt;.</data>
+<state>active</state>
+<updatedate>1225164740</updatedate>
+<createdate>1225164663</createdate>
+<description>A researchy overview paper over the MayBMS project</description>
+<language>en</language>
+<creator>ckoch</creator>
+</document>
+</documents>
+</docgroup>
+<docgroup>
+<doc_group_id>196149</doc_group_id>
+<groupname>Uncategorized Submissions</groupname>
+<documents>
+<document>
+<url>https://sourceforge.net/docman/display_doc.php?docid=127739&amp;#x26;group_id=235754</url>
+<docid>127739</docid>
+<title>World-set Algebra Expressiveness Paper</title>
+<data></data>
+<state>deleted</state>
+<updatedate>1218753277</updatedate>
+<createdate>1217948028</createdate>
+<description>World-set Algebra Expressiveness Paper</description>
+<language>en</language>
+<creator>ckoch</creator>
+</document>
+<document>
+<url>https://sourceforge.net/docman/display_doc.php?docid=132793&amp;#x26;group_id=235754</url>
+<docid>132793</docid>
+<title>MayBMS: A System for Managing Large Uncertain and Probabilistic Databases </title>
+<data>%PDF-1.4
+%&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xEC;&amp;#x8F;&amp;#xA2;
+5 0 obj
+&amp;#x26;lt;&amp;#x26;lt;/Length 6 0 R/Filter /FlateDecode&amp;#x26;gt;&amp;#x26;gt;
+stream
+x&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xEF;&amp;#xBF;&amp;#xBD;\[s&amp;#x1D;&amp;#xEF;&amp;#xBF;&amp;#xBD;q&amp;#xEF;&amp;#xBF;&amp;#xBD;3&amp;#xCA;&amp;#x95;&amp;#xEF;&amp;#xBF;&amp;#xBD;p*O&amp;#xEF;&amp;#xBF;&amp;#xBD;tVs&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xEF;&amp;#xBF;&amp;#xBD;)&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xD8;&amp;#xB4;&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xC4;&amp;#x92;&amp;#xEF;&amp;#xBF;&amp;#xBD;R&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#xEF;&amp;#xBF;&amp;#xBD;&amp;#x26;lt;&amp;#xEF;&amp;#xBF;&amp;#xBD;</data>
+<state>deleted</state>
+<updatedate>1225164559</updatedate>
+<createdate>1225164372</createdate>
+<description>A researchy overview over the MayBMS project</description>
+<language>en</language>
+<creator>ckoch</creator>
+</document>
+</documents>
+</docgroup>
+</docmanager>

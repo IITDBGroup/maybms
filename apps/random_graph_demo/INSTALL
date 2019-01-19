@@ -1,0 +1,13 @@
+Please follow the steps below to install and run this web application:
+
+-- Checkout the latest version of MayBMS from the CVS repository. Compile, install and start the MayBMS server. (Note: the application uses new functionality that is not present in the packaged MayBMS binaries.)
+
+-- Modify the $conn_string variable in index.php and social.php to reflect the correct properties for connecting to the MayBMS server.
+-- Open http://<localhost>:<port>/random_graph_demo/social.php, filling in the corresponding localhost and port values.
+
+-- Load a social network by running sh import_data.sh
+You may need to modify the path to your MayBMS binary, user- and database name, as well as the name of the file containing the network data.
+
+-- Alternatively, you can upload and load the network files in your webserver data directory using the web interface in
+http://<localhost>:<port>/random_graph_demo/social.php. Make sure there is a directory uploads at the same level as the php files (should happen automatically when checking out the application from CVS).
+

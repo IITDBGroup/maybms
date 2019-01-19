@@ -1,0 +1,29 @@
+--test for expanding star with functions and repair-key
+create table s (a int);
+create table r as repair key a in s;
+select * from r;
+ a | _v0 | _d0 | _p0 
+---+-----+-----+-----
+(0 rows)
+
+select * from (select tconf() from r) s;
+ tconf 
+-------
+(0 rows)
+
+repair key (tconf) in (select * from (select tconf() from r) s);
+ tconf | _v0 | _d0 | _p0 
+-------+-----+-----+-----
+(0 rows)
+
+repair key (a) in (select * from (select tconf() from r) s);
+ERROR:  column "a" does not exist
+LINE 1: repair key (a) in (select * from (select tconf() from r) s);
+                    ^
+repair key (a) in (select * from (select a, tconf() from r) s);
+ a | tconf | _v0 | _d0 | _p0 
+---+-------+-----+-----+-----
+(0 rows)
+
+drop table r;
+drop table s;

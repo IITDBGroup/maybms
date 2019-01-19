@@ -1,0 +1,184 @@
+
+
+
+
+
+%\chapter{Design and Implementation of the MayBMS System}
+\chapter{MayBMS Internals}
+\label{sect:system}
+
+
+\paragraph{Representations, relational encoding, and query optimization}
+%
+Our representation system, U-relations, is basically implemented as described earlier, with one small exception. With each pair of columns $V_i$, $D_i$ in the condition, we also store a column $P_i$ for the probability weight of alternative $D_i$ for variable $V_i$, straight from the $W$ relation. While the operations of relational algebra, as observed earlier, do not use probability values, confidence computation does. This denormalization (the extension by $P_i$ columns) removes the need to look up any probabilities in the $W$ table in our exact confidence computation algorithms.
+
+Our experiments show that the relational encoding of positive relational algebra which is possible for U-relations is so simple -- it is a parsimonious transformation, i.e., the number of relational algebra operations is not increased -- that the standard Postgres query optimizer actually does well at finding good query plans (see \cite{AJKO2008}).
+
+
+\paragraph{Approximate confidence computation}
+%
+MayBMS implements both an approximation algorithm and several exact algorithms for confidence computation. The approximation algorithm is a combination of the Karp-Luby unbiased estimator for DNF counting \cite{KL1983,KLM1989} in a modified version adapted for confidence computation in probabilistic databases (cf.\ e.g.\ \cite{Koch2008}) and the Dagum-Karp-Luby-Ross optimal algorithm for Monte Carlo estimation \cite{DKLR2000}. The latter is based on sequential analysis and determines the number of invocations of the Karp-Luby estimator needed to achieve the required bound by running the estimator a small number of times to estimate its mean and variance. We actually use the probabilistic variant of a version of the Karp-Luby estimator described in the book \cite{Vazirani2001} which computes fractional estimates that have smaller variance than the zero-one estimates of the classical Karp-Luby estimator.
+
+
+\paragraph{Exact confidence computation}
+\index{Confidence computation, exact}
+%
+Our exact algorithm for confidence computation is described in \cite{KO2008}. It is based on an extended version of the Davis-Putnam procedure \cite{DP1960} that is the basis of the best exact Satisfiability solvers in AI. Given a DNF (of which each clause is a conjunctive local condition), the algorithm employs a combination of variable elimination (as in Davis-Putnam) and decomposition of the DNF into independent subsets of clauses (i.e., subsets that do not share variables), with cost-estimation heuristics for choosing whether to use the former (and for which variable) or the latter.
+
+
+%\newcommand{\mystackrel}[2]{\stackrel{#1}{#2}}
+%\newcommand{\mystackrel}[2]{\begin{tabular}{c} $#1$ \\ $#2$ \end{tabular}}
+
+
+\begin{figure}[!]
+\[
+\begin{tabular}{c}
+\begin{tabular}{@{~}l@{~}|@{~}c@{~~}c@{~~}c@{~~}c@{~}}
+\hline
+$U$ & $V_1$ & $D_1$ & $V_2$ & $D_2$ \\
+\hline
+& $x$ & 1 & $x$ & 1 \\ 
+& $x$ & 2 & $y$ & 1 \\ 
+& $x$ & 2 & $z$ & 1 \\ 
+& $u$ & 1 & $v$ & 1 \\ 
+& $u$ & 2 & $u$ & 2 \\ 
+\end{tabular}
+\\
+{~}~{~}
+\\
+\begin{tabular}{l|ccc}
+\hline
+$W$ & V & D & P \\
+\hline
+& $x$ &  1 &   .1 \\
+& $x$ &  2 &   .4 \\
+& $x$ &  3 &   .5 \\
+& $y$ &  1 &   .2 \\
+& $y$ &  2 &   .8 \\
+& $z$ &  1 &   .4 \\
+& $z$ &  2 &   .6 \\
+& $u$ &  1 &   .7 \\
+& $u$ &  2 &   .3 \\
+& $v$ &  1 &   .5 \\
+& $v$ &  2 &   .5 \\
+\end{tabular}
+\end{tabular}%
+\hspace{-2mm}%
+\relax\parbox{0.8\textwidth}{\relax%
+\[
+\pstree[nodesep=1pt,levelsep=10ex,treesep=3.5em]{\TR{\framebox{$\stackrel{0.7578}{\otimes}$}}}
+{
+  \pstree{\TR{\framebox{$\stackrel{0.308}{\oplus}$}}^{\{x,y,z\}}}
+  {
+    \TR{\framebox{$\stackrel{1.0}{\emptyset}$}}^{x \stackrel{.1}{\mapsto} 1}
+    \pstree{\TR{\framebox{$\stackrel{0.52}{\otimes}$}}_{x \stackrel{.4}{\mapsto} 2}}
+    {
+      \pstree{\TR{\framebox{$\stackrel{0.2}{\oplus}$}}^{\{y\}}}
+      {
+        \TR{\framebox{$\stackrel{1.0}{\emptyset}$}}^{y \stackrel{.2}{\mapsto} 1}
+      }
+      \pstree{\TR{\framebox{$\stackrel{0.4}{\oplus}$}}_{\{z\}}}
+      {
+        \TR{\framebox{$\stackrel{1.0}{\emptyset}$}}_{z \stackrel{.4}{\mapsto} 1}
+      }
+    }
+  }
+  \pstree{\TR{\framebox{$\stackrel{0.65}{\oplus}$}}_{\{u,v\}}}
+  {
+    \pstree{\TR{\framebox{$\stackrel{0.5}{\oplus}$}}^{\ u \stackrel{.7}{\mapsto} 1}}
+    {
+      \TR{\framebox{$\stackrel{1.0}{\emptyset}$}}_{v \stackrel{.5}{\mapsto} 1}
+    }
+    \TR{\framebox{$\stackrel{1.0}{\emptyset}$}}_{u \stackrel{.3}{\mapsto} 2}
+  }
+}
+\]}
+\]
+
+\caption{Exact confidence computation.}
+\label{fig:exact-conf}
+\end{figure}
+
+
+
+\begin{example}\em
+Consider the U-relation $U$ representing a nullary table and
+the $W$ table of Figure~\ref{fig:exact-conf}.
+The local conditions of $U$ are
+\[
+\Phi = \{ \{x\mapsto 1\}, \{x\mapsto 2, y\mapsto 1\}, \{x\mapsto 2, z\mapsto 1\},
+   \{u\mapsto 1, v\mapsto 1\}, \{u\mapsto 2\} \}.
+\]
+
+The algorithm proceeds recursively. We first choose to exploit the fact that the $\Phi$ can be split into two independent sets, the first using only the variables $\{x, y, z\}$ and the second only using $\{u,v\}$.
+We recurse into the first set and eliminate the variable $x$. This requires us to consider two cases, the alternative values 1 and 2 for $x$ (alternative 3 does not have to be considered because in each of the clauses to be considered, $x$ is mapped to either 1 or 2. In the case that $x$ maps to 2, we eliminate $x$ from the set of clauses that are compatible with the variable assignment $x \mapsto 2$, i.e., the set
+$\{\{y\mapsto 1\}, \{z\mapsto 1\} \}$, and
+can decompose exploiting the independence of the two clauses. Once $y$ and $z$ are eliminated, respectively, the conditions have been reduced to ``true''. The alternative paths of the computation tree, shown in Figure~\ref{fig:exact-conf}, are processed analogously.
+
+On returning from the recursion, we compute the probabilities of the subtrees in the obvious way. For two independent sets $S_1, S_2$ of clauses with probabilities $p_1$ and $p_2$, the probability of $S_1 \cup S_2$ is
+\[
+1 - (1-p_1)\cdot(1-p_2).
+\]
+For variable elimination branches,
+the probability is the sum of the products of the probabilities of the subtrees and the probabilities of the variable assignments used for elimination.
+
+It is not hard to verify that the probability of $\Phi$, i.e., the confidence in tuple $\tuple{}$,
+is $0.7578$.
+\punto
+\end{example}
+
+
+Our exact algorithm solves a \#P-hard problem and exhibits exponential running time in the worst case. However, like some other algorithms for combinatorial problems, this algorithm shows a clear easy-hard-easy pattern. Outside a narrow range of variable-to-clause count ratios, it very pronouncedly outperforms the (polynomial-time) approximation techniques \cite{KO2008}.
+It is straightforward to extend this algorithm to condition a probabilistic database (i.e., to compute ``assert'') \cite{KO2008}.
+
+
+\paragraph{Hierarchical queries}
+\index{Hierarchical queries}
+The tuple-independent databases are those probabilistic databases in
+which, for each tuple, a probability can be given such that the tuple
+occurs in the database with that probability and the tuples are
+uncorrelated. It is known since the work of Dalvi and Suciu
+\cite{dalvi07efficient} that there is a class of conjunctive queries,
+the hierarchical queries $Q$, for which computing conf($Q$) exactly on
+tuple-independent probabilistic databases is feasible in polynomial
+time.
+
+In fact, these queries can essentially be computed using SQL queries
+that involve several nested aggregate-group-by queries. On the other
+hand, it was also shown in \cite{dalvi07efficient} that for any
+conjunctive query $Q$ that is not hierarchical, computing conf($Q$) is
+\#P-hard with respect to data complexity. Dalvi and Suciu introduce
+the notion of {\em safe plans}\/\index{Safe plans} that are at once
+certificates that a query is hierarchical and query plans with
+aggregation operators that can be used for evaluating the queries.
+
+To deal with hierarchical queries, MayBMS runs SPROUT as part of its
+query engine~\cite{OHK2008}. SPROUT extends the early work by Suciu in
+three ways. First, the observation is used that in the case that a
+query has a safe plan~\cite{dalvi07efficient}, it is not necessary to
+use that safe plan for query evaluation. Instead, one can choose any
+unrestricted query plan, not only restricted safe plans, for the
+computation of the answer tuples; confidence computation is performed
+as an aggregation which can be pushed down or pull up past joins in
+relational query plans. Second, the aggregation function for
+confidence computation is implemented as a special low-level operator
+in the query engine. Finally, the fact is exploited that the
+\#P-hardness result for any single nonhierarchical query of \cite{dalvi07efficient} 
+only applies as long as the problem is that of evaluating the query on
+an arbitrary probabilistic database of suitable schema. If further
+information about permissible databases is available in the form of
+functional dependencies that the databases must satisfy, then a larger
+class of queries can be processed by our approach~\cite{OHK2008}.
+
+
+\paragraph{Updates, concurrency control and recovery}
+%
+As a consequence of our choice of a purely relational representation
+system, these issues cause surprisingly little difficulty.
+U-relations are just relational tables and updates are just
+modifications of these tables that can be expressed using the standard
+SQL update operations. While the structure of the rewritings could allow for optimizations in the concurrency and recovery managers, those are currently left to the underlying DBMS.
+
+
+
+

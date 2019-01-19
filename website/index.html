@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="style2.css" media="screen" /> 
+    <link rel="stylesheet" type="text/css" href="https://static.sourceforge.net/css/phoneix/project.php?secure=1&amp;20080417-0957" media="all" />    
+    <title>MayBMS: A Probabilistic Database System</title> 
+  </head> 
+  <body> 
+
+       
+<div align="center">
+<h1><img src="img/maybms_logo.jpg" alt="MayBMS" /></h1> 
+<h1 class="sub">MayBMS - A Probabilistic Database Management System</h1> 
+</div> 
+<div align="center"> 
+    <h3> 
+        <a href="http://sourceforge.net/project/showfiles.php?group_id=235754" class="down"><strong>Download MayBMS</strong></a> 
+        <small> 
+        <br /> 
+        Latest version: 2.1-beta
+        </small> 
+    </h3>
+</div> 
+ 
+      
+
+<div id="main-wrapper"> 
+<div id="main" class="clear-block"> 
+
+	<div class="node sticky"> 
+		<h2>Quick Links</h2>
+		<ul>
+                        <li>
+                        NEW!  Pip, a continuous probability distributions
+                        version of MayBMS (as described in our ICDE 2010 paper) is now part of the MayBMS distribution.  Documentation <a href="pip/index.html">here</a></li>
+			<li>
+			<a href="http://sourceforge.net/project/showfiles.php?group_id=235754" class="down"><strong>Download the MayBMS distribution</strong><img src="https://sourceforge.net/images/phoneix/go-down.png" alt="Download from sourceforge" /></a>
+			<ul><li>
+                           A stable version of MayBMS
+                           can be checked out from CVS which is much more efficient than the packaged version 2.1-beta; we never got to package it the current code :-(    -- The build process is exactly as for PostgreSQL.
+                        </li></ul>
+                        </li><li>
+			<a href="http://maybms.sourceforge.net/manual/maybms_manual.pdf">Download the MayBMS manual</a>.
+			</li><li>
+			<a href="manual/index.html">Browse</a> the MayBMS manual.
+			<ul><li>
+                        <a href="manual/index.html#x1-60002">Installation instructions</a>.
+			</li><li>Find examples on how to use MayBMS in our
+		<a href="manual/index.html#x1-170004">tutorial</a>.
+                        </li></ul>
+			</li>
+			<li>
+			<a href="https://sourceforge.net/projects/maybms">https://sourceforge.net/projects/maybms</a>: Project repository (CVS, with browsing functionality), news, and statistics.
+			</li>
+			<li>Join the <a href="http://www.facebook.com/group.php?gid=59865561711">MayBMS group on Facebook </a><img src="fb.jpg" width="18px" alt="FB" />.
+                        </li>
+		</ul>
+	</div>
+
+	<div class="node sticky"> 
+
+		<h2>What is MayBMS?</h2>
+		<!--l. 82--><p>The <span 
+		class="cmti-12">MayBMS </span>system (note: MayBMS is read as &#8220;maybe-MS&#8221;, like DBMS) is a
+		complete probabilistic database management system that leverages robust
+		relational database technology: MayBMS is an extension of the Postgres server
+		backend. MayBMS is open source and the source code is available under the BSD
+		license.
+		</p>
+		<p>   MayBMS stands alone as a complete probabilistic database management
+		system that supports a powerful, compositional query language for which
+		nevertheless worst-case efficiency and result quality guarantees can be made.
+		The MayBMS backend is accessible through
+		several APIs, with efficient internal operators for computing and managing
+		probabilistic data.
+		</p>
+		<p>In summary, MayBMS has the following features:</p>	
+		<ul>
+		<li>Full support of all features of PostgreSQL 8.3.3, including unrestricted
+		query functionality, query optimization, APIs, updates, concurrency
+		control and recovery, etc.
+		</li>
+		<li>Essentially  no  performance  loss  on  PostgreSQL  8.3.3  functionality:
+		After parsing a query or DML statement, a fast syntactic check is made
+		to decide whether the statement uses the extended functionality of
+		MayBMS. If it does not, the subsequently executed code is exactly that
+		of PostgreSQL 8.3.3.
+		</li>
+		<li>Support for efficiently creating and updating probabilistic databases,
+		i.e., uncertain databases in which degrees of belief can be associated
+		with uncertain data.
+		</li>
+		<li>A powerful query and update language for processing uncertain data
+		that  gracefully  extends  SQL  with  a  small  number  of  well-designed
+		language constructs.
+		</li>
+		<li>State-of-the-art   efficient   techniques   for   exact   and   approximate
+		probabilistic inference.</li>
+		</ul>
+	</div>
+	<div class="node sticky"> 
+		<h2>Applications</h2>
+		<p>Database systems for uncertain and probabilistic data promise to have many
+		applications. Query processing on uncertain data occurs in the contexts of data
+		warehousing, data integration, and of processing data extracted from
+		the Web. Data cleaning can be fruitfully approached as a problem of
+		reducing uncertainty in data and requires the management and processing of
+		large amounts of uncertain data. Decision support and diagnosis systems                                                                      
+		employ hypothetical (what-if) queries. Scientific databases, which store
+		outcomes of scientific experiments, frequently contain uncertain data such as
+		incomplete observations or imprecise measurements. Sensor and RFID data is
+		inherently uncertain. Applications in the contexts of fighting crime or
+		terrorism, tracking moving objects, surveillance, and plagiarism detection
+		essentially rely on techniques for processing and managing large uncertain
+		datasets. Beyond that, many further potential applications of probabilistic
+		databases exist and will manifest themselves once such systems become
+		available.
+		</p>
+		<p>   The MayBMS distribution comes with a number of examples that illustrate its
+		use in these application domains. Some of these examples are described in the
+		tutorial chapter of our <a href="http://maybms.sourceforge.net/manual/index.html">manual</a>.
+		</p>
+	</div>
+      <div class="node sticky">
+      <h2>For Researchers</h2>
+<blockquote><i>
+<b>Cite:</b>
+L. Antova, T. Jansen, C. Koch, and D. Olteanu.
+"Fast and Simple Relational Processing of Uncertain Data".
+Proc. 24th International Conference on Data Engineering,
+ICDE 2008, April 7-12, 2008, Cancun, Mexico, pp. 983-992.
+</i></blockquote>
+
+<p/>
+<p/>
+<p/>
+<p/>
+
+
+[Read as "maybe-em-es"; rhymes with DBMS]
+
+
+<h2>Overview</h2>
+<p>
+MayBMS is a state-of-the-art probabilistic database management system
+developed as an extension of the Postgres server backend.
+</p>
+
+<p>The MayBMS project is founded on the thesis that a principled effort to use
+and extend mature relational database technology
+will be essential for creating
+robust and scalable systems for managing and querying large uncertain
+datasets.
+</p>
+<p>
+MayBMS stands alone as a complete probabilistic database management system
+that supports a very powerful, compositional query language
+(<a href="http://maybms.cvs.sourceforge.net/viewvc/maybms/maybms/examples/">examples</a>) for which
+nevertheless worst-case efficiency and result quality guarantees can be made.
+Central to this is our choice of essentially using probabilistic versions of
+conditional tables as the representation system, but in a form engineered
+for admitting the efficient evaluation and automatic optimization
+of most operations of our language using robust and mature relational
+database technology.
+</p>
+
+<p>
+Central themes in our research include the creation of foundations of query
+languages for probabilistic databases by developing analogs of relational
+algebra and SQL and the development of efficient query processing techniques.
+In practice, the efficient evaluation of queries on probabilistic data
+requires approximation techniques, and another important goal is to
+understand which approximation guarantees can be made for complex,realistic query languages.
+Apart from data representation and storage
+mechanisms, a query language, and query processing techniques, our work
+covers query optimization, an update language, concurrency control and
+recovery, and APIs for uncertain data.
+</p>
+
+
+<h2>Overview Papers and Slides</h2>
+
+
+<ul class="publist">
+<li>
+C. Koch.
+"MayBMS: A System for Managing Large Uncertain and
+Probabilistic Databases"
+[<a href="download/maybms.pdf">pdf</a>].
+Chapter 6 of
+Charu Aggarwal, ed., <i>Managing and Mining Uncertain Data</i>,
+Springer-Verlag, 2008/9.
+</li>
+
+<li>
+<a href="download/maybms2-talk.pdf">Slides</a> on MayBMS2.
+</li>
+
+<li>
+<a href="download/maybms1-talk.pdf">Slides</a> on MayBMS1.
+</li>
+</ul>
+
+
+<h2>People</h2>
+<ul>
+<li><a href="http://www.cs.cornell.edu/~lantova/">Lyublena Antova</a></li>
+<li><a href="http://www.cs.cornell.edu/~goetz/">Michaela G&ouml;tz</a></li>
+<li>Jiewen Huang (Oxford University)</li><li><a href="http://www.cs.cornell.edu/~okennedy/">Oliver Kennedy</a></li>
+<li><a href="http://people.epfl.ch/christoph.koch">Christoph Koch</a></li>
+<li><a href="http://web.comlab.ox.ac.uk/oucl/work/dan.olteanu/index.html">Dan Olteanu</a> (Oxford University)</li>
+</ul>
+Alumni:
+Viktor Ivanov, Thomas Jansen, Ali Baran Sari, Yin Lou, Anton Morozov, Lucja Kot.
+<p/>
+
+      </div>
+      <div class="node sticky">
+<h2>Overview Papers</h2>
+<ul class="publist">
+
+<li>
+<strong>
+MayBMS: A System for Managing Large Uncertain and
+Probabilistic Databases
+</strong>
+[<a href="download/maybms.pdf">pdf</a>]
+<br/>
+C. Koch. Chapter 6 of
+Charu Aggarwal, ed., <i>Managing and Mining Uncertain Data</i>,
+Springer-Verlag, 2009.
+<ul><li><i>This is currently the best document giving an overview of the
+project.</i></li></ul>
+<p/>
+</li>
+
+</ul>
+
+
+<h2>New: Pip (MayBMS with continuous distributions)</h2>
+<ul class="publist">
+
+<li>
+<b>PIP: A Database System for Great and Small Expectations</b>
+<br/>
+Oliver Kennedy, Christoph Koch.
+<br/>
+Proc. ICDE 2010. Long paper.
+(<a href="download/icde2010_pip.pdf">pdf</a>)
+<p/>
+</li>
+
+</ul>
+
+
+<h2>Papers on the MayBMS2 System</h2>
+<ul class="publist">
+
+<li>
+<b>Approximate Confidence Computation in Probabilistic Databases</b>
+<br/>
+Dan Olteanu, Jiewen Huang, Christoph Koch.
+<br/>
+Proc. ICDE 2010. Long paper.
+(<a href="download/icde2010_ohk.pdf">pdf</a>)
+<p/>
+</li>
+
+<li>
+<strong>MayBMS: A Probabilistic Database Management System</strong>
+[<a href="download/sigmod2009_demo.pdf">pdf</a>]
+<br/>
+Jiewen Huang, Lyublena Antova, Christoph Koch, Dan Olteanu.
+Proc. SIGMOD 2009. Demo paper.
+<p/>
+</li>
+
+<li>
+<strong>
+A Compositional Framework for Complex Queries over Uncertain Data
+[<a href="download/icdt2009_gk.pdf">pdf</a>]
+</strong>
+<br/>
+M. Goetz and C. Koch. Proc. ICDT 2009.
+<p/>
+</li>
+
+
+<li>
+<strong>
+SPROUT: Lazy vs. Eager Query Plans for Tuple-Independent Probabilistic Databases
+[<a href="download/icde2009_ohk.pdf">pdf</a>]
+</strong>
+<br/>
+D. Olteanu, J. Huang, C. Koch. 
+Proc. ICDE, 2009. Long paper.
+<br/>
+<ul><li><i>
+This paper shows how to find query plans that are more efficient than safe plans
+for hierarchical queries on tuple-independent databases. The paper also introduces a special operator for efficiently processing such plans.
+</i></li></ul><p/>
+</li>
+
+
+<li>
+<strong>Conditioning Probabilistic Databases</strong>
+[<a href="http://arxiv.org/abs/0803.2212">arXiv:0803.2212</a>]
+<br/>
+C. Koch and D. Olteanu.
+Proc. VLDB 2008.
+<br/>
+<ul><li><i>
+This paper is the first to consider the problem of conditioning a probabilistic
+database outside of the context of graphical models. The core contribution
+is an exact confidence computation algorithm that seems to perform well in
+practice.
+</i></li></ul>
+<p/>
+</li>
+
+
+<li>
+<strong>Approximating Predicates and Expressive Queries on Probabilistic
+Databases</strong>
+[<a href="download/pods2008.pdf">pdf</a>]
+<br/>
+C. Koch.
+Proc. PODS 2008.
+<ul><li><i>
+This paper shows that queries in our expressive compositional query language
+can be efficiently arbitrarily closely approximated.
+</i></li></ul>
+<p/>
+</li>
+
+
+<li>
+<strong>Fast and Simple Relational Processing of Uncertain Data</strong>
+[<a href="download/INFOSYS-TR-2007-2.pdf">pdf</a>]
+<br/>
+L. Antova, T. Jansen, C. Koch, D. Olteanu.
+Proc. ICDE 2008. Best paper runner-up.
+<br/>
+<ul><li><i>
+This paper presents the representation system of MayBMS2 and the efficient
+SQL-only evaluation of a large fragment of our query language.
+</i></li></ul>
+<p/>
+</li>
+</ul>
+
+
+<h2>Papers on the MayBMS Query Language and on APIs</h2>
+<ul class="publist">
+
+
+<li>
+<strong>
+A Compositional Query Algebra for Second-Order Logic and Uncertain
+Databases</strong>
+[<a href="download/icdt2009_so.pdf">pdf</a>]
+<br/>
+C. Koch.
+Proc. ICDT 2009. Technical Report arXiv:0807.4620.
+<br/>
+<ul><li><i>
+This paper proves that world-set algebra, (the nonprobabilistic version
+of) the core of the 
+MayBMS query language, has exactly the same expressive power as
+second-order logic. It also provides
+some useful insights into query languages for uncertain databases in
+general.
+</i></li></ul>
+<p/>
+</li>
+
+<li>
+<strong>On Query Algebras for Probabilistic Databases</strong>
+<br/>
+Christoph Koch.
+<i>SIGMOD Record</i> <b>37</b>(4): 78-85, 2008.
+(<a href="download/sigrec4.pdf">pdf</a>).
+<br/>
+<ul><li><i>
+
+</i></li></ul><p/>
+</li>
+
+<li>
+<strong>On APIs for Probabilistic Databases</strong>
+[<a href="download/mud2008.pdf">pdf</a>]
+<br/>
+L. Antova and C. Koch.
+Proc. MUD 2008.
+<br/>
+<ul><li><i>
+This paper studies the challenge of defining an application programming
+interface for probabilistic databases. This is difficult because the goal
+of keeping the API independent from database internals (specifically, the
+representation system) clashes with the desire for efficiency.
+</i></li></ul>
+<p/>
+</li>
+
+<li>
+<strong>Query language support for incomplete information in the MayBMS system (Demonstration)</strong>
+[<a href="download/2007_vldb_akodemo.pdf">pdf</a>]
+<br/>
+L. Antova, C. Koch, D. Olteanu.
+Proc. VLDB 2007.
+<br/>
+<ul><li><i>
+This was a MayBMS2 demo, but the paper focuses on the query language of MayBMS.
+The PODS 2008
+paper is a much better reference for (the algebraic version of) the language.
+</i></li></ul>
+<p/> 
+</li>
+
+<li>
+<strong>From Complete to Incomplete Information and Back</strong>
+[<a href="download/INFOSYS-TR-2006-15.pdf">pdf</a>]
+<br/>
+L. Antova, C. Koch, D. Olteanu.
+Proc. SIGMOD 2007.
+<br/>
+<ul><li><i>
+This paper presents the nonprobabilistic version of the MayBMS query language
+and studies its properties.
+</i></li></ul>
+<p/> 
+</li>
+</ul>
+
+
+<h2>Papers on the MayBMS1 Prototype</h2>
+
+
+<p>
+Note: We are currently working on the second prototype of MayBMS -- MayBMS2 --
+which is based on <a href="download/maybms2-talk.pdf">U-relations</a>
+as the representation system (see our ICDE 2008 paper).
+The first prototype, MayBMS1, was based on
+<a href="download/maybms1-talk.pdf">world-set decompositions (WSDs)</a>.
+U-relations allow for more efficient query processing than WSDs and are
+more succinct.
+</p>
+
+
+<ul class="publist">
+
+<li>
+<b>World-set Decompositions: Expressiveness and Efficient Algorithms</b>
+[<a href="http://arxiv.org/abs/0705.4442">arxiv 0705.4442</a>]
+<br/> 
+L. Antova, C. Koch, D. Olteanu.
+Theoretical Computer Science 403 (2-3):265-284 (2008)
+Preliminary version in Proc. ICDT 2007.
+<br/>
+<ul><li><i>
+This paper studies the theory of world-set decompositions.
+Of particular interest is the factorization algorithm, which does
+a form of minimization of representations.
+</i></li></ul>
+<p/> 
+</li>
+
+<li>
+<strong>MayBMS: Managing Incomplete Information with Probabilistic
+World-Set Decompositions (Demonstration)</strong>
+[<a href="download/icde2007_demo.pdf">pdf</a>]
+<br />
+L. Antova, C. Koch, D. Olteanu.
+Proc. ICDE 2007. Demo Paper.
+<br/>
+<ul><li><i>
+This was a demo of MayBMS1. The paper is the first to discuss world-set
+decompositions for representing probabilistic databases.
+</i></li></ul>
+<p/> 
+</li>
+
+<li>
+<b>10^(10^6) Worlds and Beyond: Efficient Representation and Processing of Incomplete Information.</b>
+[<a href="download/INFOSYS-TR-2005-4-final.pdf">pdf</a>]
+<br/>
+L. Antova, C. Koch, D. Olteanu.
+Proc. ICDE 2007.
+Technical Report INFOSYS-TR-2005-4.
+Journal version in <i>VLDB Journal</i> 18(5): 1021-1040 (2009),
+Special Issue on Uncertain and Probabilistic Databases
+(<a href="download/vldbj2.pdf">pdf</a>).
+<br/>
+<ul><li><i>
+This paper introduces world-set decompositions, the representation formalism
+of MayBMS1, and studies query evaluation on these representations.
+World-set decompositions are based on factorizations to exploit independence
+and, at least in their probabilistic form,
+can be thought of as shallow Bayesian Networks.
+</i></li></ul>
+<p/> 
+</li>
+</ul>
+
+
+<h2>Posters</h2>
+
+
+<ul>
+<li>
+<b>SIGMOD 2009 Demo Poster.</b>
+[<a href="download/sigmod2009_poster.pdf">pdf</a>]
+<br/>
+(see companion paper above)
+</li>
+
+<li>
+<b>MayBMS: A System for Managing Large Uncertain and Probabilistic Databases.</b>
+[<a href="download/poster.pdf">pdf</a>]
+<br/>
+L. Antova, C. Koch, D. Olteanu.
+<a href="http://dbirday.cs.columbia.edu/spring08/posters.php">Best Poster
+Award at Spring'08 North East DB/IR Day</a>, Columbia University,
+April 18, 2008.
+</li></ul>
+</div> 
+	<div class="node sticky"> 
+<h2>Additional Resources</h2>
+<ul>
+<li>
+<a href="http://pdbench.sourceforge.net/MayBMS-tpch.tgz">Resources
+used in our experiments for the ICDE 2008 paper on U-relations</a>
+(available at <a href="http://pdbench.sourceforge.net">pdbench.sourceforge.net</a>):
+<ul><li>
+This includes a TPC-like generator of attribute-level U-relations,
+the queries used in the ICDE08 experiments,
+a translator from attribute-level to tuple-level U-relations, and
+a translator from tuple-level U-relations to
+ULDBs.
+</li></ul>
+</li><li>
+Probabilistic database use cases and data generators are collected
+at <a href="http://pdbench.sourceforge.net">http://pdbench.sourceforge.net</a>.
+</li>
+</ul>
+	</div>
+	<div class="node sticky"> 
+		<h2>Acknowledgments</h2>
+		The MayBMS project was supported by grant IIS-0812272 of the US National Science
+		Foundation.
+It was previously supported by the German Science Foundation (DFG) under grant KO 3491/1-1.
+	</div>
+
+ 
+</div>
+</div>
+  </body>
+</html>

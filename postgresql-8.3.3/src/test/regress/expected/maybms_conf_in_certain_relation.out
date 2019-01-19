@@ -1,0 +1,38 @@
+--test of error messges of confidence computation on top of certain relation 
+create table r(a int, b int);
+select conf() from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select tconf() from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select aconf(.1,.1) from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select ecount() from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select esum(a) from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select a, conf() from r group by a;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select a, tconf() from r;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select a, aconf() from r group by a;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select a, ecount() from r group by a;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select a, esum(b) from r group by a;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+drop table r;
+create table r(a int, b int);
+insert into r values (1,1), (1,2), (2,1), (2,2);
+create table s as repair key a in r;
+select conf() from( select conf() from s ) as s;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select tconf() from( select tconf() from s ) as s;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select aconf(.1,.1) from( select aconf(.1,.1) from s ) as s;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select ecount() from( select ecount() from s ) as s;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+select esum(esum) from( select esum(a) from s ) as s;
+ERROR:  Query not supported: tconf, conf, aconf, esum and ecount cannot used be in a certain query
+drop table r;
+drop table s;

@@ -1,0 +1,106 @@
+
+
+\chapter{The MayBMS Codebase}
+\label{sect:codebase}
+
+MayBMS is currently implemented in PostgreSQL 8.3.3. Integration into
+an existing full-fledged DBMS brings two major advantages. First,
+integration makes it possible to reuse the internal functions and
+structures of the DBMS. Secondly, it often increases the efficiency of
+query processing.
+
+Figures~\ref{fig:modified-files1} and \ref{fig:modified-files2} give a
+list of source files modified or added to the original PostgreSQL
+8.3.3. All modifications are explicitly marked in the source files by 
+\begin{verbatim}
+/* MAYBMS BEGIN */
+... [some code goes here]
+/* MAYBMS END */
+\end{verbatim}
+All files in directory \texttt{maybms} are newly created and the
+others are existing files in PostgreSQL8.3.3. Header files (*.h) refer
+to \texttt{src/include/directory/filename}. Source files (*.c and *.y)
+refer to \texttt{src/backend/directory/filename}.
+
+\begin{figure}[ht]
+\begin{center}
+\small
+\begin{tabular}{|l|l|}
+\hline
+File & Description \\
+\hline
+parser/gram.y           & Adds new constructs such as repair-key and possible. \\ \hline
+parser/keyword.c        & Adds necessary keywords. \\ \hline
+nodes/parsenodes.h      & Adds the relation type to structure CreatStmt. \\ \hline
+catalog/pg\_class.h 	& Adds an extra column specifying the type of a relation \\
+catalog/pg\_attribute.h & in the catalog. \\ \hline 
+nodes/copyfuncs.c		& Copying the relation type. \\ \hline
+catalog/heap.c          & Execution of creating urelations.  \\ \hline
+catalog/heap.h			& An argument tabletype is added to function   \\ 
+catalog/toasting.c		& heap\_create\_with\_catalog in heap.h.  \\ 
+commands/tablecmds.c	& All files accessing this function are modified.\\
+commands/cluster.c		& \\
+bootstrap/bootparse.y	& \\
+executor/execMain.c		& \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace*{-1em}
+\caption{ Files related to U-relation creation.}
+\label{fig:modified-files1}
+\end{figure}
+
+
+\begin{figure}[ht]
+\begin{center}
+\small
+\begin{tabular}{|l|l|}
+\hline
+File & Description \\
+\hline
+catalog/pg\_proc.h              & Registers conf, tconf, aconf, argmax, esum, ecount  \\
+								& and the related functions. \\ \hline 
+catalog/pg\_aggregate.h 		& Specifies the relationships between conf, aconf and  \\
+                           		& the related state, final functions. \\ \hline
+nodes/execnodes.h 				& Adds confidence computation states to structure AggState. \\ 
+executor/nodeAgg.c      		&   \\ \hline
+tcop/postgres.c        			& Access point to query rewriting. \\ \hline
+maybms/conf\_comp.h           	& Prototypes for conf, tconf, aconf and their related functions.  \\ \hline 
+maybms/SPROUT.c                     & Confidence computation of conf for hierarchical \\
+                                & queries on tuple-independent U-relations using SPROUT. \\ \hline
+maybms/tupleconf.c              & Confidence computation for tconf. \\ \hline
+maybms/ws-tree.c            	& Confidence computation of conf for arbitrary \\
+                            	& U-relations using ws-tree-based algorithm. \\ \hline
+maybms/bitset.h                 & Auxiliary files for ws-tree-based algorithm. \\ 
+maybms/bitset.c                 &  \\ \hline
+maybms/aconf.c      			&    Implementation of approximate confidence computation. \\ \hline
+maybms/signature.h   			& Derives signatures for hierarchical queries. \\  
+maybms/signature.c      		&   \\ \hline
+maybms/repair\_key.c       		& Implementation of repair-key construct by pure rewriting. \\ \hline 
+maybms/pick\_tuples.c       		& Implementation of pick-tuples construct by pure rewriting. \\ \hline 
+maybms/localcond.h       		& Storing the condition columns for confidence computation. \\  
+maybms/localcond.c      		&    \\ \hline
+maybms/argmax.c      			&    Implementation of aggregate function argmax. \\ \hline
+maybms/rewrite.c      			&  Rewriting of select and create commands involving uncertainty. \\ 
+maybms/rewrite\_utils.c      	&   \\ \hline
+maybms/rewrite\_updates.c      	&    Rewriting of update commands (insert, delete, update). \\ \hline
+maybms/supported.c     			&    Checking whether a query is supported and should be rewritten. \\ \hline
+maybms/utils.h					& Utility functions. \\	 
+maybms/utils.c       			&  \\	\hline                                               
+\end{tabular}
+
+\end{center}
+
+\vspace*{-1em}
+\caption{ Files related to confidence computation and query rewriting. }
+\label{fig:modified-files2}
+\end{figure}
+
+\vspace*{-10em}
+
+
+
+
+
+
+

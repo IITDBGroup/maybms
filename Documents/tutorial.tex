@@ -1,0 +1,905 @@
+
+
+
+
+
+
+\chapter{First Steps}
+
+
+\section{Installing MayBMS}
+
+
+\subsubsection{Using the installers}
+
+Installers for MayBMS are available for both Windows and Linux operating systems and can be downloaded at
+
+\url{https://sourceforge.net/projects/maybms/}
+
+After you have obtained a copy of the installer, start it and follow the instructions.
+
+\subsubsection{Compiling from scratch}
+
+If the prepackaged installers do not work for you you can download the MayBMS's source code and compile it.
+A copy is available for download at
+
+\url{https://sourceforge.net/projects/maybms/}
+
+Alternatively, you can obtain the latest snapshot from the repository by issuing the following command:
+\begin{verbatim}
+cvs -z3 -d:pserver:anonymous@maybms.cvs.sourceforge.net:/cvsroot/maybms
+   co -P maybms 
+\end{verbatim}
+(on a single line).
+
+This creates a directory maybms/ with a subdirectory postgresql-8.3.3/
+that contains the source code of the system.
+
+To compile and install MayBMS, just follow the instructions for installing
+PostgreSQL 8.3.3. The latter is documented at
+
+\medskip
+
+\url{http://www.postgresql.org/docs/8.3/interactive/installation.html}.
+
+%\medskip
+%
+%\noindent
+%See
+%
+%\medskip
+%
+%\url{http://www.postgresql.org/docs/8.3/interactive/install-short.html}
+%
+%\medskip
+%
+%\noindent
+%for a short version of the installation instructions.
+
+\section{Running MayBMS}
+
+After you have installed MayBMS (in either of the described ways), you can
+set up a database and start using it.
+Creating and accessing databases is the same as in PostgreSQL 8.3.3. Follow the links
+
+\medskip
+
+\url{http://www.postgresql.org/docs/8.3/interactive/tutorial-createdb.html}
+
+\medskip
+
+\noindent
+and 
+
+\medskip
+
+\url{http://www.postgresql.org/docs/8.3/interactive/tutorial-accessdb.html}.
+
+See next section for short instructions on how to run MayBMS.
+
+\section{Short Instructions}
+
+
+Alternatively, you can follow the following set of instructions.\footnote{If
+you do know how to compile and install Postgres, or have followed the
+installation instructions above, you can ignore this.}
+
+
+On most UNIX machines, Postgres
+is by default installed in the directory /usr/local/pgsql/
+and run under user ``postgres''.
+MayBMS uses the same defaults.
+If you prefer to install MayBMS
+in your home directory and run it with your user privileges, you do not
+need root privileges to install it. Proceed as follows:
+Change the path ac\_default\_prefix in line 279 of the file
+maybms/postgresql-8.3.3/configure to a path into your home directory
+(e.g. /home/myname/pgsql/ if your home directory is /home/myname/).
+
+To compile, install, and start the Postgres server, execute the
+following statements:
+\begin{verbatim}
+cd maybms/postgresql-8.3.3/
+./configure
+make
+make install
+cd
+pgsql/bin/initdb -D mydbname
+pgsql/bin/pg_cql start -D mydbname
+\end{verbatim}
+
+Note: In these minimal instructions, we did not create a special database
+using createdb (so the default, template1, has to be used), and error
+messages are written to the console.
+
+Now MayBMS is available for connections from applications.
+
+For example, the Postgres command line interface psql
+in which you can issue MayBMS queries
+and data manipulation language statements is started with
+\begin{verbatim}
+psql template1
+\end{verbatim}
+Now you can enter the examples from, e.g., the following tutorial.
+The psql program is terminated using the command ``$\backslash$q''.
+The database server is stopped with
+\begin{verbatim}
+pgsql/bin/pg_ctl stop -D mydbname
+\end{verbatim}
+
+
+\subsubsection{Remark}
+
+
+Since Postgres and MayBMS use the same process identifiers,
+MayBMS and Postgres cannot run concurrently on the same machine.
+If you start Postgres when MayBMS is already running
+(or vice versa), there will be an error message stating that Postgres is
+already running. Since MayBMS always identifies itself as Postgres,
+standard Postgres applications and middleware can run on MayBMS.  
+
+
+\chapter{Probabilistic Databases}
+
+
+We first give an informal definition of probabilistic databases, followed
+by a formal definition.
+%You should be able to do fine by just reading the
+%first if the latter is too mathematical.
+
+
+\section{Informal Definition}
+
+
+Given a relational database schema (i.e., the structural information usually
+specified by SQL CREATE TABLE statements).
+A probabilistic database is a finite set of {\em possible worlds}\/, where each
+possible world has a weight greater than 0 but no greater than 1
+such that the sum of the weights
+of all the worlds is one.
+Each possible world is a relational database over the given
+schema. That is, the schema is common to all possible worlds.
+
+Possible worlds are a means of expressing uncertainty.
+\begin{itemize}
+\item
+In a frequentist interpretation, the probabilistic database represents the
+possible outcomes of a random experiment, the outcomes of which are relational
+databases (or can be conveniently represented as relational databases).
+The probability weight of a possible world is (the limit of) the relative
+frequency of that possible world occurring as outcome of the random experiment
+over a large number of trials.
+
+\item
+In a Bayesian interpretation, one of the possible worlds is
+``true'', but we do not know which one, and the probabilities represent
+degrees of belief in the various possible worlds.
+\end{itemize}
+
+Note that these interpretations of probabilistic databases are completely
+standard in probability theory (and formalized via the notion of {\em probability spaces}). The only aspect particular to probabilistic
+databases is the fact that possible worlds are relational databases.
+
+
+Note that the idea of a probabilistic database as a set of possible worlds
+is only the conceptual model. The physical representation of the
+set of possible worlds in the MayBMS system is quite different
+(see Section~\ref{sect:representation}) and allows for the efficient and
+space-saving (compressed) representation of very large sets of possible
+worlds.
+
+
+\section{Formal Definition}
+
+
+The following is a standard definition from probability theory and
+shall only be recalled to demonstrate the close connection of
+probabilistic databases to classical concepts in mathematics.
+
+
+\begin{definition}\em
+A {\em finite probability space}\/ is a triple $(\Omega, {\cal F}, \Pr)$ where
+\begin{itemize}
+\item
+$\Omega$ is a finite set called the {\em sample space}\/,
+
+\item
+${\cal F} = 2^\Omega$ is the set of
+subsets of $\Omega$ (these subsets are called {\em events}; the one-element subsets $\{\omega\}$ are called atomic events), and
+
+\item
+$\Pr$ is a
+{\em probability measure}\/, i.e., a function
+that maps each element $\omega \in \Omega$ (i.e., each atomic event)
+to a number between 0 and 1 such that
+\[
+\sum_{\omega \in \Omega} \Pr[\omega] = 1
+\]
+and that maps
+each (nonatomic) event $E \in ({\cal F} \;\backslash\; \Omega)$ to
+$\sum_{\omega \in E} Pr[\omega]$.
+\punto
+\end{itemize}
+\end{definition}
+
+
+Formally,
+a {\em probabilistic database}\/ over a relational database schema $sch$
+is a finite probability space $(\Omega, {\cal F} = 2^\Omega, \Pr)$ with an associated
+function $I$ (for {\em instance}) that maps each
+$\omega \in \Omega$ to a relational database
+over schema $sch$.
+
+We call the elements $\omega$ of $\Omega$ the {\em possible worlds}\/
+of the probabilistic database.
+
+We can identify events with Boolean queries $Q$ that are true on a subset of
+$\Omega$. Of course, the probability of such an event is given by
+\[
+\Pr[Q] = \sum_{\omega \in \Omega \;:\; Q(I(\omega))=true} \Pr[\omega].
+\]
+
+One particular type of event is membership of a given tuple $\vec{t}$
+in the result of a (nonboolean) query, i.e., an event
+\[
+\{\omega \in \Omega \;:\; \vec{t} \in Q(I(\omega)) \}.
+\]
+The probability of this event is called the
+{\em tuple confidence}\/ for tuple $\vec{t}$. 
+
+
+A {\em random variable} $X$ is a function from $\Omega$ to a set $D$
+(the ``values'' of the random variable).
+We can associate each expression $X=x$, where $x \in D$, with an event
+\[
+\{ \omega \in \Omega \mid X(\omega) = x \}.
+\]
+Again, this is the usual notion from probability theory.
+
+
+\section{An Example}
+
+
+Consider a finite probability space with
+\[
+\Omega = \{
+\omega_{rain, wet},
+\omega_{\neg rain, wet}, 
+\omega_{rain, \neg wet},
+\omega_{\neg rain, \neg wet}
+\}
+\]
+and
+$\Pr[\omega_{rain, wet}] = 0.35$,
+$\Pr[\omega_{rain, \neg wet}] = 0.05$,
+$\Pr[\omega_{\neg rain, wet}] = 0.1$, and
+$\Pr[\omega_{\neg rain, \neg wet}] = 0.5$.
+
+Let $Wet$ be the event $\{ \omega_{rain, wet}, \omega_{\neg rain, wet} \}$.
+Then $\Pr[Wet] = 0.35+0.1 = 0.45$.
+%
+We define Boolean random variables Wet and Rain as follows:
+\[
+Wet = \{
+\omega_{rain, wet} \mapsto true,
+\omega_{\neg rain, wet} \mapsto true, 
+\omega_{rain, \neg wet} \mapsto false,
+\omega_{\neg rain, \neg wet} \mapsto false
+\};
+\]\[ 
+Rain = \{
+\omega_{rain, wet} \mapsto true,
+\omega_{\neg rain, wet} \mapsto false, 
+\omega_{rain, \neg wet} \mapsto true,
+\omega_{\neg rain, \neg wet} \mapsto false
+\}.
+\]
+Then, $\Pr[Wet=true]$ is again $0.45$.
+
+The first example of the following tutorial chapter captures this
+example in the framework of the MayBMS query and update language.
+
+
+\chapter{Tutorial}
+
+
+This tutorial introduces the main features of MayBMS in an informal
+way. The full examples can be run using the psql command line interface.
+
+
+
+\section{A Really Simple Example}
+
+
+We start by creating a simple table using SQL commands.
+The table encodes that we see rain and wet ground with probability 0.4,
+no rain but wet ground with probability 0.1, and
+no rain and dry ground with probability 0.5.
+%
+\begin{verbatim}
+create table R (Dummy varchar, Weather varchar,
+                Ground varchar, P float);
+insert into R values ('dummy',    'rain', 'wet', 0.35);
+insert into R values ('dummy',    'rain', 'dry', 0.05);
+insert into R values ('dummy', 'no rain', 'wet', 0.1);
+insert into R values ('dummy', 'no rain', 'dry', 0.5);
+
+select * from R;
+ dummy | weather | ground |  p
+-------+---------+--------+------
+ dummy | rain    | wet    | 0.35
+ dummy | rain    | dry    | 0.05
+ dummy | no rain | wet    | 0.1
+ dummy | no rain | dry    | 0.5
+(4 rows)
+\end{verbatim}
+
+Table R is a completely standard relational database table,
+created using standard SQL statement. One of the columns, P, stores
+probabilities, but to the system these are only numbers without any particular
+meaning so far.
+
+The following statement creates a probabilistic database table S:
+%
+\begin{verbatim}
+create table S as
+repair key Dummy in R weight by P;
+\end{verbatim}
+
+The repair-key statement is one of the extensions of the MayBMS query
+language over standard SQL, and it associates a special meaning to the
+values taken from the ``weight by'' column.
+
+The statement creates a probability space with a sample space consisting 
+of three possible databases -- each one consisting just of one tuple
+from $R$ -- with an associated probability measure given by the P column.
+
+There are at least two natural interpretations of this example,
+one using random variables and one using a possible worlds semantics.
+%
+\begin{itemize}
+\item
+We can think of S as a table specifying the joint probability distribution
+of two discrete random variables Weather (with values ``rain'' and ``no rain'')
+and Ground (with values ``wet'' and ``dry'').
+
+\item
+Alternatively, there are three possible worlds. Each of these worlds
+is a relation S with a single tuple from R. The probability of such a world is
+the value given for the tuple in column P of R.
+\end{itemize}
+
+We can compute the probabilities Pr[Ground='wet'] and
+Pr[Weather='rain' and Ground='wet'] as follows
+using the MayBMS conf() aggregate (which stands for ``confidence'').
+%
+\begin{verbatim}
+create table Wet as
+select conf() as P from S where Ground = 'wet';
+
+select * from Wet;
+  p
+------
+ 0.45
+(1 row)
+
+create table Rain_and_Wet as
+select conf() as P from S
+where Weather = 'rain' and Ground = 'wet';
+
+select * from Rain_and_Wet;
+  p
+------
+ 0.35
+(1 row)
+\end{verbatim}
+
+The conditional probability
+Pr[Weather='rain' $|$ Ground='wet'] can be computed as the ratio
+\[
+\mbox{Pr[Weather='rain' and Ground='wet'] / Pr[Ground='wet'].}
+\]
+%
+\begin{verbatim}
+select R1.P/R2.P as Rain_if_Wet from Rain_and_Wet R1, Wet R2;
+ rain_if_wet
+-------------
+ 0.777777778
+(1 row)
+\end{verbatim}
+
+Since conf() is an aggregate, we can compute the marginal probability
+table for random variable Ground as
+\begin{verbatim}
+select Ground, conf() from S group by Ground;
+ ground | conf
+--------+------
+ dry    |  0.55
+ wet    |  0.45
+(2 rows)
+\end{verbatim}
+
+
+\section{Example: Triangles in Random Graphs}
+\label{sec:randgraph}
+
+In this tutorial, we compute the probability that a triangle occurs
+in a random graph
+with $k$ named (and thus distinguishable) nodes.
+That is, we ask for the probability that an undirected
+graph, chosen uniformly at random among the graphs of $k$ nodes,
+contains at least one triangle.
+This is equivalent to computing the count $n$ of graphs
+that contain a triangle among the $2^{k \cdot (k-1)/2}$ undirected graphs of
+$k$ distinguished nodes.
+Indeed, an undirected graph of $k$ nodes has at most
+$k \cdot (k-1)/2$ edges, and we obtain all the graphs over the given
+$k$ nodes by considering all subsets of this maximal set of edges.
+
+
+We start by creating a unary ``node'' relation, say with five nodes.
+We do this with the standard SQL ``create table'' and ``insert'' commands,
+which behave as usual in a relational database system.
+
+\begin{verbatim}
+create table node (n integer);
+insert into  node values (1);
+insert into  node values (2);
+insert into  node values (3);
+insert into  node values (4);
+insert into  node values (5);
+\end{verbatim}
+
+Next we create the total order over the nodes, i.e., a binary relation
+with exactly one edge between any two nodes. This is again a standard
+SQL ``create table'' statement where we compute the tuples to be inserted
+with a standard SQL query over the ``node'' relation.
+%
+\begin{verbatim}
+create table total_order as
+(
+   select n1.n as u, n2.n as v
+   from node n1, node n2
+   where n1.n < n2.n
+);
+\end{verbatim}
+
+We create a table to represent that each edge is either in the
+graph (bit=1) or missing (bit=0).
+%
+\begin{verbatim}
+create table inout (bit integer);
+insert into  inout values (1);
+insert into  inout values (0);
+\end{verbatim}
+
+The following operation introduces uncertainty into the database and
+creates a probabilistic database with $2^{5 \cdot 4/2} = 1024$ possible
+worlds, one for each possible edge relation over the five nodes
+(=subset of the total order).
+We do this by a query operation ``repair key'' that for each edge
+of the total order nondeterministically chooses whether the edge is in
+the graph (bit=1) or not. (That is, since we do not indicate at what
+probability either of the two alternatives for bit is to be chosen, the
+system makes the decision {\em uniformly}\/ at random, choosing bit=1 with
+probability 0.5.) The resulting probabilistic database
+represents all the alternative edge relations as possible worlds.
+%
+\begin{verbatim}
+create table to_subset as
+(
+   repair key u,v in (select * from total_order, inout)
+);
+\end{verbatim}
+
+The ``repair key'' operation is the most difficult to understand and
+at the same time the most interesting addition to SQL that MayBMS provides.
+Conceptually, ``repair key'' takes a set of attributes $\vec{K}$
+and a relation $R$ (in this case the relational
+product of total\_order and inout)
+as arguments and nondeterministically chooses a maximal repair
+of key $\vec{K}$ in $R$, that is, it removes a minimal set of tuples from
+$R$ such that $\vec{K}$ ceases to violate a key constraint on columns $u, v$.
+In this case, there are exactly two tuples for each pair $(u,v)$, namely
+$(u,v,1)$ and $(u,v,0)$, and repair key chooses exactly one of them.
+The consequence is that, overall, the operation nondeterministically
+chooses a subset of the set of all edges. It chooses from these subsets
+uniformly. The ``repair key'' operation accepts an additional argument that
+allows us to assign nonuniform probabilities to the possible choices, but
+in this case we do want uniform probabilities.
+
+We have now created a probabilistic database. Conceptually, queries
+and updates are evaluated in all possible worlds in parallel. Viewed differently, there is only one to\_subset relation (but we do not know which one), and
+we continue to run queries and updates on this uncertain relation.
+
+To actually create the edge relation, we select those tuples that have
+bit=1 and compute their symmetric closure (to really represent an undirected
+graph).
+%
+\begin{verbatim}
+create table edge0    as (select u,v from to_subset where bit=1);
+
+create table edge     as (select *              from edge0);
+insert into  edge        (select v as u, u as v from edge0);
+\end{verbatim}
+
+Now we can compute the probability that the chosen graph has a triangle
+as
+%
+\begin{verbatim}
+select conf() as triangle_prob
+from   edge e1, edge e2, edge e3
+where  e1.v = e2.u and e2.v = e3.u and e3.v=e1.u
+and    e1.u <> e2.u and e1.u <> e3.u and e2.u <> e3.u;
+\end{verbatim}
+where the conf aggregate computes the probability (``confidence'') that
+the query given by the from-where statement returns a nonempty result.
+This results in
+%
+\begin{verbatim}
+ triangle_prob
+---------------
+      0.623355
+(1 row)
+\end{verbatim}
+
+This is the correct probability: out of the 1024 possible
+graphs of five nodes, 636 have a triangle, and $636/1024 \approx .623355$.
+Indeed, the query
+%
+\begin{verbatim}
+select *
+from   edge e1, edge e2, edge e3
+where  e1.v = e2.u and e2.v = e3.u and e3.v=e1.u
+and    e1.u <> e2.u and e1.u <> e3.u and e2.u <> e3.u;
+\end{verbatim}
+%
+computes at least one tuple in exactly those possible worlds (=on those
+graphs) that have a triangle.
+The conf() aggregate applied to this query conceptually
+computes the sum of the probability
+weights of the worlds in which the query has a nonempty result.
+(The actual implementation does not naively iterate over possible
+worlds, because this would be very inefficient.)
+
+A more efficient implementation of the same query starts from the
+``edge0'' relation:
+%
+\begin{verbatim}
+select conf() as triangle_prob
+from   edge0 e1, edge0 e2, edge0 e3
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u
+and    e1.u < e2.u and e2.u < e3.v;
+\end{verbatim}
+
+Finally, an even more efficient implementation uses the
+aconf$(\epsilon, \delta)$ aggregate
+to compute an $(\epsilon, \delta)$-approximation of the probability,
+i.e., the probability that the computed value $\hat{p}$ returned by aconf
+deviates from the
+correct probability $p$ by more than $\epsilon \cdot p$ is less than $\delta$.
+%
+\begin{verbatim}
+select aconf(.05,.05) as triangle_prob
+from   edge0 e1, edge0 e2, edge0 e3
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u
+and    e1.u < e2.u and e2.u < e3.v;
+\end{verbatim}
+
+This result may be somewhat off, but the probability that the error is greater
+than 5\% is less than 5\%.
+
+
+Note that in the example we have seen only two extensions of SQL, ``repair
+key'' and ``[a]conf''. The good news is that this is essentially
+all there is. SQL extended by just these two features allows for very powerful
+queries, including the computation of conditional probability tables,
+maximum likelihood estimates, maximum-a-posteriori, Bayesian learning,
+and much more.
+
+
+\section{Example: Skills Management}
+
+
+The following example demonstrates that probabilistic databases can be useful
+even if the input data is not uncertain and the desired result is a classical
+relational table. We define a hypothetical query in the context of skills
+management. Assume we are given a classical relational database with two
+tables, one, CE, stores possible takeover targets -- companies that we might
+decide to buy with the employees that work in these companies.
+The second table, ES, stores each employee's skills.
+
+Here is an example database. We can build this database in MayBMS with the
+standard SQL ``create table'' and ``insert'' statements.
+
+\[
+\begin{tabular}{l@{~}|@{~}l@{~~}l}
+CE & CID & EID \\
+\hline
+  & Google & Bob  \\
+  & Google & Joe  \\
+  & Yahoo  & Dan  \\
+  & Yahoo  & Bill \\
+  & Yahoo  & Fred \\
+\end{tabular}
+\hspace{2mm}
+\begin{tabular}{l@{~}|@{~}l@{~~}l}
+ES & EID & Skill \\
+\hline
+  & Bob  & Web \\
+  & Joe  & Web \\
+  & Dan  & Java \\
+  & Dan  & Web \\
+  & Bill & Search \\
+  & Fred & Java \\
+\end{tabular}
+\]
+
+
+Now suppose that we want to buy exactly one of those companies, and
+we expect exactly one employee to leave as a result of the takeover.
+Which skills can we gain for certain?
+
+We express this query in two steps. First we randomly choose a
+company to buy and an employee who leaves, and compute the remaining
+employees in the chosen company. We obtain this uncertain table using the
+following query:
+%
+\begin{verbatim}
+create table RemainingEmployees as
+select CE.cid, CE.eid
+from   CE,
+       (repair key dummy
+        in (select 1 as dummy, * from CE)) Choice
+where  CE.cid =  Choice.cid
+and    CE.eid <> Choice.eid;
+\end{verbatim}
+
+Note that the probabilistic database thus created contains five possible
+worlds (since there are five tuples in CE), with a uniform probability
+distribution. Not all these worlds have the same number of tuples: If we chose
+Google and Bob, the world contains one tuple, Google and Joe. If we choose
+Yahoo and Dan, the world contains two tuples, (Yahoo, Bill) and (Yahoo, Fred).
+
+Now we compute which skills we gain for certain:
+\begin{verbatim}
+create table SkillGained as
+select Q1.cid, Q1.skill, p1, p2, p1/p2 as p
+from (select   R.cid, ES.skill, conf() as p1
+      from     RemainingEmployees R, ES
+      where    R.eid = ES.eid
+      group by R.cid, ES.skill) Q1,
+     (select cid, conf() as p2
+      from RemainingEmployees
+      group by cid) Q2
+where Q1.cid = Q2.cid;
+
+select cid, skill from SkillGained where p=1;
+\end{verbatim}
+
+The result is the table
+\begin{center}
+\begin{tabular}{ll}
+CID & Skill \\
+\hline
+Google & Web \\
+Yahoo  & Java \\
+\end{tabular}
+\end{center}
+indicating that if we buy Google, we gain the skill ``Web'' for certain, and
+if we buy Yahoo, we gain the skill ``Java'' for certain.
+
+It is worth looking at the auxiliary table SkillGained:
+\begin{center}
+\begin{tabular}{l|l@{~~}l@{~~}l@{~~}l@{~~}l}
+SkillGained & CID   & Skill  & p1  & p2  &    p     \\
+\hline
+& Google & Web    & 2/5 & 2/5 &   1 \\
+& Yahoo  & Java   & 3/5 & 3/5 &   1 \\
+& Yahoo  & Web    & 2/5 & 3/5 & 2/3 \\
+& Yahoo  & Search & 2/5 & 3/5 & 2/3 \\
+\end{tabular}
+\end{center}
+
+This table consists of the tuples $(x,y, p1, p2, p)$ such that
+\begin{itemize}
+\item
+$x$ is a company,
+
+\item
+$y$ is a skill,
+
+\item
+$p1$ is the probability that the chosen company is $x$ and the skill
+$y$ is gained (e.g., for $x$=Yahoo and $y$=Web, this is true in two of the
+five possible worlds),
+
+\item
+$p2$ is the probability that $x$ is the chosen company
+(e.g., for $x$=Yahoo, this is true in three of the five possible worlds), and
+
+\item
+$p=p1/p2$ is the probability that skill $y$ is gained if company $x$ is bought
+(e.g., for $x$=Yahoo and $y$=Web, the probability is 2/3: of the three possible
+worlds in which Yahoo was bought, only two worlds guarantee that the skill
+Web is gained).
+\end{itemize}
+
+Thus, indeed, if we select those tuples of SkillGained for which $p=1$, we
+obtain the desired pairs of companies and skills -- those skills that we
+obtain for certain if we buy a company.
+
+
+\section{Data Cleaning}
+
+
+The following example is in the domain of data cleaning. Consider a
+census in which a number of individuals complete forms, that are subsequently
+digitized using an OCR system that will in some cases indicate a number
+of alternative readings, together with probabilities.
+For simplicity, let us assume that the forms only ask for a social security
+number (SSN).
+
+For example, if two individuals complete their forms and the OCR system
+recognizes the SSN of the first to be either 185 (with probability .4) or
+785 and the SSN of the second to be either 185 (with probability .7) or
+186, we store this information in a probabilistic database constructed as
+follows: 
+%
+\begin{verbatim}
+create table Census_SSN_0 (tid integer, ssn integer, p float);
+
+insert into Census_SSN_0 values (1, 185, .4);
+insert into Census_SSN_0 values (1, 785, .6);
+insert into Census_SSN_0 values (2, 185, .7);
+insert into Census_SSN_0 values (2, 186, .3);
+
+create table Census_SSN as
+   repair key tid in Census_SSN_0 weight by p;
+\end{verbatim}
+
+We can view the alternatives and their probability weights by the following
+query:
+\begin{verbatim}
+select   tid, ssn, conf() as prior
+from     Census_SSN
+group by tid, ssn;
+
+ tid | ssn | prior
+-----+-----+-------
+   1 | 185 |   0.4
+   1 | 785 |   0.6
+   2 | 185 |   0.7
+   2 | 186 |   0.3
+\end{verbatim}
+
+We can determine the probability that at least one individual has any
+particular SSN (assuming that the OCR system did not miss the correct
+SSN as an alternative) using the following query:
+\begin{verbatim}
+select   ssn, conf() as ssn_prior
+from     Census_SSN
+group by ssn;
+
+ ssn | ssn_prior
+-----+-----------
+ 185 |      0.82
+ 186 |       0.3
+ 785 |       0.6
+\end{verbatim}
+Indeed, the probability that at least one individual has SSN 185 is
+$1 - .6 \cdot .3 = .82$.
+
+We now perform data cleaning using a single integrity constraint, namely
+that no two individuals can have the same ssn.
+Conceptually, we want to exclude worlds that violate the functional dependency
+\[
+ssn \rightarrow tid,
+\]
+i.e., the constraint that ssn must be a key for the relation.
+
+We start by computing an auxiliary relation that
+computes, in each possible worlds, the ssn values that violate the
+integrity constraint.
+\begin{verbatim}
+create table FD_Violations as
+select S1.ssn
+from   Census_SSN S1, Census_SSN S2
+where  S1.tid < S2.tid and S1.ssn = S2.ssn;
+\end{verbatim}
+Note that two tuples violate the constraint if they have the same ssn
+but different tid. We express this in the above query using a slightly
+changed condition: (S1.tid $<$ S2.tid and S1.ssn = S2.ssn) instead of
+(S1.tid $<>$ S2.tid and S1.ssn = S2.ssn). However, both conditions
+select the same set of distinct ssn values that violate the integrity
+constraint.
+
+This query computes the uncertain table that holds 185 in the world in
+which both forms have ssn value 185. In all other worlds it is empty.
+
+Next we compute an auxiliary relation which computes, for each
+SSN that occurs in at least one world in which an FD is violated,
+the sum of the weights of those worlds in
+which the SSN occurs and an FD is violated.
+\begin{verbatim}
+
+create table FD_Violations_by_ssn as
+(
+   select S.ssn, conf() as p
+   from FD_Violations V,
+        Census_SSN S
+   group by S.ssn
+);
+\end{verbatim}
+
+Next we compute the conditional probability table
+\begin{verbatim}
+create table TidSSNPosterior as
+select Q1.tid, Q1.ssn, p1, p2, p3,
+       cast((p1-p2)/(1-p3) as real) as posterior
+from
+   (
+      select tid, ssn, conf() as p1
+      from   Census_SSN
+      group by tid, ssn
+   ) Q1,
+   (
+      (select ssn, p as p2 from FD_Violations_by_ssn)
+      union
+      (
+         (select ssn, 0 as p2 from Census_SSN_0)
+         except
+         (select possible ssn, 0 as p2 from FD_Violations_by_ssn)
+      )
+   ) Q2,
+   (
+      select conf() as p3
+      from   FD_Violations
+   ) Q3
+where Q1.ssn = Q2.ssn;
+
+select * from TidSSNPosterior;
+
+ tid | ssn | p1  |  p2  |  p3  | posterior
+-----+-----+-----+------+------+-----------
+   1 | 185 | 0.4 | 0.28 | 0.28 |  0.166667
+   1 | 785 | 0.6 |    0 | 0.28 |  0.833333
+   2 | 185 | 0.7 | 0.28 | 0.28 |  0.583333
+   2 | 186 | 0.3 |    0 | 0.28 |  0.416667
+\end{verbatim}
+
+This table stores, for each pair of form tid and ssn, the posterior probability
+that the individual who completed the form tid has the social security number
+ssn given that no two individuals can have the same ssn.
+
+We can compute, for each form, the maximum-a-posteriori ssn (the most likely
+ssn given the evidence specified by the integrity constraint) as
+\begin{verbatim}
+select tid, argmax(ssn, posterior) as map
+from   TidSSNPosterior
+group by tid
+order by tid;
+
+ tid | map
+-----+-----
+   1 | 785
+   2 | 185
+\end{verbatim}
+
+In a sense, these map values are the locally best values that we could decide
+upon for each uncertain answer in our census database. Note, however, that,
+if we always choose the map value, we may sometimes create a database that
+again violates the integrity constraints used for data cleaning.
+This would have been the case if we had indicated probability .9 for both
+185 alternatives in the input database.
+
+
+
+
+A further example that computes conditional probabilities and MAP values
+in a different context can be
+found in Chapter~\ref{sect:ql} (Example~\ref{ex:coins_sql}).
+
+
+
+

@@ -1,0 +1,16 @@
+This directory contains the implementation of query rewriting on U-relations,
+including confidence and approximate confidence computation.
+
+rewrite.c			things start here
+aconf.c				Implementation of approximate confidence computation.
+argmax.c			Implementation of aggregate function argmax.
+bitset.c			An auxiliary file for ws-tree.c.
+SPROUT.c		    Implementation of Lazy confidence computation in SPROUT.
+localcond.c			Storing the condition columns for confidence computation.
+repair_key.c		Implementation of repair-key construct by pure rewriting.
+rewrite_updates.c	Rewriting of update commands (insert, delete, update)
+supported.c			Check whether a query is supported and should be rewritten
+tupleconf.c			Implementation of local confidence computation.
+utils.c				Utility functions.
+ws-tree.c			Implementation of exact confidence computation using world set tree.
+signature.c			Implementation of query signature identification.

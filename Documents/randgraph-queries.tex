@@ -1,0 +1,51 @@
+\chapter{Queries in Random Graph Experiments} 
+\label{app:randgraph}
+
+\begin{verbatim}
+create table node (n integer);
+insert into  node values (1);
+insert into  node values (2);
+insert into  node values (3);
+insert into  node values (4);
+......
+insert into  node values (n-1);
+insert into  node values (n); /* n is the number of nodes in the graph */
+
+/* Here we specify the probability that an edge is in the graph. */
+create table inout (bit integer, p float);
+insert into  inout values (1, 0.5); /* probability that edge is in the graph */
+insert into  inout values (0, 0.5); /* probability that edge is missing */
+
+create table total_order as
+(
+   select n1.n as u, n2.n as v
+   from node n1, node n2
+   where n1.n < n2.n
+);
+
+/* This table represents all subsets of the total order over
+   node as possible worlds. We use the same probability -- from
+   inout -- for each edge, but in principle we could just as
+   well have a different (independent) probability for each edge.
+*/
+create table to_subset as
+(
+   repair key u,v
+   in (select * from total_order, inout)
+   weight by p
+);
+
+create table edge0 as (select u,v from to_subset where bit=1);
+
+select conf() as triangle_prob
+from   edge0 e1, edge0 e2, edge0 e3
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u
+and    e1.u < e2.u and e2.u < e3.v;
+
+select aconf(0.05,0.05) as triangle_prob
+from   edge0 e1, edge0 e2, edge0 e3
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u
+and    e1.u < e2.u and e2.u < e3.v;
+
+\end{verbatim}
+\newpage

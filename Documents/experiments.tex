@@ -1,0 +1,292 @@
+
+
+\chapter{Experiments}
+
+
+
+This section reports on experiments performed with the first MayBMS release
+(beta) and a benchmark consisting of two parts,
+which are described in more detail in the remainder of this chapter:
+%
+\begin{enumerate}
+\item
+Computing the probability of triangles in random graphs.
+
+\item
+A modified subset of the TPC-H queries on uncertain TPC-H datasets.
+\end{enumerate}
+
+
+By this benchmark, we do not attempt to simulate a representative set of
+use cases: the jury is still out on what such a set of use cases might be.
+Instead, we focus on a benchmark that allows us to see how the performance
+of MayBMS develops across releases on the two core technical problems solved
+by MayBMS: polynomial-time query evaluation for the polynomial-time fragment
+of our query language and the efficient approximation of query results for
+queries that do not belong to the polynomial-time fragment. (Finding triangles
+in random graphs is a near-canonical example of such queries.)
+
+We will keep monitoring the development of the state of the art and will
+continue to survey applications and collect use cases; we will extend or
+replace this benchmark as consensus develops regarding the most important
+applications of probabilistic databases.
+
+
+\medskip
+
+Experimental setup.
+All the experiments reported on in this chapter were conducted on an Athlon-X2(4600+)64bit / 1.8GB / Linux2.6.20 / gcc4.1.2 machine.
+
+
+
+\section{Random Graphs}
+\subsection{Experiments with Varying Levels of Precision} 
+
+In this experiment, we create undirected random graphs in which 
+the presence of each edge is independent of that of the other edges. The probability that an edge is in the graph is 0.5 and
+this applies to each edge. Then we compute the probability that there exists a triangle in the graphs using approximation.
+The queries can be found in Appendix~\ref{app:randgraph}.
+
+We report wall-clock execution times
+of queries run in the PostgreSQL8.3.3 psql shell with a warm
+cache obtained by running a query once and then reporting
+the average execution time over three subsequent, identical executions.
+Figure \ref{fig:randgraph} shows the execution time of approximation with different precision parameters for random graphs composed of 5 to 33 nodes. An ($\epsilon, \delta$) approximation has the following property: let $p$ be the exact probability and $\hat{p}$ be the approximate probability, then
+$\Pr\big[ |p - \hat{p}| \ge \epsilon \cdot p \big] \le \delta$.
+
+\begin{figure}[htp]
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c | c | }
+    \hline
+    \multirow{2}{*}{\#nodes} & \multirow{2}{*}{\#clauses} & \multicolumn{4}{|c|}{Execution Time(Seconds)} \\ \cline{3-6}
+          &  & (.05,.05) & (.01,.01) & (.005,.005) &  (.001,.001)  \\ \hline
+    5 & 10 & 0.01 & 0.03 & 0.11 & 2.08  \\ \hline
+    6 & 20 & 0.01 & 0.08 & 0.26 & 5.27   \\ \hline
+	7 & 35 & 0.02 & 0.14 & 0.46 & 9.15   \\ \hline
+	8 & 56 & 0.03 & 0.22 & 0.7 & 12.49   \\ \hline
+	9 & 84 & 0.04 & 0.28 & 0.85 & 14.95   \\ \hline
+	10 & 120 & 0.08 & 0.44 & 1.13 & 16.19   \\ \hline
+	11 & 165 & 0.15 & 0.60 & 1.60 & 17.98   \\ \hline
+	12 & 220 & 0.29 & 1.24 & 2.48 & 24.31   \\ \hline
+	13 & 286 & 0.55 & 2.38 & 4.74 & 35.29   \\ \hline
+	14 & 364 & 0.98 & 4.26 & 8.38 & 51.51   \\ \hline
+	15 & 455 & 1.56 & 6.74 & 13.29 & 73.00   \\ \hline
+	16 & 560 & 2.37 & 10.26 & 19.21 & 102.97   \\ \hline
+	17 & 680 & 3.46 & 14.6 & 28.76 & 144.02   \\ \hline
+	18 & 816 & 4.92 & 20.49 & 41.1 & 206.18  \\ \hline
+	19 & 969 & 7.03 & 28.52 & 56.43 & 291.21  \\ \hline
+	20 & 1140 & 9.97 & 39.72 & 81.01 & 395.18  \\ \hline
+	21 & 1330 & 14.74 & 57.13 & 123.79 &  597.86  \\ \hline
+	22 & 1540 & 23.94 & 119.81 & 218.62 & 600+   \\ \hline
+	23 & 1771 & 46.21 & 204.83 & 416.42 & 600+  \\ \hline
+	24 & 2024 & 79.03 & 411.67 & 600+ & 600+  \\ \hline
+	25 & 2300 & 115.64 & 515.65 & 600+ & 600+  \\ \hline
+	26 & 2600 & 159.66 & 600+ & 600+ & 600+  \\ \hline
+	27 & 2925 & 202.98 & 600+ & 600+ & 600+  \\ \hline
+	28 & 3276 & 251.82 & 600+ & 600+ & 600+  \\ \hline
+	29 & 3654 & 312.89 & 600+ & 600+ & 600+  \\ \hline
+	30 & 4060 & 387.72 & 600+ & 600+ & 600+  \\ \hline
+	31 & 4495 & 475.78 & 600+ & 600+ & 600+  \\ \hline
+	32 & 4960 & 582.4 & 600+ & 600+ & 600+  \\ \hline
+	33 & 5456 & 600+ & 600+ & 600+ & 600+  \\ \hline
+
+  \end{tabular}
+\end{center} 
+
+\caption{Comparison between execution time of approximation with different precision}
+
+\label{fig:randgraph}
+\end{figure}
+
+\subsection{Experiments with Different Edge Probabilities}  
+
+In the previous experiments, each edge had probability 0.5. We use other values as the edge probability(all edges still have the same probability) and run the experiment again with (0.05,0.05) approximation. The SQL statements in Appendix~\ref{app:randgraph} should be modified accordingly. Let $p$ be the probability, change the following statements
+\begin{verbatim}
+insert into  inout values (1, 0.5); 
+insert into  inout values (0, 0.5); 
+\end{verbatim}
+ to
+\begin{verbatim}
+insert into  inout values (1, p); 
+insert into  inout values (0, 1 - p); 
+\end{verbatim}
+Figure \ref{fig:edge-prob} shows the execution time for queries of random graphs composed of 25 to 101 nodes with different fixed edge probabilities.
+
+\begin{figure}[htp]
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c | }
+    \hline
+    \multirow{2}{*}{\#nodes} & \multirow{2}{*}{\#clauses} & \multicolumn{3}{|c|}{Execution Time(Seconds)} \\ \cline{3-5}
+      	&  & p=0.5 & p=0.1 & p=0.05   \\ \hline
+	25 & 2300 & 115.64 & 1.77 & 0.55   \\ \hline
+	%26 & 2600 & 159.66 & 2.28 & 0.72   \\ \hline
+	%27 & 2925 & 202.98 & 2.52 & 0.83   \\ \hline
+	%28 & 3276 & 251.82 & 3.19 & 1.02   \\ \hline
+	%29 & 3654 & 312.89 & 3.73 & 1.19   \\ \hline
+	30 & 4060 & 387.72 & 4.13 & 1.35   \\ \hline
+	31 & 4495 & 475.78 & 4.94 & 1.54   \\ \hline
+	32 & 4960 & 582.40 & 5.72 & 1.82   \\ \hline
+	33 & 5456 & 600+ & 6.87 & 2.12   \\ \hline
+	%34 & 5984 & 600+ & 7.48 & 2.60  \\ \hline
+	35 & 6545 & 600+ & 8.74 & 2.74  \\ \hline
+	%36 & 7140 & 600+ & 9.59 & 3.12  \\ \hline
+	%37 & 7770 & 600+ & 11.53 & 3.63  \\ \hline
+	%38 & 8436 & 600+ & 13.38 & 3.92  \\ \hline
+	%39 & 9139 & 600+ & 15.32 & 4.6  \\ \hline
+	40 & 9880 & 600+ & 18.32 & 5.06  \\ \hline
+	%41 & 10660 & 600+ & 20.65 & 5.76  \\ \hline
+	%42 & 11480 & 600+ & 23.91 & 6.51  \\ \hline
+	%43 & 12341 & 600+ & 28.44 & 7.7  \\ \hline
+	%44 & 13244 & 600+ & 32.38 & 8.48  \\ \hline
+	45 & 14190 & 600+ & 36.77 & 8.96  \\ \hline
+	%46 & 15180 & 600+ & 41.09 & 9.99  \\ \hline
+	%47 & 16215 & 600+ & 48.68 & 11.45  \\ \hline
+	%48 & 17296 & 600+ & 54.66 & 12.62  \\ \hline
+	%49 & 18424 & 600+ & 61.05 & 13.39  \\ \hline
+	50 & 19600 & 600+ & 70.79 & 15.79  \\ \hline
+	%51 & 20825 & 600+ & 80.19 & 16.09  \\ \hline
+	%52 & 22100 & 600+ & 88.32 & 17.16  \\ \hline
+	%53 & 23426 & 600+ & 97.99 & 19.49  \\ \hline
+	%54 & 24804 & 600+ & 112.07 & 21.58  \\ \hline
+	55 & 26235 & 600+ & 123.69 & 21.97  \\ \hline
+	%56 & 27720 & 600+ & 138.92 & 25.73  \\ \hline
+	%57 & 29260 & 600+ & 155.86 & 27.52  \\ \hline
+	%58 & 30856 & 600+ & 172.39 & 29.37  \\ \hline
+	%59 & 32509 & 600+ & 190.98 & 32.06  \\ \hline
+	60 & 34220 & 600+ & 214.06 & 33.94  \\ \hline
+	%61 & 35990 & 600+ &  & 36.97  \\ \hline
+	%62 & 37820 & 600+ &  & 38.40  \\ \hline
+	%63 & 39711 & 600+ &  & 42.80  \\ \hline
+	%64 & 41664 & 600+ &  & 43.89  \\ \hline
+	65 & 43680 & 600+ & 343.66 & 47.09  \\ \hline
+	%66 & 45760 & 600+ &  & 51.56  \\ \hline
+	%67 & 47905 & 600+ &  & 54.87  \\ \hline
+	68 & 50116 & 600+ & 451.06 & 59.87  \\ \hline
+	69 & 52934 & 600+ & 490.64 & 64.69  \\ \hline
+	70 & 54740 & 600+ & 542.61 & 68.98  \\ \hline
+	71 & 57155 & 600+ & 595.03 & 72.88  \\ \hline
+	72 & 59640 & 600+ & 600+ & 82.30  \\ \hline
+	75 & 67525 & 600+ & 600+ & 106.49  \\ \hline
+	80 & 82160 & 600+ & 600+ & 154.92  \\ \hline
+	85 & 98770 & 600+ & 600+ & 224.3  \\ \hline
+	90 & 117480 & 600+ & 600+ & 316.28  \\ \hline
+	95 & 138415 & 600+ & 600+ & 437.39  \\ \hline
+	97 & 147440 & 600+ & 600+ & 510.39  \\ \hline
+	98 & 152096 & 600+ & 600+ & 543.87  \\ \hline
+	99 & 156849 & 600+ & 600+ & 558.44  \\ \hline
+	100 & 161700 & 600+ & 600+ & 593.84  \\ \hline
+	101 & 166650 & 600+ & 600+ & 600+  \\ \hline
+	
+  \end{tabular}
+\end{center} 
+
+\caption{Comparison between execution time of queries of random graphs with different fixed edge probabilities}
+
+\label{fig:edge-prob}
+\end{figure}
+
+\subsection{Experiments with General Random Graphs} 
+
+The previous experiments were conducted on undirected graphs in which every pair of nodes had a possibly present edge. However, this may not be the case in general. In many scenarios, each pair of nodes may have a certainly present, certainly absent or possibly present edge. In our following experiments, we construct such general probabilistic random graphs from data representing directed links between webpage within nd.edu domain\footnote{http://www.nd.edu/~networks/resources/www/www.dat.gz}. If a link between two pages is absent from the data, then it is also absent from our graphs. If a link is present in the data, then it is a certainly or possibly present edge in our graphs. We run again the queries computing the probabilities of existence of triangles in such graphs with (0.05,0.05) approximation. The probabilities that possibly present edges are in the graphs are randomly distributed in (0,0.1). The queries of the graph constructions and confidence computation can be found in Appendix~\ref{app:general-randgraph}. Figure \ref{fig:general-randgraph} shows the execution time for queries of such random graphs composed of 1000 to 30000 nodes.
+
+\begin{figure}[htp]
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | }
+    \hline
+    \#nodes & \#possible edges & \#clauses & Execution Time(Seconds) \\ \hline
+	  	1000 & 3271 & 6367 &  4.04   \\ \hline
+	  	2000 & 6446 & 12598 & 11.84    \\ \hline
+	  	3000 & 9056 & 19836 &  21.88   \\ \hline
+	  	4000 & 11366 & 22455 &  28.57   \\ \hline
+	  	5000 & 13497 & 24574 &  31.38   \\ \hline
+	  	6000 & 16095 & 25731 &  35.36   \\ \hline
+	  	7000 & 17958 & 26070 &  35.82   \\ \hline
+	  	8000 & 23113 & 39481 &  80.14   \\ \hline
+	  	9000 & 26114 & 43369 &  115.45   \\ \hline
+	  	10000 & 32975 & 51586 &  140.00   \\ \hline
+	  	11000 & 35507 & 55562 &  157.34   \\ \hline
+	  	12000 & 37623 & 57260 &  170.05   \\ \hline
+	  	13000 & 40246 & 61060 &  197.67   \\ \hline	  	
+	  	14000 & 44045 & 66530 &  225.88   \\ \hline
+	  	15000 & 45434 & 66966 &  230.51   \\ \hline
+	  	16000 & 47814 & 69787 &  260.70   \\ \hline
+	  	17000 & 50456 & 72710 &  278.48  \\ \hline
+	  	18000 & 52145 & 73043 &  280.76  \\ \hline
+	  	19000 & 53849 & 73437 &  288.01  \\ \hline
+	  	20000 & 55584 & 73953 &  289.30  \\ \hline	  	
+	  	21000 & 57654 & 74688 &  290.37  \\ \hline
+		22000 & 59274 & 74991 &  295.66   \\ \hline
+		23000 & 61308 & 75954 &  296.13   \\ \hline
+		24000 & 63000 & 76288 &  313.13  \\ \hline
+		25000 & 65538 & 79404 &  354.95   \\ \hline
+		26000 & 69741 & 89888 &  439.01   \\ \hline
+		27000 & 72741 & 93016 &  479.78  \\ \hline
+		28000 & 76148 & 98065 &  553.75   \\ \hline
+		29000 & 79414 & 104328 &  573.24   \\ \hline
+		30000 & 82714 & 107633 &  601.33   \\ \hline
+
+  \end{tabular}
+\end{center}       
+
+\caption{Execution time of confidence computation for existence of triangles in general random graphs}
+
+\label{fig:general-randgraph}
+\end{figure}
+
+\section{Probabilistic TPC-H}
+
+SPROUT\footnote{http://web.comlab.ox.ac.uk/projects/SPROUT/index.html} is a part 
+of the query engine of MayBMS and provides state-of-the-art techniques for efficient 
+exact confidence computation. In this section, we show how TPC-H queries can 
+benefit from these techniques. For each TPC-H query, we consider its largest subquery
+without aggregations and inequality joins but with
+conf() for specifying exact probability computation
+for distinct tuples in query answers. We consider two
+flavours of each of these queries: A version with original
+selection attributes (again, without aggregations), and a version
+where we drop keys from the selection attributes. Queries are included in the 
+experiments if SPROUT's techniques can be applied to them. Our data set consists 
+of tuple-independent probabilistic databases obtained from deterministic
+databases produced by TPC-H 2.7.0 by associating each
+tuple with a Boolean random variable and by choosing at random
+a probability distribution over these variables. We perform experiments with TPC-H 
+scale factor 1 (1GB database size) and evaluate the 
+TPC-H-like queries mentioned above. The queries can 
+be found in Appendix~\ref{app:tpch}. In addition, we compare our results 
+with the reported time from \cite{OHK2008} in which SPROUT was only partially 
+integrated into PostgreSQL and storing temporary relations to the disk was 
+sometimes necessary. The average time shown below is obtained from ten subsequent, 
+identical executions with a warm cache by running the query once.
+
+\begin{figure}[htp]
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    Query &  \multicolumn{2}{|c|}{Average Time(Seconds)} \\ \cline{2-3}
+           &  Current running time & Time reported in \cite{OHK2008} \\ \hline
+	1 & 8.21 & 120.13 \\ \hline
+	4 & 40.57 & 39.52 \\ \hline
+	12 & 17.1 & 21.94 \\ \hline
+	15 & 5.5 & 3.2 \\ \hline
+	B1 & 5.37 & 14.92 \\ \hline
+	B4 & 31.88 & 33.02 \\ \hline
+	B6 & 3.82 & 6.37 \\ \hline
+	B12 & 15.91 & 18.56 \\ \hline
+	B14 & 4.17 & 4.86 \\ \hline
+	B15 & 4.81 & 5.24 \\ \hline
+	B16 & 0.87 & 3.16 \\ \hline
+	B17 & 3.25 & 2.43 \\ \hline
+
+  \end{tabular}
+\end{center} 
+\caption{Current running times vs.\ running times reported in \cite{OHK2008}.
+Boolean queries are prefixed by B. }
+
+\end{figure}
+
+
+

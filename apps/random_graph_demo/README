@@ -1,0 +1,25 @@
+DESCRIPTION
+
+This application demonstrates the use of probabilistic databases for modelling
+random graphs and social networks. We consider graphs in which each edge is
+assigned a probability for its existence, and where edges are independent of each other.
+The application allows the user to generate a random graph with certain parameters such as
+number of nodes and edge probability, or load a social network with probability-weighted edges.
+
+To model such a network as a probabilistic database we store the edge relation as an
+uncertain table, where each edge is associated with a boolean random variable. After loading
+or generating a network, the user can compute the probability of different patterns
+in the network. Some of the currently supported queries are:
+- probability for the existence of a triangle (four-clique)
+- pairs of nodes within four degrees of separation
+- nodes which have at least three neighbors with probability higher than 80%
+- nodes which are not directly connected but share at least two neighbors
+
+USE
+
+For installation instructions, see the INSTALL file in the current directory.
+
+To use the application:
+-- Generate a random graph by opening http://<localhost>:<port>/random_graph_demo/index.php and filling in the graph parameters.
+-- You can upload social network data from a tab-separated file where each line is of the form "from <tab> to <tab> probability". To do this open http://<localhost>:<port>/random_graph_demo/social.php and specify a file to upload.
+-- Choose a query to run on the random graph from the ones listed in index.php and social.php.

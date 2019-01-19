@@ -1,0 +1,10 @@
+Please follow the steps below to run this web application: 
+
+1. Install MayBMS and start the server.
+
+2. Run shell script 'import_data.sh' in directory 'apps/nba/data' to load the data into the MayBMS. 
+
+3. Install a web server on your computer and start it. 
+
+4. Place all PHP files, HTML files and images in the document root directory. For example, the default directory for Apache2 is 'htdocs'.
+

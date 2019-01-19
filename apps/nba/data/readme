@@ -1,0 +1,3 @@
+Run 'import_data.sh' in current directory to import the data to the database. 
+
+Before running the script, please make sure that your database server is ready to accept connections.

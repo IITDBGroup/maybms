@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://static.sourceforge.net/css/phoneix/project.php?secure=1&amp;20080417-0957" media="all" />
+    <title>MayBMS: A Probabilistic Database System</title> 
+  </head> 
+  <body> 
+    <div id="wrap"> 
+ 
+      <div id="content"> 
+ 
+ 
+<div align="center">
+<h1><img src="img/maybms_logo.jpg" alt="MayBMS" /></h1> 
+<h1 class="sub">MayBMS - A Probabilistic Database Management System</h1> 
+</div> 
+ 
+ 
+<p><h1><center> 
+<a href="index.html">MAIN PAGE</a> |
+<b>DOWNLOAD</b> |
+<a href="documentation.html">DOCUMENTATION</a> |
+</center></h1></p> 
+ 
+ 
+<p/> 
+<p/> 
+<p/> 
+<p/>
+<table width = "300px" align="center">
+<tr>
+<td>
+<div class="downloadbar" title="Download this file from SourceForge.net"> 
+    <h3> 
+        <a href="http://sourceforge.net/project/showfiles.php?group_id=235754" title="Download this file from SourceForge.net" class="down"><strong>Download</strong><img src="https://sourceforge.net/images/phoneix/go-down.png" alt="Download"></a> 
+        <small> 
+        <br /> 
+        MayBMS - MayBMS-2.1-beta<br /> 
+        Last Update: Mar 01 2009
+        </small> 
+    </h3>
+</div> 
+</td></tr>
+</table>
+<br />
+ <h2>Using the installers</h2>
+<p>Prepackaged installers of MayBMS are available for both Windows and Linux operating
+systems and can be downloaded
+<a href="http://sourceforge.net/project/showfiles.php?group_id=235754" title="Download this file from SourceForge.net" class="down"><strong>here</strong><img src="https://sourceforge.net/images/phoneix/go-down.png"></a>.
+</p>
+<p>
+After you have obtained a copy of the installer, start it and follow the
+instructions.
+</p>
+
+<h2>Obtaining the source code</h2>
+<p>If the prepackaged installers do not work for you
+you can download the
+MayBMS&#8217;s source code and compile it. A copy is available for download
+<a href="http://sourceforge.net/project/showfiles.php?group_id=235754" title="Download this file from SourceForge.net" class="down"><strong>here</strong><img src="https://sourceforge.net/images/phoneix/go-down.png"></a>.
+
+<br />
+Alternatively, you can obtain the latest snapshot from the repository by
+issuing the following command:
+</p>
+                                                                                                                                                   
+   <div class="verbatim">
+cvs&#x00A0;-z3&#x00A0;-d:pserver:anonymous@maybms.cvs.sourceforge.net:/cvsroot/maybms
+&#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;co&#x00A0;-P&#x00A0;maybms
+</div>
+<!--l. 32--><p class="nopar" > (on a single line).
+<!--l. 35--><p class="indent" >   This creates a directory maybms/ with a subdirectory postgresql-8.3.3/ that
+contains the source code of the system.
+<!--l. 38--><p class="indent" >   To compile and install MayBMS, just follow the instructions for installing
+PostgreSQL 8.3.3. The latter is documented at
+
+   <a 
+href="http://www.postgresql.org/docs/8.3/interactive/installation.html" class="url" ><span 
+class="cmtt-12">http://www.postgresql.org/docs/8.3/interactive/installation.html</span></a>.
+<!--l. 59--><p class="noindent" >
+
+<h2>Running MayBMS</h2>
+<p>After you have installed MayBMS (in either of the described ways), you can set
+up a database and start using it. Creating and accessing databases is the same as
+in PostgreSQL 8.3.3. Follow the links
+
+   <a href="http://www.postgresql.org/docs/8.3/interactive/tutorial-createdb.html">
+   http://www.postgresql.org/docs/8.3/interactive/tutorial-createdb.html</a>
+and
+   <a href="http://www.postgresql.org/docs/8.3/interactive/tutorial-accessdb.html">
+http://www.postgresql.org/docs/8.3/interactive/tutorial-accessdb.html</a>.
+
+<h2>Short Instructions</h2>
+<p>Alternatively, you can follow the following set of
+instructions.
+</p>                                                             
+
+                                                                          
+<p>   On most UNIX machines, Postgres is by default installed in the directory
+/usr/local/pgsql/ and run under user "postgres". MayBMS uses the same
+defaults. If you prefer to install MayBMS in your home directory and run it
+with your user privileges, you do not need root privileges to install it.
+Proceed as follows: Change the path ac_default_prefix in line 279 of the file
+maybms/postgresql-8.3.3/configure to a path into your home directory (e.g.
+/home/myname/pgsql/ if your home directory is /home/myname/).
+</p>
+<p>
+To compile, install, and start the Postgres server, execute the following
+statements:
+</p>                                                                          
+
+                                                                          
+   <div class="verbatim">
+cd&#x00A0;maybms/postgresql-8.3.3/
+&#x00A0;<br />./configure
+&#x00A0;<br />make
+&#x00A0;<br />make&#x00A0;install
+&#x00A0;<br />cd
+&#x00A0;<br />pgsql/bin/initdb&#x00A0;-D&#x00A0;mydbname
+&#x00A0;<br />pgsql/bin/pg_cql&#x00A0;start&#x00A0;-D&#x00A0;mydbname
+</div>
+<!--l. 109--><p class="nopar" >
+<!--l. 111--><p class="indent" >   Note: In these minimal instructions, we did not create a special database using
+createdb (so the default, template1, has to be used), and error messages are
+written to the console.
+<!--l. 115--><p class="indent" >   Now MayBMS is available for connections from applications.
+<!--l. 117--><p class="indent" >   For example, the Postgres command line interface psql in which you can issue
+MayBMS queries and data manipulation language statements is started
+with
+                                                                          
+
+                                                                          
+   <div class="verbatim">
+psql&#x00A0;template1
+</div>
+<!--l. 122--><p class="nopar" > Now you can enter the examples from, e.g., the following tutorial. The psql
+program is terminated using the command &#8220;<span 
+class="cmsy-10x-x-120">\</span>q&#8221;. The database server is stopped
+with
+                                                                          
+
+                                                                          
+   <div class="verbatim">
+pgsql/bin/pg_ctl&#x00A0;stop&#x00A0;-D&#x00A0;mydbname
+</div>
+      </div> 
+     </div> 
+  </body> 
+</html> 

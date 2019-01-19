@@ -1,0 +1,246 @@
+\documentclass[12pt]{book}
+\usepackage[bookmarks]{hyperref}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{pst-tree}
+\usepackage{multirow}
+\usepackage{array}
+
+%\addtolength{\textwidth}{1in}
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textheight}{1.5in}
+%%\addtolength{\topmargin}{-1in}
+%\addtolength{\topmargin}{-.2in}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{metatheorem}{Metatheorem}[section]
+\newtheorem{example}[theorem]{Example}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{property}[theorem]{Property}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proviso}[theorem]{Proviso}
+\newtheorem{todo}[theorem]{ToDo}
+
+
+\newcommand{\cby}[1]{#1}
+\newcommand{\bluebox}[1]{#1}
+\newcommand{\tuple}[1]{\langle #1 \rangle}
+\newcommand{\nop}[1]{}
+\newcommand{\difc}[1]{$#1$}
+\def\lBrack{\lbrack\!\lbrack}
+\def\rBrack{\rbrack\!\rbrack}
+\newcommand{\Bracks}[1]{\lBrack#1\rBrack}
+\def\punto{$\hspace*{\fill}\Box$}
+\def\ph{\hat{p}}
+\def\Pr{\mbox{Pr}}
+\def\expec{\mathbf{E}}
+\def\conf{\mathrm{conf}}
+\def\rk{\mbox{repair-key}}
+
+
+\title{MayBMS: A Probabilistic Database System \\[3ex]
+User Manual
+\\[6ex]
+{\small Copyright (c) 2005-2009 \\
+The MayBMS Development Group
+\\[6ex]
+Christoph Koch$^*$, Dan Olteanu$^{**}$, Lyublena Antova$^{*}$, and
+Jiewen Huang$^{*,**}$ \\[4ex]
+$^*$ Department of Computer Science,
+Cornell University, Ithaca, NY \\[1ex]
+$^{**}$ Oxford University Computing Laboratory, Oxford, UK}}
+
+\author{}
+\date{}
+
+
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+
+ 
+\chapter{Introduction}
+
+
+\section{What is MayBMS?}
+
+
+The {\em MayBMS}\/ system (note: MayBMS is read as ``maybe-MS'', like DBMS)
+is a complete
+probabilistic database management system that leverages robust
+relational database technology:
+MayBMS is an extension of the Postgres server backend.
+MayBMS is open source and the source code
+is available under the BSD license at
+%
+\begin{center}
+http://maybms.sourceforge.net
+\end{center}
+
+
+The MayBMS system has been under development since 2005.
+While the development has been carried out in an academic environment,
+care has been taken to build a robust, scalable system that can be
+reliably used in real applications.
+%
+The academic homepage of the MayBMS project is at
+
+\begin{center}
+http://www.cs.cornell.edu/database/maybms/
+\end{center}
+
+
+
+MayBMS stands alone as a complete probabilistic database management system
+that supports a powerful, compositional query language for which nevertheless worst-case efficiency and result quality guarantees can be made.
+We are aware of several research prototype probabilistic database management systems that are built as front-end applications of Postgres, but of no other fully integrated and available system. The MayBMS backend is accessible through several APIs, with efficient internal operators for computing and managing probabilistic data.
+
+
+In summary, MayBMS has the following features:
+\begin{itemize}
+\item
+Full support of all features of PostgreSQL 8.3.3, including unrestricted
+query functionality, query optimization, APIs, updates, concurrency control and
+recovery, etc.
+
+\item
+Essentially no performance loss on PostgreSQL 8.3.3 functionality:
+After parsing a query or DML statement,
+a fast syntactic check is made to decide
+whether the statement uses the extended functionality of MayBMS. If it does
+not, the subsequently executed code is exactly that of PostgreSQL 8.3.3.
+
+\item
+Support for efficiently creating and updating probabilistic databases,
+i.e., uncertain databases in which degrees of belief can be associated
+with uncertain data.
+
+\item
+A powerful query and update language for processing uncertain data
+that gracefully extends SQL with a small number of well-designed
+language constructs.
+
+\item
+State-of-the-art efficient techniques
+for exact and approximate probabilistic inference.
+\end{itemize}
+
+
+
+\section{Applications}
+
+
+Database systems for uncertain  and probabilistic data promise to have
+many applications.  Query processing on  uncertain data occurs  in the
+contexts of data warehousing, data integration, and of processing data
+extracted from the Web. Data  cleaning can be fruitfully approached as
+a problem of reducing uncertainty  in data and requires the management
+and processing  of large amounts  of uncertain data.  Decision support
+and   diagnosis  systems   employ   hypothetical  (what-if)   queries.
+Scientific databases, which  store outcomes of scientific experiments,
+frequently contain  uncertain data such as  incomplete observations or
+imprecise   measurements.   Sensor  and   RFID   data  is   inherently
+uncertain.  Applications   in  the  contexts  of   fighting  crime  or
+terrorism,  tracking  moving  objects,  surveillance,  and  plagiarism
+detection essentially  rely on techniques for  processing and managing
+large  uncertain   datasets.  Beyond  that,   many  further  potential
+applications  of  probabilistic  databases  exist  and  will  manifest
+themselves once such systems become available.
+
+The MayBMS distribution comes with a number of examples that illustrate
+its use in
+these application domains. Some of these examples are described in the
+tutorial chapter of this manual.
+
+The experiments section at the end of
+this manual reports on some performance experiments with MayBMS. Unfortunately,
+at the time of writing this, no benchmark for probabilistic database
+systems exists, so these experiments are necessarily somewhat ad-hoc.
+
+
+
+\section{Acknowledgments}
+
+
+%MayBMS is an extension of PostgreSQL.
+
+Michaela Goetz, Thomas Jansen and Ali Baran Sari are alumni of the MayBMS team.
+%
+The MayBMS project was previously supported by
+German Science Foundation (DFG) grant KO 3491/1-1 and by funding provided by
+the Center for Bioinformatics (ZBI) at Saarland University, Saarbruecken,
+Germany. It is currently supported by grant IIS-0812272 of the
+US National Science Foundation.
+
+
+
+
+
+
+
+
+\input{tutorial}
+\input{foundations}
+\input{language}
+\input{system}
+\input{codebase}
+\input{experiments}
+
+
+
+\nop{
+\chapter{Planned Extensions}
+
+
+Planned features for future releases of MayBMS are
+\begin{itemize}
+\item
+The relaxation of some current minor restrictions in the query language.
+
+\item
+More efficient confidence computation.
+
+\item
+A knowledge compilation operation for conditioning a probabilistic database,
+i.e., removing possible worlds that do not satisfy a given constraint.
+
+\item
+Continuous probability distributions.
+
+\item
+Support for importing graphical models such as Bayesian Networks.
+\end{itemize}
+} % end nop
+
+
+\newpage
+
+\appendix
+\input{randgraph-queries}
+\input{general-randgraph}
+\input{tpch-queries}
+
+
+\bibliographystyle{abbrv}
+\bibliography{bibtex}
+
+
+
+
+\end{document}
+
+

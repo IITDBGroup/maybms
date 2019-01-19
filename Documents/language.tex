@@ -1,0 +1,436 @@
+
+\chapter{The MayBMS Query and Update Language}
+
+
+\section{Language Overview}
+\label{sect:ql}
+
+
+This section describes the query and update language of MayBMS, which is based on SQL.
+In fact, our language is a generalization of SQL on classical relational databases.
+To simplify the presentation, a fragment of the full language supported in MayBMS is presented here.
+
+The representation system used in MayBMS, U-relations, has as a special case classical relational tables, that is, tables with no condition columns. We will call these tables {\em typed-certain (t-certain) tables}\/ in this section. Tables that are not t-certain are called uncertain.
+Note that this notion of certainty is
+purely syntactic, and
+\[
+\mbox{cert}(R) = \pi_{sch(R)}(\sigma_{P=1}(\mbox{conf}(R)))
+\]
+may well be equal to the projection of a U-relation $U_R$ to its attribute (non-condition) columns despite $R$ not being t-certain according to this definition.
+
+\paragraph{Aggregates}
+In MayBMS, full SQL is supported on t-certain tables.
+Beyond t-certain tables, some restrictions are in place to assure that query evaluation is feasible. In particular, we do not support the standard SQL aggregates such as {\tt sum} or {\tt count} on uncertain relations. This can be easily justified: In general, these aggregates will produce exponentially many different numerical results in the various possible worlds, and there is no way of representing these results efficiently.  However, MayBMS supports a different set of aggregate operations on uncertain relations. These include the computations of {\em expected}\/ sums and counts (using aggregates {\tt esum} and {\tt ecount}).
+
+Moreover, the confidence computation operation is an aggregate in the MayBMS query language.
+This is a deviation from the language flavor of our algebra, but there is a justification for
+this. The algebra presented earlier assumed a set-based semantics for relations, where operations
+such as projections automatically remove duplicates. In the MayBMS query language, just like in SQL, duplicates have to be eliminated explicitly, and confidence is naturally an aggregate that computes a single confidence value for each group of tuples that agree on (a subset of) the non-condition columns.
+By using aggregation syntax for {\tt conf} and not supporting {\tt select distinct} on uncertain relations, we avoid a need for conditions beyond the special conjunctions that can be stored with each tuple in
+U-relations.
+
+All supported aggregates on uncertain tables produce t-certain tables.
+
+\paragraph{Duplicate tuples}
+SQL databases in general support multiset tables, i.e., tables in which there may be duplicate tuples.  There is no conceptual difficulty at all in supporting multiset U-relations.  In fact, since U-relations are just relations in which some columns are interpreted to have a special meaning (conditions), just storing them in a standard relational database management system which supports duplicates in tables yields support for multiset U-relations.
+
+\paragraph{Syntax}
+The MayBMS query language is compositional and built from uncertain and t-certain queries. 
+The uncertain queries are those that produce a possibly uncertain relation (represented by a U-relation with more than zero $V$ and $D$ columns). Uncertain queries can be constructed, inductively, from t-certain queries, {\tt select-from-where} queries over uncertain tables, the multiset union of uncertain queries (using the SQL {\tt union} construct), and the {\tt repair-key} and {\tt pick-tuples} statements that can be specified as follows
+\begin{verbatim}
+   repair key <attributes> in 
+   (<t-certain-query> | <t-certain-relation>)
+   [weight by <expression>];
+   
+   pick tuples from
+   <t-certain-query> | <t-certain-relation>
+   [independently] 
+   [with probability <expression>];
+\end{verbatim}
+Note that {\tt repair-key} is a query, rather than an update statement.
+Details on these constructs can be found in Section~\ref{sec:langref}, Language reference.
+
+The {\tt select-from-where} queries may use any t-certain subqueries in the conditions, plus uncertain subqueries in atomic conditions of the form
+\begin{verbatim}
+   <tuple> in <uncertain-query>
+\end{verbatim}
+that occur positively in the condition. (That is, if the condition is turned into DNF, these literals are not negated.)
+
+\nop{
+Uncertain queries also support a construct {\tt tconf()} that can be used in the select list and outputs, for each tuple selected, its confidence. Applied to a multiset U-relation, this operation does not eliminate duplicates and compute aggregate confidence values as {\tt conf} does, but outputs the probability of the (conjunctive) condition for each of the tuples in the multiset.
+} % end nop
+
+The t-certain queries (i.e., queries that produce a t-certain table) are given by 
+\begin{itemize}
+\item
+all constructs of SQL on t-certain tables and t-certain subqueries, extended by a new aggregate
+\begin{verbatim}
+   argmax(<argument-attribute>, <value-attribute>)
+\end{verbatim}
+which outputs one of the {\tt argument-attribute} values in the current group (determined by the group-by clause) whose tuples have a maximum {\tt value-attribute} value within the group. Thus, this is the typical argmax construct from mathematics added as an SQL extension.
+
+\item
+{\tt select-from-where-group-by} on uncertain queries using the {\tt possible} construct for computing possible tuples, or the aggregates {\tt conf}, {\tt esum}, and {\tt ecount}, but none of the standard SQL aggregates. There is an exact and an approximate version of the {\tt conf} aggregate. The
+latter takes two parameters $\epsilon$ and $\delta$ (see the earlier discussion of the Karp-Luby FPRAS).
+\end{itemize}
+
+
+The aggregates {\tt esum} and {\tt ecount} compute expected sums and counts across groups of tuples.
+While it may seem that these aggregates are at least as hard as confidence computation (which is \#P-hard), this is in fact not so.
+These aggregates can be efficiently computed exploiting linearity of expectation.
+A query
+\begin{verbatim}
+   select A, esum(B) from R group by A;
+\end{verbatim}
+is equivalent to a query
+\begin{verbatim}
+   select A, sum(B * P) from R' group by A;
+\end{verbatim}
+where {\tt R'} is obtained from the U-relation of {\tt R} by 
+replacing each local condition $V_1, D_1$, $\dots$, $V_k$, $D_k$ by the probability
+$\Pr[V_1=D_1 \land \dots \land V_k=D_k]$, not eliminating duplicates.
+That is, expected sums can be computed efficiently tuple by tuple, and only require to determine the probability of a conjunction, which is easy, rather than a DNF of variable assignments
+as in the case of the {\tt conf} aggregate.
+The {\tt ecount} aggregate is a special case of {\tt esum} applied to a column of ones.
+
+
+\begin{example}\em
+\label{ex:coins_sql}
+The query of Example~\ref{ex:twotosses} can be expressed in the query language of MayBMS as follows.
+Let {\tt R} be {\tt repair key in Coins weight by Count} and let {\tt S} be
+\begin{verbatim}
+select R.Type, Toss, Face
+from (repair key Type, Toss in (select * from Faces, Tosses)
+      weight by FProb) S0, R
+where R.Type = S0.Type;
+\end{verbatim}
+
+It is not hard to verify that $\pi_{\mathrm{Toss}, \mathrm{Face}}(S) \neq Ev$
+exactly if there exist tuples $\vec{s} \in S, \vec{t} \in Ev$ such that
+$\vec{s}.\mathrm{Toss}=\vec{t}.\mathrm{Toss}$ and
+$\vec{s}.\mathrm{Face} \neq \vec{t}.\mathrm{Face}$.
+Let {\tt C} be
+\begin{verbatim}
+select S.Type from S, Ev
+where S.Toss = Ev.Toss and S.Face <> Ev.Face;
+\end{verbatim}
+
+Then we can compute {\tt Q} using the trick of Example~\ref{ex:trick} as
+% BUG-FIX BEGIN
+\begin{verbatim}
+select Type, (P1-P2)/(1-P3) as P
+from (select Type, conf() as P1 from S group by Type) Q1,
+     ((select Type, conf() as P2 from C group by Type)
+      union
+      (
+         (select Type, 0 as P2 from Coins)
+         except
+         (select Type, 0 as P2 from
+             (select Type, conf() from C group by Type) Dummy)
+      )) Q2,
+     (select conf() as P3 from C) Q3
+where Q1.Type = Q2.Type;
+\end{verbatim}
+% BUG-FIX END
+
+The argmax aggregate can be used to compute maximum-a-posteriori (MAP) and maximum-likelihood estimates.
+For example,
+the MAP coin type
+\[
+\mbox{argmax}_{\mathrm{Type}} \; \Pr[\mbox{evidence is twice heads} \land \mbox{coin type is Type}]
+\]
+can be computed as
+{\tt select argmax(Type, P) from Q}
+because the normalizing factor {\tt (1-P3)} has no impact on argmax. Thus, the answer in this example
+is the double-headed coin. (See table $Q$ of Figure~\ref{fig:twotosses_tables}: The fair coin has $P=1/3$, while the double-headed coin has $P=2/3$.)
+
+The maximum likelihood estimate
+\[
+\mbox{argmax}_{\mathrm{Type}} \; \Pr[\mbox{evidence is twice heads} \mid \mbox{coin type is Type}]
+\]
+can be computed as
+\begin{verbatim}
+select argmax(Q.Type, Q.P/R'.P) 
+from Q, (select Type, conf() as P from R) R'
+where Q.Type = R'.Type;
+\end{verbatim}
+Here, again, the result is 2headed, but this time with likelihood
+1. (The fair coin has likelihood 1/4).
+%
+\punto
+\end{example}
+
+
+\paragraph{Supported Queries}
+\index{Supported Queries}
+MayBMS supports full SQL on t-certain tables. In addition it supports a large subset of SQL on t-uncertain tables, with even more features supported when fragments of the uncertain query involve t-certain subqueries. The following restrictions apply:
+\begin{itemize}
+    \item
+    Exact aggregates and duplicate elimination using {\tt distinct} in a select statement are supported as long as the from clause subqueries and the subqueries in the where condition are t-certain.
+    \item
+    If a t-certain subquery Q in the where condition of a select statement contains references to t-uncertain tables, then the containing query is supported if Q is not correlated with it.
+    \item
+    The set operations {\tt except} and {\tt union} with duplicate elimination are supported when both the left and the right argument are t-certain queries.
+    \item
+    {\tt repair-key} and {\tt pick-tuples} are supported on t-certain queries.
+\end{itemize}
+
+Restrictions on the update statements are discussed below.
+
+\paragraph{Updates}
+\index{Updates}
+%
+MayBMS supports the usual schema modification and update statements of SQL. In fact, our use of U-relations makes this quite easy.
+An insertion of the form
+\begin{verbatim}
+   insert into <uncertain-table> (<uncertain-query>);
+\end{verbatim}
+is just the standard SQL insertion for tables we interpret as U-relations. Thus, the table inserted into must have the right number (that is, a sufficient number) of condition columns.
+Schema-modifying operations such as
+\begin{verbatim}
+   create table <uncertain-table> as (<uncertain-query>);
+\end{verbatim}
+are similarly straightforward.
+A deletion
+\begin{verbatim}
+   delete from <uncertain-table>
+   where <condition>;
+\end{verbatim}
+admits conditions that refer to the attributes of the current tuple and may use t-certain subqueries.
+One can also update an uncertain table with an update statement 
+\begin{verbatim}
+   update <uncertain-table>
+   set <attribute> = <expr> [,...]
+   where <condition>;
+\end{verbatim}
+where the set list does not modify the condition columns and the where condition satisfies the same conditions as that of the delete statement. MayBMS allows users to insert a constant tuple by specifying values for the data columns in an insert statement:
+\begin{verbatim}
+   insert into <uncertain-table> [<attribute_list>] <tuple>;
+\end{verbatim}
+
+
+\section{Language Reference}
+\label{sec:langref} 
+
+We next discuss the extensions to SQL by MayBMS.
+For a description of the standard SQL constructs please see the Postgres SQL language reference available at
+
+\url{http://www.postgresql.org/docs/8.3/interactive/sql-commands.html}
+
+
+\subsection{repair-key}
+\textbf{Syntax:}
+\begin{verbatim}
+   repair key <attributes> in 
+   (<t-certain-query> | <t-certain-relation>)
+   [ weight by <expression> ]
+\end{verbatim}
+
+\noindent \textbf{Description:}
+The {\tt repair-key} operation turns a {\em t-certain-query}\/
+(or, as a special case, a {\em t-certain-relation}\/) into the set of worlds consisting of all possible
+{\em maximal repairs}\/ of key $attributes$. A repair of key $\vec{A}$ in 
+relation $R$ is a subset of $R$ for which $\vec{A}$ is a key.
+We say that relation $R'$ is a {\em maximal repair}\/ of a functional dependency 
+for relation $R$ if $R'$ is a maximal subset of $R$ which satisfies that 
+functional dependency. The numerically-valued $expression$ is used for 
+weighting the newly created alternative repairs.
+If the {\tt weight by} clause is omitted, a uniform probability distribution is assumed among all tuples with 
+the same key. Suppose there are $n$ tuples sharing the same key, each of them is 
+associated with a probability of $1/n$. If the weight is specified by $expression$, 
+the value of $expression$ will be the probability of the tuple before normalization. 
+Suppose there are $n$ tuples sharing the same key, tuple $t_i$ is associated 
+with probability $expression_i$ / $\sum_{k=1}^n expression_k$. In either case, 
+the sum of the probabilities among all tuples with the same key is 1. 
+There will be an error message if the value of $expression$ in any tuple is 
+negative. The tuples for which probability is 0 are ignored and not included in any resulting possible world.
+
+{\tt repair-key} can be placed wherever a select statement is allowed in SQL. 
+See Section~\ref{sect:pwsa} for more details on {\tt repair-key}.
+
+\noindent \textbf{Example:}
+Suppose $Customer$ is a certain
+relation with columns $ID$ and $name$, the following query performs a {\tt repair-key} operation on column $ID$ in $Customer$: 
+
+\begin{verbatim}
+   repair key ID in Customer;
+\end{verbatim}
+
+Suppose $Accounts$ is a certain relation with columns $ID$ and $account$, the following is an example of {\tt repair-key} operation on column $ID$ in the output of a certain query: 
+
+\begin{verbatim}
+   repair key ID in 
+   (select * from Customer natural join Accounts);
+\end{verbatim}
+
+
+
+\subsection{pick-tuples}
+\textbf{Syntax:}
+\begin{verbatim}
+    pick tuples from 
+    <t-certain-query> | <t-certain-relation>
+    [independently] 
+    [with probability <expression>];
+\end{verbatim}
+
+\noindent \textbf{Description:}
+%
+The {\tt pick-tuples} operation generates the set of worlds which can be obtained from a {\it t-certain-query} or a {\it t-certain-relation} by selecting a subset of the tuples of that query or relation. In the current version of MayBMS, the presence of {\tt independently} does not affect query evaluation. It is the default; in the future, MayBMS may be extended by other options.
+
+By default, every tuple in a possible world is associated with probability 0.5. If {\tt with probability} $expression$ is specified, the numerical value of $expression$ is the probability of the tuple. Note that only values in (0,1] are valid. There will be an error message if the value of $expression$ is negative or larger than 1. Tuples for which $expression$ are 0 are ignored. 
+
+{\tt pick-tuples} can be placed wherever a select statement is allowed in SQL. 
+
+\subsection{possible}
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+    select possible <attributes> from <query> | <relation>;
+\end{verbatim}
+
+\noindent \textbf{Description:}
+The operation {\tt possible} selects the set of tuples appearing in at least one possible world. This construct is a shortcut for the query which selects all distinct tuples with confidence greater than zero:
+\begin{verbatim}
+    select distinct <attributes> from
+    (select <attributes>, tconf() as conf from <query> | <relation>
+     where conf > 0) Q;
+\end{verbatim}
+
+
+\noindent \textbf{Example:}
+Suppose R and S are uncertain relations, the following query displays distinct pairs (A,B) with positive probabilities.  
+\begin{verbatim}
+	select possible A, B from R, S; 
+\end{verbatim}
+
+
+\subsection{Confidence computation and approximate aggregates}
+
+{\tt argmax}, {\tt conf}, {\tt aconf}, {\tt tconf}, {\tt esum} and {\tt ecount} are functions introduced by MayBMS. Following is the summary of the functions. \\
+
+\begin{small}
+\begin{tabular}{|l|l|}
+\hline
+Name & Brief Description  \\
+\hline
+argmax(argument, value) & Returns the argument with the maximum value.	 \\ \hline
+conf() & Returns the exact confidence of distinct tuples.	 \\ \hline
+conf(approach, $\epsilon$) & Returns the approximate confidence of distinct tuples.	 \\ \hline
+aconf($\epsilon$, $\delta$) & Returns the approximate confidence of distinct tuples.	 \\ \hline
+tconf() & Returns the exact confidence of tuples.	\\ \hline
+esum(attribute) & Returns the expected sum over distinct tuples.	 \\ \hline
+ecount(attribute) & Returns the expected count over distinct tuples.	 \\ \hline
+\end{tabular}
+\end{small}
+
+\setcounter{secnumdepth}{3}
+
+\subsubsection{argmax(argument-attribute, value-attribute)}
+
+Outputs an {\tt argument-attribute} value in the current group (determined by the group-by clause) whose tuples have a maximum {\tt value-attribute} value within the group. If there are several tuples sharing the same maximum {\tt value-attribute} value with different {\tt argument-attribute} values, an arbitrary value among them is returned. For example, 
+\begin{verbatim}
+select location, argmax(date, temperature)
+from weather_reports
+group by location; 
+\end{verbatim}
+retrieves one of the dates with the highest temperature for each location.
+
+{\tt argmax} can be used on all relations and queries.
+
+\subsubsection{conf()}
+
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+	select <attribute | conf()> [, ...]
+	from <query> | <relation>
+	group by <attributes>; 
+\end{verbatim}
+
+\noindent \textbf{Description:}
+Computes for each possible {\em distinct}\/ tuple of attribute values of the target list that occurs in an uncertain relation in at least one possible world, the sum of the probabilities of the worlds in which it occurs. {\tt conf} can only be used on a t-uncertain query or a t-uncertain relation and the output of the query is a t-certain relation.
+
+\noindent \textbf{Example:}
+Suppose weather\_forecast is an uncertain relation storing information regarding weather prediction, the following query computes the probability of each weather condition for each location:
+\begin{verbatim}
+	select location, weather, conf()
+	from weather_forecast
+	group by location, weather; 
+\end{verbatim}
+
+\subsubsection{tconf()}
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+	select <attribute | tconf()> [, ...]
+	from <query> | <relation>;
+\end{verbatim}
+
+\noindent \textbf{Description:}
+Computes for each possible tuple the sum of the probabilities of the worlds where it appears. ${\tt tconf()}$ is different from ${\tt conf()}$ in that it does not eliminate duplicates. {\tt tconf} can only be used on a t-uncertain query or a t-uncertain relation and the output of the query is a t-certain relation.
+
+\subsubsection{conf(approach, $\epsilon$)}
+
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+	select <attribute | conf(<approach>, <epsilon>)> [, ...]
+	from <query> | <relation>	
+	group by <attributes>; 
+\end{verbatim}
+
+\noindent \textbf{Description:}
+Computes for each possible {\em distinct}\/ tuple of the target list that occurs in at least one possible world, the $approximate$ sum of the probabilities of the worlds in which it occurs. {\tt approach} specifies the approximation approach, namely, `R' and `A' are relative and absolute approximation, respectively. Let $p$ be the exact sum (computed by {\tt conf()}) and $\hat{p}$ be the approximate sum (computed by {\tt conf(approach, $\epsilon$)}), the approximation has the following property:
+\begin{itemize}
+\item Relative approximation: $|p - \hat{p}| \le \epsilon \cdot p$
+\item Absolute approximation: $|p - \hat{p}| \le \epsilon$
+\end{itemize}
+
+ {\tt conf(approach, $\epsilon$)} can only be used on a t-uncertain query or a t-uncertain relation and the output of the query is a t-certain relation.
+
+\subsubsection{aconf($\epsilon$, $\delta$)}
+
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+	select <attribute | aconf(<epsilon>, <delta>)> [, ...]
+	from <query> | <relation>	
+	group by <attributes>; 
+\end{verbatim}
+
+\noindent \textbf{Description:}
+Computes for each possible {\em distinct}\/ tuple of the target list that occurs in at least one possible world, the $approximate$ sum of the probabilities of the worlds in which it occurs. Let $p$ be the exact sum (computed by {\tt conf}) and $\hat{p}$ be the approximate sum (computed by {\tt aconf}), the approximation has the following property: $\Pr\big[ |p - \hat{p}| \ge \epsilon \cdot p \big] \le \delta$.
+
+See the earlier discussion of the Karp-Luby FPRAS for more details. {\tt aconf} can only be used on a t-uncertain query or a t-uncertain relation and the output of the query is a t-certain relation. \\
+
+\noindent \textbf{Remark:}
+Although both {\tt conf(approach, $\epsilon$)} and {\tt aconf} output approximate confidence for distinct tuples, there are three major differences between them:
+\begin{itemize}
+\item The underlying techniques for {\tt conf(approach, $\epsilon$)} and 
+{\tt aconf} are d-tree approximation algorithm~\cite{OHK2010} and Karp-Luby FPRAS, respectively. 
+The former is a deterministic algorithm and outputs the same probability if the 
+databases and queries are identical while the latter is randomized and likely to output
+different probabilities even if the databases and queries are identical. 
+\item {\tt conf(approach, $\epsilon$)} provides both absolute and relative approximation while {\tt aconf} only allows the latter.
+\item {\tt conf(approach, $\epsilon$)} outputs an $\epsilon$-approximation certainly while {\tt aconf} guarantees it with probability $1-\delta$. 
+\end{itemize}
+
+\subsubsection{esum and ecount}
+
+\noindent \textbf{Syntax:}
+\begin{verbatim}
+	select <attribute | esum(<attribute>) | ecount()> [, ...]
+	from <query> | <relation>
+	group by <attributes>; 
+\end{verbatim}
+
+\noindent \textbf{Description:}
+{\tt esum} and {\tt ecount} compute expected sum and count, respectively. {\tt ecount} can take zero or one argument, and the number of arguments does not affect the results. {\tt esum} and {\tt ecount} can only be used on a t-uncertain query or a t-uncertain relation and the output of the query is a t-certain relation.
+
+\noindent \textbf{Example:}
+The following query  computes the expected total rainfall of seven days for each location:
+\begin{verbatim}
+	select location, esum(rainfall)
+	from rainfall_forecast
+	where date >= '2010-10-01' and date <= '2010-10-07'
+	group by location; 
+\end{verbatim}
+
+
+

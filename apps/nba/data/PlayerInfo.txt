@@ -1,0 +1,224 @@
+LA Lakers|Trevor Ariza|06/30/1985|6-8|210
+LA Lakers|Shannon Brown|11/29/1985|6-4|211
+LA Lakers|Kobe Bryant|08/23/1978|6-6|205
+LA Lakers|Andrew Bynum|10/27/1987|7-0|285
+LA Lakers|Jordan Farmar|11/30/1986|6-2|180
+LA Lakers|Derek Fisher|08/09/1974|6-1|210
+LA Lakers|Pau Gasol|07/06/1980|7-0|250
+LA Lakers|Didier Ilunga-Mbenga|12/30/1980|7-0|255
+LA Lakers|Adam Morrison|07/19/1984|6-8|205
+LA Lakers|Lamar Odom|11/06/1979|6-10|230
+LA Lakers|Josh Powell|01/25/1983|6-9|240
+LA Lakers|Sasha Vujacic|03/08/1984|6-7|205
+LA Lakers|Luke Walton|03/28/1980|6-8|235
+LA Lakers|Sun Yue|11/06/1985|6-9|205
+Boston Celtics|Ray Allen|07/20/1975|6-5|205
+Boston Celtics|Tony Allen|01/11/1982|6-4|213
+Boston Celtics|Glen Davis|01/01/1986|6-9|289
+Boston Celtics|Kevin Garnett|05/19/1976|6-11|253
+Boston Celtics|J.R. Giddens|02/13/1985|6-5|215
+Boston Celtics|Eddie House|05/14/1978|6-1|175
+Boston Celtics|Mikki Moore|11/04/1975|7-0|225
+Boston Celtics|Kendrick Perkins|11/10/1984|6-10|280
+Boston Celtics|Paul Pierce|10/13/1977|6-7|235
+Boston Celtics|Leon Powe|01/22/1984|6-8|240
+Boston Celtics|Rajon Rondo|02/22/1986|6-1|171
+Boston Celtics|Brian Scalabrine|03/18/1978|6-9|235
+Boston Celtics|Stephon Marbury|02/20/1977|6-2|205
+Dallas Mavericks|Jose Barea|06/26/1984|6-0|175
+Dallas Mavericks|Brandon Bass|04/30/1985|6-8|250
+Dallas Mavericks|Matt Carroll|08/28/1980|6-6|212
+Dallas Mavericks|Erick Dampier|07/14/1975|6-11|265
+Dallas Mavericks|Devean George|08/29/1977|6-8|235
+Dallas Mavericks|Ryan Hollins|10/10/1984|7-0|230
+Dallas Mavericks|Josh Howard|04/28/1980|6-7|210
+Dallas Mavericks|Jason Kidd|03/23/1973|6-4|210
+Dallas Mavericks|Dirk Nowitzki|06/19/1978|7-0|245
+Dallas Mavericks|James Singleton|07/20/1981|6-8|230
+Dallas Mavericks|Jason Terry|09/15/1977|6-2|180
+Dallas Mavericks|Antoine Wright|02/06/1984|6-7|215
+New Jersey Nets|Ryan Anderson|05/06/1988|6-10|240
+New Jersey Nets|Josh Boone|11/21/1984|6-10|237
+New Jersey Nets|Vince Carter|01/26/1977|6-6|220
+New Jersey Nets|Keyon Dooling|05/08/1980|6-3|195
+New Jersey Nets|Chris Douglas-Roberts|01/08/1987|6-7|200
+New Jersey Nets|Devin Harris|02/27/1983|6-3|185
+New Jersey Nets|Trenton Hassell|03/04/1979|6-5|233
+New Jersey Nets|Jarvis Hayes|08/09/1981|6-8|228
+New Jersey Nets|Brook Lopez|04/01/1988|7-0|260
+New Jersey Nets|Eduardo Najera|07/11/1976|6-8|235
+New Jersey Nets|Bobby Simmons|06/02/1980|6-6|230
+New Jersey Nets|Yi Jianlian|10/27/1987|7-0|238
+Houston Rockets|Ron Artest|11/13/1979|6-7|260
+Houston Rockets|Brent Barry|12/31/1971|6-7|210
+Houston Rockets|Shane Battier|09/09/1978|6-8|220
+Houston Rockets|Aaron Brooks|01/14/1985|6-0|161
+Houston Rockets|Brian Cook|12/04/1980|6-9|250
+Houston Rockets|Chuck Hayes|06/11/1983|6-6|238
+Houston Rockets|Carl Landry|09/19/1983|6-9|248
+Houston Rockets|Kyle Lowry|03/25/1986|6-0|205
+Houston Rockets|Tracy McGrady|05/24/1979|6-8|223
+Houston Rockets|Luis Scola|04/30/1980|6-9|245
+Houston Rockets|Von Wafer|07/21/1985|6-5|210
+Houston Rockets|Yao Ming|09/12/1980|7-6|310
+New York Knicks|Wilson Chandler|05/10/1987|6-8|220
+New York Knicks|Joe Crawford|06/17/1986|6-5|210
+New York Knicks|Eddy Curry|12/05/1982|6-11|285
+New York Knicks|Chris Duhon|08/31/1982|6-1|185
+New York Knicks|Danilo Gallinari|08/08/1988|6-10|225
+New York Knicks|Al Harrington|02/17/1980|6-9|250
+New York Knicks|Larry Hughes|01/23/1979|6-5|185
+New York Knicks|Chris Hunter|07/07/1984|6-11|240
+New York Knicks|Jared Jeffries|11/25/1981|6-11|240
+New York Knicks|David Lee|04/29/1983|6-9|240
+New York Knicks|Cuttino Mobley|09/01/1975|6-4|215
+New York Knicks|Quentin Richardson|04/13/1980|6-6|235
+New York Knicks|Nate Robinson|05/31/1984|5-9|180
+New York Knicks|Cheikh Samb|05/12/1986|6-11|230
+New York Knicks|Courtney Sims|10/21/1983|6-11|245
+New York Knicks|Chris Wilcox|09/03/1982|6-10|235
+Memphis Grizzlies|Darrell Arthur|03/25/1988|6-9|225
+Memphis Grizzlies|Greg Buckner|09/16/1976|6-4|210
+Memphis Grizzlies|Mike Conley|10/11/1987|6-1|180
+Memphis Grizzlies|Marc Gasol|01/29/1985|7-1|265
+Memphis Grizzlies|Rudy Gay|08/17/1986|6-8|222
+Memphis Grizzlies|Hamed Haddadi|05/19/1985|7-2|254
+Memphis Grizzlies|Marko Jaric|10/12/1978|6-7|224
+Memphis Grizzlies|OJ Mayo|11/05/1987|6-4|210
+Memphis Grizzlies|Chris Mihm|07/16/1979|7-0|265
+Memphis Grizzlies|Darius Miles|10/09/1981|6-9|235
+Memphis Grizzlies|Darko Milicic|06/20/1985|7-0|275
+Memphis Grizzlies|Quinton Ross|04/30/1981|6-6|193
+Memphis Grizzlies|Hakim Warrick|07/08/1982|6-9|219
+Memphis Grizzlies|Mike Wilks|05/07/1979|5-10|180
+Philadelphia 76ers|Elton Brand|03/11/1979|6-9|254
+Philadelphia 76ers|Samuel Dalembert|05/10/1981|6-11|250
+Philadelphia 76ers|Reggie Evans|05/18/1980|6-8|245
+Philadelphia 76ers|Willie Green|07/28/1981|6-3|201
+Philadelphia 76ers|Andre Iguodala|01/28/1984|6-6|207
+Philadelphia 76ers|Royal Ivey|12/20/1981|6-4|215
+Philadelphia 76ers|Donyell Marshall|05/18/1973|6-9|245
+Philadelphia 76ers|Andre Miller|03/19/1976|6-2|200
+Philadelphia 76ers|Theo Ratliff|04/17/1973|6-10|235
+Philadelphia 76ers|Kareem Rush|10/30/1980|6-6|215
+Philadelphia 76ers|Jason Smith|03/02/1986|7-0|240
+Philadelphia 76ers|Marreese Speights|08/04/1987|6-10|245
+Philadelphia 76ers|Louis Williams|10/27/1986|6-2|175
+Philadelphia 76ers|Thaddeus Young|06/21/1988|6-8|220
+New Orleans Hornets|Hilton Armstrong|11/11/1984|6-11|235
+New Orleans Hornets|Ryan Bowen|11/20/1975|6-9|218
+New Orleans Hornets|Devin Brown|12/30/1978|6-5|210
+New Orleans Hornets|Rasual Butler|05/23/1979|6-7|205
+New Orleans Hornets|Tyson Chandler|10/02/1982|7-1|235
+New Orleans Hornets|Antonio Daniels|03/19/1975|6-4|205
+New Orleans Hornets|Melvin Ely|05/02/1978|6-10|261
+New Orleans Hornets|Sean Marks|08/23/1975|6-10|250
+New Orleans Hornets|Chris Paul|05/06/1985|6-0|175
+New Orleans Hornets|Morris Peterson|08/26/1977|6-7|220
+New Orleans Hornets|James Posey|01/13/1977|6-8|217
+New Orleans Hornets|Predrag Stojakovic|06/09/1977|6-10|229
+New Orleans Hornets|David West|08/29/1980|6-9|240
+New Orleans Hornets|Julian Wright|05/20/1987|6-8|225
+San Antonio Spurs|Malik Hairston|02/23/1987|6-6|220
+San Antonio Spurs|Matt Bonner|04/05/1980|6-10|240
+San Antonio Spurs|Bruce Bowen|06/14/1971|6-7|200
+San Antonio Spurs|Tim Duncan|04/25/1976|6-11|260
+San Antonio Spurs|Michael Finley|03/06/1973|6-7|225
+San Antonio Spurs|Manu Ginobili|07/28/1977|6-6|205
+San Antonio Spurs|Drew Gooden|09/24/1981|6-10|250
+San Antonio Spurs|George Hill|05/04/1986|6-2|180
+San Antonio Spurs|Ian Mahinmi|11/05/1986|6-11|230
+San Antonio Spurs|Roger Mason|09/10/1980|6-5|212
+San Antonio Spurs|Fabricio Oberto|03/21/1975|6-10|245
+San Antonio Spurs|Tony Parker|05/17/1982|6-2|180
+San Antonio Spurs|Kurt Thomas|10/04/1972|6-9|235
+San Antonio Spurs|Ime Udoka|08/09/1977|6-5|220
+San Antonio Spurs|Jacque Vaughn|02/11/1975|6-1|190
+San Antonio Spurs|Marcus Williams|11/18/1986|6-7|207
+Chicago Bulls|Luol Deng|04/16/1985|6-9|220
+Chicago Bulls|Ben Gordon|04/04/1983|6-3|200
+Chicago Bulls|Aaron Gray|12/07/1984|7-0|270
+Chicago Bulls|Kirk Hinrich|01/02/1981|6-3|190
+Chicago Bulls|Lindsey Hunter|12/03/1970|6-2|195
+Chicago Bulls|Jerome James|11/17/1975|7-1|285
+Chicago Bulls|Linton Johnson|205|F|6-8
+Chicago Bulls|Brad Miller|04/12/1976|7-0|261
+Chicago Bulls|DeMarcus Nelson|11/02/1985|6-4|200
+Chicago Bulls|Joakim Noah|02/25/1985|6-11|232
+Chicago Bulls|Anthony Roberson|02/14/1983|6-2|180
+Chicago Bulls|Derrick Rose|10/04/1988|6-3|190
+Chicago Bulls|John Salmons|12/12/1979|6-6|207
+Chicago Bulls|Tim Thomas|02/26/1977|6-10|240
+Chicago Bulls|Tyrus Thomas|08/17/1986|6-9|215
+Denver Nuggets|Chris Andersen|07/07/1978|6-10|228
+Denver Nuggets|Carmelo Anthony|05/29/1984|6-8|230
+Denver Nuggets|Renaldo Balkman|07/14/1984|6-8|208
+Denver Nuggets|Chauncey Billups|09/25/1976|6-3|202
+Denver Nuggets|Anthony Carter|06/16/1975|6-2|195
+Denver Nuggets|Jason Hart|04/29/1978|6-3|180
+Denver Nuggets|Steven Hunter|10/31/1981|7-0|240
+Denver Nuggets|Dahntay Jones|12/27/1980|6-6|210
+Denver Nuggets|Linas Kleiza|01/03/1985|6-8|245
+Denver Nuggets|Kenyon Martin|12/30/1977|6-9|240
+Denver Nuggets|Nene Nene|09/13/1982|6-11|250
+Denver Nuggets|Johan Petro|01/27/1986|7-0|247
+Denver Nuggets|JR Smith|09/09/1985|6-6|220
+Denver Nuggets|Sonny Weems|07/08/1986|6-6|203
+Minnesota Timberwolves|Corey Brewer|03/05/1986|6-9|188
+Minnesota Timberwolves|Bobby Brown|09/24/1984|6-2|175
+Minnesota Timberwolves|Brian Cardinal|05/02/1977|6-8|240
+Minnesota Timberwolves|Rodney Carney|04/05/1984|6-7|201
+Minnesota Timberwolves|Jason Collins|12/02/1978|7-0|255
+Minnesota Timberwolves|Randy Foye|09/24/1983|6-4|213
+Minnesota Timberwolves|Ryan Gomes|09/01/1982|6-7|245
+Minnesota Timberwolves|Al Jefferson|01/04/1985|6-10|265
+Minnesota Timberwolves|Kevin Love|09/07/1988|6-10|260
+Minnesota Timberwolves|Mark Madsen|01/28/1976|6-9|255
+Minnesota Timberwolves|Mike Miller|02/19/1980|6-8|218
+Minnesota Timberwolves|Kevin Ollie|12/27/1972|6-2|195
+Minnesota Timberwolves|Craig Smith|11/10/1983|6-7|250
+Minnesota Timberwolves|Sebastian Telfair|06/09/1985|6-0|175
+Minnesota Timberwolves|Shelden Williams|10/21/1983|6-9|250
+Detroit Pistons|Arron Afflalo|10/15/1985|6-5|215
+Detroit Pistons|Kwame Brown|03/10/1982|6-11|270
+Detroit Pistons|Will Bynum|01/04/1983|6-0|185
+Detroit Pistons|Richard Hamilton|02/14/1978|6-7|193
+Detroit Pistons|Walter Herrmann|06/26/1979|6-9|225
+Detroit Pistons|Allen Iverson|06/07/1975|6-0|180
+Detroit Pistons|Amir Johnson|05/01/1987|6-9|210
+Detroit Pistons|Jason Maxiell|02/18/1983|6-7|260
+Detroit Pistons|Antonio McDyess|09/07/1974|6-9|245
+Detroit Pistons|Tayshaun Prince|02/28/1980|6-9|215
+Detroit Pistons|Walter Sharpe|07/18/1986|6-9|245
+Detroit Pistons|Rodney Stuckey|04/21/1986|6-5|205
+Detroit Pistons|Rasheed Wallace|09/17/1974|6-11|230
+Portland Trail Blazers|LaMarcus Aldridge|07/19/1985|6-11|240
+Portland Trail Blazers|Nicolas Batum|12/14/1988|6-8|200
+Portland Trail Blazers|Jerryd Bayless|08/20/1988|6-3|200
+Portland Trail Blazers|Steve Blake|02/26/1980|6-3|172
+Portland Trail Blazers|Rudy Fernandez|04/04/1985|6-6|185
+Portland Trail Blazers|Channing Frye|05/17/1983|6-11|245
+Portland Trail Blazers|Raef LaFrentz|05/29/1976|6-11|240
+Portland Trail Blazers|Greg Oden|01/22/1988|7-0|285
+Portland Trail Blazers|Travis Outlaw|09/18/1984|6-9|207
+Portland Trail Blazers|Joel Przybilla|10/10/1979|7-1|245
+Portland Trail Blazers|Shavlik Randolph|11/24/1983|6-10|240
+Portland Trail Blazers|Sergio Rodriguez|06/12/1986|6-3|176
+Portland Trail Blazers|Brandon Roy|07/23/1984|6-6|211
+Portland Trail Blazers|Michael Ruffin|01/21/1977|6-8|248
+Portland Trail Blazers|Martell Webster|12/04/1986|6-7|235
+Indiana Pacers|Maceo Baston|05/26/1976|6-10|230
+Indiana Pacers|Marquis Daniels|01/07/1981|6-6|200
+Indiana Pacers|Travis Diener|03/01/1982|6-1|175
+Indiana Pacers|Mike Dunleavy|09/15/1980|6-9|230
+Indiana Pacers|T.J. Ford|03/24/1983|6-0|165
+Indiana Pacers|Jeff Foster|01/16/1977|6-11|250
+Indiana Pacers|Stephen Graham|06/11/1982|6-6|215
+Indiana Pacers|Danny Granger|04/20/1983|6-8|228
+Indiana Pacers|Roy Hibbert|12/11/1986|7-2|278
+Indiana Pacers|Jarrett Jack|10/28/1983|6-3|197
+Indiana Pacers|Josh McRoberts|02/28/1987|6-10|240
+Indiana Pacers|Troy Murphy|05/02/1980|6-11|245
+Indiana Pacers|Rasho Nesterovic|05/30/1976|7-0|255
+Indiana Pacers|Brandon Rush|07/07/1985|6-6|210
+Indiana Pacers|Jamaal Tinsley|02/28/1978|6-3|185

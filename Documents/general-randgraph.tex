@@ -1,0 +1,75 @@
+\chapter{Queries in General Random Graph Experiments} 
+\label{app:general-randgraph}
+
+\begin{verbatim}
+
+drop table data0;
+drop table data;
+
+create table data0(u int, v int);
+create table data(u int, v int);
+
+/* Copy the data to a relation. */
+copy data0 
+from 'path_of_the_data_file/www.dat' with delimiter as ' ';
+
+/* Since the data represents a directed graph, we need to 
+   insert all tuples again with u and v swapped. 
+*/
+insert into data0
+select v, u from data0;
+
+/* This fetches the distinct pairs of (u,v), which represents 
+   all edges of an undirected graph.  
+*/
+insert into data
+select distinct u, v from data0;
+
+drop table edges;
+drop table edge0;
+
+create table edges (u integer, v integer, p float4);
+
+/* This fetches all the edges related to the nodes we intend to 
+   keep in the graph. 
+   '1000' in 'u < 1000  and v < 1000' is the number of nodes 
+   which will appear in the graph. 
+   '0.01' in 'random() < 0.01' is the proportion of certainly 
+   present edges in all edges.
+   '0.1' is the upper bound of the probability that a possibly 
+   present edge is in the graph.
+   You may change the above-mentioned three parameters in the
+   experiments.
+ */
+insert into edges
+	select u, v,
+   	CASE WHEN random() < 0.01 THEN 1.0  
+         ELSE random() * 0.1           
+         END	      
+    from data
+    where u < 1000  and v < 1000 and u < v; 
+
+/* The number of edges in the graph */
+select count(*) as edge_count from edges;
+
+/* The number of clauses in the confidence computation */	
+select count(*) as clause_count from 
+edges e1, edges e2, edges e3 
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u 
+		and e1.u < e2.u and e2.u < e3.v;
+	
+/* Creation of an uncertain relations representing the graph */	
+create table edge0 as 
+(pick tuples from edges independently with probability p);
+	
+/* Confidence computation of existence of at least 
+   a triangle in the graph  
+*/		
+select aconf(.05,.05) as triangle_prob 
+from edge0 e1, edge0 e2, edge0 e3 
+where  e1.v = e2.u and e2.v = e3.v and e1.u = e3.u 
+		and e1.u < e2.u and e2.u < e3.v;
+
+\end{verbatim}
+\newpage
+

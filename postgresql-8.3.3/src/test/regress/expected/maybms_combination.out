@@ -1,0 +1,147 @@
+--test of combination of maybms constructs
+create table r(a int, b int);
+insert into r values(1,2), (1,3), (2,4);
+create table s as
+repair key a in r;
+select * from s;
+ a | b | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 2 |   1 |   3 | 0.5
+ 1 | 3 |   1 |   2 | 0.5
+ 2 | 4 |   2 |   1 |   1
+(3 rows)
+
+--output an error message for aconf without parameters
+select aconf() from s;
+ERROR:  aconf takes two parameters
+--output an error message for esum and ecount without parameters
+select a, esum() from s group by a;
+ERROR:  Number of arguments for esum is not correct
+--combination of repair-key and confidence computation operators
+repair key p in (select a, conf() as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 1 |   3 |   5 | 0.5
+ 2 | 1 |   3 |   4 | 0.5
+(2 rows)
+
+repair key p in (select a, esum(b) as p from s group by a);
+ a |  p  | _v0 | _d0 | _p0 
+---+-----+-----+-----+-----
+ 1 | 2.5 |   5 |   7 |   1
+ 2 |   4 |   4 |   6 |   1
+(2 rows)
+
+repair key p in (select a, ecount(b) as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 1 |   6 |   9 | 0.5
+ 2 | 1 |   6 |   8 | 0.5
+(2 rows)
+
+repair key p in (select tconf() as p from s);
+  p  | _v0 | _d0 | _p0 
+-----+-----+-----+-----
+ 0.5 |   7 |  11 |   1
+ 0.5 |   7 |  11 |   1
+   1 |   8 |  10 |   1
+(3 rows)
+
+repair key p in (select aconf(0.1,0.1) as p from s);
+    p    | _v0 | _d0 | _p0 
+---------+-----+-----+-----
+ 1.00164 |   9 |  12 |   1
+(1 row)
+
+repair key p in (select a, conf() as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 1 |  10 |  14 | 0.5
+ 2 | 1 |  10 |  13 | 0.5
+(2 rows)
+
+--combination of pick-tuples and confidence computation operators
+pick tuples from (select a, conf() as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 1 |  11 |   1 | 0.5
+ 2 | 1 |  12 |   1 | 0.5
+(2 rows)
+
+pick tuples from (select a, esum(b) as p from s group by a);
+ a |  p  | _v0 | _d0 | _p0 
+---+-----+-----+-----+-----
+ 2 |   4 |  13 |   1 | 0.5
+ 1 | 2.5 |  14 |   1 | 0.5
+(2 rows)
+
+pick tuples from (select a, ecount(b) as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 2 | 1 |  15 |   1 | 0.5
+ 1 | 1 |  16 |   1 | 0.5
+(2 rows)
+
+pick tuples from (select tconf() as p from s);
+  p  | _v0 | _d0 | _p0 
+-----+-----+-----+-----
+ 0.5 |  17 |   1 | 0.5
+ 0.5 |  18 |   1 | 0.5
+   1 |  19 |   1 | 0.5
+(3 rows)
+
+pick tuples from (select aconf(0.1,0.1) as p from s);
+    p    | _v0 | _d0 | _p0 
+---------+-----+-----+-----
+ 1.00164 |  20 |   1 | 0.5
+(1 row)
+
+pick tuples from (select a, conf() as p from s group by a);
+ a | p | _v0 | _d0 | _p0 
+---+---+-----+-----+-----
+ 1 | 1 |  21 |   1 | 0.5
+ 2 | 1 |  22 |   1 | 0.5
+(2 rows)
+
+--combination of possible and confidence computation operators
+select possible a, conf() as p from s group by a;
+ERROR:  Query not supported: no confidence computation functions allowed with possible.
+select possible a, esum(b) as p from s group by a;
+ERROR:  Query not supported: no confidence computation functions allowed with possible.
+select possible a, ecount(b) as p from s group by a;
+ERROR:  Query not supported: no confidence computation functions allowed with possible.
+select possible tconf() as p from s;
+ERROR:  Query not supported: no confidence computation functions allowed with possible.
+select possible a, aconf() as p from s group by a;
+ERROR:  Query not supported: no confidence computation functions allowed with possible.
+--combination of repair-key and possible
+repair key a in (select possible a from r);
+ a | _v0 | _d0 | _p0 
+---+-----+-----+-----
+ 1 |  23 |  15 |   1
+ 2 |  24 |  16 |   1
+(2 rows)
+
+--combination of pick-tuples and possible
+pick tuples from (select possible a from r);
+ a | _v0 | _d0 | _p0 
+---+-----+-----+-----
+ 1 |  25 |   1 | 0.5
+ 1 |  26 |   1 | 0.5
+ 2 |  27 |   1 | 0.5
+(3 rows)
+
+--combination of repair-key and repair-key
+repair key a in (repair key a in r);
+ERROR:  Query not supported:repair key not supported on uncertain relations
+--combination of repair-key and repair-key
+pick tuples from (pick tuples from r);
+ERROR:  Query not supported:pick tuples not supported on uncertain relations
+--combination of repair-key and pick-tuples
+pick tuples from (repair key a in r);
+ERROR:  Query not supported: REPAIR KEY and PICK TUPLES not supported on uncertain relations.
+--combination of repair-key and pick-tuples
+repair key a in (pick tuples from r);
+ERROR:  Query not supported: REPAIR KEY and PICK TUPLES not supported on uncertain relations.
+drop table r;
+drop table s;

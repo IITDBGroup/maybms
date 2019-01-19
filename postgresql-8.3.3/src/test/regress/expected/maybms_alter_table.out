@@ -1,0 +1,15 @@
+--test for altering uncertain table
+create table s(a int, b int);
+create table r as repair key a in s;
+alter table r add column c int;
+ERROR:  Query not supported: ALTER TABLE not supported on uncertain relations.
+alter table r drop column a;
+ERROR:  Query not supported: ALTER TABLE not supported on uncertain relations.
+alter table r drop column _v0;
+ERROR:  Query not supported: ALTER TABLE not supported on uncertain relations.
+alter table r drop column _d0;
+ERROR:  Query not supported: ALTER TABLE not supported on uncertain relations.
+alter table r drop column _p0;
+ERROR:  Query not supported: ALTER TABLE not supported on uncertain relations.
+drop table r;
+drop table s;

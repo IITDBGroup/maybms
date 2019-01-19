@@ -1,0 +1,3456 @@
+Kobe Bryant|N|Fit for Match|Fit for Match|1
+Kobe Bryant|N|Fit for Match|Seriously Injured|0
+Kobe Bryant|N|Fit for Match|Slightly Injured|0
+Kobe Bryant|N|Seriously Injured|Fit for Match|.06
+Kobe Bryant|N|Seriously Injured|Seriously Injured|.36
+Kobe Bryant|N|Seriously Injured|Slightly Injured|.58
+Kobe Bryant|N|Slightly Injured|Fit for Match|.34
+Kobe Bryant|N|Slightly Injured|Seriously Injured|0
+Kobe Bryant|N|Slightly Injured|Slightly Injured|.66
+Kobe Bryant|Y|Fit for Match|Seriously Injured|.01
+Kobe Bryant|Y|Fit for Match|Slightly Injured|.19
+Kobe Bryant|Y|Fit for Match|Fit for Match|.80
+Kobe Bryant|Y|Seriously Injured|Fit for Match|0
+Kobe Bryant|Y|Seriously Injured|Seriously Injured|1
+Kobe Bryant|Y|Seriously Injured|Slightly Injured|0
+Kobe Bryant|Y|Slightly Injured|Fit for Match|0
+Kobe Bryant|Y|Slightly Injured|Seriously Injured|.08
+Kobe Bryant|Y|Slightly Injured|Slightly Injured|.92
+Pau Gasol|N|Fit for Match|Fit for Match|1
+Pau Gasol|N|Fit for Match|Seriously Injured|0
+Pau Gasol|N|Fit for Match|Slightly Injured|0
+Pau Gasol|N|Seriously Injured|Fit for Match|.07
+Pau Gasol|N|Seriously Injured|Seriously Injured|.45
+Pau Gasol|N|Seriously Injured|Slightly Injured|.48
+Pau Gasol|N|Slightly Injured|Fit for Match|.40
+Pau Gasol|N|Slightly Injured|Seriously Injured|0
+Pau Gasol|N|Slightly Injured|Slightly Injured|.60
+Pau Gasol|Y|Fit for Match|Seriously Injured|.05
+Pau Gasol|Y|Fit for Match|Slightly Injured|.11
+Pau Gasol|Y|Fit for Match|Fit for Match|.84
+Pau Gasol|Y|Seriously Injured|Fit for Match|0
+Pau Gasol|Y|Seriously Injured|Seriously Injured|1
+Pau Gasol|Y|Seriously Injured|Slightly Injured|0
+Pau Gasol|Y|Slightly Injured|Fit for Match|0
+Pau Gasol|Y|Slightly Injured|Seriously Injured|.07
+Pau Gasol|Y|Slightly Injured|Slightly Injured|.93
+Andrew Bynum|N|Fit for Match|Fit for Match|1
+Andrew Bynum|N|Fit for Match|Seriously Injured|0
+Andrew Bynum|N|Fit for Match|Slightly Injured|0
+Andrew Bynum|N|Seriously Injured|Fit for Match|.02
+Andrew Bynum|N|Seriously Injured|Seriously Injured|.18
+Andrew Bynum|N|Seriously Injured|Slightly Injured|.80
+Andrew Bynum|N|Slightly Injured|Fit for Match|.50
+Andrew Bynum|N|Slightly Injured|Seriously Injured|0
+Andrew Bynum|N|Slightly Injured|Slightly Injured|.50
+Andrew Bynum|Y|Fit for Match|Seriously Injured|.03
+Andrew Bynum|Y|Fit for Match|Slightly Injured|.08
+Andrew Bynum|Y|Fit for Match|Fit for Match|.89
+Andrew Bynum|Y|Seriously Injured|Fit for Match|0
+Andrew Bynum|Y|Seriously Injured|Seriously Injured|1
+Andrew Bynum|Y|Seriously Injured|Slightly Injured|0
+Andrew Bynum|Y|Slightly Injured|Fit for Match|0
+Andrew Bynum|Y|Slightly Injured|Seriously Injured|.20
+Andrew Bynum|Y|Slightly Injured|Slightly Injured|.80
+Lamar Odom|N|Fit for Match|Fit for Match|1
+Lamar Odom|N|Fit for Match|Seriously Injured|0
+Lamar Odom|N|Fit for Match|Slightly Injured|0
+Lamar Odom|N|Seriously Injured|Fit for Match|.08
+Lamar Odom|N|Seriously Injured|Seriously Injured|.29
+Lamar Odom|N|Seriously Injured|Slightly Injured|.63
+Lamar Odom|N|Slightly Injured|Fit for Match|.38
+Lamar Odom|N|Slightly Injured|Seriously Injured|0
+Lamar Odom|N|Slightly Injured|Slightly Injured|.62
+Lamar Odom|Y|Fit for Match|Seriously Injured|.01
+Lamar Odom|Y|Fit for Match|Slightly Injured|.15
+Lamar Odom|Y|Fit for Match|Fit for Match|.84
+Lamar Odom|Y|Seriously Injured|Fit for Match|0
+Lamar Odom|Y|Seriously Injured|Seriously Injured|1
+Lamar Odom|Y|Seriously Injured|Slightly Injured|0
+Lamar Odom|Y|Slightly Injured|Fit for Match|0
+Lamar Odom|Y|Slightly Injured|Seriously Injured|.27
+Lamar Odom|Y|Slightly Injured|Slightly Injured|.73
+Derek Fisher|N|Fit for Match|Fit for Match|1
+Derek Fisher|N|Fit for Match|Seriously Injured|0
+Derek Fisher|N|Fit for Match|Slightly Injured|0
+Derek Fisher|N|Seriously Injured|Fit for Match|.10
+Derek Fisher|N|Seriously Injured|Seriously Injured|.37
+Derek Fisher|N|Seriously Injured|Slightly Injured|.53
+Derek Fisher|N|Slightly Injured|Fit for Match|.43
+Derek Fisher|N|Slightly Injured|Seriously Injured|0
+Derek Fisher|N|Slightly Injured|Slightly Injured|.57
+Derek Fisher|Y|Fit for Match|Seriously Injured|.05
+Derek Fisher|Y|Fit for Match|Slightly Injured|.13
+Derek Fisher|Y|Fit for Match|Fit for Match|.82
+Derek Fisher|Y|Seriously Injured|Fit for Match|0
+Derek Fisher|Y|Seriously Injured|Seriously Injured|1
+Derek Fisher|Y|Seriously Injured|Slightly Injured|0
+Derek Fisher|Y|Slightly Injured|Fit for Match|0
+Derek Fisher|Y|Slightly Injured|Seriously Injured|.02
+Derek Fisher|Y|Slightly Injured|Slightly Injured|.98
+Trevor Ariza|N|Fit for Match|Fit for Match|1
+Trevor Ariza|N|Fit for Match|Seriously Injured|0
+Trevor Ariza|N|Fit for Match|Slightly Injured|0
+Trevor Ariza|N|Seriously Injured|Fit for Match|.05
+Trevor Ariza|N|Seriously Injured|Seriously Injured|.03
+Trevor Ariza|N|Seriously Injured|Slightly Injured|.92
+Trevor Ariza|N|Slightly Injured|Fit for Match|.60
+Trevor Ariza|N|Slightly Injured|Seriously Injured|0
+Trevor Ariza|N|Slightly Injured|Slightly Injured|.40
+Trevor Ariza|Y|Fit for Match|Seriously Injured|.05
+Trevor Ariza|Y|Fit for Match|Slightly Injured|.18
+Trevor Ariza|Y|Fit for Match|Fit for Match|.77
+Trevor Ariza|Y|Seriously Injured|Fit for Match|0
+Trevor Ariza|Y|Seriously Injured|Seriously Injured|1
+Trevor Ariza|Y|Seriously Injured|Slightly Injured|0
+Trevor Ariza|Y|Slightly Injured|Fit for Match|0
+Trevor Ariza|Y|Slightly Injured|Seriously Injured|.30
+Trevor Ariza|Y|Slightly Injured|Slightly Injured|.70
+Jordan Farmar|N|Fit for Match|Fit for Match|1
+Jordan Farmar|N|Fit for Match|Seriously Injured|0
+Jordan Farmar|N|Fit for Match|Slightly Injured|0
+Jordan Farmar|N|Seriously Injured|Fit for Match|.10
+Jordan Farmar|N|Seriously Injured|Seriously Injured|.05
+Jordan Farmar|N|Seriously Injured|Slightly Injured|.85
+Jordan Farmar|N|Slightly Injured|Fit for Match|.45
+Jordan Farmar|N|Slightly Injured|Seriously Injured|0
+Jordan Farmar|N|Slightly Injured|Slightly Injured|.55
+Jordan Farmar|Y|Fit for Match|Seriously Injured|.03
+Jordan Farmar|Y|Fit for Match|Slightly Injured|.16
+Jordan Farmar|Y|Fit for Match|Fit for Match|.81
+Jordan Farmar|Y|Seriously Injured|Fit for Match|0
+Jordan Farmar|Y|Seriously Injured|Seriously Injured|1
+Jordan Farmar|Y|Seriously Injured|Slightly Injured|0
+Jordan Farmar|Y|Slightly Injured|Fit for Match|0
+Jordan Farmar|Y|Slightly Injured|Seriously Injured|.21
+Jordan Farmar|Y|Slightly Injured|Slightly Injured|.79
+Sasha Vujacic|N|Fit for Match|Fit for Match|1
+Sasha Vujacic|N|Fit for Match|Seriously Injured|0
+Sasha Vujacic|N|Fit for Match|Slightly Injured|0
+Sasha Vujacic|N|Seriously Injured|Fit for Match|.03
+Sasha Vujacic|N|Seriously Injured|Seriously Injured|.45
+Sasha Vujacic|N|Seriously Injured|Slightly Injured|.52
+Sasha Vujacic|N|Slightly Injured|Fit for Match|.66
+Sasha Vujacic|N|Slightly Injured|Seriously Injured|0
+Sasha Vujacic|N|Slightly Injured|Slightly Injured|.34
+Sasha Vujacic|Y|Fit for Match|Seriously Injured|.05
+Sasha Vujacic|Y|Fit for Match|Slightly Injured|.11
+Sasha Vujacic|Y|Fit for Match|Fit for Match|.84
+Sasha Vujacic|Y|Seriously Injured|Fit for Match|0
+Sasha Vujacic|Y|Seriously Injured|Seriously Injured|1
+Sasha Vujacic|Y|Seriously Injured|Slightly Injured|0
+Sasha Vujacic|Y|Slightly Injured|Fit for Match|0
+Sasha Vujacic|Y|Slightly Injured|Seriously Injured|.30
+Sasha Vujacic|Y|Slightly Injured|Slightly Injured|.70
+Luke Walton|N|Fit for Match|Fit for Match|1
+Luke Walton|N|Fit for Match|Seriously Injured|0
+Luke Walton|N|Fit for Match|Slightly Injured|0
+Luke Walton|N|Seriously Injured|Fit for Match|.02
+Luke Walton|N|Seriously Injured|Seriously Injured|.50
+Luke Walton|N|Seriously Injured|Slightly Injured|.48
+Luke Walton|N|Slightly Injured|Fit for Match|.27
+Luke Walton|N|Slightly Injured|Seriously Injured|0
+Luke Walton|N|Slightly Injured|Slightly Injured|.73
+Luke Walton|Y|Fit for Match|Seriously Injured|.01
+Luke Walton|Y|Fit for Match|Slightly Injured|.12
+Luke Walton|Y|Fit for Match|Fit for Match|.87
+Luke Walton|Y|Seriously Injured|Fit for Match|0
+Luke Walton|Y|Seriously Injured|Seriously Injured|1
+Luke Walton|Y|Seriously Injured|Slightly Injured|0
+Luke Walton|Y|Slightly Injured|Fit for Match|0
+Luke Walton|Y|Slightly Injured|Seriously Injured|.06
+Luke Walton|Y|Slightly Injured|Slightly Injured|.94
+Josh Powell|N|Fit for Match|Fit for Match|1
+Josh Powell|N|Fit for Match|Seriously Injured|0
+Josh Powell|N|Fit for Match|Slightly Injured|0
+Josh Powell|N|Seriously Injured|Fit for Match|.06
+Josh Powell|N|Seriously Injured|Seriously Injured|.38
+Josh Powell|N|Seriously Injured|Slightly Injured|.56
+Josh Powell|N|Slightly Injured|Fit for Match|.21
+Josh Powell|N|Slightly Injured|Seriously Injured|0
+Josh Powell|N|Slightly Injured|Slightly Injured|.79
+Josh Powell|Y|Fit for Match|Seriously Injured|.04
+Josh Powell|Y|Fit for Match|Slightly Injured|.19
+Josh Powell|Y|Fit for Match|Fit for Match|.77
+Josh Powell|Y|Seriously Injured|Fit for Match|0
+Josh Powell|Y|Seriously Injured|Seriously Injured|1
+Josh Powell|Y|Seriously Injured|Slightly Injured|0
+Josh Powell|Y|Slightly Injured|Fit for Match|0
+Josh Powell|Y|Slightly Injured|Seriously Injured|.07
+Josh Powell|Y|Slightly Injured|Slightly Injured|.93
+Shannon Brown|N|Fit for Match|Fit for Match|1
+Shannon Brown|N|Fit for Match|Seriously Injured|0
+Shannon Brown|N|Fit for Match|Slightly Injured|0
+Shannon Brown|N|Seriously Injured|Fit for Match|.10
+Shannon Brown|N|Seriously Injured|Seriously Injured|.26
+Shannon Brown|N|Seriously Injured|Slightly Injured|.64
+Shannon Brown|N|Slightly Injured|Fit for Match|.59
+Shannon Brown|N|Slightly Injured|Seriously Injured|0
+Shannon Brown|N|Slightly Injured|Slightly Injured|.41
+Shannon Brown|Y|Fit for Match|Seriously Injured|.04
+Shannon Brown|Y|Fit for Match|Slightly Injured|.06
+Shannon Brown|Y|Fit for Match|Fit for Match|.90
+Shannon Brown|Y|Seriously Injured|Fit for Match|0
+Shannon Brown|Y|Seriously Injured|Seriously Injured|1
+Shannon Brown|Y|Seriously Injured|Slightly Injured|0
+Shannon Brown|Y|Slightly Injured|Fit for Match|0
+Shannon Brown|Y|Slightly Injured|Seriously Injured|.05
+Shannon Brown|Y|Slightly Injured|Slightly Injured|.95
+Didier Ilunga-Mbenga|N|Fit for Match|Fit for Match|1
+Didier Ilunga-Mbenga|N|Fit for Match|Seriously Injured|0
+Didier Ilunga-Mbenga|N|Fit for Match|Slightly Injured|0
+Didier Ilunga-Mbenga|N|Seriously Injured|Fit for Match|.09
+Didier Ilunga-Mbenga|N|Seriously Injured|Seriously Injured|.01
+Didier Ilunga-Mbenga|N|Seriously Injured|Slightly Injured|.90
+Didier Ilunga-Mbenga|N|Slightly Injured|Fit for Match|.29
+Didier Ilunga-Mbenga|N|Slightly Injured|Seriously Injured|0
+Didier Ilunga-Mbenga|N|Slightly Injured|Slightly Injured|.71
+Didier Ilunga-Mbenga|Y|Fit for Match|Seriously Injured|.05
+Didier Ilunga-Mbenga|Y|Fit for Match|Slightly Injured|.15
+Didier Ilunga-Mbenga|Y|Fit for Match|Fit for Match|.80
+Didier Ilunga-Mbenga|Y|Seriously Injured|Fit for Match|0
+Didier Ilunga-Mbenga|Y|Seriously Injured|Seriously Injured|1
+Didier Ilunga-Mbenga|Y|Seriously Injured|Slightly Injured|0
+Didier Ilunga-Mbenga|Y|Slightly Injured|Fit for Match|0
+Didier Ilunga-Mbenga|Y|Slightly Injured|Seriously Injured|.02
+Didier Ilunga-Mbenga|Y|Slightly Injured|Slightly Injured|.98
+Paul Pierce|N|Fit for Match|Fit for Match|1
+Paul Pierce|N|Fit for Match|Seriously Injured|0
+Paul Pierce|N|Fit for Match|Slightly Injured|0
+Paul Pierce|N|Seriously Injured|Fit for Match|.08
+Paul Pierce|N|Seriously Injured|Seriously Injured|.27
+Paul Pierce|N|Seriously Injured|Slightly Injured|.65
+Paul Pierce|N|Slightly Injured|Fit for Match|.40
+Paul Pierce|N|Slightly Injured|Seriously Injured|0
+Paul Pierce|N|Slightly Injured|Slightly Injured|.60
+Paul Pierce|Y|Fit for Match|Seriously Injured|.04
+Paul Pierce|Y|Fit for Match|Slightly Injured|.06
+Paul Pierce|Y|Fit for Match|Fit for Match|.90
+Paul Pierce|Y|Seriously Injured|Fit for Match|0
+Paul Pierce|Y|Seriously Injured|Seriously Injured|1
+Paul Pierce|Y|Seriously Injured|Slightly Injured|0
+Paul Pierce|Y|Slightly Injured|Fit for Match|0
+Paul Pierce|Y|Slightly Injured|Seriously Injured|.30
+Paul Pierce|Y|Slightly Injured|Slightly Injured|.70
+Ray Allen|N|Fit for Match|Fit for Match|1
+Ray Allen|N|Fit for Match|Seriously Injured|0
+Ray Allen|N|Fit for Match|Slightly Injured|0
+Ray Allen|N|Seriously Injured|Fit for Match|.08
+Ray Allen|N|Seriously Injured|Seriously Injured|.06
+Ray Allen|N|Seriously Injured|Slightly Injured|.86
+Ray Allen|N|Slightly Injured|Fit for Match|.63
+Ray Allen|N|Slightly Injured|Seriously Injured|0
+Ray Allen|N|Slightly Injured|Slightly Injured|.37
+Ray Allen|Y|Fit for Match|Seriously Injured|.02
+Ray Allen|Y|Fit for Match|Slightly Injured|.14
+Ray Allen|Y|Fit for Match|Fit for Match|.84
+Ray Allen|Y|Seriously Injured|Fit for Match|0
+Ray Allen|Y|Seriously Injured|Seriously Injured|1
+Ray Allen|Y|Seriously Injured|Slightly Injured|0
+Ray Allen|Y|Slightly Injured|Fit for Match|0
+Ray Allen|Y|Slightly Injured|Seriously Injured|.16
+Ray Allen|Y|Slightly Injured|Slightly Injured|.84
+Kevin Garnett|N|Fit for Match|Fit for Match|1
+Kevin Garnett|N|Fit for Match|Seriously Injured|0
+Kevin Garnett|N|Fit for Match|Slightly Injured|0
+Kevin Garnett|N|Seriously Injured|Fit for Match|.05
+Kevin Garnett|N|Seriously Injured|Seriously Injured|.33
+Kevin Garnett|N|Seriously Injured|Slightly Injured|.62
+Kevin Garnett|N|Slightly Injured|Fit for Match|.56
+Kevin Garnett|N|Slightly Injured|Seriously Injured|0
+Kevin Garnett|N|Slightly Injured|Slightly Injured|.44
+Kevin Garnett|Y|Fit for Match|Seriously Injured|.03
+Kevin Garnett|Y|Fit for Match|Slightly Injured|.06
+Kevin Garnett|Y|Fit for Match|Fit for Match|.91
+Kevin Garnett|Y|Seriously Injured|Fit for Match|0
+Kevin Garnett|Y|Seriously Injured|Seriously Injured|1
+Kevin Garnett|Y|Seriously Injured|Slightly Injured|0
+Kevin Garnett|Y|Slightly Injured|Fit for Match|0
+Kevin Garnett|Y|Slightly Injured|Seriously Injured|.15
+Kevin Garnett|Y|Slightly Injured|Slightly Injured|.85
+Rajon Rondo|N|Fit for Match|Fit for Match|1
+Rajon Rondo|N|Fit for Match|Seriously Injured|0
+Rajon Rondo|N|Fit for Match|Slightly Injured|0
+Rajon Rondo|N|Seriously Injured|Fit for Match|.04
+Rajon Rondo|N|Seriously Injured|Seriously Injured|.30
+Rajon Rondo|N|Seriously Injured|Slightly Injured|.66
+Rajon Rondo|N|Slightly Injured|Fit for Match|.60
+Rajon Rondo|N|Slightly Injured|Seriously Injured|0
+Rajon Rondo|N|Slightly Injured|Slightly Injured|.40
+Rajon Rondo|Y|Fit for Match|Seriously Injured|.02
+Rajon Rondo|Y|Fit for Match|Slightly Injured|.07
+Rajon Rondo|Y|Fit for Match|Fit for Match|.91
+Rajon Rondo|Y|Seriously Injured|Fit for Match|0
+Rajon Rondo|Y|Seriously Injured|Seriously Injured|1
+Rajon Rondo|Y|Seriously Injured|Slightly Injured|0
+Rajon Rondo|Y|Slightly Injured|Fit for Match|0
+Rajon Rondo|Y|Slightly Injured|Seriously Injured|.06
+Rajon Rondo|Y|Slightly Injured|Slightly Injured|.94
+Eddie House|N|Fit for Match|Fit for Match|1
+Eddie House|N|Fit for Match|Seriously Injured|0
+Eddie House|N|Fit for Match|Slightly Injured|0
+Eddie House|N|Seriously Injured|Fit for Match|.07
+Eddie House|N|Seriously Injured|Seriously Injured|.04
+Eddie House|N|Seriously Injured|Slightly Injured|.89
+Eddie House|N|Slightly Injured|Fit for Match|.31
+Eddie House|N|Slightly Injured|Seriously Injured|0
+Eddie House|N|Slightly Injured|Slightly Injured|.69
+Eddie House|Y|Fit for Match|Seriously Injured|.03
+Eddie House|Y|Fit for Match|Slightly Injured|.06
+Eddie House|Y|Fit for Match|Fit for Match|.91
+Eddie House|Y|Seriously Injured|Fit for Match|0
+Eddie House|Y|Seriously Injured|Seriously Injured|1
+Eddie House|Y|Seriously Injured|Slightly Injured|0
+Eddie House|Y|Slightly Injured|Fit for Match|0
+Eddie House|Y|Slightly Injured|Seriously Injured|.19
+Eddie House|Y|Slightly Injured|Slightly Injured|.81
+Kendrick Perkins|N|Fit for Match|Fit for Match|1
+Kendrick Perkins|N|Fit for Match|Seriously Injured|0
+Kendrick Perkins|N|Fit for Match|Slightly Injured|0
+Kendrick Perkins|N|Seriously Injured|Fit for Match|.09
+Kendrick Perkins|N|Seriously Injured|Seriously Injured|.10
+Kendrick Perkins|N|Seriously Injured|Slightly Injured|.81
+Kendrick Perkins|N|Slightly Injured|Fit for Match|.57
+Kendrick Perkins|N|Slightly Injured|Seriously Injured|0
+Kendrick Perkins|N|Slightly Injured|Slightly Injured|.43
+Kendrick Perkins|Y|Fit for Match|Seriously Injured|.03
+Kendrick Perkins|Y|Fit for Match|Slightly Injured|.14
+Kendrick Perkins|Y|Fit for Match|Fit for Match|.83
+Kendrick Perkins|Y|Seriously Injured|Fit for Match|0
+Kendrick Perkins|Y|Seriously Injured|Seriously Injured|1
+Kendrick Perkins|Y|Seriously Injured|Slightly Injured|0
+Kendrick Perkins|Y|Slightly Injured|Fit for Match|0
+Kendrick Perkins|Y|Slightly Injured|Seriously Injured|.19
+Kendrick Perkins|Y|Slightly Injured|Slightly Injured|.81
+Tony Allen|N|Fit for Match|Fit for Match|1
+Tony Allen|N|Fit for Match|Seriously Injured|0
+Tony Allen|N|Fit for Match|Slightly Injured|0
+Tony Allen|N|Seriously Injured|Fit for Match|.01
+Tony Allen|N|Seriously Injured|Seriously Injured|.20
+Tony Allen|N|Seriously Injured|Slightly Injured|.79
+Tony Allen|N|Slightly Injured|Fit for Match|.51
+Tony Allen|N|Slightly Injured|Seriously Injured|0
+Tony Allen|N|Slightly Injured|Slightly Injured|.49
+Tony Allen|Y|Fit for Match|Seriously Injured|.05
+Tony Allen|Y|Fit for Match|Slightly Injured|.16
+Tony Allen|Y|Fit for Match|Fit for Match|.79
+Tony Allen|Y|Seriously Injured|Fit for Match|0
+Tony Allen|Y|Seriously Injured|Seriously Injured|1
+Tony Allen|Y|Seriously Injured|Slightly Injured|0
+Tony Allen|Y|Slightly Injured|Fit for Match|0
+Tony Allen|Y|Slightly Injured|Seriously Injured|.13
+Tony Allen|Y|Slightly Injured|Slightly Injured|.87
+Leon Powe|N|Fit for Match|Fit for Match|1
+Leon Powe|N|Fit for Match|Seriously Injured|0
+Leon Powe|N|Fit for Match|Slightly Injured|0
+Leon Powe|N|Seriously Injured|Fit for Match|.01
+Leon Powe|N|Seriously Injured|Seriously Injured|.36
+Leon Powe|N|Seriously Injured|Slightly Injured|.63
+Leon Powe|N|Slightly Injured|Fit for Match|.18
+Leon Powe|N|Slightly Injured|Seriously Injured|0
+Leon Powe|N|Slightly Injured|Slightly Injured|.82
+Leon Powe|Y|Fit for Match|Seriously Injured|.03
+Leon Powe|Y|Fit for Match|Slightly Injured|.10
+Leon Powe|Y|Fit for Match|Fit for Match|.87
+Leon Powe|Y|Seriously Injured|Fit for Match|0
+Leon Powe|Y|Seriously Injured|Seriously Injured|1
+Leon Powe|Y|Seriously Injured|Slightly Injured|0
+Leon Powe|Y|Slightly Injured|Fit for Match|0
+Leon Powe|Y|Slightly Injured|Seriously Injured|.24
+Leon Powe|Y|Slightly Injured|Slightly Injured|.76
+Glen Davis|N|Fit for Match|Fit for Match|1
+Glen Davis|N|Fit for Match|Seriously Injured|0
+Glen Davis|N|Fit for Match|Slightly Injured|0
+Glen Davis|N|Seriously Injured|Fit for Match|.09
+Glen Davis|N|Seriously Injured|Seriously Injured|.24
+Glen Davis|N|Seriously Injured|Slightly Injured|.67
+Glen Davis|N|Slightly Injured|Fit for Match|.27
+Glen Davis|N|Slightly Injured|Seriously Injured|0
+Glen Davis|N|Slightly Injured|Slightly Injured|.73
+Glen Davis|Y|Fit for Match|Seriously Injured|.01
+Glen Davis|Y|Fit for Match|Slightly Injured|.14
+Glen Davis|Y|Fit for Match|Fit for Match|.85
+Glen Davis|Y|Seriously Injured|Fit for Match|0
+Glen Davis|Y|Seriously Injured|Seriously Injured|1
+Glen Davis|Y|Seriously Injured|Slightly Injured|0
+Glen Davis|Y|Slightly Injured|Fit for Match|0
+Glen Davis|Y|Slightly Injured|Seriously Injured|.06
+Glen Davis|Y|Slightly Injured|Slightly Injured|.94
+Mikki Moore|N|Fit for Match|Fit for Match|1
+Mikki Moore|N|Fit for Match|Seriously Injured|0
+Mikki Moore|N|Fit for Match|Slightly Injured|0
+Mikki Moore|N|Seriously Injured|Fit for Match|.07
+Mikki Moore|N|Seriously Injured|Seriously Injured|.05
+Mikki Moore|N|Seriously Injured|Slightly Injured|.88
+Mikki Moore|N|Slightly Injured|Fit for Match|.53
+Mikki Moore|N|Slightly Injured|Seriously Injured|0
+Mikki Moore|N|Slightly Injured|Slightly Injured|.47
+Mikki Moore|Y|Fit for Match|Seriously Injured|.03
+Mikki Moore|Y|Fit for Match|Slightly Injured|.09
+Mikki Moore|Y|Fit for Match|Fit for Match|.88
+Mikki Moore|Y|Seriously Injured|Fit for Match|0
+Mikki Moore|Y|Seriously Injured|Seriously Injured|1
+Mikki Moore|Y|Seriously Injured|Slightly Injured|0
+Mikki Moore|Y|Slightly Injured|Fit for Match|0
+Mikki Moore|Y|Slightly Injured|Seriously Injured|.13
+Mikki Moore|Y|Slightly Injured|Slightly Injured|.87
+Stephon Marbury|N|Fit for Match|Fit for Match|1
+Stephon Marbury|N|Fit for Match|Seriously Injured|0
+Stephon Marbury|N|Fit for Match|Slightly Injured|0
+Stephon Marbury|N|Seriously Injured|Fit for Match|.05
+Stephon Marbury|N|Seriously Injured|Seriously Injured|.09
+Stephon Marbury|N|Seriously Injured|Slightly Injured|.86
+Stephon Marbury|N|Slightly Injured|Fit for Match|.13
+Stephon Marbury|N|Slightly Injured|Seriously Injured|0
+Stephon Marbury|N|Slightly Injured|Slightly Injured|.87
+Stephon Marbury|Y|Fit for Match|Seriously Injured|.01
+Stephon Marbury|Y|Fit for Match|Slightly Injured|.17
+Stephon Marbury|Y|Fit for Match|Fit for Match|.82
+Stephon Marbury|Y|Seriously Injured|Fit for Match|0
+Stephon Marbury|Y|Seriously Injured|Seriously Injured|1
+Stephon Marbury|Y|Seriously Injured|Slightly Injured|0
+Stephon Marbury|Y|Slightly Injured|Fit for Match|0
+Stephon Marbury|Y|Slightly Injured|Seriously Injured|.14
+Stephon Marbury|Y|Slightly Injured|Slightly Injured|.86
+Brian Scalabrine|N|Fit for Match|Fit for Match|1
+Brian Scalabrine|N|Fit for Match|Seriously Injured|0
+Brian Scalabrine|N|Fit for Match|Slightly Injured|0
+Brian Scalabrine|N|Seriously Injured|Fit for Match|.03
+Brian Scalabrine|N|Seriously Injured|Seriously Injured|.05
+Brian Scalabrine|N|Seriously Injured|Slightly Injured|.92
+Brian Scalabrine|N|Slightly Injured|Fit for Match|.15
+Brian Scalabrine|N|Slightly Injured|Seriously Injured|0
+Brian Scalabrine|N|Slightly Injured|Slightly Injured|.85
+Brian Scalabrine|Y|Fit for Match|Seriously Injured|.03
+Brian Scalabrine|Y|Fit for Match|Slightly Injured|.09
+Brian Scalabrine|Y|Fit for Match|Fit for Match|.88
+Brian Scalabrine|Y|Seriously Injured|Fit for Match|0
+Brian Scalabrine|Y|Seriously Injured|Seriously Injured|1
+Brian Scalabrine|Y|Seriously Injured|Slightly Injured|0
+Brian Scalabrine|Y|Slightly Injured|Fit for Match|0
+Brian Scalabrine|Y|Slightly Injured|Seriously Injured|.15
+Brian Scalabrine|Y|Slightly Injured|Slightly Injured|.85
+Dirk Nowitzki|N|Fit for Match|Fit for Match|1
+Dirk Nowitzki|N|Fit for Match|Seriously Injured|0
+Dirk Nowitzki|N|Fit for Match|Slightly Injured|0
+Dirk Nowitzki|N|Seriously Injured|Fit for Match|.05
+Dirk Nowitzki|N|Seriously Injured|Seriously Injured|.36
+Dirk Nowitzki|N|Seriously Injured|Slightly Injured|.59
+Dirk Nowitzki|N|Slightly Injured|Fit for Match|.53
+Dirk Nowitzki|N|Slightly Injured|Seriously Injured|0
+Dirk Nowitzki|N|Slightly Injured|Slightly Injured|.47
+Dirk Nowitzki|Y|Fit for Match|Seriously Injured|.05
+Dirk Nowitzki|Y|Fit for Match|Slightly Injured|.08
+Dirk Nowitzki|Y|Fit for Match|Fit for Match|.87
+Dirk Nowitzki|Y|Seriously Injured|Fit for Match|0
+Dirk Nowitzki|Y|Seriously Injured|Seriously Injured|1
+Dirk Nowitzki|Y|Seriously Injured|Slightly Injured|0
+Dirk Nowitzki|Y|Slightly Injured|Fit for Match|0
+Dirk Nowitzki|Y|Slightly Injured|Seriously Injured|.13
+Dirk Nowitzki|Y|Slightly Injured|Slightly Injured|.87
+Jason Terry|N|Fit for Match|Fit for Match|1
+Jason Terry|N|Fit for Match|Seriously Injured|0
+Jason Terry|N|Fit for Match|Slightly Injured|0
+Jason Terry|N|Seriously Injured|Fit for Match|.08
+Jason Terry|N|Seriously Injured|Seriously Injured|.25
+Jason Terry|N|Seriously Injured|Slightly Injured|.67
+Jason Terry|N|Slightly Injured|Fit for Match|.21
+Jason Terry|N|Slightly Injured|Seriously Injured|0
+Jason Terry|N|Slightly Injured|Slightly Injured|.79
+Jason Terry|Y|Fit for Match|Seriously Injured|.03
+Jason Terry|Y|Fit for Match|Slightly Injured|.19
+Jason Terry|Y|Fit for Match|Fit for Match|.78
+Jason Terry|Y|Seriously Injured|Fit for Match|0
+Jason Terry|Y|Seriously Injured|Seriously Injured|1
+Jason Terry|Y|Seriously Injured|Slightly Injured|0
+Jason Terry|Y|Slightly Injured|Fit for Match|0
+Jason Terry|Y|Slightly Injured|Seriously Injured|.10
+Jason Terry|Y|Slightly Injured|Slightly Injured|.90
+Josh Howard|N|Fit for Match|Fit for Match|1
+Josh Howard|N|Fit for Match|Seriously Injured|0
+Josh Howard|N|Fit for Match|Slightly Injured|0
+Josh Howard|N|Seriously Injured|Fit for Match|.01
+Josh Howard|N|Seriously Injured|Seriously Injured|.29
+Josh Howard|N|Seriously Injured|Slightly Injured|.70
+Josh Howard|N|Slightly Injured|Fit for Match|.33
+Josh Howard|N|Slightly Injured|Seriously Injured|0
+Josh Howard|N|Slightly Injured|Slightly Injured|.67
+Josh Howard|Y|Fit for Match|Seriously Injured|.03
+Josh Howard|Y|Fit for Match|Slightly Injured|.16
+Josh Howard|Y|Fit for Match|Fit for Match|.81
+Josh Howard|Y|Seriously Injured|Fit for Match|0
+Josh Howard|Y|Seriously Injured|Seriously Injured|1
+Josh Howard|Y|Seriously Injured|Slightly Injured|0
+Josh Howard|Y|Slightly Injured|Fit for Match|0
+Josh Howard|Y|Slightly Injured|Seriously Injured|.02
+Josh Howard|Y|Slightly Injured|Slightly Injured|.98
+Jason Kidd|N|Fit for Match|Fit for Match|1
+Jason Kidd|N|Fit for Match|Seriously Injured|0
+Jason Kidd|N|Fit for Match|Slightly Injured|0
+Jason Kidd|N|Seriously Injured|Fit for Match|.06
+Jason Kidd|N|Seriously Injured|Seriously Injured|.19
+Jason Kidd|N|Seriously Injured|Slightly Injured|.75
+Jason Kidd|N|Slightly Injured|Fit for Match|.20
+Jason Kidd|N|Slightly Injured|Seriously Injured|0
+Jason Kidd|N|Slightly Injured|Slightly Injured|.80
+Jason Kidd|Y|Fit for Match|Seriously Injured|.01
+Jason Kidd|Y|Fit for Match|Slightly Injured|.12
+Jason Kidd|Y|Fit for Match|Fit for Match|.87
+Jason Kidd|Y|Seriously Injured|Fit for Match|0
+Jason Kidd|Y|Seriously Injured|Seriously Injured|1
+Jason Kidd|Y|Seriously Injured|Slightly Injured|0
+Jason Kidd|Y|Slightly Injured|Fit for Match|0
+Jason Kidd|Y|Slightly Injured|Seriously Injured|.03
+Jason Kidd|Y|Slightly Injured|Slightly Injured|.97
+Brandon Bass|N|Fit for Match|Fit for Match|1
+Brandon Bass|N|Fit for Match|Seriously Injured|0
+Brandon Bass|N|Fit for Match|Slightly Injured|0
+Brandon Bass|N|Seriously Injured|Fit for Match|.06
+Brandon Bass|N|Seriously Injured|Seriously Injured|.01
+Brandon Bass|N|Seriously Injured|Slightly Injured|.93
+Brandon Bass|N|Slightly Injured|Fit for Match|.18
+Brandon Bass|N|Slightly Injured|Seriously Injured|0
+Brandon Bass|N|Slightly Injured|Slightly Injured|.82
+Brandon Bass|Y|Fit for Match|Seriously Injured|.01
+Brandon Bass|Y|Fit for Match|Slightly Injured|.16
+Brandon Bass|Y|Fit for Match|Fit for Match|.83
+Brandon Bass|Y|Seriously Injured|Fit for Match|0
+Brandon Bass|Y|Seriously Injured|Seriously Injured|1
+Brandon Bass|Y|Seriously Injured|Slightly Injured|0
+Brandon Bass|Y|Slightly Injured|Fit for Match|0
+Brandon Bass|Y|Slightly Injured|Seriously Injured|.02
+Brandon Bass|Y|Slightly Injured|Slightly Injured|.98
+Jose Barea|N|Fit for Match|Fit for Match|1
+Jose Barea|N|Fit for Match|Seriously Injured|0
+Jose Barea|N|Fit for Match|Slightly Injured|0
+Jose Barea|N|Seriously Injured|Fit for Match|.04
+Jose Barea|N|Seriously Injured|Seriously Injured|.13
+Jose Barea|N|Seriously Injured|Slightly Injured|.83
+Jose Barea|N|Slightly Injured|Fit for Match|.15
+Jose Barea|N|Slightly Injured|Seriously Injured|0
+Jose Barea|N|Slightly Injured|Slightly Injured|.85
+Jose Barea|Y|Fit for Match|Seriously Injured|.05
+Jose Barea|Y|Fit for Match|Slightly Injured|.14
+Jose Barea|Y|Fit for Match|Fit for Match|.81
+Jose Barea|Y|Seriously Injured|Fit for Match|0
+Jose Barea|Y|Seriously Injured|Seriously Injured|1
+Jose Barea|Y|Seriously Injured|Slightly Injured|0
+Jose Barea|Y|Slightly Injured|Fit for Match|0
+Jose Barea|Y|Slightly Injured|Seriously Injured|.25
+Jose Barea|Y|Slightly Injured|Slightly Injured|.75
+Antoine Wright|N|Fit for Match|Fit for Match|1
+Antoine Wright|N|Fit for Match|Seriously Injured|0
+Antoine Wright|N|Fit for Match|Slightly Injured|0
+Antoine Wright|N|Seriously Injured|Fit for Match|.05
+Antoine Wright|N|Seriously Injured|Seriously Injured|.35
+Antoine Wright|N|Seriously Injured|Slightly Injured|.60
+Antoine Wright|N|Slightly Injured|Fit for Match|.63
+Antoine Wright|N|Slightly Injured|Seriously Injured|0
+Antoine Wright|N|Slightly Injured|Slightly Injured|.37
+Antoine Wright|Y|Fit for Match|Seriously Injured|.05
+Antoine Wright|Y|Fit for Match|Slightly Injured|.18
+Antoine Wright|Y|Fit for Match|Fit for Match|.77
+Antoine Wright|Y|Seriously Injured|Fit for Match|0
+Antoine Wright|Y|Seriously Injured|Seriously Injured|1
+Antoine Wright|Y|Seriously Injured|Slightly Injured|0
+Antoine Wright|Y|Slightly Injured|Fit for Match|0
+Antoine Wright|Y|Slightly Injured|Seriously Injured|.01
+Antoine Wright|Y|Slightly Injured|Slightly Injured|.99
+Erick Dampier|N|Fit for Match|Fit for Match|1
+Erick Dampier|N|Fit for Match|Seriously Injured|0
+Erick Dampier|N|Fit for Match|Slightly Injured|0
+Erick Dampier|N|Seriously Injured|Fit for Match|.01
+Erick Dampier|N|Seriously Injured|Seriously Injured|.01
+Erick Dampier|N|Seriously Injured|Slightly Injured|.98
+Erick Dampier|N|Slightly Injured|Fit for Match|.33
+Erick Dampier|N|Slightly Injured|Seriously Injured|0
+Erick Dampier|N|Slightly Injured|Slightly Injured|.67
+Erick Dampier|Y|Fit for Match|Seriously Injured|.04
+Erick Dampier|Y|Fit for Match|Slightly Injured|.15
+Erick Dampier|Y|Fit for Match|Fit for Match|.81
+Erick Dampier|Y|Seriously Injured|Fit for Match|0
+Erick Dampier|Y|Seriously Injured|Seriously Injured|1
+Erick Dampier|Y|Seriously Injured|Slightly Injured|0
+Erick Dampier|Y|Slightly Injured|Fit for Match|0
+Erick Dampier|Y|Slightly Injured|Seriously Injured|.09
+Erick Dampier|Y|Slightly Injured|Slightly Injured|.91
+James Singleton|N|Fit for Match|Fit for Match|1
+James Singleton|N|Fit for Match|Seriously Injured|0
+James Singleton|N|Fit for Match|Slightly Injured|0
+James Singleton|N|Seriously Injured|Fit for Match|.04
+James Singleton|N|Seriously Injured|Seriously Injured|.15
+James Singleton|N|Seriously Injured|Slightly Injured|.81
+James Singleton|N|Slightly Injured|Fit for Match|.65
+James Singleton|N|Slightly Injured|Seriously Injured|0
+James Singleton|N|Slightly Injured|Slightly Injured|.35
+James Singleton|Y|Fit for Match|Seriously Injured|.04
+James Singleton|Y|Fit for Match|Slightly Injured|.19
+James Singleton|Y|Fit for Match|Fit for Match|.77
+James Singleton|Y|Seriously Injured|Fit for Match|0
+James Singleton|Y|Seriously Injured|Seriously Injured|1
+James Singleton|Y|Seriously Injured|Slightly Injured|0
+James Singleton|Y|Slightly Injured|Fit for Match|0
+James Singleton|Y|Slightly Injured|Seriously Injured|.19
+James Singleton|Y|Slightly Injured|Slightly Injured|.81
+Devean George|N|Fit for Match|Fit for Match|1
+Devean George|N|Fit for Match|Seriously Injured|0
+Devean George|N|Fit for Match|Slightly Injured|0
+Devean George|N|Seriously Injured|Fit for Match|.01
+Devean George|N|Seriously Injured|Seriously Injured|.08
+Devean George|N|Seriously Injured|Slightly Injured|.91
+Devean George|N|Slightly Injured|Fit for Match|.26
+Devean George|N|Slightly Injured|Seriously Injured|0
+Devean George|N|Slightly Injured|Slightly Injured|.74
+Devean George|Y|Fit for Match|Seriously Injured|.05
+Devean George|Y|Fit for Match|Slightly Injured|.09
+Devean George|Y|Fit for Match|Fit for Match|.86
+Devean George|Y|Seriously Injured|Fit for Match|0
+Devean George|Y|Seriously Injured|Seriously Injured|1
+Devean George|Y|Seriously Injured|Slightly Injured|0
+Devean George|Y|Slightly Injured|Fit for Match|0
+Devean George|Y|Slightly Injured|Seriously Injured|.05
+Devean George|Y|Slightly Injured|Slightly Injured|.95
+Ryan Hollins|N|Fit for Match|Fit for Match|1
+Ryan Hollins|N|Fit for Match|Seriously Injured|0
+Ryan Hollins|N|Fit for Match|Slightly Injured|0
+Ryan Hollins|N|Seriously Injured|Fit for Match|.08
+Ryan Hollins|N|Seriously Injured|Seriously Injured|.46
+Ryan Hollins|N|Seriously Injured|Slightly Injured|.46
+Ryan Hollins|N|Slightly Injured|Fit for Match|.58
+Ryan Hollins|N|Slightly Injured|Seriously Injured|0
+Ryan Hollins|N|Slightly Injured|Slightly Injured|.42
+Ryan Hollins|Y|Fit for Match|Seriously Injured|.03
+Ryan Hollins|Y|Fit for Match|Slightly Injured|.17
+Ryan Hollins|Y|Fit for Match|Fit for Match|.80
+Ryan Hollins|Y|Seriously Injured|Fit for Match|0
+Ryan Hollins|Y|Seriously Injured|Seriously Injured|1
+Ryan Hollins|Y|Seriously Injured|Slightly Injured|0
+Ryan Hollins|Y|Slightly Injured|Fit for Match|0
+Ryan Hollins|Y|Slightly Injured|Seriously Injured|.30
+Ryan Hollins|Y|Slightly Injured|Slightly Injured|.70
+Matt Carroll|N|Fit for Match|Fit for Match|1
+Matt Carroll|N|Fit for Match|Seriously Injured|0
+Matt Carroll|N|Fit for Match|Slightly Injured|0
+Matt Carroll|N|Seriously Injured|Fit for Match|.07
+Matt Carroll|N|Seriously Injured|Seriously Injured|.38
+Matt Carroll|N|Seriously Injured|Slightly Injured|.55
+Matt Carroll|N|Slightly Injured|Fit for Match|.70
+Matt Carroll|N|Slightly Injured|Seriously Injured|0
+Matt Carroll|N|Slightly Injured|Slightly Injured|.30
+Matt Carroll|Y|Fit for Match|Seriously Injured|.01
+Matt Carroll|Y|Fit for Match|Slightly Injured|.14
+Matt Carroll|Y|Fit for Match|Fit for Match|.85
+Matt Carroll|Y|Seriously Injured|Fit for Match|0
+Matt Carroll|Y|Seriously Injured|Seriously Injured|1
+Matt Carroll|Y|Seriously Injured|Slightly Injured|0
+Matt Carroll|Y|Slightly Injured|Fit for Match|0
+Matt Carroll|Y|Slightly Injured|Seriously Injured|.05
+Matt Carroll|Y|Slightly Injured|Slightly Injured|.95
+Devin Harris|N|Fit for Match|Fit for Match|1
+Devin Harris|N|Fit for Match|Seriously Injured|0
+Devin Harris|N|Fit for Match|Slightly Injured|0
+Devin Harris|N|Seriously Injured|Fit for Match|.05
+Devin Harris|N|Seriously Injured|Seriously Injured|.31
+Devin Harris|N|Seriously Injured|Slightly Injured|.64
+Devin Harris|N|Slightly Injured|Fit for Match|.57
+Devin Harris|N|Slightly Injured|Seriously Injured|0
+Devin Harris|N|Slightly Injured|Slightly Injured|.43
+Devin Harris|Y|Fit for Match|Seriously Injured|.03
+Devin Harris|Y|Fit for Match|Slightly Injured|.07
+Devin Harris|Y|Fit for Match|Fit for Match|.90
+Devin Harris|Y|Seriously Injured|Fit for Match|0
+Devin Harris|Y|Seriously Injured|Seriously Injured|1
+Devin Harris|Y|Seriously Injured|Slightly Injured|0
+Devin Harris|Y|Slightly Injured|Fit for Match|0
+Devin Harris|Y|Slightly Injured|Seriously Injured|.06
+Devin Harris|Y|Slightly Injured|Slightly Injured|.94
+Vince Carter|N|Fit for Match|Fit for Match|1
+Vince Carter|N|Fit for Match|Seriously Injured|0
+Vince Carter|N|Fit for Match|Slightly Injured|0
+Vince Carter|N|Seriously Injured|Fit for Match|.07
+Vince Carter|N|Seriously Injured|Seriously Injured|.31
+Vince Carter|N|Seriously Injured|Slightly Injured|.62
+Vince Carter|N|Slightly Injured|Fit for Match|.51
+Vince Carter|N|Slightly Injured|Seriously Injured|0
+Vince Carter|N|Slightly Injured|Slightly Injured|.49
+Vince Carter|Y|Fit for Match|Seriously Injured|.04
+Vince Carter|Y|Fit for Match|Slightly Injured|.07
+Vince Carter|Y|Fit for Match|Fit for Match|.89
+Vince Carter|Y|Seriously Injured|Fit for Match|0
+Vince Carter|Y|Seriously Injured|Seriously Injured|1
+Vince Carter|Y|Seriously Injured|Slightly Injured|0
+Vince Carter|Y|Slightly Injured|Fit for Match|0
+Vince Carter|Y|Slightly Injured|Seriously Injured|.23
+Vince Carter|Y|Slightly Injured|Slightly Injured|.77
+Brook Lopez|N|Fit for Match|Fit for Match|1
+Brook Lopez|N|Fit for Match|Seriously Injured|0
+Brook Lopez|N|Fit for Match|Slightly Injured|0
+Brook Lopez|N|Seriously Injured|Fit for Match|.08
+Brook Lopez|N|Seriously Injured|Seriously Injured|.29
+Brook Lopez|N|Seriously Injured|Slightly Injured|.63
+Brook Lopez|N|Slightly Injured|Fit for Match|.28
+Brook Lopez|N|Slightly Injured|Seriously Injured|0
+Brook Lopez|N|Slightly Injured|Slightly Injured|.72
+Brook Lopez|Y|Fit for Match|Seriously Injured|.05
+Brook Lopez|Y|Fit for Match|Slightly Injured|.09
+Brook Lopez|Y|Fit for Match|Fit for Match|.86
+Brook Lopez|Y|Seriously Injured|Fit for Match|0
+Brook Lopez|Y|Seriously Injured|Seriously Injured|1
+Brook Lopez|Y|Seriously Injured|Slightly Injured|0
+Brook Lopez|Y|Slightly Injured|Fit for Match|0
+Brook Lopez|Y|Slightly Injured|Seriously Injured|.12
+Brook Lopez|Y|Slightly Injured|Slightly Injured|.88
+Keyon Dooling|N|Fit for Match|Fit for Match|1
+Keyon Dooling|N|Fit for Match|Seriously Injured|0
+Keyon Dooling|N|Fit for Match|Slightly Injured|0
+Keyon Dooling|N|Seriously Injured|Fit for Match|.01
+Keyon Dooling|N|Seriously Injured|Seriously Injured|.02
+Keyon Dooling|N|Seriously Injured|Slightly Injured|.97
+Keyon Dooling|N|Slightly Injured|Fit for Match|.39
+Keyon Dooling|N|Slightly Injured|Seriously Injured|0
+Keyon Dooling|N|Slightly Injured|Slightly Injured|.61
+Keyon Dooling|Y|Fit for Match|Seriously Injured|.04
+Keyon Dooling|Y|Fit for Match|Slightly Injured|.17
+Keyon Dooling|Y|Fit for Match|Fit for Match|.79
+Keyon Dooling|Y|Seriously Injured|Fit for Match|0
+Keyon Dooling|Y|Seriously Injured|Seriously Injured|1
+Keyon Dooling|Y|Seriously Injured|Slightly Injured|0
+Keyon Dooling|Y|Slightly Injured|Fit for Match|0
+Keyon Dooling|Y|Slightly Injured|Seriously Injured|.09
+Keyon Dooling|Y|Slightly Injured|Slightly Injured|.91
+Jarvis Hayes|N|Fit for Match|Fit for Match|1
+Jarvis Hayes|N|Fit for Match|Seriously Injured|0
+Jarvis Hayes|N|Fit for Match|Slightly Injured|0
+Jarvis Hayes|N|Seriously Injured|Fit for Match|.09
+Jarvis Hayes|N|Seriously Injured|Seriously Injured|.06
+Jarvis Hayes|N|Seriously Injured|Slightly Injured|.85
+Jarvis Hayes|N|Slightly Injured|Fit for Match|.37
+Jarvis Hayes|N|Slightly Injured|Seriously Injured|0
+Jarvis Hayes|N|Slightly Injured|Slightly Injured|.63
+Jarvis Hayes|Y|Fit for Match|Seriously Injured|.01
+Jarvis Hayes|Y|Fit for Match|Slightly Injured|.19
+Jarvis Hayes|Y|Fit for Match|Fit for Match|.80
+Jarvis Hayes|Y|Seriously Injured|Fit for Match|0
+Jarvis Hayes|Y|Seriously Injured|Seriously Injured|1
+Jarvis Hayes|Y|Seriously Injured|Slightly Injured|0
+Jarvis Hayes|Y|Slightly Injured|Fit for Match|0
+Jarvis Hayes|Y|Slightly Injured|Seriously Injured|.23
+Jarvis Hayes|Y|Slightly Injured|Slightly Injured|.77
+Yi Jianlian|N|Fit for Match|Fit for Match|1
+Yi Jianlian|N|Fit for Match|Seriously Injured|0
+Yi Jianlian|N|Fit for Match|Slightly Injured|0
+Yi Jianlian|N|Seriously Injured|Fit for Match|.02
+Yi Jianlian|N|Seriously Injured|Seriously Injured|.43
+Yi Jianlian|N|Seriously Injured|Slightly Injured|.55
+Yi Jianlian|N|Slightly Injured|Fit for Match|.28
+Yi Jianlian|N|Slightly Injured|Seriously Injured|0
+Yi Jianlian|N|Slightly Injured|Slightly Injured|.72
+Yi Jianlian|Y|Fit for Match|Seriously Injured|.02
+Yi Jianlian|Y|Fit for Match|Slightly Injured|.07
+Yi Jianlian|Y|Fit for Match|Fit for Match|.91
+Yi Jianlian|Y|Seriously Injured|Fit for Match|0
+Yi Jianlian|Y|Seriously Injured|Seriously Injured|1
+Yi Jianlian|Y|Seriously Injured|Slightly Injured|0
+Yi Jianlian|Y|Slightly Injured|Fit for Match|0
+Yi Jianlian|Y|Slightly Injured|Seriously Injured|.08
+Yi Jianlian|Y|Slightly Injured|Slightly Injured|.92
+Bobby Simmons|N|Fit for Match|Fit for Match|1
+Bobby Simmons|N|Fit for Match|Seriously Injured|0
+Bobby Simmons|N|Fit for Match|Slightly Injured|0
+Bobby Simmons|N|Seriously Injured|Fit for Match|.06
+Bobby Simmons|N|Seriously Injured|Seriously Injured|.21
+Bobby Simmons|N|Seriously Injured|Slightly Injured|.73
+Bobby Simmons|N|Slightly Injured|Fit for Match|.22
+Bobby Simmons|N|Slightly Injured|Seriously Injured|0
+Bobby Simmons|N|Slightly Injured|Slightly Injured|.78
+Bobby Simmons|Y|Fit for Match|Seriously Injured|.04
+Bobby Simmons|Y|Fit for Match|Slightly Injured|.13
+Bobby Simmons|Y|Fit for Match|Fit for Match|.83
+Bobby Simmons|Y|Seriously Injured|Fit for Match|0
+Bobby Simmons|Y|Seriously Injured|Seriously Injured|1
+Bobby Simmons|Y|Seriously Injured|Slightly Injured|0
+Bobby Simmons|Y|Slightly Injured|Fit for Match|0
+Bobby Simmons|Y|Slightly Injured|Seriously Injured|.07
+Bobby Simmons|Y|Slightly Injured|Slightly Injured|.93
+Ryan Anderson|N|Fit for Match|Fit for Match|1
+Ryan Anderson|N|Fit for Match|Seriously Injured|0
+Ryan Anderson|N|Fit for Match|Slightly Injured|0
+Ryan Anderson|N|Seriously Injured|Fit for Match|.05
+Ryan Anderson|N|Seriously Injured|Seriously Injured|.01
+Ryan Anderson|N|Seriously Injured|Slightly Injured|.94
+Ryan Anderson|N|Slightly Injured|Fit for Match|.28
+Ryan Anderson|N|Slightly Injured|Seriously Injured|0
+Ryan Anderson|N|Slightly Injured|Slightly Injured|.72
+Ryan Anderson|Y|Fit for Match|Seriously Injured|.05
+Ryan Anderson|Y|Fit for Match|Slightly Injured|.20
+Ryan Anderson|Y|Fit for Match|Fit for Match|.75
+Ryan Anderson|Y|Seriously Injured|Fit for Match|0
+Ryan Anderson|Y|Seriously Injured|Seriously Injured|1
+Ryan Anderson|Y|Seriously Injured|Slightly Injured|0
+Ryan Anderson|Y|Slightly Injured|Fit for Match|0
+Ryan Anderson|Y|Slightly Injured|Seriously Injured|.16
+Ryan Anderson|Y|Slightly Injured|Slightly Injured|.84
+Chris Douglas-Roberts|N|Fit for Match|Fit for Match|1
+Chris Douglas-Roberts|N|Fit for Match|Seriously Injured|0
+Chris Douglas-Roberts|N|Fit for Match|Slightly Injured|0
+Chris Douglas-Roberts|N|Seriously Injured|Fit for Match|.06
+Chris Douglas-Roberts|N|Seriously Injured|Seriously Injured|.06
+Chris Douglas-Roberts|N|Seriously Injured|Slightly Injured|.88
+Chris Douglas-Roberts|N|Slightly Injured|Fit for Match|.19
+Chris Douglas-Roberts|N|Slightly Injured|Seriously Injured|0
+Chris Douglas-Roberts|N|Slightly Injured|Slightly Injured|.81
+Chris Douglas-Roberts|Y|Fit for Match|Seriously Injured|.02
+Chris Douglas-Roberts|Y|Fit for Match|Slightly Injured|.15
+Chris Douglas-Roberts|Y|Fit for Match|Fit for Match|.83
+Chris Douglas-Roberts|Y|Seriously Injured|Fit for Match|0
+Chris Douglas-Roberts|Y|Seriously Injured|Seriously Injured|1
+Chris Douglas-Roberts|Y|Seriously Injured|Slightly Injured|0
+Chris Douglas-Roberts|Y|Slightly Injured|Fit for Match|0
+Chris Douglas-Roberts|Y|Slightly Injured|Seriously Injured|.02
+Chris Douglas-Roberts|Y|Slightly Injured|Slightly Injured|.98
+Josh Boone|N|Fit for Match|Fit for Match|1
+Josh Boone|N|Fit for Match|Seriously Injured|0
+Josh Boone|N|Fit for Match|Slightly Injured|0
+Josh Boone|N|Seriously Injured|Fit for Match|.08
+Josh Boone|N|Seriously Injured|Seriously Injured|.17
+Josh Boone|N|Seriously Injured|Slightly Injured|.75
+Josh Boone|N|Slightly Injured|Fit for Match|.48
+Josh Boone|N|Slightly Injured|Seriously Injured|0
+Josh Boone|N|Slightly Injured|Slightly Injured|.52
+Josh Boone|Y|Fit for Match|Seriously Injured|.04
+Josh Boone|Y|Fit for Match|Slightly Injured|.06
+Josh Boone|Y|Fit for Match|Fit for Match|.90
+Josh Boone|Y|Seriously Injured|Fit for Match|0
+Josh Boone|Y|Seriously Injured|Seriously Injured|1
+Josh Boone|Y|Seriously Injured|Slightly Injured|0
+Josh Boone|Y|Slightly Injured|Fit for Match|0
+Josh Boone|Y|Slightly Injured|Seriously Injured|.04
+Josh Boone|Y|Slightly Injured|Slightly Injured|.96
+Trenton Hassell|N|Fit for Match|Fit for Match|1
+Trenton Hassell|N|Fit for Match|Seriously Injured|0
+Trenton Hassell|N|Fit for Match|Slightly Injured|0
+Trenton Hassell|N|Seriously Injured|Fit for Match|.01
+Trenton Hassell|N|Seriously Injured|Seriously Injured|.08
+Trenton Hassell|N|Seriously Injured|Slightly Injured|.91
+Trenton Hassell|N|Slightly Injured|Fit for Match|.33
+Trenton Hassell|N|Slightly Injured|Seriously Injured|0
+Trenton Hassell|N|Slightly Injured|Slightly Injured|.67
+Trenton Hassell|Y|Fit for Match|Seriously Injured|.01
+Trenton Hassell|Y|Fit for Match|Slightly Injured|.15
+Trenton Hassell|Y|Fit for Match|Fit for Match|.84
+Trenton Hassell|Y|Seriously Injured|Fit for Match|0
+Trenton Hassell|Y|Seriously Injured|Seriously Injured|1
+Trenton Hassell|Y|Seriously Injured|Slightly Injured|0
+Trenton Hassell|Y|Slightly Injured|Fit for Match|0
+Trenton Hassell|Y|Slightly Injured|Seriously Injured|.12
+Trenton Hassell|Y|Slightly Injured|Slightly Injured|.88
+Eduardo Najera|N|Fit for Match|Fit for Match|1
+Eduardo Najera|N|Fit for Match|Seriously Injured|0
+Eduardo Najera|N|Fit for Match|Slightly Injured|0
+Eduardo Najera|N|Seriously Injured|Fit for Match|.01
+Eduardo Najera|N|Seriously Injured|Seriously Injured|.08
+Eduardo Najera|N|Seriously Injured|Slightly Injured|.91
+Eduardo Najera|N|Slightly Injured|Fit for Match|.37
+Eduardo Najera|N|Slightly Injured|Seriously Injured|0
+Eduardo Najera|N|Slightly Injured|Slightly Injured|.63
+Eduardo Najera|Y|Fit for Match|Seriously Injured|.03
+Eduardo Najera|Y|Fit for Match|Slightly Injured|.14
+Eduardo Najera|Y|Fit for Match|Fit for Match|.83
+Eduardo Najera|Y|Seriously Injured|Fit for Match|0
+Eduardo Najera|Y|Seriously Injured|Seriously Injured|1
+Eduardo Najera|Y|Seriously Injured|Slightly Injured|0
+Eduardo Najera|Y|Slightly Injured|Fit for Match|0
+Eduardo Najera|Y|Slightly Injured|Seriously Injured|.10
+Eduardo Najera|Y|Slightly Injured|Slightly Injured|.90
+Yao Ming|N|Fit for Match|Fit for Match|1
+Yao Ming|N|Fit for Match|Seriously Injured|0
+Yao Ming|N|Fit for Match|Slightly Injured|0
+Yao Ming|N|Seriously Injured|Fit for Match|.05
+Yao Ming|N|Seriously Injured|Seriously Injured|.33
+Yao Ming|N|Seriously Injured|Slightly Injured|.62
+Yao Ming|N|Slightly Injured|Fit for Match|.64
+Yao Ming|N|Slightly Injured|Seriously Injured|0
+Yao Ming|N|Slightly Injured|Slightly Injured|.36
+Yao Ming|Y|Fit for Match|Seriously Injured|.02
+Yao Ming|Y|Fit for Match|Slightly Injured|.06
+Yao Ming|Y|Fit for Match|Fit for Match|.92
+Yao Ming|Y|Seriously Injured|Fit for Match|0
+Yao Ming|Y|Seriously Injured|Seriously Injured|1
+Yao Ming|Y|Seriously Injured|Slightly Injured|0
+Yao Ming|Y|Slightly Injured|Fit for Match|0
+Yao Ming|Y|Slightly Injured|Seriously Injured|.29
+Yao Ming|Y|Slightly Injured|Slightly Injured|.71
+Ron Artest|N|Fit for Match|Fit for Match|1
+Ron Artest|N|Fit for Match|Seriously Injured|0
+Ron Artest|N|Fit for Match|Slightly Injured|0
+Ron Artest|N|Seriously Injured|Fit for Match|.06
+Ron Artest|N|Seriously Injured|Seriously Injured|.10
+Ron Artest|N|Seriously Injured|Slightly Injured|.84
+Ron Artest|N|Slightly Injured|Fit for Match|.53
+Ron Artest|N|Slightly Injured|Seriously Injured|0
+Ron Artest|N|Slightly Injured|Slightly Injured|.47
+Ron Artest|Y|Fit for Match|Seriously Injured|.02
+Ron Artest|Y|Fit for Match|Slightly Injured|.10
+Ron Artest|Y|Fit for Match|Fit for Match|.88
+Ron Artest|Y|Seriously Injured|Fit for Match|0
+Ron Artest|Y|Seriously Injured|Seriously Injured|1
+Ron Artest|Y|Seriously Injured|Slightly Injured|0
+Ron Artest|Y|Slightly Injured|Fit for Match|0
+Ron Artest|Y|Slightly Injured|Seriously Injured|.13
+Ron Artest|Y|Slightly Injured|Slightly Injured|.87
+Tracy McGrady|N|Fit for Match|Fit for Match|1
+Tracy McGrady|N|Fit for Match|Seriously Injured|0
+Tracy McGrady|N|Fit for Match|Slightly Injured|0
+Tracy McGrady|N|Seriously Injured|Fit for Match|.04
+Tracy McGrady|N|Seriously Injured|Seriously Injured|.39
+Tracy McGrady|N|Seriously Injured|Slightly Injured|.57
+Tracy McGrady|N|Slightly Injured|Fit for Match|.30
+Tracy McGrady|N|Slightly Injured|Seriously Injured|0
+Tracy McGrady|N|Slightly Injured|Slightly Injured|.70
+Tracy McGrady|Y|Fit for Match|Seriously Injured|.01
+Tracy McGrady|Y|Fit for Match|Slightly Injured|.11
+Tracy McGrady|Y|Fit for Match|Fit for Match|.88
+Tracy McGrady|Y|Seriously Injured|Fit for Match|0
+Tracy McGrady|Y|Seriously Injured|Seriously Injured|1
+Tracy McGrady|Y|Seriously Injured|Slightly Injured|0
+Tracy McGrady|Y|Slightly Injured|Fit for Match|0
+Tracy McGrady|Y|Slightly Injured|Seriously Injured|.26
+Tracy McGrady|Y|Slightly Injured|Slightly Injured|.74
+Luis Scola|N|Fit for Match|Fit for Match|1
+Luis Scola|N|Fit for Match|Seriously Injured|0
+Luis Scola|N|Fit for Match|Slightly Injured|0
+Luis Scola|N|Seriously Injured|Fit for Match|.08
+Luis Scola|N|Seriously Injured|Seriously Injured|.10
+Luis Scola|N|Seriously Injured|Slightly Injured|.82
+Luis Scola|N|Slightly Injured|Fit for Match|.70
+Luis Scola|N|Slightly Injured|Seriously Injured|0
+Luis Scola|N|Slightly Injured|Slightly Injured|.30
+Luis Scola|Y|Fit for Match|Seriously Injured|.01
+Luis Scola|Y|Fit for Match|Slightly Injured|.10
+Luis Scola|Y|Fit for Match|Fit for Match|.89
+Luis Scola|Y|Seriously Injured|Fit for Match|0
+Luis Scola|Y|Seriously Injured|Seriously Injured|1
+Luis Scola|Y|Seriously Injured|Slightly Injured|0
+Luis Scola|Y|Slightly Injured|Fit for Match|0
+Luis Scola|Y|Slightly Injured|Seriously Injured|.08
+Luis Scola|Y|Slightly Injured|Slightly Injured|.92
+Aaron Brooks|N|Fit for Match|Fit for Match|1
+Aaron Brooks|N|Fit for Match|Seriously Injured|0
+Aaron Brooks|N|Fit for Match|Slightly Injured|0
+Aaron Brooks|N|Seriously Injured|Fit for Match|.04
+Aaron Brooks|N|Seriously Injured|Seriously Injured|.48
+Aaron Brooks|N|Seriously Injured|Slightly Injured|.48
+Aaron Brooks|N|Slightly Injured|Fit for Match|.38
+Aaron Brooks|N|Slightly Injured|Seriously Injured|0
+Aaron Brooks|N|Slightly Injured|Slightly Injured|.62
+Aaron Brooks|Y|Fit for Match|Seriously Injured|.01
+Aaron Brooks|Y|Fit for Match|Slightly Injured|.17
+Aaron Brooks|Y|Fit for Match|Fit for Match|.82
+Aaron Brooks|Y|Seriously Injured|Fit for Match|0
+Aaron Brooks|Y|Seriously Injured|Seriously Injured|1
+Aaron Brooks|Y|Seriously Injured|Slightly Injured|0
+Aaron Brooks|Y|Slightly Injured|Fit for Match|0
+Aaron Brooks|Y|Slightly Injured|Seriously Injured|.28
+Aaron Brooks|Y|Slightly Injured|Slightly Injured|.72
+Von Wafer|N|Fit for Match|Fit for Match|1
+Von Wafer|N|Fit for Match|Seriously Injured|0
+Von Wafer|N|Fit for Match|Slightly Injured|0
+Von Wafer|N|Seriously Injured|Fit for Match|.09
+Von Wafer|N|Seriously Injured|Seriously Injured|.05
+Von Wafer|N|Seriously Injured|Slightly Injured|.86
+Von Wafer|N|Slightly Injured|Fit for Match|.37
+Von Wafer|N|Slightly Injured|Seriously Injured|0
+Von Wafer|N|Slightly Injured|Slightly Injured|.63
+Von Wafer|Y|Fit for Match|Seriously Injured|.01
+Von Wafer|Y|Fit for Match|Slightly Injured|.09
+Von Wafer|Y|Fit for Match|Fit for Match|.90
+Von Wafer|Y|Seriously Injured|Fit for Match|0
+Von Wafer|Y|Seriously Injured|Seriously Injured|1
+Von Wafer|Y|Seriously Injured|Slightly Injured|0
+Von Wafer|Y|Slightly Injured|Fit for Match|0
+Von Wafer|Y|Slightly Injured|Seriously Injured|.04
+Von Wafer|Y|Slightly Injured|Slightly Injured|.96
+Carl Landry|N|Fit for Match|Fit for Match|1
+Carl Landry|N|Fit for Match|Seriously Injured|0
+Carl Landry|N|Fit for Match|Slightly Injured|0
+Carl Landry|N|Seriously Injured|Fit for Match|.05
+Carl Landry|N|Seriously Injured|Seriously Injured|.44
+Carl Landry|N|Seriously Injured|Slightly Injured|.51
+Carl Landry|N|Slightly Injured|Fit for Match|.35
+Carl Landry|N|Slightly Injured|Seriously Injured|0
+Carl Landry|N|Slightly Injured|Slightly Injured|.65
+Carl Landry|Y|Fit for Match|Seriously Injured|.05
+Carl Landry|Y|Fit for Match|Slightly Injured|.18
+Carl Landry|Y|Fit for Match|Fit for Match|.77
+Carl Landry|Y|Seriously Injured|Fit for Match|0
+Carl Landry|Y|Seriously Injured|Seriously Injured|1
+Carl Landry|Y|Seriously Injured|Slightly Injured|0
+Carl Landry|Y|Slightly Injured|Fit for Match|0
+Carl Landry|Y|Slightly Injured|Seriously Injured|.24
+Carl Landry|Y|Slightly Injured|Slightly Injured|.76
+Kyle Lowry|N|Fit for Match|Fit for Match|1
+Kyle Lowry|N|Fit for Match|Seriously Injured|0
+Kyle Lowry|N|Fit for Match|Slightly Injured|0
+Kyle Lowry|N|Seriously Injured|Fit for Match|.10
+Kyle Lowry|N|Seriously Injured|Seriously Injured|.28
+Kyle Lowry|N|Seriously Injured|Slightly Injured|.62
+Kyle Lowry|N|Slightly Injured|Fit for Match|.68
+Kyle Lowry|N|Slightly Injured|Seriously Injured|0
+Kyle Lowry|N|Slightly Injured|Slightly Injured|.32
+Kyle Lowry|Y|Fit for Match|Seriously Injured|.04
+Kyle Lowry|Y|Fit for Match|Slightly Injured|.09
+Kyle Lowry|Y|Fit for Match|Fit for Match|.87
+Kyle Lowry|Y|Seriously Injured|Fit for Match|0
+Kyle Lowry|Y|Seriously Injured|Seriously Injured|1
+Kyle Lowry|Y|Seriously Injured|Slightly Injured|0
+Kyle Lowry|Y|Slightly Injured|Fit for Match|0
+Kyle Lowry|Y|Slightly Injured|Seriously Injured|.03
+Kyle Lowry|Y|Slightly Injured|Slightly Injured|.97
+Shane Battier|N|Fit for Match|Fit for Match|1
+Shane Battier|N|Fit for Match|Seriously Injured|0
+Shane Battier|N|Fit for Match|Slightly Injured|0
+Shane Battier|N|Seriously Injured|Fit for Match|.10
+Shane Battier|N|Seriously Injured|Seriously Injured|.20
+Shane Battier|N|Seriously Injured|Slightly Injured|.70
+Shane Battier|N|Slightly Injured|Fit for Match|.53
+Shane Battier|N|Slightly Injured|Seriously Injured|0
+Shane Battier|N|Slightly Injured|Slightly Injured|.47
+Shane Battier|Y|Fit for Match|Seriously Injured|.01
+Shane Battier|Y|Fit for Match|Slightly Injured|.13
+Shane Battier|Y|Fit for Match|Fit for Match|.86
+Shane Battier|Y|Seriously Injured|Fit for Match|0
+Shane Battier|Y|Seriously Injured|Seriously Injured|1
+Shane Battier|Y|Seriously Injured|Slightly Injured|0
+Shane Battier|Y|Slightly Injured|Fit for Match|0
+Shane Battier|Y|Slightly Injured|Seriously Injured|.08
+Shane Battier|Y|Slightly Injured|Slightly Injured|.92
+Brent Barry|N|Fit for Match|Fit for Match|1
+Brent Barry|N|Fit for Match|Seriously Injured|0
+Brent Barry|N|Fit for Match|Slightly Injured|0
+Brent Barry|N|Seriously Injured|Fit for Match|.07
+Brent Barry|N|Seriously Injured|Seriously Injured|.27
+Brent Barry|N|Seriously Injured|Slightly Injured|.66
+Brent Barry|N|Slightly Injured|Fit for Match|.55
+Brent Barry|N|Slightly Injured|Seriously Injured|0
+Brent Barry|N|Slightly Injured|Slightly Injured|.45
+Brent Barry|Y|Fit for Match|Seriously Injured|.02
+Brent Barry|Y|Fit for Match|Slightly Injured|.06
+Brent Barry|Y|Fit for Match|Fit for Match|.92
+Brent Barry|Y|Seriously Injured|Fit for Match|0
+Brent Barry|Y|Seriously Injured|Seriously Injured|1
+Brent Barry|Y|Seriously Injured|Slightly Injured|0
+Brent Barry|Y|Slightly Injured|Fit for Match|0
+Brent Barry|Y|Slightly Injured|Seriously Injured|.11
+Brent Barry|Y|Slightly Injured|Slightly Injured|.89
+Brian Cook|N|Fit for Match|Fit for Match|1
+Brian Cook|N|Fit for Match|Seriously Injured|0
+Brian Cook|N|Fit for Match|Slightly Injured|0
+Brian Cook|N|Seriously Injured|Fit for Match|.08
+Brian Cook|N|Seriously Injured|Seriously Injured|.28
+Brian Cook|N|Seriously Injured|Slightly Injured|.64
+Brian Cook|N|Slightly Injured|Fit for Match|.20
+Brian Cook|N|Slightly Injured|Seriously Injured|0
+Brian Cook|N|Slightly Injured|Slightly Injured|.80
+Brian Cook|Y|Fit for Match|Seriously Injured|.01
+Brian Cook|Y|Fit for Match|Slightly Injured|.15
+Brian Cook|Y|Fit for Match|Fit for Match|.84
+Brian Cook|Y|Seriously Injured|Fit for Match|0
+Brian Cook|Y|Seriously Injured|Seriously Injured|1
+Brian Cook|Y|Seriously Injured|Slightly Injured|0
+Brian Cook|Y|Slightly Injured|Fit for Match|0
+Brian Cook|Y|Slightly Injured|Seriously Injured|.07
+Brian Cook|Y|Slightly Injured|Slightly Injured|.93
+Chuck Hayes|N|Fit for Match|Fit for Match|1
+Chuck Hayes|N|Fit for Match|Seriously Injured|0
+Chuck Hayes|N|Fit for Match|Slightly Injured|0
+Chuck Hayes|N|Seriously Injured|Fit for Match|.07
+Chuck Hayes|N|Seriously Injured|Seriously Injured|.48
+Chuck Hayes|N|Seriously Injured|Slightly Injured|.45
+Chuck Hayes|N|Slightly Injured|Fit for Match|.19
+Chuck Hayes|N|Slightly Injured|Seriously Injured|0
+Chuck Hayes|N|Slightly Injured|Slightly Injured|.81
+Chuck Hayes|Y|Fit for Match|Seriously Injured|.04
+Chuck Hayes|Y|Fit for Match|Slightly Injured|.15
+Chuck Hayes|Y|Fit for Match|Fit for Match|.81
+Chuck Hayes|Y|Seriously Injured|Fit for Match|0
+Chuck Hayes|Y|Seriously Injured|Seriously Injured|1
+Chuck Hayes|Y|Seriously Injured|Slightly Injured|0
+Chuck Hayes|Y|Slightly Injured|Fit for Match|0
+Chuck Hayes|Y|Slightly Injured|Seriously Injured|.15
+Chuck Hayes|Y|Slightly Injured|Slightly Injured|.85
+Al Harrington|N|Fit for Match|Fit for Match|1
+Al Harrington|N|Fit for Match|Seriously Injured|0
+Al Harrington|N|Fit for Match|Slightly Injured|0
+Al Harrington|N|Seriously Injured|Fit for Match|.10
+Al Harrington|N|Seriously Injured|Seriously Injured|.37
+Al Harrington|N|Seriously Injured|Slightly Injured|.53
+Al Harrington|N|Slightly Injured|Fit for Match|.35
+Al Harrington|N|Slightly Injured|Seriously Injured|0
+Al Harrington|N|Slightly Injured|Slightly Injured|.65
+Al Harrington|Y|Fit for Match|Seriously Injured|.03
+Al Harrington|Y|Fit for Match|Slightly Injured|.10
+Al Harrington|Y|Fit for Match|Fit for Match|.87
+Al Harrington|Y|Seriously Injured|Fit for Match|0
+Al Harrington|Y|Seriously Injured|Seriously Injured|1
+Al Harrington|Y|Seriously Injured|Slightly Injured|0
+Al Harrington|Y|Slightly Injured|Fit for Match|0
+Al Harrington|Y|Slightly Injured|Seriously Injured|.22
+Al Harrington|Y|Slightly Injured|Slightly Injured|.78
+Nate Robinson|N|Fit for Match|Fit for Match|1
+Nate Robinson|N|Fit for Match|Seriously Injured|0
+Nate Robinson|N|Fit for Match|Slightly Injured|0
+Nate Robinson|N|Seriously Injured|Fit for Match|.04
+Nate Robinson|N|Seriously Injured|Seriously Injured|.02
+Nate Robinson|N|Seriously Injured|Slightly Injured|.94
+Nate Robinson|N|Slightly Injured|Fit for Match|.55
+Nate Robinson|N|Slightly Injured|Seriously Injured|0
+Nate Robinson|N|Slightly Injured|Slightly Injured|.45
+Nate Robinson|Y|Fit for Match|Seriously Injured|.05
+Nate Robinson|Y|Fit for Match|Slightly Injured|.19
+Nate Robinson|Y|Fit for Match|Fit for Match|.76
+Nate Robinson|Y|Seriously Injured|Fit for Match|0
+Nate Robinson|Y|Seriously Injured|Seriously Injured|1
+Nate Robinson|Y|Seriously Injured|Slightly Injured|0
+Nate Robinson|Y|Slightly Injured|Fit for Match|0
+Nate Robinson|Y|Slightly Injured|Seriously Injured|.13
+Nate Robinson|Y|Slightly Injured|Slightly Injured|.87
+David Lee|N|Fit for Match|Fit for Match|1
+David Lee|N|Fit for Match|Seriously Injured|0
+David Lee|N|Fit for Match|Slightly Injured|0
+David Lee|N|Seriously Injured|Fit for Match|.08
+David Lee|N|Seriously Injured|Seriously Injured|.30
+David Lee|N|Seriously Injured|Slightly Injured|.62
+David Lee|N|Slightly Injured|Fit for Match|.11
+David Lee|N|Slightly Injured|Seriously Injured|0
+David Lee|N|Slightly Injured|Slightly Injured|.89
+David Lee|Y|Fit for Match|Seriously Injured|.03
+David Lee|Y|Fit for Match|Slightly Injured|.07
+David Lee|Y|Fit for Match|Fit for Match|.90
+David Lee|Y|Seriously Injured|Fit for Match|0
+David Lee|Y|Seriously Injured|Seriously Injured|1
+David Lee|Y|Seriously Injured|Slightly Injured|0
+David Lee|Y|Slightly Injured|Fit for Match|0
+David Lee|Y|Slightly Injured|Seriously Injured|.02
+David Lee|Y|Slightly Injured|Slightly Injured|.98
+Wilson Chandler|N|Fit for Match|Fit for Match|1
+Wilson Chandler|N|Fit for Match|Seriously Injured|0
+Wilson Chandler|N|Fit for Match|Slightly Injured|0
+Wilson Chandler|N|Seriously Injured|Fit for Match|.01
+Wilson Chandler|N|Seriously Injured|Seriously Injured|.49
+Wilson Chandler|N|Seriously Injured|Slightly Injured|.50
+Wilson Chandler|N|Slightly Injured|Fit for Match|.46
+Wilson Chandler|N|Slightly Injured|Seriously Injured|0
+Wilson Chandler|N|Slightly Injured|Slightly Injured|.54
+Wilson Chandler|Y|Fit for Match|Seriously Injured|.05
+Wilson Chandler|Y|Fit for Match|Slightly Injured|.20
+Wilson Chandler|Y|Fit for Match|Fit for Match|.75
+Wilson Chandler|Y|Seriously Injured|Fit for Match|0
+Wilson Chandler|Y|Seriously Injured|Seriously Injured|1
+Wilson Chandler|Y|Seriously Injured|Slightly Injured|0
+Wilson Chandler|Y|Slightly Injured|Fit for Match|0
+Wilson Chandler|Y|Slightly Injured|Seriously Injured|.23
+Wilson Chandler|Y|Slightly Injured|Slightly Injured|.77
+Larry Hughes|N|Fit for Match|Fit for Match|1
+Larry Hughes|N|Fit for Match|Seriously Injured|0
+Larry Hughes|N|Fit for Match|Slightly Injured|0
+Larry Hughes|N|Seriously Injured|Fit for Match|.02
+Larry Hughes|N|Seriously Injured|Seriously Injured|.21
+Larry Hughes|N|Seriously Injured|Slightly Injured|.77
+Larry Hughes|N|Slightly Injured|Fit for Match|.32
+Larry Hughes|N|Slightly Injured|Seriously Injured|0
+Larry Hughes|N|Slightly Injured|Slightly Injured|.68
+Larry Hughes|Y|Fit for Match|Seriously Injured|.03
+Larry Hughes|Y|Fit for Match|Slightly Injured|.06
+Larry Hughes|Y|Fit for Match|Fit for Match|.91
+Larry Hughes|Y|Seriously Injured|Fit for Match|0
+Larry Hughes|Y|Seriously Injured|Seriously Injured|1
+Larry Hughes|Y|Seriously Injured|Slightly Injured|0
+Larry Hughes|Y|Slightly Injured|Fit for Match|0
+Larry Hughes|Y|Slightly Injured|Seriously Injured|.05
+Larry Hughes|Y|Slightly Injured|Slightly Injured|.95
+Chris Duhon|N|Fit for Match|Fit for Match|1
+Chris Duhon|N|Fit for Match|Seriously Injured|0
+Chris Duhon|N|Fit for Match|Slightly Injured|0
+Chris Duhon|N|Seriously Injured|Fit for Match|.08
+Chris Duhon|N|Seriously Injured|Seriously Injured|.19
+Chris Duhon|N|Seriously Injured|Slightly Injured|.73
+Chris Duhon|N|Slightly Injured|Fit for Match|.40
+Chris Duhon|N|Slightly Injured|Seriously Injured|0
+Chris Duhon|N|Slightly Injured|Slightly Injured|.60
+Chris Duhon|Y|Fit for Match|Seriously Injured|.02
+Chris Duhon|Y|Fit for Match|Slightly Injured|.13
+Chris Duhon|Y|Fit for Match|Fit for Match|.85
+Chris Duhon|Y|Seriously Injured|Fit for Match|0
+Chris Duhon|Y|Seriously Injured|Seriously Injured|1
+Chris Duhon|Y|Seriously Injured|Slightly Injured|0
+Chris Duhon|Y|Slightly Injured|Fit for Match|0
+Chris Duhon|Y|Slightly Injured|Seriously Injured|.23
+Chris Duhon|Y|Slightly Injured|Slightly Injured|.77
+Quentin Richardson|N|Fit for Match|Fit for Match|1
+Quentin Richardson|N|Fit for Match|Seriously Injured|0
+Quentin Richardson|N|Fit for Match|Slightly Injured|0
+Quentin Richardson|N|Seriously Injured|Fit for Match|.03
+Quentin Richardson|N|Seriously Injured|Seriously Injured|.32
+Quentin Richardson|N|Seriously Injured|Slightly Injured|.65
+Quentin Richardson|N|Slightly Injured|Fit for Match|.24
+Quentin Richardson|N|Slightly Injured|Seriously Injured|0
+Quentin Richardson|N|Slightly Injured|Slightly Injured|.76
+Quentin Richardson|Y|Fit for Match|Seriously Injured|.03
+Quentin Richardson|Y|Fit for Match|Slightly Injured|.09
+Quentin Richardson|Y|Fit for Match|Fit for Match|.88
+Quentin Richardson|Y|Seriously Injured|Fit for Match|0
+Quentin Richardson|Y|Seriously Injured|Seriously Injured|1
+Quentin Richardson|Y|Seriously Injured|Slightly Injured|0
+Quentin Richardson|Y|Slightly Injured|Fit for Match|0
+Quentin Richardson|Y|Slightly Injured|Seriously Injured|.06
+Quentin Richardson|Y|Slightly Injured|Slightly Injured|.94
+Danilo Gallinari|N|Fit for Match|Fit for Match|1
+Danilo Gallinari|N|Fit for Match|Seriously Injured|0
+Danilo Gallinari|N|Fit for Match|Slightly Injured|0
+Danilo Gallinari|N|Seriously Injured|Fit for Match|.03
+Danilo Gallinari|N|Seriously Injured|Seriously Injured|.14
+Danilo Gallinari|N|Seriously Injured|Slightly Injured|.83
+Danilo Gallinari|N|Slightly Injured|Fit for Match|.35
+Danilo Gallinari|N|Slightly Injured|Seriously Injured|0
+Danilo Gallinari|N|Slightly Injured|Slightly Injured|.65
+Danilo Gallinari|Y|Fit for Match|Seriously Injured|.03
+Danilo Gallinari|Y|Fit for Match|Slightly Injured|.16
+Danilo Gallinari|Y|Fit for Match|Fit for Match|.81
+Danilo Gallinari|Y|Seriously Injured|Fit for Match|0
+Danilo Gallinari|Y|Seriously Injured|Seriously Injured|1
+Danilo Gallinari|Y|Seriously Injured|Slightly Injured|0
+Danilo Gallinari|Y|Slightly Injured|Fit for Match|0
+Danilo Gallinari|Y|Slightly Injured|Seriously Injured|.15
+Danilo Gallinari|Y|Slightly Injured|Slightly Injured|.85
+Chris Wilcox|N|Fit for Match|Fit for Match|1
+Chris Wilcox|N|Fit for Match|Seriously Injured|0
+Chris Wilcox|N|Fit for Match|Slightly Injured|0
+Chris Wilcox|N|Seriously Injured|Fit for Match|.01
+Chris Wilcox|N|Seriously Injured|Seriously Injured|.25
+Chris Wilcox|N|Seriously Injured|Slightly Injured|.74
+Chris Wilcox|N|Slightly Injured|Fit for Match|.46
+Chris Wilcox|N|Slightly Injured|Seriously Injured|0
+Chris Wilcox|N|Slightly Injured|Slightly Injured|.54
+Chris Wilcox|Y|Fit for Match|Seriously Injured|.02
+Chris Wilcox|Y|Fit for Match|Slightly Injured|.14
+Chris Wilcox|Y|Fit for Match|Fit for Match|.84
+Chris Wilcox|Y|Seriously Injured|Fit for Match|0
+Chris Wilcox|Y|Seriously Injured|Seriously Injured|1
+Chris Wilcox|Y|Seriously Injured|Slightly Injured|0
+Chris Wilcox|Y|Slightly Injured|Fit for Match|0
+Chris Wilcox|Y|Slightly Injured|Seriously Injured|.23
+Chris Wilcox|Y|Slightly Injured|Slightly Injured|.77
+Jared Jeffries|N|Fit for Match|Fit for Match|1
+Jared Jeffries|N|Fit for Match|Seriously Injured|0
+Jared Jeffries|N|Fit for Match|Slightly Injured|0
+Jared Jeffries|N|Seriously Injured|Fit for Match|.10
+Jared Jeffries|N|Seriously Injured|Seriously Injured|.15
+Jared Jeffries|N|Seriously Injured|Slightly Injured|.75
+Jared Jeffries|N|Slightly Injured|Fit for Match|.45
+Jared Jeffries|N|Slightly Injured|Seriously Injured|0
+Jared Jeffries|N|Slightly Injured|Slightly Injured|.55
+Jared Jeffries|Y|Fit for Match|Seriously Injured|.02
+Jared Jeffries|Y|Fit for Match|Slightly Injured|.18
+Jared Jeffries|Y|Fit for Match|Fit for Match|.80
+Jared Jeffries|Y|Seriously Injured|Fit for Match|0
+Jared Jeffries|Y|Seriously Injured|Seriously Injured|1
+Jared Jeffries|Y|Seriously Injured|Slightly Injured|0
+Jared Jeffries|Y|Slightly Injured|Fit for Match|0
+Jared Jeffries|Y|Slightly Injured|Seriously Injured|.08
+Jared Jeffries|Y|Slightly Injured|Slightly Injured|.92
+Mouhamed Sene|N|Fit for Match|Fit for Match|1
+Mouhamed Sene|N|Fit for Match|Seriously Injured|0
+Mouhamed Sene|N|Fit for Match|Slightly Injured|0
+Mouhamed Sene|N|Seriously Injured|Fit for Match|.07
+Mouhamed Sene|N|Seriously Injured|Seriously Injured|.23
+Mouhamed Sene|N|Seriously Injured|Slightly Injured|.70
+Mouhamed Sene|N|Slightly Injured|Fit for Match|.42
+Mouhamed Sene|N|Slightly Injured|Seriously Injured|0
+Mouhamed Sene|N|Slightly Injured|Slightly Injured|.58
+Mouhamed Sene|Y|Fit for Match|Seriously Injured|.02
+Mouhamed Sene|Y|Fit for Match|Slightly Injured|.17
+Mouhamed Sene|Y|Fit for Match|Fit for Match|.81
+Mouhamed Sene|Y|Seriously Injured|Fit for Match|0
+Mouhamed Sene|Y|Seriously Injured|Seriously Injured|1
+Mouhamed Sene|Y|Seriously Injured|Slightly Injured|0
+Mouhamed Sene|Y|Slightly Injured|Fit for Match|0
+Mouhamed Sene|Y|Slightly Injured|Seriously Injured|.24
+Mouhamed Sene|Y|Slightly Injured|Slightly Injured|.76
+Cheikh Samb|N|Fit for Match|Fit for Match|1
+Cheikh Samb|N|Fit for Match|Seriously Injured|0
+Cheikh Samb|N|Fit for Match|Slightly Injured|0
+Cheikh Samb|N|Seriously Injured|Fit for Match|.07
+Cheikh Samb|N|Seriously Injured|Seriously Injured|.27
+Cheikh Samb|N|Seriously Injured|Slightly Injured|.66
+Cheikh Samb|N|Slightly Injured|Fit for Match|.12
+Cheikh Samb|N|Slightly Injured|Seriously Injured|0
+Cheikh Samb|N|Slightly Injured|Slightly Injured|.88
+Cheikh Samb|Y|Fit for Match|Seriously Injured|.05
+Cheikh Samb|Y|Fit for Match|Slightly Injured|.13
+Cheikh Samb|Y|Fit for Match|Fit for Match|.82
+Cheikh Samb|Y|Seriously Injured|Fit for Match|0
+Cheikh Samb|Y|Seriously Injured|Seriously Injured|1
+Cheikh Samb|Y|Seriously Injured|Slightly Injured|0
+Cheikh Samb|Y|Slightly Injured|Fit for Match|0
+Cheikh Samb|Y|Slightly Injured|Seriously Injured|.10
+Cheikh Samb|Y|Slightly Injured|Slightly Injured|.90
+Rudy Gay|N|Fit for Match|Fit for Match|1
+Rudy Gay|N|Fit for Match|Seriously Injured|0
+Rudy Gay|N|Fit for Match|Slightly Injured|0
+Rudy Gay|N|Seriously Injured|Fit for Match|.05
+Rudy Gay|N|Seriously Injured|Seriously Injured|.22
+Rudy Gay|N|Seriously Injured|Slightly Injured|.73
+Rudy Gay|N|Slightly Injured|Fit for Match|.34
+Rudy Gay|N|Slightly Injured|Seriously Injured|0
+Rudy Gay|N|Slightly Injured|Slightly Injured|.66
+Rudy Gay|Y|Fit for Match|Seriously Injured|.03
+Rudy Gay|Y|Fit for Match|Slightly Injured|.15
+Rudy Gay|Y|Fit for Match|Fit for Match|.82
+Rudy Gay|Y|Seriously Injured|Fit for Match|0
+Rudy Gay|Y|Seriously Injured|Seriously Injured|1
+Rudy Gay|Y|Seriously Injured|Slightly Injured|0
+Rudy Gay|Y|Slightly Injured|Fit for Match|0
+Rudy Gay|Y|Slightly Injured|Seriously Injured|.20
+Rudy Gay|Y|Slightly Injured|Slightly Injured|.80
+OJ Mayo|N|Fit for Match|Fit for Match|1
+OJ Mayo|N|Fit for Match|Seriously Injured|0
+OJ Mayo|N|Fit for Match|Slightly Injured|0
+OJ Mayo|N|Seriously Injured|Fit for Match|.10
+OJ Mayo|N|Seriously Injured|Seriously Injured|.15
+OJ Mayo|N|Seriously Injured|Slightly Injured|.75
+OJ Mayo|N|Slightly Injured|Fit for Match|.24
+OJ Mayo|N|Slightly Injured|Seriously Injured|0
+OJ Mayo|N|Slightly Injured|Slightly Injured|.76
+OJ Mayo|Y|Fit for Match|Seriously Injured|.03
+OJ Mayo|Y|Fit for Match|Slightly Injured|.09
+OJ Mayo|Y|Fit for Match|Fit for Match|.88
+OJ Mayo|Y|Seriously Injured|Fit for Match|0
+OJ Mayo|Y|Seriously Injured|Seriously Injured|1
+OJ Mayo|Y|Seriously Injured|Slightly Injured|0
+OJ Mayo|Y|Slightly Injured|Fit for Match|0
+OJ Mayo|Y|Slightly Injured|Seriously Injured|.23
+OJ Mayo|Y|Slightly Injured|Slightly Injured|.77
+Marc Gasol|N|Fit for Match|Fit for Match|1
+Marc Gasol|N|Fit for Match|Seriously Injured|0
+Marc Gasol|N|Fit for Match|Slightly Injured|0
+Marc Gasol|N|Seriously Injured|Fit for Match|.04
+Marc Gasol|N|Seriously Injured|Seriously Injured|.30
+Marc Gasol|N|Seriously Injured|Slightly Injured|.66
+Marc Gasol|N|Slightly Injured|Fit for Match|.52
+Marc Gasol|N|Slightly Injured|Seriously Injured|0
+Marc Gasol|N|Slightly Injured|Slightly Injured|.48
+Marc Gasol|Y|Fit for Match|Seriously Injured|.05
+Marc Gasol|Y|Fit for Match|Slightly Injured|.14
+Marc Gasol|Y|Fit for Match|Fit for Match|.81
+Marc Gasol|Y|Seriously Injured|Fit for Match|0
+Marc Gasol|Y|Seriously Injured|Seriously Injured|1
+Marc Gasol|Y|Seriously Injured|Slightly Injured|0
+Marc Gasol|Y|Slightly Injured|Fit for Match|0
+Marc Gasol|Y|Slightly Injured|Seriously Injured|.14
+Marc Gasol|Y|Slightly Injured|Slightly Injured|.86
+Hakim Warrick|N|Fit for Match|Fit for Match|1
+Hakim Warrick|N|Fit for Match|Seriously Injured|0
+Hakim Warrick|N|Fit for Match|Slightly Injured|0
+Hakim Warrick|N|Seriously Injured|Fit for Match|.07
+Hakim Warrick|N|Seriously Injured|Seriously Injured|.13
+Hakim Warrick|N|Seriously Injured|Slightly Injured|.80
+Hakim Warrick|N|Slightly Injured|Fit for Match|.66
+Hakim Warrick|N|Slightly Injured|Seriously Injured|0
+Hakim Warrick|N|Slightly Injured|Slightly Injured|.34
+Hakim Warrick|Y|Fit for Match|Seriously Injured|.01
+Hakim Warrick|Y|Fit for Match|Slightly Injured|.19
+Hakim Warrick|Y|Fit for Match|Fit for Match|.80
+Hakim Warrick|Y|Seriously Injured|Fit for Match|0
+Hakim Warrick|Y|Seriously Injured|Seriously Injured|1
+Hakim Warrick|Y|Seriously Injured|Slightly Injured|0
+Hakim Warrick|Y|Slightly Injured|Fit for Match|0
+Hakim Warrick|Y|Slightly Injured|Seriously Injured|.22
+Hakim Warrick|Y|Slightly Injured|Slightly Injured|.78
+Mike Conley|N|Fit for Match|Fit for Match|1
+Mike Conley|N|Fit for Match|Seriously Injured|0
+Mike Conley|N|Fit for Match|Slightly Injured|0
+Mike Conley|N|Seriously Injured|Fit for Match|.07
+Mike Conley|N|Seriously Injured|Seriously Injured|.31
+Mike Conley|N|Seriously Injured|Slightly Injured|.62
+Mike Conley|N|Slightly Injured|Fit for Match|.53
+Mike Conley|N|Slightly Injured|Seriously Injured|0
+Mike Conley|N|Slightly Injured|Slightly Injured|.47
+Mike Conley|Y|Fit for Match|Seriously Injured|.01
+Mike Conley|Y|Fit for Match|Slightly Injured|.19
+Mike Conley|Y|Fit for Match|Fit for Match|.80
+Mike Conley|Y|Seriously Injured|Fit for Match|0
+Mike Conley|Y|Seriously Injured|Seriously Injured|1
+Mike Conley|Y|Seriously Injured|Slightly Injured|0
+Mike Conley|Y|Slightly Injured|Fit for Match|0
+Mike Conley|Y|Slightly Injured|Seriously Injured|.01
+Mike Conley|Y|Slightly Injured|Slightly Injured|.99
+Darrell Arthur|N|Fit for Match|Fit for Match|1
+Darrell Arthur|N|Fit for Match|Seriously Injured|0
+Darrell Arthur|N|Fit for Match|Slightly Injured|0
+Darrell Arthur|N|Seriously Injured|Fit for Match|.09
+Darrell Arthur|N|Seriously Injured|Seriously Injured|.13
+Darrell Arthur|N|Seriously Injured|Slightly Injured|.78
+Darrell Arthur|N|Slightly Injured|Fit for Match|.70
+Darrell Arthur|N|Slightly Injured|Seriously Injured|0
+Darrell Arthur|N|Slightly Injured|Slightly Injured|.30
+Darrell Arthur|Y|Fit for Match|Seriously Injured|.02
+Darrell Arthur|Y|Fit for Match|Slightly Injured|.11
+Darrell Arthur|Y|Fit for Match|Fit for Match|.87
+Darrell Arthur|Y|Seriously Injured|Fit for Match|0
+Darrell Arthur|Y|Seriously Injured|Seriously Injured|1
+Darrell Arthur|Y|Seriously Injured|Slightly Injured|0
+Darrell Arthur|Y|Slightly Injured|Fit for Match|0
+Darrell Arthur|Y|Slightly Injured|Seriously Injured|.12
+Darrell Arthur|Y|Slightly Injured|Slightly Injured|.88
+Darko Milicic|N|Fit for Match|Fit for Match|1
+Darko Milicic|N|Fit for Match|Seriously Injured|0
+Darko Milicic|N|Fit for Match|Slightly Injured|0
+Darko Milicic|N|Seriously Injured|Fit for Match|.08
+Darko Milicic|N|Seriously Injured|Seriously Injured|.14
+Darko Milicic|N|Seriously Injured|Slightly Injured|.78
+Darko Milicic|N|Slightly Injured|Fit for Match|.29
+Darko Milicic|N|Slightly Injured|Seriously Injured|0
+Darko Milicic|N|Slightly Injured|Slightly Injured|.71
+Darko Milicic|Y|Fit for Match|Seriously Injured|.04
+Darko Milicic|Y|Fit for Match|Slightly Injured|.20
+Darko Milicic|Y|Fit for Match|Fit for Match|.76
+Darko Milicic|Y|Seriously Injured|Fit for Match|0
+Darko Milicic|Y|Seriously Injured|Seriously Injured|1
+Darko Milicic|Y|Seriously Injured|Slightly Injured|0
+Darko Milicic|Y|Slightly Injured|Fit for Match|0
+Darko Milicic|Y|Slightly Injured|Seriously Injured|.27
+Darko Milicic|Y|Slightly Injured|Slightly Injured|.73
+Quinton Ross|N|Fit for Match|Fit for Match|1
+Quinton Ross|N|Fit for Match|Seriously Injured|0
+Quinton Ross|N|Fit for Match|Slightly Injured|0
+Quinton Ross|N|Seriously Injured|Fit for Match|.02
+Quinton Ross|N|Seriously Injured|Seriously Injured|.13
+Quinton Ross|N|Seriously Injured|Slightly Injured|.85
+Quinton Ross|N|Slightly Injured|Fit for Match|.30
+Quinton Ross|N|Slightly Injured|Seriously Injured|0
+Quinton Ross|N|Slightly Injured|Slightly Injured|.70
+Quinton Ross|Y|Fit for Match|Seriously Injured|.02
+Quinton Ross|Y|Fit for Match|Slightly Injured|.07
+Quinton Ross|Y|Fit for Match|Fit for Match|.91
+Quinton Ross|Y|Seriously Injured|Fit for Match|0
+Quinton Ross|Y|Seriously Injured|Seriously Injured|1
+Quinton Ross|Y|Seriously Injured|Slightly Injured|0
+Quinton Ross|Y|Slightly Injured|Fit for Match|0
+Quinton Ross|Y|Slightly Injured|Seriously Injured|.07
+Quinton Ross|Y|Slightly Injured|Slightly Injured|.93
+Darius Miles|N|Fit for Match|Fit for Match|1
+Darius Miles|N|Fit for Match|Seriously Injured|0
+Darius Miles|N|Fit for Match|Slightly Injured|0
+Darius Miles|N|Seriously Injured|Fit for Match|.07
+Darius Miles|N|Seriously Injured|Seriously Injured|.12
+Darius Miles|N|Seriously Injured|Slightly Injured|.81
+Darius Miles|N|Slightly Injured|Fit for Match|.32
+Darius Miles|N|Slightly Injured|Seriously Injured|0
+Darius Miles|N|Slightly Injured|Slightly Injured|.68
+Darius Miles|Y|Fit for Match|Seriously Injured|.03
+Darius Miles|Y|Fit for Match|Slightly Injured|.18
+Darius Miles|Y|Fit for Match|Fit for Match|.79
+Darius Miles|Y|Seriously Injured|Fit for Match|0
+Darius Miles|Y|Seriously Injured|Seriously Injured|1
+Darius Miles|Y|Seriously Injured|Slightly Injured|0
+Darius Miles|Y|Slightly Injured|Fit for Match|0
+Darius Miles|Y|Slightly Injured|Seriously Injured|.30
+Darius Miles|Y|Slightly Injured|Slightly Injured|.70
+Marko Jaric|N|Fit for Match|Fit for Match|1
+Marko Jaric|N|Fit for Match|Seriously Injured|0
+Marko Jaric|N|Fit for Match|Slightly Injured|0
+Marko Jaric|N|Seriously Injured|Fit for Match|.10
+Marko Jaric|N|Seriously Injured|Seriously Injured|.35
+Marko Jaric|N|Seriously Injured|Slightly Injured|.55
+Marko Jaric|N|Slightly Injured|Fit for Match|.63
+Marko Jaric|N|Slightly Injured|Seriously Injured|0
+Marko Jaric|N|Slightly Injured|Slightly Injured|.37
+Marko Jaric|Y|Fit for Match|Seriously Injured|.03
+Marko Jaric|Y|Fit for Match|Slightly Injured|.19
+Marko Jaric|Y|Fit for Match|Fit for Match|.78
+Marko Jaric|Y|Seriously Injured|Fit for Match|0
+Marko Jaric|Y|Seriously Injured|Seriously Injured|1
+Marko Jaric|Y|Seriously Injured|Slightly Injured|0
+Marko Jaric|Y|Slightly Injured|Fit for Match|0
+Marko Jaric|Y|Slightly Injured|Seriously Injured|.25
+Marko Jaric|Y|Slightly Injured|Slightly Injured|.75
+Greg Buckner|N|Fit for Match|Fit for Match|1
+Greg Buckner|N|Fit for Match|Seriously Injured|0
+Greg Buckner|N|Fit for Match|Slightly Injured|0
+Greg Buckner|N|Seriously Injured|Fit for Match|.05
+Greg Buckner|N|Seriously Injured|Seriously Injured|.20
+Greg Buckner|N|Seriously Injured|Slightly Injured|.75
+Greg Buckner|N|Slightly Injured|Fit for Match|.16
+Greg Buckner|N|Slightly Injured|Seriously Injured|0
+Greg Buckner|N|Slightly Injured|Slightly Injured|.84
+Greg Buckner|Y|Fit for Match|Seriously Injured|.05
+Greg Buckner|Y|Fit for Match|Slightly Injured|.07
+Greg Buckner|Y|Fit for Match|Fit for Match|.88
+Greg Buckner|Y|Seriously Injured|Fit for Match|0
+Greg Buckner|Y|Seriously Injured|Seriously Injured|1
+Greg Buckner|Y|Seriously Injured|Slightly Injured|0
+Greg Buckner|Y|Slightly Injured|Fit for Match|0
+Greg Buckner|Y|Slightly Injured|Seriously Injured|.29
+Greg Buckner|Y|Slightly Injured|Slightly Injured|.71
+Hamed Haddadi|N|Fit for Match|Fit for Match|1
+Hamed Haddadi|N|Fit for Match|Seriously Injured|0
+Hamed Haddadi|N|Fit for Match|Slightly Injured|0
+Hamed Haddadi|N|Seriously Injured|Fit for Match|.07
+Hamed Haddadi|N|Seriously Injured|Seriously Injured|.25
+Hamed Haddadi|N|Seriously Injured|Slightly Injured|.68
+Hamed Haddadi|N|Slightly Injured|Fit for Match|.31
+Hamed Haddadi|N|Slightly Injured|Seriously Injured|0
+Hamed Haddadi|N|Slightly Injured|Slightly Injured|.69
+Hamed Haddadi|Y|Fit for Match|Seriously Injured|.05
+Hamed Haddadi|Y|Fit for Match|Slightly Injured|.15
+Hamed Haddadi|Y|Fit for Match|Fit for Match|.80
+Hamed Haddadi|Y|Seriously Injured|Fit for Match|0
+Hamed Haddadi|Y|Seriously Injured|Seriously Injured|1
+Hamed Haddadi|Y|Seriously Injured|Slightly Injured|0
+Hamed Haddadi|Y|Slightly Injured|Fit for Match|0
+Hamed Haddadi|Y|Slightly Injured|Seriously Injured|.08
+Hamed Haddadi|Y|Slightly Injured|Slightly Injured|.92
+Andre Iguodala|N|Fit for Match|Fit for Match|1
+Andre Iguodala|N|Fit for Match|Seriously Injured|0
+Andre Iguodala|N|Fit for Match|Slightly Injured|0
+Andre Iguodala|N|Seriously Injured|Fit for Match|.02
+Andre Iguodala|N|Seriously Injured|Seriously Injured|.36
+Andre Iguodala|N|Seriously Injured|Slightly Injured|.62
+Andre Iguodala|N|Slightly Injured|Fit for Match|.53
+Andre Iguodala|N|Slightly Injured|Seriously Injured|0
+Andre Iguodala|N|Slightly Injured|Slightly Injured|.47
+Andre Iguodala|Y|Fit for Match|Seriously Injured|.03
+Andre Iguodala|Y|Fit for Match|Slightly Injured|.20
+Andre Iguodala|Y|Fit for Match|Fit for Match|.77
+Andre Iguodala|Y|Seriously Injured|Fit for Match|0
+Andre Iguodala|Y|Seriously Injured|Seriously Injured|1
+Andre Iguodala|Y|Seriously Injured|Slightly Injured|0
+Andre Iguodala|Y|Slightly Injured|Fit for Match|0
+Andre Iguodala|Y|Slightly Injured|Seriously Injured|.08
+Andre Iguodala|Y|Slightly Injured|Slightly Injured|.92
+Andre Miller|N|Fit for Match|Fit for Match|1
+Andre Miller|N|Fit for Match|Seriously Injured|0
+Andre Miller|N|Fit for Match|Slightly Injured|0
+Andre Miller|N|Seriously Injured|Fit for Match|.07
+Andre Miller|N|Seriously Injured|Seriously Injured|.21
+Andre Miller|N|Seriously Injured|Slightly Injured|.72
+Andre Miller|N|Slightly Injured|Fit for Match|.11
+Andre Miller|N|Slightly Injured|Seriously Injured|0
+Andre Miller|N|Slightly Injured|Slightly Injured|.89
+Andre Miller|Y|Fit for Match|Seriously Injured|.02
+Andre Miller|Y|Fit for Match|Slightly Injured|.09
+Andre Miller|Y|Fit for Match|Fit for Match|.89
+Andre Miller|Y|Seriously Injured|Fit for Match|0
+Andre Miller|Y|Seriously Injured|Seriously Injured|1
+Andre Miller|Y|Seriously Injured|Slightly Injured|0
+Andre Miller|Y|Slightly Injured|Fit for Match|0
+Andre Miller|Y|Slightly Injured|Seriously Injured|.13
+Andre Miller|Y|Slightly Injured|Slightly Injured|.87
+Thaddeus Young|N|Fit for Match|Fit for Match|1
+Thaddeus Young|N|Fit for Match|Seriously Injured|0
+Thaddeus Young|N|Fit for Match|Slightly Injured|0
+Thaddeus Young|N|Seriously Injured|Fit for Match|.08
+Thaddeus Young|N|Seriously Injured|Seriously Injured|.47
+Thaddeus Young|N|Seriously Injured|Slightly Injured|.45
+Thaddeus Young|N|Slightly Injured|Fit for Match|.68
+Thaddeus Young|N|Slightly Injured|Seriously Injured|0
+Thaddeus Young|N|Slightly Injured|Slightly Injured|.32
+Thaddeus Young|Y|Fit for Match|Seriously Injured|.01
+Thaddeus Young|Y|Fit for Match|Slightly Injured|.20
+Thaddeus Young|Y|Fit for Match|Fit for Match|.79
+Thaddeus Young|Y|Seriously Injured|Fit for Match|0
+Thaddeus Young|Y|Seriously Injured|Seriously Injured|1
+Thaddeus Young|Y|Seriously Injured|Slightly Injured|0
+Thaddeus Young|Y|Slightly Injured|Fit for Match|0
+Thaddeus Young|Y|Slightly Injured|Seriously Injured|.02
+Thaddeus Young|Y|Slightly Injured|Slightly Injured|.98
+Elton Brand|N|Fit for Match|Fit for Match|1
+Elton Brand|N|Fit for Match|Seriously Injured|0
+Elton Brand|N|Fit for Match|Slightly Injured|0
+Elton Brand|N|Seriously Injured|Fit for Match|.10
+Elton Brand|N|Seriously Injured|Seriously Injured|.08
+Elton Brand|N|Seriously Injured|Slightly Injured|.82
+Elton Brand|N|Slightly Injured|Fit for Match|.18
+Elton Brand|N|Slightly Injured|Seriously Injured|0
+Elton Brand|N|Slightly Injured|Slightly Injured|.82
+Elton Brand|Y|Fit for Match|Seriously Injured|.01
+Elton Brand|Y|Fit for Match|Slightly Injured|.17
+Elton Brand|Y|Fit for Match|Fit for Match|.82
+Elton Brand|Y|Seriously Injured|Fit for Match|0
+Elton Brand|Y|Seriously Injured|Seriously Injured|1
+Elton Brand|Y|Seriously Injured|Slightly Injured|0
+Elton Brand|Y|Slightly Injured|Fit for Match|0
+Elton Brand|Y|Slightly Injured|Seriously Injured|.06
+Elton Brand|Y|Slightly Injured|Slightly Injured|.94
+Louis Williams|N|Fit for Match|Fit for Match|1
+Louis Williams|N|Fit for Match|Seriously Injured|0
+Louis Williams|N|Fit for Match|Slightly Injured|0
+Louis Williams|N|Seriously Injured|Fit for Match|.03
+Louis Williams|N|Seriously Injured|Seriously Injured|.03
+Louis Williams|N|Seriously Injured|Slightly Injured|.94
+Louis Williams|N|Slightly Injured|Fit for Match|.19
+Louis Williams|N|Slightly Injured|Seriously Injured|0
+Louis Williams|N|Slightly Injured|Slightly Injured|.81
+Louis Williams|Y|Fit for Match|Seriously Injured|.04
+Louis Williams|Y|Fit for Match|Slightly Injured|.06
+Louis Williams|Y|Fit for Match|Fit for Match|.90
+Louis Williams|Y|Seriously Injured|Fit for Match|0
+Louis Williams|Y|Seriously Injured|Seriously Injured|1
+Louis Williams|Y|Seriously Injured|Slightly Injured|0
+Louis Williams|Y|Slightly Injured|Fit for Match|0
+Louis Williams|Y|Slightly Injured|Seriously Injured|.14
+Louis Williams|Y|Slightly Injured|Slightly Injured|.86
+Willie Green|N|Fit for Match|Fit for Match|1
+Willie Green|N|Fit for Match|Seriously Injured|0
+Willie Green|N|Fit for Match|Slightly Injured|0
+Willie Green|N|Seriously Injured|Fit for Match|.07
+Willie Green|N|Seriously Injured|Seriously Injured|.10
+Willie Green|N|Seriously Injured|Slightly Injured|.83
+Willie Green|N|Slightly Injured|Fit for Match|.37
+Willie Green|N|Slightly Injured|Seriously Injured|0
+Willie Green|N|Slightly Injured|Slightly Injured|.63
+Willie Green|Y|Fit for Match|Seriously Injured|.02
+Willie Green|Y|Fit for Match|Slightly Injured|.13
+Willie Green|Y|Fit for Match|Fit for Match|.85
+Willie Green|Y|Seriously Injured|Fit for Match|0
+Willie Green|Y|Seriously Injured|Seriously Injured|1
+Willie Green|Y|Seriously Injured|Slightly Injured|0
+Willie Green|Y|Slightly Injured|Fit for Match|0
+Willie Green|Y|Slightly Injured|Seriously Injured|.20
+Willie Green|Y|Slightly Injured|Slightly Injured|.80
+Marreese Speights|N|Fit for Match|Fit for Match|1
+Marreese Speights|N|Fit for Match|Seriously Injured|0
+Marreese Speights|N|Fit for Match|Slightly Injured|0
+Marreese Speights|N|Seriously Injured|Fit for Match|.06
+Marreese Speights|N|Seriously Injured|Seriously Injured|.16
+Marreese Speights|N|Seriously Injured|Slightly Injured|.78
+Marreese Speights|N|Slightly Injured|Fit for Match|.18
+Marreese Speights|N|Slightly Injured|Seriously Injured|0
+Marreese Speights|N|Slightly Injured|Slightly Injured|.82
+Marreese Speights|Y|Fit for Match|Seriously Injured|.03
+Marreese Speights|Y|Fit for Match|Slightly Injured|.06
+Marreese Speights|Y|Fit for Match|Fit for Match|.91
+Marreese Speights|Y|Seriously Injured|Fit for Match|0
+Marreese Speights|Y|Seriously Injured|Seriously Injured|1
+Marreese Speights|Y|Seriously Injured|Slightly Injured|0
+Marreese Speights|Y|Slightly Injured|Fit for Match|0
+Marreese Speights|Y|Slightly Injured|Seriously Injured|.25
+Marreese Speights|Y|Slightly Injured|Slightly Injured|.75
+Samuel Dalembert|N|Fit for Match|Fit for Match|1
+Samuel Dalembert|N|Fit for Match|Seriously Injured|0
+Samuel Dalembert|N|Fit for Match|Slightly Injured|0
+Samuel Dalembert|N|Seriously Injured|Fit for Match|.02
+Samuel Dalembert|N|Seriously Injured|Seriously Injured|.48
+Samuel Dalembert|N|Seriously Injured|Slightly Injured|.50
+Samuel Dalembert|N|Slightly Injured|Fit for Match|.54
+Samuel Dalembert|N|Slightly Injured|Seriously Injured|0
+Samuel Dalembert|N|Slightly Injured|Slightly Injured|.46
+Samuel Dalembert|Y|Fit for Match|Seriously Injured|.05
+Samuel Dalembert|Y|Fit for Match|Slightly Injured|.09
+Samuel Dalembert|Y|Fit for Match|Fit for Match|.86
+Samuel Dalembert|Y|Seriously Injured|Fit for Match|0
+Samuel Dalembert|Y|Seriously Injured|Seriously Injured|1
+Samuel Dalembert|Y|Seriously Injured|Slightly Injured|0
+Samuel Dalembert|Y|Slightly Injured|Fit for Match|0
+Samuel Dalembert|Y|Slightly Injured|Seriously Injured|.20
+Samuel Dalembert|Y|Slightly Injured|Slightly Injured|.80
+Donyell Marshall|N|Fit for Match|Fit for Match|1
+Donyell Marshall|N|Fit for Match|Seriously Injured|0
+Donyell Marshall|N|Fit for Match|Slightly Injured|0
+Donyell Marshall|N|Seriously Injured|Fit for Match|.10
+Donyell Marshall|N|Seriously Injured|Seriously Injured|.49
+Donyell Marshall|N|Seriously Injured|Slightly Injured|.41
+Donyell Marshall|N|Slightly Injured|Fit for Match|.54
+Donyell Marshall|N|Slightly Injured|Seriously Injured|0
+Donyell Marshall|N|Slightly Injured|Slightly Injured|.46
+Donyell Marshall|Y|Fit for Match|Seriously Injured|.04
+Donyell Marshall|Y|Fit for Match|Slightly Injured|.10
+Donyell Marshall|Y|Fit for Match|Fit for Match|.86
+Donyell Marshall|Y|Seriously Injured|Fit for Match|0
+Donyell Marshall|Y|Seriously Injured|Seriously Injured|1
+Donyell Marshall|Y|Seriously Injured|Slightly Injured|0
+Donyell Marshall|Y|Slightly Injured|Fit for Match|0
+Donyell Marshall|Y|Slightly Injured|Seriously Injured|.21
+Donyell Marshall|Y|Slightly Injured|Slightly Injured|.79
+Reggie Evans|N|Fit for Match|Fit for Match|1
+Reggie Evans|N|Fit for Match|Seriously Injured|0
+Reggie Evans|N|Fit for Match|Slightly Injured|0
+Reggie Evans|N|Seriously Injured|Fit for Match|.06
+Reggie Evans|N|Seriously Injured|Seriously Injured|.39
+Reggie Evans|N|Seriously Injured|Slightly Injured|.55
+Reggie Evans|N|Slightly Injured|Fit for Match|.59
+Reggie Evans|N|Slightly Injured|Seriously Injured|0
+Reggie Evans|N|Slightly Injured|Slightly Injured|.41
+Reggie Evans|Y|Fit for Match|Seriously Injured|.03
+Reggie Evans|Y|Fit for Match|Slightly Injured|.06
+Reggie Evans|Y|Fit for Match|Fit for Match|.91
+Reggie Evans|Y|Seriously Injured|Fit for Match|0
+Reggie Evans|Y|Seriously Injured|Seriously Injured|1
+Reggie Evans|Y|Seriously Injured|Slightly Injured|0
+Reggie Evans|Y|Slightly Injured|Fit for Match|0
+Reggie Evans|Y|Slightly Injured|Seriously Injured|.19
+Reggie Evans|Y|Slightly Injured|Slightly Injured|.81
+Royal Ivey|N|Fit for Match|Fit for Match|1
+Royal Ivey|N|Fit for Match|Seriously Injured|0
+Royal Ivey|N|Fit for Match|Slightly Injured|0
+Royal Ivey|N|Seriously Injured|Fit for Match|.09
+Royal Ivey|N|Seriously Injured|Seriously Injured|.03
+Royal Ivey|N|Seriously Injured|Slightly Injured|.88
+Royal Ivey|N|Slightly Injured|Fit for Match|.34
+Royal Ivey|N|Slightly Injured|Seriously Injured|0
+Royal Ivey|N|Slightly Injured|Slightly Injured|.66
+Royal Ivey|Y|Fit for Match|Seriously Injured|.03
+Royal Ivey|Y|Fit for Match|Slightly Injured|.19
+Royal Ivey|Y|Fit for Match|Fit for Match|.78
+Royal Ivey|Y|Seriously Injured|Fit for Match|0
+Royal Ivey|Y|Seriously Injured|Seriously Injured|1
+Royal Ivey|Y|Seriously Injured|Slightly Injured|0
+Royal Ivey|Y|Slightly Injured|Fit for Match|0
+Royal Ivey|Y|Slightly Injured|Seriously Injured|.22
+Royal Ivey|Y|Slightly Injured|Slightly Injured|.78
+Theo Ratliff|N|Fit for Match|Fit for Match|1
+Theo Ratliff|N|Fit for Match|Seriously Injured|0
+Theo Ratliff|N|Fit for Match|Slightly Injured|0
+Theo Ratliff|N|Seriously Injured|Fit for Match|.04
+Theo Ratliff|N|Seriously Injured|Seriously Injured|.50
+Theo Ratliff|N|Seriously Injured|Slightly Injured|.46
+Theo Ratliff|N|Slightly Injured|Fit for Match|.60
+Theo Ratliff|N|Slightly Injured|Seriously Injured|0
+Theo Ratliff|N|Slightly Injured|Slightly Injured|.40
+Theo Ratliff|Y|Fit for Match|Seriously Injured|.02
+Theo Ratliff|Y|Fit for Match|Slightly Injured|.08
+Theo Ratliff|Y|Fit for Match|Fit for Match|.90
+Theo Ratliff|Y|Seriously Injured|Fit for Match|0
+Theo Ratliff|Y|Seriously Injured|Seriously Injured|1
+Theo Ratliff|Y|Seriously Injured|Slightly Injured|0
+Theo Ratliff|Y|Slightly Injured|Fit for Match|0
+Theo Ratliff|Y|Slightly Injured|Seriously Injured|.04
+Theo Ratliff|Y|Slightly Injured|Slightly Injured|.96
+Chris Paul|N|Fit for Match|Fit for Match|1
+Chris Paul|N|Fit for Match|Seriously Injured|0
+Chris Paul|N|Fit for Match|Slightly Injured|0
+Chris Paul|N|Seriously Injured|Fit for Match|.08
+Chris Paul|N|Seriously Injured|Seriously Injured|.35
+Chris Paul|N|Seriously Injured|Slightly Injured|.57
+Chris Paul|N|Slightly Injured|Fit for Match|.48
+Chris Paul|N|Slightly Injured|Seriously Injured|0
+Chris Paul|N|Slightly Injured|Slightly Injured|.52
+Chris Paul|Y|Fit for Match|Seriously Injured|.03
+Chris Paul|Y|Fit for Match|Slightly Injured|.10
+Chris Paul|Y|Fit for Match|Fit for Match|.87
+Chris Paul|Y|Seriously Injured|Fit for Match|0
+Chris Paul|Y|Seriously Injured|Seriously Injured|1
+Chris Paul|Y|Seriously Injured|Slightly Injured|0
+Chris Paul|Y|Slightly Injured|Fit for Match|0
+Chris Paul|Y|Slightly Injured|Seriously Injured|.05
+Chris Paul|Y|Slightly Injured|Slightly Injured|.95
+David West|N|Fit for Match|Fit for Match|1
+David West|N|Fit for Match|Seriously Injured|0
+David West|N|Fit for Match|Slightly Injured|0
+David West|N|Seriously Injured|Fit for Match|.01
+David West|N|Seriously Injured|Seriously Injured|.47
+David West|N|Seriously Injured|Slightly Injured|.52
+David West|N|Slightly Injured|Fit for Match|.48
+David West|N|Slightly Injured|Seriously Injured|0
+David West|N|Slightly Injured|Slightly Injured|.52
+David West|Y|Fit for Match|Seriously Injured|.02
+David West|Y|Fit for Match|Slightly Injured|.16
+David West|Y|Fit for Match|Fit for Match|.82
+David West|Y|Seriously Injured|Fit for Match|0
+David West|Y|Seriously Injured|Seriously Injured|1
+David West|Y|Seriously Injured|Slightly Injured|0
+David West|Y|Slightly Injured|Fit for Match|0
+David West|Y|Slightly Injured|Seriously Injured|.25
+David West|Y|Slightly Injured|Slightly Injured|.75
+Predrag Stojakovic|N|Fit for Match|Fit for Match|1
+Predrag Stojakovic|N|Fit for Match|Seriously Injured|0
+Predrag Stojakovic|N|Fit for Match|Slightly Injured|0
+Predrag Stojakovic|N|Seriously Injured|Fit for Match|.05
+Predrag Stojakovic|N|Seriously Injured|Seriously Injured|.38
+Predrag Stojakovic|N|Seriously Injured|Slightly Injured|.57
+Predrag Stojakovic|N|Slightly Injured|Fit for Match|.18
+Predrag Stojakovic|N|Slightly Injured|Seriously Injured|0
+Predrag Stojakovic|N|Slightly Injured|Slightly Injured|.82
+Predrag Stojakovic|Y|Fit for Match|Seriously Injured|.04
+Predrag Stojakovic|Y|Fit for Match|Slightly Injured|.13
+Predrag Stojakovic|Y|Fit for Match|Fit for Match|.83
+Predrag Stojakovic|Y|Seriously Injured|Fit for Match|0
+Predrag Stojakovic|Y|Seriously Injured|Seriously Injured|1
+Predrag Stojakovic|Y|Seriously Injured|Slightly Injured|0
+Predrag Stojakovic|Y|Slightly Injured|Fit for Match|0
+Predrag Stojakovic|Y|Slightly Injured|Seriously Injured|.24
+Predrag Stojakovic|Y|Slightly Injured|Slightly Injured|.76
+Rasual Butler|N|Fit for Match|Fit for Match|1
+Rasual Butler|N|Fit for Match|Seriously Injured|0
+Rasual Butler|N|Fit for Match|Slightly Injured|0
+Rasual Butler|N|Seriously Injured|Fit for Match|.01
+Rasual Butler|N|Seriously Injured|Seriously Injured|.07
+Rasual Butler|N|Seriously Injured|Slightly Injured|.92
+Rasual Butler|N|Slightly Injured|Fit for Match|.36
+Rasual Butler|N|Slightly Injured|Seriously Injured|0
+Rasual Butler|N|Slightly Injured|Slightly Injured|.64
+Rasual Butler|Y|Fit for Match|Seriously Injured|.04
+Rasual Butler|Y|Fit for Match|Slightly Injured|.20
+Rasual Butler|Y|Fit for Match|Fit for Match|.76
+Rasual Butler|Y|Seriously Injured|Fit for Match|0
+Rasual Butler|Y|Seriously Injured|Seriously Injured|1
+Rasual Butler|Y|Seriously Injured|Slightly Injured|0
+Rasual Butler|Y|Slightly Injured|Fit for Match|0
+Rasual Butler|Y|Slightly Injured|Seriously Injured|.03
+Rasual Butler|Y|Slightly Injured|Slightly Injured|.97
+James Posey|N|Fit for Match|Fit for Match|1
+James Posey|N|Fit for Match|Seriously Injured|0
+James Posey|N|Fit for Match|Slightly Injured|0
+James Posey|N|Seriously Injured|Fit for Match|.05
+James Posey|N|Seriously Injured|Seriously Injured|.50
+James Posey|N|Seriously Injured|Slightly Injured|.45
+James Posey|N|Slightly Injured|Fit for Match|.38
+James Posey|N|Slightly Injured|Seriously Injured|0
+James Posey|N|Slightly Injured|Slightly Injured|.62
+James Posey|Y|Fit for Match|Seriously Injured|.02
+James Posey|Y|Fit for Match|Slightly Injured|.06
+James Posey|Y|Fit for Match|Fit for Match|.92
+James Posey|Y|Seriously Injured|Fit for Match|0
+James Posey|Y|Seriously Injured|Seriously Injured|1
+James Posey|Y|Seriously Injured|Slightly Injured|0
+James Posey|Y|Slightly Injured|Fit for Match|0
+James Posey|Y|Slightly Injured|Seriously Injured|.15
+James Posey|Y|Slightly Injured|Slightly Injured|.85
+Tyson Chandler|N|Fit for Match|Fit for Match|1
+Tyson Chandler|N|Fit for Match|Seriously Injured|0
+Tyson Chandler|N|Fit for Match|Slightly Injured|0
+Tyson Chandler|N|Seriously Injured|Fit for Match|.08
+Tyson Chandler|N|Seriously Injured|Seriously Injured|.15
+Tyson Chandler|N|Seriously Injured|Slightly Injured|.77
+Tyson Chandler|N|Slightly Injured|Fit for Match|.45
+Tyson Chandler|N|Slightly Injured|Seriously Injured|0
+Tyson Chandler|N|Slightly Injured|Slightly Injured|.55
+Tyson Chandler|Y|Fit for Match|Seriously Injured|.04
+Tyson Chandler|Y|Fit for Match|Slightly Injured|.12
+Tyson Chandler|Y|Fit for Match|Fit for Match|.84
+Tyson Chandler|Y|Seriously Injured|Fit for Match|0
+Tyson Chandler|Y|Seriously Injured|Seriously Injured|1
+Tyson Chandler|Y|Seriously Injured|Slightly Injured|0
+Tyson Chandler|Y|Slightly Injured|Fit for Match|0
+Tyson Chandler|Y|Slightly Injured|Seriously Injured|.21
+Tyson Chandler|Y|Slightly Injured|Slightly Injured|.79
+Devin Brown|N|Fit for Match|Fit for Match|1
+Devin Brown|N|Fit for Match|Seriously Injured|0
+Devin Brown|N|Fit for Match|Slightly Injured|0
+Devin Brown|N|Seriously Injured|Fit for Match|.08
+Devin Brown|N|Seriously Injured|Seriously Injured|.19
+Devin Brown|N|Seriously Injured|Slightly Injured|.73
+Devin Brown|N|Slightly Injured|Fit for Match|.34
+Devin Brown|N|Slightly Injured|Seriously Injured|0
+Devin Brown|N|Slightly Injured|Slightly Injured|.66
+Devin Brown|Y|Fit for Match|Seriously Injured|.01
+Devin Brown|Y|Fit for Match|Slightly Injured|.15
+Devin Brown|Y|Fit for Match|Fit for Match|.84
+Devin Brown|Y|Seriously Injured|Fit for Match|0
+Devin Brown|Y|Seriously Injured|Seriously Injured|1
+Devin Brown|Y|Seriously Injured|Slightly Injured|0
+Devin Brown|Y|Slightly Injured|Fit for Match|0
+Devin Brown|Y|Slightly Injured|Seriously Injured|.17
+Devin Brown|Y|Slightly Injured|Slightly Injured|.83
+Hilton Armstrong|N|Fit for Match|Fit for Match|1
+Hilton Armstrong|N|Fit for Match|Seriously Injured|0
+Hilton Armstrong|N|Fit for Match|Slightly Injured|0
+Hilton Armstrong|N|Seriously Injured|Fit for Match|.02
+Hilton Armstrong|N|Seriously Injured|Seriously Injured|.17
+Hilton Armstrong|N|Seriously Injured|Slightly Injured|.81
+Hilton Armstrong|N|Slightly Injured|Fit for Match|.66
+Hilton Armstrong|N|Slightly Injured|Seriously Injured|0
+Hilton Armstrong|N|Slightly Injured|Slightly Injured|.34
+Hilton Armstrong|Y|Fit for Match|Seriously Injured|.01
+Hilton Armstrong|Y|Fit for Match|Slightly Injured|.15
+Hilton Armstrong|Y|Fit for Match|Fit for Match|.84
+Hilton Armstrong|Y|Seriously Injured|Fit for Match|0
+Hilton Armstrong|Y|Seriously Injured|Seriously Injured|1
+Hilton Armstrong|Y|Seriously Injured|Slightly Injured|0
+Hilton Armstrong|Y|Slightly Injured|Fit for Match|0
+Hilton Armstrong|Y|Slightly Injured|Seriously Injured|.06
+Hilton Armstrong|Y|Slightly Injured|Slightly Injured|.94
+Julian Wright|N|Fit for Match|Fit for Match|1
+Julian Wright|N|Fit for Match|Seriously Injured|0
+Julian Wright|N|Fit for Match|Slightly Injured|0
+Julian Wright|N|Seriously Injured|Fit for Match|.10
+Julian Wright|N|Seriously Injured|Seriously Injured|.27
+Julian Wright|N|Seriously Injured|Slightly Injured|.63
+Julian Wright|N|Slightly Injured|Fit for Match|.25
+Julian Wright|N|Slightly Injured|Seriously Injured|0
+Julian Wright|N|Slightly Injured|Slightly Injured|.75
+Julian Wright|Y|Fit for Match|Seriously Injured|.03
+Julian Wright|Y|Fit for Match|Slightly Injured|.09
+Julian Wright|Y|Fit for Match|Fit for Match|.88
+Julian Wright|Y|Seriously Injured|Fit for Match|0
+Julian Wright|Y|Seriously Injured|Seriously Injured|1
+Julian Wright|Y|Seriously Injured|Slightly Injured|0
+Julian Wright|Y|Slightly Injured|Fit for Match|0
+Julian Wright|Y|Slightly Injured|Seriously Injured|.26
+Julian Wright|Y|Slightly Injured|Slightly Injured|.74
+Morris Peterson|N|Fit for Match|Fit for Match|1
+Morris Peterson|N|Fit for Match|Seriously Injured|0
+Morris Peterson|N|Fit for Match|Slightly Injured|0
+Morris Peterson|N|Seriously Injured|Fit for Match|.04
+Morris Peterson|N|Seriously Injured|Seriously Injured|.48
+Morris Peterson|N|Seriously Injured|Slightly Injured|.48
+Morris Peterson|N|Slightly Injured|Fit for Match|.45
+Morris Peterson|N|Slightly Injured|Seriously Injured|0
+Morris Peterson|N|Slightly Injured|Slightly Injured|.55
+Morris Peterson|Y|Fit for Match|Seriously Injured|.02
+Morris Peterson|Y|Fit for Match|Slightly Injured|.10
+Morris Peterson|Y|Fit for Match|Fit for Match|.88
+Morris Peterson|Y|Seriously Injured|Fit for Match|0
+Morris Peterson|Y|Seriously Injured|Seriously Injured|1
+Morris Peterson|Y|Seriously Injured|Slightly Injured|0
+Morris Peterson|Y|Slightly Injured|Fit for Match|0
+Morris Peterson|Y|Slightly Injured|Seriously Injured|.16
+Morris Peterson|Y|Slightly Injured|Slightly Injured|.84
+Antonio Daniels|N|Fit for Match|Fit for Match|1
+Antonio Daniels|N|Fit for Match|Seriously Injured|0
+Antonio Daniels|N|Fit for Match|Slightly Injured|0
+Antonio Daniels|N|Seriously Injured|Fit for Match|.02
+Antonio Daniels|N|Seriously Injured|Seriously Injured|.18
+Antonio Daniels|N|Seriously Injured|Slightly Injured|.80
+Antonio Daniels|N|Slightly Injured|Fit for Match|.17
+Antonio Daniels|N|Slightly Injured|Seriously Injured|0
+Antonio Daniels|N|Slightly Injured|Slightly Injured|.83
+Antonio Daniels|Y|Fit for Match|Seriously Injured|.04
+Antonio Daniels|Y|Fit for Match|Slightly Injured|.19
+Antonio Daniels|Y|Fit for Match|Fit for Match|.77
+Antonio Daniels|Y|Seriously Injured|Fit for Match|0
+Antonio Daniels|Y|Seriously Injured|Seriously Injured|1
+Antonio Daniels|Y|Seriously Injured|Slightly Injured|0
+Antonio Daniels|Y|Slightly Injured|Fit for Match|0
+Antonio Daniels|Y|Slightly Injured|Seriously Injured|.06
+Antonio Daniels|Y|Slightly Injured|Slightly Injured|.94
+Sean Marks|N|Fit for Match|Fit for Match|1
+Sean Marks|N|Fit for Match|Seriously Injured|0
+Sean Marks|N|Fit for Match|Slightly Injured|0
+Sean Marks|N|Seriously Injured|Fit for Match|.10
+Sean Marks|N|Seriously Injured|Seriously Injured|.06
+Sean Marks|N|Seriously Injured|Slightly Injured|.84
+Sean Marks|N|Slightly Injured|Fit for Match|.66
+Sean Marks|N|Slightly Injured|Seriously Injured|0
+Sean Marks|N|Slightly Injured|Slightly Injured|.34
+Sean Marks|Y|Fit for Match|Seriously Injured|.01
+Sean Marks|Y|Fit for Match|Slightly Injured|.14
+Sean Marks|Y|Fit for Match|Fit for Match|.85
+Sean Marks|Y|Seriously Injured|Fit for Match|0
+Sean Marks|Y|Seriously Injured|Seriously Injured|1
+Sean Marks|Y|Seriously Injured|Slightly Injured|0
+Sean Marks|Y|Slightly Injured|Fit for Match|0
+Sean Marks|Y|Slightly Injured|Seriously Injured|.23
+Sean Marks|Y|Slightly Injured|Slightly Injured|.77
+Tony Parker|N|Fit for Match|Fit for Match|1
+Tony Parker|N|Fit for Match|Seriously Injured|0
+Tony Parker|N|Fit for Match|Slightly Injured|0
+Tony Parker|N|Seriously Injured|Fit for Match|.07
+Tony Parker|N|Seriously Injured|Seriously Injured|.33
+Tony Parker|N|Seriously Injured|Slightly Injured|.60
+Tony Parker|N|Slightly Injured|Fit for Match|.69
+Tony Parker|N|Slightly Injured|Seriously Injured|0
+Tony Parker|N|Slightly Injured|Slightly Injured|.31
+Tony Parker|Y|Fit for Match|Seriously Injured|.05
+Tony Parker|Y|Fit for Match|Slightly Injured|.18
+Tony Parker|Y|Fit for Match|Fit for Match|.77
+Tony Parker|Y|Seriously Injured|Fit for Match|0
+Tony Parker|Y|Seriously Injured|Seriously Injured|1
+Tony Parker|Y|Seriously Injured|Slightly Injured|0
+Tony Parker|Y|Slightly Injured|Fit for Match|0
+Tony Parker|Y|Slightly Injured|Seriously Injured|.18
+Tony Parker|Y|Slightly Injured|Slightly Injured|.82
+Tim Duncan|N|Fit for Match|Fit for Match|1
+Tim Duncan|N|Fit for Match|Seriously Injured|0
+Tim Duncan|N|Fit for Match|Slightly Injured|0
+Tim Duncan|N|Seriously Injured|Fit for Match|.06
+Tim Duncan|N|Seriously Injured|Seriously Injured|.40
+Tim Duncan|N|Seriously Injured|Slightly Injured|.54
+Tim Duncan|N|Slightly Injured|Fit for Match|.41
+Tim Duncan|N|Slightly Injured|Seriously Injured|0
+Tim Duncan|N|Slightly Injured|Slightly Injured|.59
+Tim Duncan|Y|Fit for Match|Seriously Injured|.02
+Tim Duncan|Y|Fit for Match|Slightly Injured|.19
+Tim Duncan|Y|Fit for Match|Fit for Match|.79
+Tim Duncan|Y|Seriously Injured|Fit for Match|0
+Tim Duncan|Y|Seriously Injured|Seriously Injured|1
+Tim Duncan|Y|Seriously Injured|Slightly Injured|0
+Tim Duncan|Y|Slightly Injured|Fit for Match|0
+Tim Duncan|Y|Slightly Injured|Seriously Injured|.06
+Tim Duncan|Y|Slightly Injured|Slightly Injured|.94
+Manu Ginobili|N|Fit for Match|Fit for Match|1
+Manu Ginobili|N|Fit for Match|Seriously Injured|0
+Manu Ginobili|N|Fit for Match|Slightly Injured|0
+Manu Ginobili|N|Seriously Injured|Fit for Match|.04
+Manu Ginobili|N|Seriously Injured|Seriously Injured|.35
+Manu Ginobili|N|Seriously Injured|Slightly Injured|.61
+Manu Ginobili|N|Slightly Injured|Fit for Match|.47
+Manu Ginobili|N|Slightly Injured|Seriously Injured|0
+Manu Ginobili|N|Slightly Injured|Slightly Injured|.53
+Manu Ginobili|Y|Fit for Match|Seriously Injured|.02
+Manu Ginobili|Y|Fit for Match|Slightly Injured|.20
+Manu Ginobili|Y|Fit for Match|Fit for Match|.78
+Manu Ginobili|Y|Seriously Injured|Fit for Match|0
+Manu Ginobili|Y|Seriously Injured|Seriously Injured|1
+Manu Ginobili|Y|Seriously Injured|Slightly Injured|0
+Manu Ginobili|Y|Slightly Injured|Fit for Match|0
+Manu Ginobili|Y|Slightly Injured|Seriously Injured|.21
+Manu Ginobili|Y|Slightly Injured|Slightly Injured|.79
+Roger Mason|N|Fit for Match|Fit for Match|1
+Roger Mason|N|Fit for Match|Seriously Injured|0
+Roger Mason|N|Fit for Match|Slightly Injured|0
+Roger Mason|N|Seriously Injured|Fit for Match|.04
+Roger Mason|N|Seriously Injured|Seriously Injured|.17
+Roger Mason|N|Seriously Injured|Slightly Injured|.79
+Roger Mason|N|Slightly Injured|Fit for Match|.48
+Roger Mason|N|Slightly Injured|Seriously Injured|0
+Roger Mason|N|Slightly Injured|Slightly Injured|.52
+Roger Mason|Y|Fit for Match|Seriously Injured|.04
+Roger Mason|Y|Fit for Match|Slightly Injured|.20
+Roger Mason|Y|Fit for Match|Fit for Match|.76
+Roger Mason|Y|Seriously Injured|Fit for Match|0
+Roger Mason|Y|Seriously Injured|Seriously Injured|1
+Roger Mason|Y|Seriously Injured|Slightly Injured|0
+Roger Mason|Y|Slightly Injured|Fit for Match|0
+Roger Mason|Y|Slightly Injured|Seriously Injured|.28
+Roger Mason|Y|Slightly Injured|Slightly Injured|.72
+Drew Gooden|N|Fit for Match|Fit for Match|1
+Drew Gooden|N|Fit for Match|Seriously Injured|0
+Drew Gooden|N|Fit for Match|Slightly Injured|0
+Drew Gooden|N|Seriously Injured|Fit for Match|.02
+Drew Gooden|N|Seriously Injured|Seriously Injured|.25
+Drew Gooden|N|Seriously Injured|Slightly Injured|.73
+Drew Gooden|N|Slightly Injured|Fit for Match|.58
+Drew Gooden|N|Slightly Injured|Seriously Injured|0
+Drew Gooden|N|Slightly Injured|Slightly Injured|.42
+Drew Gooden|Y|Fit for Match|Seriously Injured|.01
+Drew Gooden|Y|Fit for Match|Slightly Injured|.16
+Drew Gooden|Y|Fit for Match|Fit for Match|.83
+Drew Gooden|Y|Seriously Injured|Fit for Match|0
+Drew Gooden|Y|Seriously Injured|Seriously Injured|1
+Drew Gooden|Y|Seriously Injured|Slightly Injured|0
+Drew Gooden|Y|Slightly Injured|Fit for Match|0
+Drew Gooden|Y|Slightly Injured|Seriously Injured|.13
+Drew Gooden|Y|Slightly Injured|Slightly Injured|.87
+Michael Finley|N|Fit for Match|Fit for Match|1
+Michael Finley|N|Fit for Match|Seriously Injured|0
+Michael Finley|N|Fit for Match|Slightly Injured|0
+Michael Finley|N|Seriously Injured|Fit for Match|.09
+Michael Finley|N|Seriously Injured|Seriously Injured|.11
+Michael Finley|N|Seriously Injured|Slightly Injured|.80
+Michael Finley|N|Slightly Injured|Fit for Match|.32
+Michael Finley|N|Slightly Injured|Seriously Injured|0
+Michael Finley|N|Slightly Injured|Slightly Injured|.68
+Michael Finley|Y|Fit for Match|Seriously Injured|.03
+Michael Finley|Y|Fit for Match|Slightly Injured|.07
+Michael Finley|Y|Fit for Match|Fit for Match|.90
+Michael Finley|Y|Seriously Injured|Fit for Match|0
+Michael Finley|Y|Seriously Injured|Seriously Injured|1
+Michael Finley|Y|Seriously Injured|Slightly Injured|0
+Michael Finley|Y|Slightly Injured|Fit for Match|0
+Michael Finley|Y|Slightly Injured|Seriously Injured|.24
+Michael Finley|Y|Slightly Injured|Slightly Injured|.76
+Matt Bonner|N|Fit for Match|Fit for Match|1
+Matt Bonner|N|Fit for Match|Seriously Injured|0
+Matt Bonner|N|Fit for Match|Slightly Injured|0
+Matt Bonner|N|Seriously Injured|Fit for Match|.04
+Matt Bonner|N|Seriously Injured|Seriously Injured|.01
+Matt Bonner|N|Seriously Injured|Slightly Injured|.95
+Matt Bonner|N|Slightly Injured|Fit for Match|.37
+Matt Bonner|N|Slightly Injured|Seriously Injured|0
+Matt Bonner|N|Slightly Injured|Slightly Injured|.63
+Matt Bonner|Y|Fit for Match|Seriously Injured|.02
+Matt Bonner|Y|Fit for Match|Slightly Injured|.07
+Matt Bonner|Y|Fit for Match|Fit for Match|.91
+Matt Bonner|Y|Seriously Injured|Fit for Match|0
+Matt Bonner|Y|Seriously Injured|Seriously Injured|1
+Matt Bonner|Y|Seriously Injured|Slightly Injured|0
+Matt Bonner|Y|Slightly Injured|Fit for Match|0
+Matt Bonner|Y|Slightly Injured|Seriously Injured|.28
+Matt Bonner|Y|Slightly Injured|Slightly Injured|.72
+George Hill|N|Fit for Match|Fit for Match|1
+George Hill|N|Fit for Match|Seriously Injured|0
+George Hill|N|Fit for Match|Slightly Injured|0
+George Hill|N|Seriously Injured|Fit for Match|.09
+George Hill|N|Seriously Injured|Seriously Injured|.03
+George Hill|N|Seriously Injured|Slightly Injured|.88
+George Hill|N|Slightly Injured|Fit for Match|.25
+George Hill|N|Slightly Injured|Seriously Injured|0
+George Hill|N|Slightly Injured|Slightly Injured|.75
+George Hill|Y|Fit for Match|Seriously Injured|.05
+George Hill|Y|Fit for Match|Slightly Injured|.15
+George Hill|Y|Fit for Match|Fit for Match|.80
+George Hill|Y|Seriously Injured|Fit for Match|0
+George Hill|Y|Seriously Injured|Seriously Injured|1
+George Hill|Y|Seriously Injured|Slightly Injured|0
+George Hill|Y|Slightly Injured|Fit for Match|0
+George Hill|Y|Slightly Injured|Seriously Injured|.05
+George Hill|Y|Slightly Injured|Slightly Injured|.95
+Ime Udoka|N|Fit for Match|Fit for Match|1
+Ime Udoka|N|Fit for Match|Seriously Injured|0
+Ime Udoka|N|Fit for Match|Slightly Injured|0
+Ime Udoka|N|Seriously Injured|Fit for Match|.01
+Ime Udoka|N|Seriously Injured|Seriously Injured|.42
+Ime Udoka|N|Seriously Injured|Slightly Injured|.57
+Ime Udoka|N|Slightly Injured|Fit for Match|.66
+Ime Udoka|N|Slightly Injured|Seriously Injured|0
+Ime Udoka|N|Slightly Injured|Slightly Injured|.34
+Ime Udoka|Y|Fit for Match|Seriously Injured|.01
+Ime Udoka|Y|Fit for Match|Slightly Injured|.12
+Ime Udoka|Y|Fit for Match|Fit for Match|.87
+Ime Udoka|Y|Seriously Injured|Fit for Match|0
+Ime Udoka|Y|Seriously Injured|Seriously Injured|1
+Ime Udoka|Y|Seriously Injured|Slightly Injured|0
+Ime Udoka|Y|Slightly Injured|Fit for Match|0
+Ime Udoka|Y|Slightly Injured|Seriously Injured|.25
+Ime Udoka|Y|Slightly Injured|Slightly Injured|.75
+Kurt Thomas|N|Fit for Match|Fit for Match|1
+Kurt Thomas|N|Fit for Match|Seriously Injured|0
+Kurt Thomas|N|Fit for Match|Slightly Injured|0
+Kurt Thomas|N|Seriously Injured|Fit for Match|.08
+Kurt Thomas|N|Seriously Injured|Seriously Injured|.21
+Kurt Thomas|N|Seriously Injured|Slightly Injured|.71
+Kurt Thomas|N|Slightly Injured|Fit for Match|.45
+Kurt Thomas|N|Slightly Injured|Seriously Injured|0
+Kurt Thomas|N|Slightly Injured|Slightly Injured|.55
+Kurt Thomas|Y|Fit for Match|Seriously Injured|.03
+Kurt Thomas|Y|Fit for Match|Slightly Injured|.09
+Kurt Thomas|Y|Fit for Match|Fit for Match|.88
+Kurt Thomas|Y|Seriously Injured|Fit for Match|0
+Kurt Thomas|Y|Seriously Injured|Seriously Injured|1
+Kurt Thomas|Y|Seriously Injured|Slightly Injured|0
+Kurt Thomas|Y|Slightly Injured|Fit for Match|0
+Kurt Thomas|Y|Slightly Injured|Seriously Injured|.05
+Kurt Thomas|Y|Slightly Injured|Slightly Injured|.95
+Malik Hairston|N|Fit for Match|Fit for Match|1
+Malik Hairston|N|Fit for Match|Seriously Injured|0
+Malik Hairston|N|Fit for Match|Slightly Injured|0
+Malik Hairston|N|Seriously Injured|Fit for Match|.10
+Malik Hairston|N|Seriously Injured|Seriously Injured|.21
+Malik Hairston|N|Seriously Injured|Slightly Injured|.69
+Malik Hairston|N|Slightly Injured|Fit for Match|.52
+Malik Hairston|N|Slightly Injured|Seriously Injured|0
+Malik Hairston|N|Slightly Injured|Slightly Injured|.48
+Malik Hairston|Y|Fit for Match|Seriously Injured|.05
+Malik Hairston|Y|Fit for Match|Slightly Injured|.11
+Malik Hairston|Y|Fit for Match|Fit for Match|.84
+Malik Hairston|Y|Seriously Injured|Fit for Match|0
+Malik Hairston|Y|Seriously Injured|Seriously Injured|1
+Malik Hairston|Y|Seriously Injured|Slightly Injured|0
+Malik Hairston|Y|Slightly Injured|Fit for Match|0
+Malik Hairston|Y|Slightly Injured|Seriously Injured|.14
+Malik Hairston|Y|Slightly Injured|Slightly Injured|.86
+Bruce Bowen|N|Fit for Match|Fit for Match|1
+Bruce Bowen|N|Fit for Match|Seriously Injured|0
+Bruce Bowen|N|Fit for Match|Slightly Injured|0
+Bruce Bowen|N|Seriously Injured|Fit for Match|.05
+Bruce Bowen|N|Seriously Injured|Seriously Injured|.02
+Bruce Bowen|N|Seriously Injured|Slightly Injured|.93
+Bruce Bowen|N|Slightly Injured|Fit for Match|.24
+Bruce Bowen|N|Slightly Injured|Seriously Injured|0
+Bruce Bowen|N|Slightly Injured|Slightly Injured|.76
+Bruce Bowen|Y|Fit for Match|Seriously Injured|.04
+Bruce Bowen|Y|Fit for Match|Slightly Injured|.11
+Bruce Bowen|Y|Fit for Match|Fit for Match|.85
+Bruce Bowen|Y|Seriously Injured|Fit for Match|0
+Bruce Bowen|Y|Seriously Injured|Seriously Injured|1
+Bruce Bowen|Y|Seriously Injured|Slightly Injured|0
+Bruce Bowen|Y|Slightly Injured|Fit for Match|0
+Bruce Bowen|Y|Slightly Injured|Seriously Injured|.09
+Bruce Bowen|Y|Slightly Injured|Slightly Injured|.91
+Ben Gordon|N|Fit for Match|Fit for Match|1
+Ben Gordon|N|Fit for Match|Seriously Injured|0
+Ben Gordon|N|Fit for Match|Slightly Injured|0
+Ben Gordon|N|Seriously Injured|Fit for Match|.10
+Ben Gordon|N|Seriously Injured|Seriously Injured|.07
+Ben Gordon|N|Seriously Injured|Slightly Injured|.83
+Ben Gordon|N|Slightly Injured|Fit for Match|.48
+Ben Gordon|N|Slightly Injured|Seriously Injured|0
+Ben Gordon|N|Slightly Injured|Slightly Injured|.52
+Ben Gordon|Y|Fit for Match|Seriously Injured|.05
+Ben Gordon|Y|Fit for Match|Slightly Injured|.09
+Ben Gordon|Y|Fit for Match|Fit for Match|.86
+Ben Gordon|Y|Seriously Injured|Fit for Match|0
+Ben Gordon|Y|Seriously Injured|Seriously Injured|1
+Ben Gordon|Y|Seriously Injured|Slightly Injured|0
+Ben Gordon|Y|Slightly Injured|Fit for Match|0
+Ben Gordon|Y|Slightly Injured|Seriously Injured|.11
+Ben Gordon|Y|Slightly Injured|Slightly Injured|.89
+John Salmons|N|Fit for Match|Fit for Match|1
+John Salmons|N|Fit for Match|Seriously Injured|0
+John Salmons|N|Fit for Match|Slightly Injured|0
+John Salmons|N|Seriously Injured|Fit for Match|.04
+John Salmons|N|Seriously Injured|Seriously Injured|.04
+John Salmons|N|Seriously Injured|Slightly Injured|.92
+John Salmons|N|Slightly Injured|Fit for Match|.32
+John Salmons|N|Slightly Injured|Seriously Injured|0
+John Salmons|N|Slightly Injured|Slightly Injured|.68
+John Salmons|Y|Fit for Match|Seriously Injured|.03
+John Salmons|Y|Fit for Match|Slightly Injured|.15
+John Salmons|Y|Fit for Match|Fit for Match|.82
+John Salmons|Y|Seriously Injured|Fit for Match|0
+John Salmons|Y|Seriously Injured|Seriously Injured|1
+John Salmons|Y|Seriously Injured|Slightly Injured|0
+John Salmons|Y|Slightly Injured|Fit for Match|0
+John Salmons|Y|Slightly Injured|Seriously Injured|.12
+John Salmons|Y|Slightly Injured|Slightly Injured|.88
+Derrick Rose|N|Fit for Match|Fit for Match|1
+Derrick Rose|N|Fit for Match|Seriously Injured|0
+Derrick Rose|N|Fit for Match|Slightly Injured|0
+Derrick Rose|N|Seriously Injured|Fit for Match|.02
+Derrick Rose|N|Seriously Injured|Seriously Injured|.29
+Derrick Rose|N|Seriously Injured|Slightly Injured|.69
+Derrick Rose|N|Slightly Injured|Fit for Match|.42
+Derrick Rose|N|Slightly Injured|Seriously Injured|0
+Derrick Rose|N|Slightly Injured|Slightly Injured|.58
+Derrick Rose|Y|Fit for Match|Seriously Injured|.02
+Derrick Rose|Y|Fit for Match|Slightly Injured|.07
+Derrick Rose|Y|Fit for Match|Fit for Match|.91
+Derrick Rose|Y|Seriously Injured|Fit for Match|0
+Derrick Rose|Y|Seriously Injured|Seriously Injured|1
+Derrick Rose|Y|Seriously Injured|Slightly Injured|0
+Derrick Rose|Y|Slightly Injured|Fit for Match|0
+Derrick Rose|Y|Slightly Injured|Seriously Injured|.03
+Derrick Rose|Y|Slightly Injured|Slightly Injured|.97
+Luol Deng|N|Fit for Match|Fit for Match|1
+Luol Deng|N|Fit for Match|Seriously Injured|0
+Luol Deng|N|Fit for Match|Slightly Injured|0
+Luol Deng|N|Seriously Injured|Fit for Match|.05
+Luol Deng|N|Seriously Injured|Seriously Injured|.09
+Luol Deng|N|Seriously Injured|Slightly Injured|.86
+Luol Deng|N|Slightly Injured|Fit for Match|.66
+Luol Deng|N|Slightly Injured|Seriously Injured|0
+Luol Deng|N|Slightly Injured|Slightly Injured|.34
+Luol Deng|Y|Fit for Match|Seriously Injured|.01
+Luol Deng|Y|Fit for Match|Slightly Injured|.09
+Luol Deng|Y|Fit for Match|Fit for Match|.90
+Luol Deng|Y|Seriously Injured|Fit for Match|0
+Luol Deng|Y|Seriously Injured|Seriously Injured|1
+Luol Deng|Y|Seriously Injured|Slightly Injured|0
+Luol Deng|Y|Slightly Injured|Fit for Match|0
+Luol Deng|Y|Slightly Injured|Seriously Injured|.16
+Luol Deng|Y|Slightly Injured|Slightly Injured|.84
+Brad Miller|N|Fit for Match|Fit for Match|1
+Brad Miller|N|Fit for Match|Seriously Injured|0
+Brad Miller|N|Fit for Match|Slightly Injured|0
+Brad Miller|N|Seriously Injured|Fit for Match|.10
+Brad Miller|N|Seriously Injured|Seriously Injured|.31
+Brad Miller|N|Seriously Injured|Slightly Injured|.59
+Brad Miller|N|Slightly Injured|Fit for Match|.60
+Brad Miller|N|Slightly Injured|Seriously Injured|0
+Brad Miller|N|Slightly Injured|Slightly Injured|.40
+Brad Miller|Y|Fit for Match|Seriously Injured|.05
+Brad Miller|Y|Fit for Match|Slightly Injured|.12
+Brad Miller|Y|Fit for Match|Fit for Match|.83
+Brad Miller|Y|Seriously Injured|Fit for Match|0
+Brad Miller|Y|Seriously Injured|Seriously Injured|1
+Brad Miller|Y|Seriously Injured|Slightly Injured|0
+Brad Miller|Y|Slightly Injured|Fit for Match|0
+Brad Miller|Y|Slightly Injured|Seriously Injured|.09
+Brad Miller|Y|Slightly Injured|Slightly Injured|.91
+Tyrus Thomas|N|Fit for Match|Fit for Match|1
+Tyrus Thomas|N|Fit for Match|Seriously Injured|0
+Tyrus Thomas|N|Fit for Match|Slightly Injured|0
+Tyrus Thomas|N|Seriously Injured|Fit for Match|.06
+Tyrus Thomas|N|Seriously Injured|Seriously Injured|.45
+Tyrus Thomas|N|Seriously Injured|Slightly Injured|.49
+Tyrus Thomas|N|Slightly Injured|Fit for Match|.52
+Tyrus Thomas|N|Slightly Injured|Seriously Injured|0
+Tyrus Thomas|N|Slightly Injured|Slightly Injured|.48
+Tyrus Thomas|Y|Fit for Match|Seriously Injured|.05
+Tyrus Thomas|Y|Fit for Match|Slightly Injured|.18
+Tyrus Thomas|Y|Fit for Match|Fit for Match|.77
+Tyrus Thomas|Y|Seriously Injured|Fit for Match|0
+Tyrus Thomas|Y|Seriously Injured|Seriously Injured|1
+Tyrus Thomas|Y|Seriously Injured|Slightly Injured|0
+Tyrus Thomas|Y|Slightly Injured|Fit for Match|0
+Tyrus Thomas|Y|Slightly Injured|Seriously Injured|.01
+Tyrus Thomas|Y|Slightly Injured|Slightly Injured|.99
+Kirk Hinrich|N|Fit for Match|Fit for Match|1
+Kirk Hinrich|N|Fit for Match|Seriously Injured|0
+Kirk Hinrich|N|Fit for Match|Slightly Injured|0
+Kirk Hinrich|N|Seriously Injured|Fit for Match|.05
+Kirk Hinrich|N|Seriously Injured|Seriously Injured|.34
+Kirk Hinrich|N|Seriously Injured|Slightly Injured|.61
+Kirk Hinrich|N|Slightly Injured|Fit for Match|.15
+Kirk Hinrich|N|Slightly Injured|Seriously Injured|0
+Kirk Hinrich|N|Slightly Injured|Slightly Injured|.85
+Kirk Hinrich|Y|Fit for Match|Seriously Injured|.01
+Kirk Hinrich|Y|Fit for Match|Slightly Injured|.07
+Kirk Hinrich|Y|Fit for Match|Fit for Match|.92
+Kirk Hinrich|Y|Seriously Injured|Fit for Match|0
+Kirk Hinrich|Y|Seriously Injured|Seriously Injured|1
+Kirk Hinrich|Y|Seriously Injured|Slightly Injured|0
+Kirk Hinrich|Y|Slightly Injured|Fit for Match|0
+Kirk Hinrich|Y|Slightly Injured|Seriously Injured|.13
+Kirk Hinrich|Y|Slightly Injured|Slightly Injured|.87
+Joakim Noah|N|Fit for Match|Fit for Match|1
+Joakim Noah|N|Fit for Match|Seriously Injured|0
+Joakim Noah|N|Fit for Match|Slightly Injured|0
+Joakim Noah|N|Seriously Injured|Fit for Match|.05
+Joakim Noah|N|Seriously Injured|Seriously Injured|.34
+Joakim Noah|N|Seriously Injured|Slightly Injured|.61
+Joakim Noah|N|Slightly Injured|Fit for Match|.27
+Joakim Noah|N|Slightly Injured|Seriously Injured|0
+Joakim Noah|N|Slightly Injured|Slightly Injured|.73
+Joakim Noah|Y|Fit for Match|Seriously Injured|.03
+Joakim Noah|Y|Fit for Match|Slightly Injured|.11
+Joakim Noah|Y|Fit for Match|Fit for Match|.86
+Joakim Noah|Y|Seriously Injured|Fit for Match|0
+Joakim Noah|Y|Seriously Injured|Seriously Injured|1
+Joakim Noah|Y|Seriously Injured|Slightly Injured|0
+Joakim Noah|Y|Slightly Injured|Fit for Match|0
+Joakim Noah|Y|Slightly Injured|Seriously Injured|.27
+Joakim Noah|Y|Slightly Injured|Slightly Injured|.73
+Tim Thomas|N|Fit for Match|Fit for Match|1
+Tim Thomas|N|Fit for Match|Seriously Injured|0
+Tim Thomas|N|Fit for Match|Slightly Injured|0
+Tim Thomas|N|Seriously Injured|Fit for Match|.06
+Tim Thomas|N|Seriously Injured|Seriously Injured|.49
+Tim Thomas|N|Seriously Injured|Slightly Injured|.45
+Tim Thomas|N|Slightly Injured|Fit for Match|.36
+Tim Thomas|N|Slightly Injured|Seriously Injured|0
+Tim Thomas|N|Slightly Injured|Slightly Injured|.64
+Tim Thomas|Y|Fit for Match|Seriously Injured|.05
+Tim Thomas|Y|Fit for Match|Slightly Injured|.17
+Tim Thomas|Y|Fit for Match|Fit for Match|.78
+Tim Thomas|Y|Seriously Injured|Fit for Match|0
+Tim Thomas|Y|Seriously Injured|Seriously Injured|1
+Tim Thomas|Y|Seriously Injured|Slightly Injured|0
+Tim Thomas|Y|Slightly Injured|Fit for Match|0
+Tim Thomas|Y|Slightly Injured|Seriously Injured|.07
+Tim Thomas|Y|Slightly Injured|Slightly Injured|.93
+Aaron Gray|N|Fit for Match|Fit for Match|1
+Aaron Gray|N|Fit for Match|Seriously Injured|0
+Aaron Gray|N|Fit for Match|Slightly Injured|0
+Aaron Gray|N|Seriously Injured|Fit for Match|.06
+Aaron Gray|N|Seriously Injured|Seriously Injured|.01
+Aaron Gray|N|Seriously Injured|Slightly Injured|.93
+Aaron Gray|N|Slightly Injured|Fit for Match|.24
+Aaron Gray|N|Slightly Injured|Seriously Injured|0
+Aaron Gray|N|Slightly Injured|Slightly Injured|.76
+Aaron Gray|Y|Fit for Match|Seriously Injured|.03
+Aaron Gray|Y|Fit for Match|Slightly Injured|.11
+Aaron Gray|Y|Fit for Match|Fit for Match|.86
+Aaron Gray|Y|Seriously Injured|Fit for Match|0
+Aaron Gray|Y|Seriously Injured|Seriously Injured|1
+Aaron Gray|Y|Seriously Injured|Slightly Injured|0
+Aaron Gray|Y|Slightly Injured|Fit for Match|0
+Aaron Gray|Y|Slightly Injured|Seriously Injured|.25
+Aaron Gray|Y|Slightly Injured|Slightly Injured|.75
+Lindsey Hunter|N|Fit for Match|Fit for Match|1
+Lindsey Hunter|N|Fit for Match|Seriously Injured|0
+Lindsey Hunter|N|Fit for Match|Slightly Injured|0
+Lindsey Hunter|N|Seriously Injured|Fit for Match|.02
+Lindsey Hunter|N|Seriously Injured|Seriously Injured|.10
+Lindsey Hunter|N|Seriously Injured|Slightly Injured|.88
+Lindsey Hunter|N|Slightly Injured|Fit for Match|.42
+Lindsey Hunter|N|Slightly Injured|Seriously Injured|0
+Lindsey Hunter|N|Slightly Injured|Slightly Injured|.58
+Lindsey Hunter|Y|Fit for Match|Seriously Injured|.05
+Lindsey Hunter|Y|Fit for Match|Slightly Injured|.16
+Lindsey Hunter|Y|Fit for Match|Fit for Match|.79
+Lindsey Hunter|Y|Seriously Injured|Fit for Match|0
+Lindsey Hunter|Y|Seriously Injured|Seriously Injured|1
+Lindsey Hunter|Y|Seriously Injured|Slightly Injured|0
+Lindsey Hunter|Y|Slightly Injured|Fit for Match|0
+Lindsey Hunter|Y|Slightly Injured|Seriously Injured|.21
+Lindsey Hunter|Y|Slightly Injured|Slightly Injured|.79
+Anthony Roberson|N|Fit for Match|Fit for Match|1
+Anthony Roberson|N|Fit for Match|Seriously Injured|0
+Anthony Roberson|N|Fit for Match|Slightly Injured|0
+Anthony Roberson|N|Seriously Injured|Fit for Match|.06
+Anthony Roberson|N|Seriously Injured|Seriously Injured|.47
+Anthony Roberson|N|Seriously Injured|Slightly Injured|.47
+Anthony Roberson|N|Slightly Injured|Fit for Match|.62
+Anthony Roberson|N|Slightly Injured|Seriously Injured|0
+Anthony Roberson|N|Slightly Injured|Slightly Injured|.38
+Anthony Roberson|Y|Fit for Match|Seriously Injured|.02
+Anthony Roberson|Y|Fit for Match|Slightly Injured|.15
+Anthony Roberson|Y|Fit for Match|Fit for Match|.83
+Anthony Roberson|Y|Seriously Injured|Fit for Match|0
+Anthony Roberson|Y|Seriously Injured|Seriously Injured|1
+Anthony Roberson|Y|Seriously Injured|Slightly Injured|0
+Anthony Roberson|Y|Slightly Injured|Fit for Match|0
+Anthony Roberson|Y|Slightly Injured|Seriously Injured|.06
+Anthony Roberson|Y|Slightly Injured|Slightly Injured|.94
+Carmelo Anthony|N|Fit for Match|Fit for Match|1
+Carmelo Anthony|N|Fit for Match|Seriously Injured|0
+Carmelo Anthony|N|Fit for Match|Slightly Injured|0
+Carmelo Anthony|N|Seriously Injured|Fit for Match|.08
+Carmelo Anthony|N|Seriously Injured|Seriously Injured|.19
+Carmelo Anthony|N|Seriously Injured|Slightly Injured|.73
+Carmelo Anthony|N|Slightly Injured|Fit for Match|.28
+Carmelo Anthony|N|Slightly Injured|Seriously Injured|0
+Carmelo Anthony|N|Slightly Injured|Slightly Injured|.72
+Carmelo Anthony|Y|Fit for Match|Seriously Injured|.01
+Carmelo Anthony|Y|Fit for Match|Slightly Injured|.20
+Carmelo Anthony|Y|Fit for Match|Fit for Match|.79
+Carmelo Anthony|Y|Seriously Injured|Fit for Match|0
+Carmelo Anthony|Y|Seriously Injured|Seriously Injured|1
+Carmelo Anthony|Y|Seriously Injured|Slightly Injured|0
+Carmelo Anthony|Y|Slightly Injured|Fit for Match|0
+Carmelo Anthony|Y|Slightly Injured|Seriously Injured|.02
+Carmelo Anthony|Y|Slightly Injured|Slightly Injured|.98
+Chauncey Billups|N|Fit for Match|Fit for Match|1
+Chauncey Billups|N|Fit for Match|Seriously Injured|0
+Chauncey Billups|N|Fit for Match|Slightly Injured|0
+Chauncey Billups|N|Seriously Injured|Fit for Match|.08
+Chauncey Billups|N|Seriously Injured|Seriously Injured|.34
+Chauncey Billups|N|Seriously Injured|Slightly Injured|.58
+Chauncey Billups|N|Slightly Injured|Fit for Match|.37
+Chauncey Billups|N|Slightly Injured|Seriously Injured|0
+Chauncey Billups|N|Slightly Injured|Slightly Injured|.63
+Chauncey Billups|Y|Fit for Match|Seriously Injured|.02
+Chauncey Billups|Y|Fit for Match|Slightly Injured|.08
+Chauncey Billups|Y|Fit for Match|Fit for Match|.90
+Chauncey Billups|Y|Seriously Injured|Fit for Match|0
+Chauncey Billups|Y|Seriously Injured|Seriously Injured|1
+Chauncey Billups|Y|Seriously Injured|Slightly Injured|0
+Chauncey Billups|Y|Slightly Injured|Fit for Match|0
+Chauncey Billups|Y|Slightly Injured|Seriously Injured|.17
+Chauncey Billups|Y|Slightly Injured|Slightly Injured|.83
+JR Smith|N|Fit for Match|Fit for Match|1
+JR Smith|N|Fit for Match|Seriously Injured|0
+JR Smith|N|Fit for Match|Slightly Injured|0
+JR Smith|N|Seriously Injured|Fit for Match|.04
+JR Smith|N|Seriously Injured|Seriously Injured|.28
+JR Smith|N|Seriously Injured|Slightly Injured|.68
+JR Smith|N|Slightly Injured|Fit for Match|.50
+JR Smith|N|Slightly Injured|Seriously Injured|0
+JR Smith|N|Slightly Injured|Slightly Injured|.50
+JR Smith|Y|Fit for Match|Seriously Injured|.05
+JR Smith|Y|Fit for Match|Slightly Injured|.09
+JR Smith|Y|Fit for Match|Fit for Match|.86
+JR Smith|Y|Seriously Injured|Fit for Match|0
+JR Smith|Y|Seriously Injured|Seriously Injured|1
+JR Smith|Y|Seriously Injured|Slightly Injured|0
+JR Smith|Y|Slightly Injured|Fit for Match|0
+JR Smith|Y|Slightly Injured|Seriously Injured|.27
+JR Smith|Y|Slightly Injured|Slightly Injured|.73
+Nene Nene|N|Fit for Match|Fit for Match|1
+Nene Nene|N|Fit for Match|Seriously Injured|0
+Nene Nene|N|Fit for Match|Slightly Injured|0
+Nene Nene|N|Seriously Injured|Fit for Match|.01
+Nene Nene|N|Seriously Injured|Seriously Injured|.09
+Nene Nene|N|Seriously Injured|Slightly Injured|.90
+Nene Nene|N|Slightly Injured|Fit for Match|.21
+Nene Nene|N|Slightly Injured|Seriously Injured|0
+Nene Nene|N|Slightly Injured|Slightly Injured|.79
+Nene Nene|Y|Fit for Match|Seriously Injured|.02
+Nene Nene|Y|Fit for Match|Slightly Injured|.14
+Nene Nene|Y|Fit for Match|Fit for Match|.84
+Nene Nene|Y|Seriously Injured|Fit for Match|0
+Nene Nene|Y|Seriously Injured|Seriously Injured|1
+Nene Nene|Y|Seriously Injured|Slightly Injured|0
+Nene Nene|Y|Slightly Injured|Fit for Match|0
+Nene Nene|Y|Slightly Injured|Seriously Injured|.06
+Nene Nene|Y|Slightly Injured|Slightly Injured|.94
+Kenyon Martin|N|Fit for Match|Fit for Match|1
+Kenyon Martin|N|Fit for Match|Seriously Injured|0
+Kenyon Martin|N|Fit for Match|Slightly Injured|0
+Kenyon Martin|N|Seriously Injured|Fit for Match|.03
+Kenyon Martin|N|Seriously Injured|Seriously Injured|.40
+Kenyon Martin|N|Seriously Injured|Slightly Injured|.57
+Kenyon Martin|N|Slightly Injured|Fit for Match|.16
+Kenyon Martin|N|Slightly Injured|Seriously Injured|0
+Kenyon Martin|N|Slightly Injured|Slightly Injured|.84
+Kenyon Martin|Y|Fit for Match|Seriously Injured|.02
+Kenyon Martin|Y|Fit for Match|Slightly Injured|.12
+Kenyon Martin|Y|Fit for Match|Fit for Match|.86
+Kenyon Martin|Y|Seriously Injured|Fit for Match|0
+Kenyon Martin|Y|Seriously Injured|Seriously Injured|1
+Kenyon Martin|Y|Seriously Injured|Slightly Injured|0
+Kenyon Martin|Y|Slightly Injured|Fit for Match|0
+Kenyon Martin|Y|Slightly Injured|Seriously Injured|.29
+Kenyon Martin|Y|Slightly Injured|Slightly Injured|.71
+Linas Kleiza|N|Fit for Match|Fit for Match|1
+Linas Kleiza|N|Fit for Match|Seriously Injured|0
+Linas Kleiza|N|Fit for Match|Slightly Injured|0
+Linas Kleiza|N|Seriously Injured|Fit for Match|.05
+Linas Kleiza|N|Seriously Injured|Seriously Injured|.34
+Linas Kleiza|N|Seriously Injured|Slightly Injured|.61
+Linas Kleiza|N|Slightly Injured|Fit for Match|.38
+Linas Kleiza|N|Slightly Injured|Seriously Injured|0
+Linas Kleiza|N|Slightly Injured|Slightly Injured|.62
+Linas Kleiza|Y|Fit for Match|Seriously Injured|.05
+Linas Kleiza|Y|Fit for Match|Slightly Injured|.08
+Linas Kleiza|Y|Fit for Match|Fit for Match|.87
+Linas Kleiza|Y|Seriously Injured|Fit for Match|0
+Linas Kleiza|Y|Seriously Injured|Seriously Injured|1
+Linas Kleiza|Y|Seriously Injured|Slightly Injured|0
+Linas Kleiza|Y|Slightly Injured|Fit for Match|0
+Linas Kleiza|Y|Slightly Injured|Seriously Injured|.28
+Linas Kleiza|Y|Slightly Injured|Slightly Injured|.72
+Chris Andersen|N|Fit for Match|Fit for Match|1
+Chris Andersen|N|Fit for Match|Seriously Injured|0
+Chris Andersen|N|Fit for Match|Slightly Injured|0
+Chris Andersen|N|Seriously Injured|Fit for Match|.03
+Chris Andersen|N|Seriously Injured|Seriously Injured|.18
+Chris Andersen|N|Seriously Injured|Slightly Injured|.79
+Chris Andersen|N|Slightly Injured|Fit for Match|.29
+Chris Andersen|N|Slightly Injured|Seriously Injured|0
+Chris Andersen|N|Slightly Injured|Slightly Injured|.71
+Chris Andersen|Y|Fit for Match|Seriously Injured|.02
+Chris Andersen|Y|Fit for Match|Slightly Injured|.09
+Chris Andersen|Y|Fit for Match|Fit for Match|.89
+Chris Andersen|Y|Seriously Injured|Fit for Match|0
+Chris Andersen|Y|Seriously Injured|Seriously Injured|1
+Chris Andersen|Y|Seriously Injured|Slightly Injured|0
+Chris Andersen|Y|Slightly Injured|Fit for Match|0
+Chris Andersen|Y|Slightly Injured|Seriously Injured|.23
+Chris Andersen|Y|Slightly Injured|Slightly Injured|.77
+Dahntay Jones|N|Fit for Match|Fit for Match|1
+Dahntay Jones|N|Fit for Match|Seriously Injured|0
+Dahntay Jones|N|Fit for Match|Slightly Injured|0
+Dahntay Jones|N|Seriously Injured|Fit for Match|.04
+Dahntay Jones|N|Seriously Injured|Seriously Injured|.31
+Dahntay Jones|N|Seriously Injured|Slightly Injured|.65
+Dahntay Jones|N|Slightly Injured|Fit for Match|.54
+Dahntay Jones|N|Slightly Injured|Seriously Injured|0
+Dahntay Jones|N|Slightly Injured|Slightly Injured|.46
+Dahntay Jones|Y|Fit for Match|Seriously Injured|.04
+Dahntay Jones|Y|Fit for Match|Slightly Injured|.07
+Dahntay Jones|Y|Fit for Match|Fit for Match|.89
+Dahntay Jones|Y|Seriously Injured|Fit for Match|0
+Dahntay Jones|Y|Seriously Injured|Seriously Injured|1
+Dahntay Jones|Y|Seriously Injured|Slightly Injured|0
+Dahntay Jones|Y|Slightly Injured|Fit for Match|0
+Dahntay Jones|Y|Slightly Injured|Seriously Injured|.28
+Dahntay Jones|Y|Slightly Injured|Slightly Injured|.72
+Anthony Carter|N|Fit for Match|Fit for Match|1
+Anthony Carter|N|Fit for Match|Seriously Injured|0
+Anthony Carter|N|Fit for Match|Slightly Injured|0
+Anthony Carter|N|Seriously Injured|Fit for Match|.06
+Anthony Carter|N|Seriously Injured|Seriously Injured|.16
+Anthony Carter|N|Seriously Injured|Slightly Injured|.78
+Anthony Carter|N|Slightly Injured|Fit for Match|.29
+Anthony Carter|N|Slightly Injured|Seriously Injured|0
+Anthony Carter|N|Slightly Injured|Slightly Injured|.71
+Anthony Carter|Y|Fit for Match|Seriously Injured|.01
+Anthony Carter|Y|Fit for Match|Slightly Injured|.07
+Anthony Carter|Y|Fit for Match|Fit for Match|.92
+Anthony Carter|Y|Seriously Injured|Fit for Match|0
+Anthony Carter|Y|Seriously Injured|Seriously Injured|1
+Anthony Carter|Y|Seriously Injured|Slightly Injured|0
+Anthony Carter|Y|Slightly Injured|Fit for Match|0
+Anthony Carter|Y|Slightly Injured|Seriously Injured|.03
+Anthony Carter|Y|Slightly Injured|Slightly Injured|.97
+Renaldo Balkman|N|Fit for Match|Fit for Match|1
+Renaldo Balkman|N|Fit for Match|Seriously Injured|0
+Renaldo Balkman|N|Fit for Match|Slightly Injured|0
+Renaldo Balkman|N|Seriously Injured|Fit for Match|.10
+Renaldo Balkman|N|Seriously Injured|Seriously Injured|.12
+Renaldo Balkman|N|Seriously Injured|Slightly Injured|.78
+Renaldo Balkman|N|Slightly Injured|Fit for Match|.65
+Renaldo Balkman|N|Slightly Injured|Seriously Injured|0
+Renaldo Balkman|N|Slightly Injured|Slightly Injured|.35
+Renaldo Balkman|Y|Fit for Match|Seriously Injured|.02
+Renaldo Balkman|Y|Fit for Match|Slightly Injured|.20
+Renaldo Balkman|Y|Fit for Match|Fit for Match|.78
+Renaldo Balkman|Y|Seriously Injured|Fit for Match|0
+Renaldo Balkman|Y|Seriously Injured|Seriously Injured|1
+Renaldo Balkman|Y|Seriously Injured|Slightly Injured|0
+Renaldo Balkman|Y|Slightly Injured|Fit for Match|0
+Renaldo Balkman|Y|Slightly Injured|Seriously Injured|.23
+Renaldo Balkman|Y|Slightly Injured|Slightly Injured|.77
+Johan Petro|N|Fit for Match|Fit for Match|1
+Johan Petro|N|Fit for Match|Seriously Injured|0
+Johan Petro|N|Fit for Match|Slightly Injured|0
+Johan Petro|N|Seriously Injured|Fit for Match|.01
+Johan Petro|N|Seriously Injured|Seriously Injured|.38
+Johan Petro|N|Seriously Injured|Slightly Injured|.61
+Johan Petro|N|Slightly Injured|Fit for Match|.36
+Johan Petro|N|Slightly Injured|Seriously Injured|0
+Johan Petro|N|Slightly Injured|Slightly Injured|.64
+Johan Petro|Y|Fit for Match|Seriously Injured|.02
+Johan Petro|Y|Fit for Match|Slightly Injured|.19
+Johan Petro|Y|Fit for Match|Fit for Match|.79
+Johan Petro|Y|Seriously Injured|Fit for Match|0
+Johan Petro|Y|Seriously Injured|Seriously Injured|1
+Johan Petro|Y|Seriously Injured|Slightly Injured|0
+Johan Petro|Y|Slightly Injured|Fit for Match|0
+Johan Petro|Y|Slightly Injured|Seriously Injured|.07
+Johan Petro|Y|Slightly Injured|Slightly Injured|.93
+Jason Hart|N|Fit for Match|Fit for Match|1
+Jason Hart|N|Fit for Match|Seriously Injured|0
+Jason Hart|N|Fit for Match|Slightly Injured|0
+Jason Hart|N|Seriously Injured|Fit for Match|.03
+Jason Hart|N|Seriously Injured|Seriously Injured|.08
+Jason Hart|N|Seriously Injured|Slightly Injured|.89
+Jason Hart|N|Slightly Injured|Fit for Match|.63
+Jason Hart|N|Slightly Injured|Seriously Injured|0
+Jason Hart|N|Slightly Injured|Slightly Injured|.37
+Jason Hart|Y|Fit for Match|Seriously Injured|.01
+Jason Hart|Y|Fit for Match|Slightly Injured|.17
+Jason Hart|Y|Fit for Match|Fit for Match|.82
+Jason Hart|Y|Seriously Injured|Fit for Match|0
+Jason Hart|Y|Seriously Injured|Seriously Injured|1
+Jason Hart|Y|Seriously Injured|Slightly Injured|0
+Jason Hart|Y|Slightly Injured|Fit for Match|0
+Jason Hart|Y|Slightly Injured|Seriously Injured|.25
+Jason Hart|Y|Slightly Injured|Slightly Injured|.75
+Al Jefferson|N|Fit for Match|Fit for Match|1
+Al Jefferson|N|Fit for Match|Seriously Injured|0
+Al Jefferson|N|Fit for Match|Slightly Injured|0
+Al Jefferson|N|Seriously Injured|Fit for Match|.05
+Al Jefferson|N|Seriously Injured|Seriously Injured|.44
+Al Jefferson|N|Seriously Injured|Slightly Injured|.51
+Al Jefferson|N|Slightly Injured|Fit for Match|.59
+Al Jefferson|N|Slightly Injured|Seriously Injured|0
+Al Jefferson|N|Slightly Injured|Slightly Injured|.41
+Al Jefferson|Y|Fit for Match|Seriously Injured|.01
+Al Jefferson|Y|Fit for Match|Slightly Injured|.14
+Al Jefferson|Y|Fit for Match|Fit for Match|.85
+Al Jefferson|Y|Seriously Injured|Fit for Match|0
+Al Jefferson|Y|Seriously Injured|Seriously Injured|1
+Al Jefferson|Y|Seriously Injured|Slightly Injured|0
+Al Jefferson|Y|Slightly Injured|Fit for Match|0
+Al Jefferson|Y|Slightly Injured|Seriously Injured|.02
+Al Jefferson|Y|Slightly Injured|Slightly Injured|.98
+Randy Foye|N|Fit for Match|Fit for Match|1
+Randy Foye|N|Fit for Match|Seriously Injured|0
+Randy Foye|N|Fit for Match|Slightly Injured|0
+Randy Foye|N|Seriously Injured|Fit for Match|.06
+Randy Foye|N|Seriously Injured|Seriously Injured|.05
+Randy Foye|N|Seriously Injured|Slightly Injured|.89
+Randy Foye|N|Slightly Injured|Fit for Match|.27
+Randy Foye|N|Slightly Injured|Seriously Injured|0
+Randy Foye|N|Slightly Injured|Slightly Injured|.73
+Randy Foye|Y|Fit for Match|Seriously Injured|.01
+Randy Foye|Y|Fit for Match|Slightly Injured|.10
+Randy Foye|Y|Fit for Match|Fit for Match|.89
+Randy Foye|Y|Seriously Injured|Fit for Match|0
+Randy Foye|Y|Seriously Injured|Seriously Injured|1
+Randy Foye|Y|Seriously Injured|Slightly Injured|0
+Randy Foye|Y|Slightly Injured|Fit for Match|0
+Randy Foye|Y|Slightly Injured|Seriously Injured|.08
+Randy Foye|Y|Slightly Injured|Slightly Injured|.92
+Ryan Gomes|N|Fit for Match|Fit for Match|1
+Ryan Gomes|N|Fit for Match|Seriously Injured|0
+Ryan Gomes|N|Fit for Match|Slightly Injured|0
+Ryan Gomes|N|Seriously Injured|Fit for Match|.03
+Ryan Gomes|N|Seriously Injured|Seriously Injured|.50
+Ryan Gomes|N|Seriously Injured|Slightly Injured|.47
+Ryan Gomes|N|Slightly Injured|Fit for Match|.64
+Ryan Gomes|N|Slightly Injured|Seriously Injured|0
+Ryan Gomes|N|Slightly Injured|Slightly Injured|.36
+Ryan Gomes|Y|Fit for Match|Seriously Injured|.04
+Ryan Gomes|Y|Fit for Match|Slightly Injured|.11
+Ryan Gomes|Y|Fit for Match|Fit for Match|.85
+Ryan Gomes|Y|Seriously Injured|Fit for Match|0
+Ryan Gomes|Y|Seriously Injured|Seriously Injured|1
+Ryan Gomes|Y|Seriously Injured|Slightly Injured|0
+Ryan Gomes|Y|Slightly Injured|Fit for Match|0
+Ryan Gomes|Y|Slightly Injured|Seriously Injured|.26
+Ryan Gomes|Y|Slightly Injured|Slightly Injured|.74
+Kevin Love|N|Fit for Match|Fit for Match|1
+Kevin Love|N|Fit for Match|Seriously Injured|0
+Kevin Love|N|Fit for Match|Slightly Injured|0
+Kevin Love|N|Seriously Injured|Fit for Match|.07
+Kevin Love|N|Seriously Injured|Seriously Injured|.17
+Kevin Love|N|Seriously Injured|Slightly Injured|.76
+Kevin Love|N|Slightly Injured|Fit for Match|.16
+Kevin Love|N|Slightly Injured|Seriously Injured|0
+Kevin Love|N|Slightly Injured|Slightly Injured|.84
+Kevin Love|Y|Fit for Match|Seriously Injured|.01
+Kevin Love|Y|Fit for Match|Slightly Injured|.06
+Kevin Love|Y|Fit for Match|Fit for Match|.93
+Kevin Love|Y|Seriously Injured|Fit for Match|0
+Kevin Love|Y|Seriously Injured|Seriously Injured|1
+Kevin Love|Y|Seriously Injured|Slightly Injured|0
+Kevin Love|Y|Slightly Injured|Fit for Match|0
+Kevin Love|Y|Slightly Injured|Seriously Injured|.23
+Kevin Love|Y|Slightly Injured|Slightly Injured|.77
+Craig Smith|N|Fit for Match|Fit for Match|1
+Craig Smith|N|Fit for Match|Seriously Injured|0
+Craig Smith|N|Fit for Match|Slightly Injured|0
+Craig Smith|N|Seriously Injured|Fit for Match|.01
+Craig Smith|N|Seriously Injured|Seriously Injured|.40
+Craig Smith|N|Seriously Injured|Slightly Injured|.59
+Craig Smith|N|Slightly Injured|Fit for Match|.50
+Craig Smith|N|Slightly Injured|Seriously Injured|0
+Craig Smith|N|Slightly Injured|Slightly Injured|.50
+Craig Smith|Y|Fit for Match|Seriously Injured|.02
+Craig Smith|Y|Fit for Match|Slightly Injured|.11
+Craig Smith|Y|Fit for Match|Fit for Match|.87
+Craig Smith|Y|Seriously Injured|Fit for Match|0
+Craig Smith|Y|Seriously Injured|Seriously Injured|1
+Craig Smith|Y|Seriously Injured|Slightly Injured|0
+Craig Smith|Y|Slightly Injured|Fit for Match|0
+Craig Smith|Y|Slightly Injured|Seriously Injured|.07
+Craig Smith|Y|Slightly Injured|Slightly Injured|.93
+Mike Miller|N|Fit for Match|Fit for Match|1
+Mike Miller|N|Fit for Match|Seriously Injured|0
+Mike Miller|N|Fit for Match|Slightly Injured|0
+Mike Miller|N|Seriously Injured|Fit for Match|.06
+Mike Miller|N|Seriously Injured|Seriously Injured|.02
+Mike Miller|N|Seriously Injured|Slightly Injured|.92
+Mike Miller|N|Slightly Injured|Fit for Match|.59
+Mike Miller|N|Slightly Injured|Seriously Injured|0
+Mike Miller|N|Slightly Injured|Slightly Injured|.41
+Mike Miller|Y|Fit for Match|Seriously Injured|.04
+Mike Miller|Y|Fit for Match|Slightly Injured|.16
+Mike Miller|Y|Fit for Match|Fit for Match|.80
+Mike Miller|Y|Seriously Injured|Fit for Match|0
+Mike Miller|Y|Seriously Injured|Seriously Injured|1
+Mike Miller|Y|Seriously Injured|Slightly Injured|0
+Mike Miller|Y|Slightly Injured|Fit for Match|0
+Mike Miller|Y|Slightly Injured|Seriously Injured|.04
+Mike Miller|Y|Slightly Injured|Slightly Injured|.96
+Sebastian Telfair|N|Fit for Match|Fit for Match|1
+Sebastian Telfair|N|Fit for Match|Seriously Injured|0
+Sebastian Telfair|N|Fit for Match|Slightly Injured|0
+Sebastian Telfair|N|Seriously Injured|Fit for Match|.03
+Sebastian Telfair|N|Seriously Injured|Seriously Injured|.24
+Sebastian Telfair|N|Seriously Injured|Slightly Injured|.73
+Sebastian Telfair|N|Slightly Injured|Fit for Match|.35
+Sebastian Telfair|N|Slightly Injured|Seriously Injured|0
+Sebastian Telfair|N|Slightly Injured|Slightly Injured|.65
+Sebastian Telfair|Y|Fit for Match|Seriously Injured|.01
+Sebastian Telfair|Y|Fit for Match|Slightly Injured|.11
+Sebastian Telfair|Y|Fit for Match|Fit for Match|.88
+Sebastian Telfair|Y|Seriously Injured|Fit for Match|0
+Sebastian Telfair|Y|Seriously Injured|Seriously Injured|1
+Sebastian Telfair|Y|Seriously Injured|Slightly Injured|0
+Sebastian Telfair|Y|Slightly Injured|Fit for Match|0
+Sebastian Telfair|Y|Slightly Injured|Seriously Injured|.10
+Sebastian Telfair|Y|Slightly Injured|Slightly Injured|.90
+Rodney Carney|N|Fit for Match|Fit for Match|1
+Rodney Carney|N|Fit for Match|Seriously Injured|0
+Rodney Carney|N|Fit for Match|Slightly Injured|0
+Rodney Carney|N|Seriously Injured|Fit for Match|.03
+Rodney Carney|N|Seriously Injured|Seriously Injured|.36
+Rodney Carney|N|Seriously Injured|Slightly Injured|.61
+Rodney Carney|N|Slightly Injured|Fit for Match|.64
+Rodney Carney|N|Slightly Injured|Seriously Injured|0
+Rodney Carney|N|Slightly Injured|Slightly Injured|.36
+Rodney Carney|Y|Fit for Match|Seriously Injured|.02
+Rodney Carney|Y|Fit for Match|Slightly Injured|.09
+Rodney Carney|Y|Fit for Match|Fit for Match|.89
+Rodney Carney|Y|Seriously Injured|Fit for Match|0
+Rodney Carney|Y|Seriously Injured|Seriously Injured|1
+Rodney Carney|Y|Seriously Injured|Slightly Injured|0
+Rodney Carney|Y|Slightly Injured|Fit for Match|0
+Rodney Carney|Y|Slightly Injured|Seriously Injured|.16
+Rodney Carney|Y|Slightly Injured|Slightly Injured|.84
+Corey Brewer|N|Fit for Match|Fit for Match|1
+Corey Brewer|N|Fit for Match|Seriously Injured|0
+Corey Brewer|N|Fit for Match|Slightly Injured|0
+Corey Brewer|N|Seriously Injured|Fit for Match|.02
+Corey Brewer|N|Seriously Injured|Seriously Injured|.23
+Corey Brewer|N|Seriously Injured|Slightly Injured|.75
+Corey Brewer|N|Slightly Injured|Fit for Match|.52
+Corey Brewer|N|Slightly Injured|Seriously Injured|0
+Corey Brewer|N|Slightly Injured|Slightly Injured|.48
+Corey Brewer|Y|Fit for Match|Seriously Injured|.03
+Corey Brewer|Y|Fit for Match|Slightly Injured|.10
+Corey Brewer|Y|Fit for Match|Fit for Match|.87
+Corey Brewer|Y|Seriously Injured|Fit for Match|0
+Corey Brewer|Y|Seriously Injured|Seriously Injured|1
+Corey Brewer|Y|Seriously Injured|Slightly Injured|0
+Corey Brewer|Y|Slightly Injured|Fit for Match|0
+Corey Brewer|Y|Slightly Injured|Seriously Injured|.24
+Corey Brewer|Y|Slightly Injured|Slightly Injured|.76
+Bobby Brown|N|Fit for Match|Fit for Match|1
+Bobby Brown|N|Fit for Match|Seriously Injured|0
+Bobby Brown|N|Fit for Match|Slightly Injured|0
+Bobby Brown|N|Seriously Injured|Fit for Match|.09
+Bobby Brown|N|Seriously Injured|Seriously Injured|.30
+Bobby Brown|N|Seriously Injured|Slightly Injured|.61
+Bobby Brown|N|Slightly Injured|Fit for Match|.24
+Bobby Brown|N|Slightly Injured|Seriously Injured|0
+Bobby Brown|N|Slightly Injured|Slightly Injured|.76
+Bobby Brown|Y|Fit for Match|Seriously Injured|.01
+Bobby Brown|Y|Fit for Match|Slightly Injured|.17
+Bobby Brown|Y|Fit for Match|Fit for Match|.82
+Bobby Brown|Y|Seriously Injured|Fit for Match|0
+Bobby Brown|Y|Seriously Injured|Seriously Injured|1
+Bobby Brown|Y|Seriously Injured|Slightly Injured|0
+Bobby Brown|Y|Slightly Injured|Fit for Match|0
+Bobby Brown|Y|Slightly Injured|Seriously Injured|.15
+Bobby Brown|Y|Slightly Injured|Slightly Injured|.85
+Kevin Ollie|N|Fit for Match|Fit for Match|1
+Kevin Ollie|N|Fit for Match|Seriously Injured|0
+Kevin Ollie|N|Fit for Match|Slightly Injured|0
+Kevin Ollie|N|Seriously Injured|Fit for Match|.07
+Kevin Ollie|N|Seriously Injured|Seriously Injured|.30
+Kevin Ollie|N|Seriously Injured|Slightly Injured|.63
+Kevin Ollie|N|Slightly Injured|Fit for Match|.53
+Kevin Ollie|N|Slightly Injured|Seriously Injured|0
+Kevin Ollie|N|Slightly Injured|Slightly Injured|.47
+Kevin Ollie|Y|Fit for Match|Seriously Injured|.01
+Kevin Ollie|Y|Fit for Match|Slightly Injured|.10
+Kevin Ollie|Y|Fit for Match|Fit for Match|.89
+Kevin Ollie|Y|Seriously Injured|Fit for Match|0
+Kevin Ollie|Y|Seriously Injured|Seriously Injured|1
+Kevin Ollie|Y|Seriously Injured|Slightly Injured|0
+Kevin Ollie|Y|Slightly Injured|Fit for Match|0
+Kevin Ollie|Y|Slightly Injured|Seriously Injured|.11
+Kevin Ollie|Y|Slightly Injured|Slightly Injured|.89
+Brian Cardinal|N|Fit for Match|Fit for Match|1
+Brian Cardinal|N|Fit for Match|Seriously Injured|0
+Brian Cardinal|N|Fit for Match|Slightly Injured|0
+Brian Cardinal|N|Seriously Injured|Fit for Match|.10
+Brian Cardinal|N|Seriously Injured|Seriously Injured|.44
+Brian Cardinal|N|Seriously Injured|Slightly Injured|.46
+Brian Cardinal|N|Slightly Injured|Fit for Match|.59
+Brian Cardinal|N|Slightly Injured|Seriously Injured|0
+Brian Cardinal|N|Slightly Injured|Slightly Injured|.41
+Brian Cardinal|Y|Fit for Match|Seriously Injured|.04
+Brian Cardinal|Y|Fit for Match|Slightly Injured|.06
+Brian Cardinal|Y|Fit for Match|Fit for Match|.90
+Brian Cardinal|Y|Seriously Injured|Fit for Match|0
+Brian Cardinal|Y|Seriously Injured|Seriously Injured|1
+Brian Cardinal|Y|Seriously Injured|Slightly Injured|0
+Brian Cardinal|Y|Slightly Injured|Fit for Match|0
+Brian Cardinal|Y|Slightly Injured|Seriously Injured|.29
+Brian Cardinal|Y|Slightly Injured|Slightly Injured|.71
+Richard Hamilton|N|Fit for Match|Fit for Match|1
+Richard Hamilton|N|Fit for Match|Seriously Injured|0
+Richard Hamilton|N|Fit for Match|Slightly Injured|0
+Richard Hamilton|N|Seriously Injured|Fit for Match|.09
+Richard Hamilton|N|Seriously Injured|Seriously Injured|.06
+Richard Hamilton|N|Seriously Injured|Slightly Injured|.85
+Richard Hamilton|N|Slightly Injured|Fit for Match|.64
+Richard Hamilton|N|Slightly Injured|Seriously Injured|0
+Richard Hamilton|N|Slightly Injured|Slightly Injured|.36
+Richard Hamilton|Y|Fit for Match|Seriously Injured|.03
+Richard Hamilton|Y|Fit for Match|Slightly Injured|.08
+Richard Hamilton|Y|Fit for Match|Fit for Match|.89
+Richard Hamilton|Y|Seriously Injured|Fit for Match|0
+Richard Hamilton|Y|Seriously Injured|Seriously Injured|1
+Richard Hamilton|Y|Seriously Injured|Slightly Injured|0
+Richard Hamilton|Y|Slightly Injured|Fit for Match|0
+Richard Hamilton|Y|Slightly Injured|Seriously Injured|.17
+Richard Hamilton|Y|Slightly Injured|Slightly Injured|.83
+Allen Iverson|N|Fit for Match|Fit for Match|1
+Allen Iverson|N|Fit for Match|Seriously Injured|0
+Allen Iverson|N|Fit for Match|Slightly Injured|0
+Allen Iverson|N|Seriously Injured|Fit for Match|.10
+Allen Iverson|N|Seriously Injured|Seriously Injured|.38
+Allen Iverson|N|Seriously Injured|Slightly Injured|.52
+Allen Iverson|N|Slightly Injured|Fit for Match|.38
+Allen Iverson|N|Slightly Injured|Seriously Injured|0
+Allen Iverson|N|Slightly Injured|Slightly Injured|.62
+Allen Iverson|Y|Fit for Match|Seriously Injured|.05
+Allen Iverson|Y|Fit for Match|Slightly Injured|.07
+Allen Iverson|Y|Fit for Match|Fit for Match|.88
+Allen Iverson|Y|Seriously Injured|Fit for Match|0
+Allen Iverson|Y|Seriously Injured|Seriously Injured|1
+Allen Iverson|Y|Seriously Injured|Slightly Injured|0
+Allen Iverson|Y|Slightly Injured|Fit for Match|0
+Allen Iverson|Y|Slightly Injured|Seriously Injured|.24
+Allen Iverson|Y|Slightly Injured|Slightly Injured|.76
+Tayshaun Prince|N|Fit for Match|Fit for Match|1
+Tayshaun Prince|N|Fit for Match|Seriously Injured|0
+Tayshaun Prince|N|Fit for Match|Slightly Injured|0
+Tayshaun Prince|N|Seriously Injured|Fit for Match|.08
+Tayshaun Prince|N|Seriously Injured|Seriously Injured|.29
+Tayshaun Prince|N|Seriously Injured|Slightly Injured|.63
+Tayshaun Prince|N|Slightly Injured|Fit for Match|.28
+Tayshaun Prince|N|Slightly Injured|Seriously Injured|0
+Tayshaun Prince|N|Slightly Injured|Slightly Injured|.72
+Tayshaun Prince|Y|Fit for Match|Seriously Injured|.01
+Tayshaun Prince|Y|Fit for Match|Slightly Injured|.11
+Tayshaun Prince|Y|Fit for Match|Fit for Match|.88
+Tayshaun Prince|Y|Seriously Injured|Fit for Match|0
+Tayshaun Prince|Y|Seriously Injured|Seriously Injured|1
+Tayshaun Prince|Y|Seriously Injured|Slightly Injured|0
+Tayshaun Prince|Y|Slightly Injured|Fit for Match|0
+Tayshaun Prince|Y|Slightly Injured|Seriously Injured|.22
+Tayshaun Prince|Y|Slightly Injured|Slightly Injured|.78
+Rodney Stuckey|N|Fit for Match|Fit for Match|1
+Rodney Stuckey|N|Fit for Match|Seriously Injured|0
+Rodney Stuckey|N|Fit for Match|Slightly Injured|0
+Rodney Stuckey|N|Seriously Injured|Fit for Match|.01
+Rodney Stuckey|N|Seriously Injured|Seriously Injured|.29
+Rodney Stuckey|N|Seriously Injured|Slightly Injured|.70
+Rodney Stuckey|N|Slightly Injured|Fit for Match|.30
+Rodney Stuckey|N|Slightly Injured|Seriously Injured|0
+Rodney Stuckey|N|Slightly Injured|Slightly Injured|.70
+Rodney Stuckey|Y|Fit for Match|Seriously Injured|.04
+Rodney Stuckey|Y|Fit for Match|Slightly Injured|.14
+Rodney Stuckey|Y|Fit for Match|Fit for Match|.82
+Rodney Stuckey|Y|Seriously Injured|Fit for Match|0
+Rodney Stuckey|Y|Seriously Injured|Seriously Injured|1
+Rodney Stuckey|Y|Seriously Injured|Slightly Injured|0
+Rodney Stuckey|Y|Slightly Injured|Fit for Match|0
+Rodney Stuckey|Y|Slightly Injured|Seriously Injured|.03
+Rodney Stuckey|Y|Slightly Injured|Slightly Injured|.97
+Rasheed Wallace|N|Fit for Match|Fit for Match|1
+Rasheed Wallace|N|Fit for Match|Seriously Injured|0
+Rasheed Wallace|N|Fit for Match|Slightly Injured|0
+Rasheed Wallace|N|Seriously Injured|Fit for Match|.05
+Rasheed Wallace|N|Seriously Injured|Seriously Injured|.42
+Rasheed Wallace|N|Seriously Injured|Slightly Injured|.53
+Rasheed Wallace|N|Slightly Injured|Fit for Match|.67
+Rasheed Wallace|N|Slightly Injured|Seriously Injured|0
+Rasheed Wallace|N|Slightly Injured|Slightly Injured|.33
+Rasheed Wallace|Y|Fit for Match|Seriously Injured|.03
+Rasheed Wallace|Y|Fit for Match|Slightly Injured|.10
+Rasheed Wallace|Y|Fit for Match|Fit for Match|.87
+Rasheed Wallace|Y|Seriously Injured|Fit for Match|0
+Rasheed Wallace|Y|Seriously Injured|Seriously Injured|1
+Rasheed Wallace|Y|Seriously Injured|Slightly Injured|0
+Rasheed Wallace|Y|Slightly Injured|Fit for Match|0
+Rasheed Wallace|Y|Slightly Injured|Seriously Injured|.11
+Rasheed Wallace|Y|Slightly Injured|Slightly Injured|.89
+Antonio McDyess|N|Fit for Match|Fit for Match|1
+Antonio McDyess|N|Fit for Match|Seriously Injured|0
+Antonio McDyess|N|Fit for Match|Slightly Injured|0
+Antonio McDyess|N|Seriously Injured|Fit for Match|.05
+Antonio McDyess|N|Seriously Injured|Seriously Injured|.33
+Antonio McDyess|N|Seriously Injured|Slightly Injured|.62
+Antonio McDyess|N|Slightly Injured|Fit for Match|.69
+Antonio McDyess|N|Slightly Injured|Seriously Injured|0
+Antonio McDyess|N|Slightly Injured|Slightly Injured|.31
+Antonio McDyess|Y|Fit for Match|Seriously Injured|.02
+Antonio McDyess|Y|Fit for Match|Slightly Injured|.10
+Antonio McDyess|Y|Fit for Match|Fit for Match|.88
+Antonio McDyess|Y|Seriously Injured|Fit for Match|0
+Antonio McDyess|Y|Seriously Injured|Seriously Injured|1
+Antonio McDyess|Y|Seriously Injured|Slightly Injured|0
+Antonio McDyess|Y|Slightly Injured|Fit for Match|0
+Antonio McDyess|Y|Slightly Injured|Seriously Injured|.16
+Antonio McDyess|Y|Slightly Injured|Slightly Injured|.84
+Will Bynum|N|Fit for Match|Fit for Match|1
+Will Bynum|N|Fit for Match|Seriously Injured|0
+Will Bynum|N|Fit for Match|Slightly Injured|0
+Will Bynum|N|Seriously Injured|Fit for Match|.03
+Will Bynum|N|Seriously Injured|Seriously Injured|.09
+Will Bynum|N|Seriously Injured|Slightly Injured|.88
+Will Bynum|N|Slightly Injured|Fit for Match|.36
+Will Bynum|N|Slightly Injured|Seriously Injured|0
+Will Bynum|N|Slightly Injured|Slightly Injured|.64
+Will Bynum|Y|Fit for Match|Seriously Injured|.01
+Will Bynum|Y|Fit for Match|Slightly Injured|.18
+Will Bynum|Y|Fit for Match|Fit for Match|.81
+Will Bynum|Y|Seriously Injured|Fit for Match|0
+Will Bynum|Y|Seriously Injured|Seriously Injured|1
+Will Bynum|Y|Seriously Injured|Slightly Injured|0
+Will Bynum|Y|Slightly Injured|Fit for Match|0
+Will Bynum|Y|Slightly Injured|Seriously Injured|.23
+Will Bynum|Y|Slightly Injured|Slightly Injured|.77
+Jason Maxiell|N|Fit for Match|Fit for Match|1
+Jason Maxiell|N|Fit for Match|Seriously Injured|0
+Jason Maxiell|N|Fit for Match|Slightly Injured|0
+Jason Maxiell|N|Seriously Injured|Fit for Match|.02
+Jason Maxiell|N|Seriously Injured|Seriously Injured|.15
+Jason Maxiell|N|Seriously Injured|Slightly Injured|.83
+Jason Maxiell|N|Slightly Injured|Fit for Match|.29
+Jason Maxiell|N|Slightly Injured|Seriously Injured|0
+Jason Maxiell|N|Slightly Injured|Slightly Injured|.71
+Jason Maxiell|Y|Fit for Match|Seriously Injured|.05
+Jason Maxiell|Y|Fit for Match|Slightly Injured|.11
+Jason Maxiell|Y|Fit for Match|Fit for Match|.84
+Jason Maxiell|Y|Seriously Injured|Fit for Match|0
+Jason Maxiell|Y|Seriously Injured|Seriously Injured|1
+Jason Maxiell|Y|Seriously Injured|Slightly Injured|0
+Jason Maxiell|Y|Slightly Injured|Fit for Match|0
+Jason Maxiell|Y|Slightly Injured|Seriously Injured|.17
+Jason Maxiell|Y|Slightly Injured|Slightly Injured|.83
+Arron Afflalo|N|Fit for Match|Fit for Match|1
+Arron Afflalo|N|Fit for Match|Seriously Injured|0
+Arron Afflalo|N|Fit for Match|Slightly Injured|0
+Arron Afflalo|N|Seriously Injured|Fit for Match|.03
+Arron Afflalo|N|Seriously Injured|Seriously Injured|.45
+Arron Afflalo|N|Seriously Injured|Slightly Injured|.52
+Arron Afflalo|N|Slightly Injured|Fit for Match|.54
+Arron Afflalo|N|Slightly Injured|Seriously Injured|0
+Arron Afflalo|N|Slightly Injured|Slightly Injured|.46
+Arron Afflalo|Y|Fit for Match|Seriously Injured|.01
+Arron Afflalo|Y|Fit for Match|Slightly Injured|.08
+Arron Afflalo|Y|Fit for Match|Fit for Match|.91
+Arron Afflalo|Y|Seriously Injured|Fit for Match|0
+Arron Afflalo|Y|Seriously Injured|Seriously Injured|1
+Arron Afflalo|Y|Seriously Injured|Slightly Injured|0
+Arron Afflalo|Y|Slightly Injured|Fit for Match|0
+Arron Afflalo|Y|Slightly Injured|Seriously Injured|.26
+Arron Afflalo|Y|Slightly Injured|Slightly Injured|.74
+Kwame Brown|N|Fit for Match|Fit for Match|1
+Kwame Brown|N|Fit for Match|Seriously Injured|0
+Kwame Brown|N|Fit for Match|Slightly Injured|0
+Kwame Brown|N|Seriously Injured|Fit for Match|.04
+Kwame Brown|N|Seriously Injured|Seriously Injured|.02
+Kwame Brown|N|Seriously Injured|Slightly Injured|.94
+Kwame Brown|N|Slightly Injured|Fit for Match|.23
+Kwame Brown|N|Slightly Injured|Seriously Injured|0
+Kwame Brown|N|Slightly Injured|Slightly Injured|.77
+Kwame Brown|Y|Fit for Match|Seriously Injured|.02
+Kwame Brown|Y|Fit for Match|Slightly Injured|.12
+Kwame Brown|Y|Fit for Match|Fit for Match|.86
+Kwame Brown|Y|Seriously Injured|Fit for Match|0
+Kwame Brown|Y|Seriously Injured|Seriously Injured|1
+Kwame Brown|Y|Seriously Injured|Slightly Injured|0
+Kwame Brown|Y|Slightly Injured|Fit for Match|0
+Kwame Brown|Y|Slightly Injured|Seriously Injured|.03
+Kwame Brown|Y|Slightly Injured|Slightly Injured|.97
+Walter Herrmann|N|Fit for Match|Fit for Match|1
+Walter Herrmann|N|Fit for Match|Seriously Injured|0
+Walter Herrmann|N|Fit for Match|Slightly Injured|0
+Walter Herrmann|N|Seriously Injured|Fit for Match|.07
+Walter Herrmann|N|Seriously Injured|Seriously Injured|.33
+Walter Herrmann|N|Seriously Injured|Slightly Injured|.60
+Walter Herrmann|N|Slightly Injured|Fit for Match|.36
+Walter Herrmann|N|Slightly Injured|Seriously Injured|0
+Walter Herrmann|N|Slightly Injured|Slightly Injured|.64
+Walter Herrmann|Y|Fit for Match|Seriously Injured|.04
+Walter Herrmann|Y|Fit for Match|Slightly Injured|.20
+Walter Herrmann|Y|Fit for Match|Fit for Match|.76
+Walter Herrmann|Y|Seriously Injured|Fit for Match|0
+Walter Herrmann|Y|Seriously Injured|Seriously Injured|1
+Walter Herrmann|Y|Seriously Injured|Slightly Injured|0
+Walter Herrmann|Y|Slightly Injured|Fit for Match|0
+Walter Herrmann|Y|Slightly Injured|Seriously Injured|.18
+Walter Herrmann|Y|Slightly Injured|Slightly Injured|.82
+Amir Johnson|N|Fit for Match|Fit for Match|1
+Amir Johnson|N|Fit for Match|Seriously Injured|0
+Amir Johnson|N|Fit for Match|Slightly Injured|0
+Amir Johnson|N|Seriously Injured|Fit for Match|.05
+Amir Johnson|N|Seriously Injured|Seriously Injured|.01
+Amir Johnson|N|Seriously Injured|Slightly Injured|.94
+Amir Johnson|N|Slightly Injured|Fit for Match|.68
+Amir Johnson|N|Slightly Injured|Seriously Injured|0
+Amir Johnson|N|Slightly Injured|Slightly Injured|.32
+Amir Johnson|Y|Fit for Match|Seriously Injured|.05
+Amir Johnson|Y|Fit for Match|Slightly Injured|.06
+Amir Johnson|Y|Fit for Match|Fit for Match|.89
+Amir Johnson|Y|Seriously Injured|Fit for Match|0
+Amir Johnson|Y|Seriously Injured|Seriously Injured|1
+Amir Johnson|Y|Seriously Injured|Slightly Injured|0
+Amir Johnson|Y|Slightly Injured|Fit for Match|0
+Amir Johnson|Y|Slightly Injured|Seriously Injured|.07
+Amir Johnson|Y|Slightly Injured|Slightly Injured|.93
+Brandon Roy|N|Fit for Match|Fit for Match|1
+Brandon Roy|N|Fit for Match|Seriously Injured|0
+Brandon Roy|N|Fit for Match|Slightly Injured|0
+Brandon Roy|N|Seriously Injured|Fit for Match|.01
+Brandon Roy|N|Seriously Injured|Seriously Injured|.41
+Brandon Roy|N|Seriously Injured|Slightly Injured|.58
+Brandon Roy|N|Slightly Injured|Fit for Match|.65
+Brandon Roy|N|Slightly Injured|Seriously Injured|0
+Brandon Roy|N|Slightly Injured|Slightly Injured|.35
+Brandon Roy|Y|Fit for Match|Seriously Injured|.03
+Brandon Roy|Y|Fit for Match|Slightly Injured|.19
+Brandon Roy|Y|Fit for Match|Fit for Match|.78
+Brandon Roy|Y|Seriously Injured|Fit for Match|0
+Brandon Roy|Y|Seriously Injured|Seriously Injured|1
+Brandon Roy|Y|Seriously Injured|Slightly Injured|0
+Brandon Roy|Y|Slightly Injured|Fit for Match|0
+Brandon Roy|Y|Slightly Injured|Seriously Injured|.05
+Brandon Roy|Y|Slightly Injured|Slightly Injured|.95
+LaMarcus Aldridge|N|Fit for Match|Fit for Match|1
+LaMarcus Aldridge|N|Fit for Match|Seriously Injured|0
+LaMarcus Aldridge|N|Fit for Match|Slightly Injured|0
+LaMarcus Aldridge|N|Seriously Injured|Fit for Match|.08
+LaMarcus Aldridge|N|Seriously Injured|Seriously Injured|.15
+LaMarcus Aldridge|N|Seriously Injured|Slightly Injured|.77
+LaMarcus Aldridge|N|Slightly Injured|Fit for Match|.33
+LaMarcus Aldridge|N|Slightly Injured|Seriously Injured|0
+LaMarcus Aldridge|N|Slightly Injured|Slightly Injured|.67
+LaMarcus Aldridge|Y|Fit for Match|Seriously Injured|.01
+LaMarcus Aldridge|Y|Fit for Match|Slightly Injured|.17
+LaMarcus Aldridge|Y|Fit for Match|Fit for Match|.82
+LaMarcus Aldridge|Y|Seriously Injured|Fit for Match|0
+LaMarcus Aldridge|Y|Seriously Injured|Seriously Injured|1
+LaMarcus Aldridge|Y|Seriously Injured|Slightly Injured|0
+LaMarcus Aldridge|Y|Slightly Injured|Fit for Match|0
+LaMarcus Aldridge|Y|Slightly Injured|Seriously Injured|.16
+LaMarcus Aldridge|Y|Slightly Injured|Slightly Injured|.84
+Travis Outlaw|N|Fit for Match|Fit for Match|1
+Travis Outlaw|N|Fit for Match|Seriously Injured|0
+Travis Outlaw|N|Fit for Match|Slightly Injured|0
+Travis Outlaw|N|Seriously Injured|Fit for Match|.08
+Travis Outlaw|N|Seriously Injured|Seriously Injured|.32
+Travis Outlaw|N|Seriously Injured|Slightly Injured|.60
+Travis Outlaw|N|Slightly Injured|Fit for Match|.67
+Travis Outlaw|N|Slightly Injured|Seriously Injured|0
+Travis Outlaw|N|Slightly Injured|Slightly Injured|.33
+Travis Outlaw|Y|Fit for Match|Seriously Injured|.02
+Travis Outlaw|Y|Fit for Match|Slightly Injured|.18
+Travis Outlaw|Y|Fit for Match|Fit for Match|.80
+Travis Outlaw|Y|Seriously Injured|Fit for Match|0
+Travis Outlaw|Y|Seriously Injured|Seriously Injured|1
+Travis Outlaw|Y|Seriously Injured|Slightly Injured|0
+Travis Outlaw|Y|Slightly Injured|Fit for Match|0
+Travis Outlaw|Y|Slightly Injured|Seriously Injured|.27
+Travis Outlaw|Y|Slightly Injured|Slightly Injured|.73
+Steve Blake|N|Fit for Match|Fit for Match|1
+Steve Blake|N|Fit for Match|Seriously Injured|0
+Steve Blake|N|Fit for Match|Slightly Injured|0
+Steve Blake|N|Seriously Injured|Fit for Match|.05
+Steve Blake|N|Seriously Injured|Seriously Injured|.08
+Steve Blake|N|Seriously Injured|Slightly Injured|.87
+Steve Blake|N|Slightly Injured|Fit for Match|.56
+Steve Blake|N|Slightly Injured|Seriously Injured|0
+Steve Blake|N|Slightly Injured|Slightly Injured|.44
+Steve Blake|Y|Fit for Match|Seriously Injured|.04
+Steve Blake|Y|Fit for Match|Slightly Injured|.14
+Steve Blake|Y|Fit for Match|Fit for Match|.82
+Steve Blake|Y|Seriously Injured|Fit for Match|0
+Steve Blake|Y|Seriously Injured|Seriously Injured|1
+Steve Blake|Y|Seriously Injured|Slightly Injured|0
+Steve Blake|Y|Slightly Injured|Fit for Match|0
+Steve Blake|Y|Slightly Injured|Seriously Injured|.06
+Steve Blake|Y|Slightly Injured|Slightly Injured|.94
+Rudy Fernandez|N|Fit for Match|Fit for Match|1
+Rudy Fernandez|N|Fit for Match|Seriously Injured|0
+Rudy Fernandez|N|Fit for Match|Slightly Injured|0
+Rudy Fernandez|N|Seriously Injured|Fit for Match|.03
+Rudy Fernandez|N|Seriously Injured|Seriously Injured|.28
+Rudy Fernandez|N|Seriously Injured|Slightly Injured|.69
+Rudy Fernandez|N|Slightly Injured|Fit for Match|.23
+Rudy Fernandez|N|Slightly Injured|Seriously Injured|0
+Rudy Fernandez|N|Slightly Injured|Slightly Injured|.77
+Rudy Fernandez|Y|Fit for Match|Seriously Injured|.01
+Rudy Fernandez|Y|Fit for Match|Slightly Injured|.07
+Rudy Fernandez|Y|Fit for Match|Fit for Match|.92
+Rudy Fernandez|Y|Seriously Injured|Fit for Match|0
+Rudy Fernandez|Y|Seriously Injured|Seriously Injured|1
+Rudy Fernandez|Y|Seriously Injured|Slightly Injured|0
+Rudy Fernandez|Y|Slightly Injured|Fit for Match|0
+Rudy Fernandez|Y|Slightly Injured|Seriously Injured|.22
+Rudy Fernandez|Y|Slightly Injured|Slightly Injured|.78
+Greg Oden|N|Fit for Match|Fit for Match|1
+Greg Oden|N|Fit for Match|Seriously Injured|0
+Greg Oden|N|Fit for Match|Slightly Injured|0
+Greg Oden|N|Seriously Injured|Fit for Match|.05
+Greg Oden|N|Seriously Injured|Seriously Injured|.37
+Greg Oden|N|Seriously Injured|Slightly Injured|.58
+Greg Oden|N|Slightly Injured|Fit for Match|.69
+Greg Oden|N|Slightly Injured|Seriously Injured|0
+Greg Oden|N|Slightly Injured|Slightly Injured|.31
+Greg Oden|Y|Fit for Match|Seriously Injured|.05
+Greg Oden|Y|Fit for Match|Slightly Injured|.16
+Greg Oden|Y|Fit for Match|Fit for Match|.79
+Greg Oden|Y|Seriously Injured|Fit for Match|0
+Greg Oden|Y|Seriously Injured|Seriously Injured|1
+Greg Oden|Y|Seriously Injured|Slightly Injured|0
+Greg Oden|Y|Slightly Injured|Fit for Match|0
+Greg Oden|Y|Slightly Injured|Seriously Injured|.24
+Greg Oden|Y|Slightly Injured|Slightly Injured|.76
+Joel Przybilla|N|Fit for Match|Fit for Match|1
+Joel Przybilla|N|Fit for Match|Seriously Injured|0
+Joel Przybilla|N|Fit for Match|Slightly Injured|0
+Joel Przybilla|N|Seriously Injured|Fit for Match|.06
+Joel Przybilla|N|Seriously Injured|Seriously Injured|.12
+Joel Przybilla|N|Seriously Injured|Slightly Injured|.82
+Joel Przybilla|N|Slightly Injured|Fit for Match|.60
+Joel Przybilla|N|Slightly Injured|Seriously Injured|0
+Joel Przybilla|N|Slightly Injured|Slightly Injured|.40
+Joel Przybilla|Y|Fit for Match|Seriously Injured|.05
+Joel Przybilla|Y|Fit for Match|Slightly Injured|.14
+Joel Przybilla|Y|Fit for Match|Fit for Match|.81
+Joel Przybilla|Y|Seriously Injured|Fit for Match|0
+Joel Przybilla|Y|Seriously Injured|Seriously Injured|1
+Joel Przybilla|Y|Seriously Injured|Slightly Injured|0
+Joel Przybilla|Y|Slightly Injured|Fit for Match|0
+Joel Przybilla|Y|Slightly Injured|Seriously Injured|.07
+Joel Przybilla|Y|Slightly Injured|Slightly Injured|.93
+Nicolas Batum|N|Fit for Match|Fit for Match|1
+Nicolas Batum|N|Fit for Match|Seriously Injured|0
+Nicolas Batum|N|Fit for Match|Slightly Injured|0
+Nicolas Batum|N|Seriously Injured|Fit for Match|.06
+Nicolas Batum|N|Seriously Injured|Seriously Injured|.38
+Nicolas Batum|N|Seriously Injured|Slightly Injured|.56
+Nicolas Batum|N|Slightly Injured|Fit for Match|.23
+Nicolas Batum|N|Slightly Injured|Seriously Injured|0
+Nicolas Batum|N|Slightly Injured|Slightly Injured|.77
+Nicolas Batum|Y|Fit for Match|Seriously Injured|.03
+Nicolas Batum|Y|Fit for Match|Slightly Injured|.18
+Nicolas Batum|Y|Fit for Match|Fit for Match|.79
+Nicolas Batum|Y|Seriously Injured|Fit for Match|0
+Nicolas Batum|Y|Seriously Injured|Seriously Injured|1
+Nicolas Batum|Y|Seriously Injured|Slightly Injured|0
+Nicolas Batum|Y|Slightly Injured|Fit for Match|0
+Nicolas Batum|Y|Slightly Injured|Seriously Injured|.06
+Nicolas Batum|Y|Slightly Injured|Slightly Injured|.94
+Sergio Rodriguez|N|Fit for Match|Fit for Match|1
+Sergio Rodriguez|N|Fit for Match|Seriously Injured|0
+Sergio Rodriguez|N|Fit for Match|Slightly Injured|0
+Sergio Rodriguez|N|Seriously Injured|Fit for Match|.10
+Sergio Rodriguez|N|Seriously Injured|Seriously Injured|.02
+Sergio Rodriguez|N|Seriously Injured|Slightly Injured|.88
+Sergio Rodriguez|N|Slightly Injured|Fit for Match|.31
+Sergio Rodriguez|N|Slightly Injured|Seriously Injured|0
+Sergio Rodriguez|N|Slightly Injured|Slightly Injured|.69
+Sergio Rodriguez|Y|Fit for Match|Seriously Injured|.04
+Sergio Rodriguez|Y|Fit for Match|Slightly Injured|.18
+Sergio Rodriguez|Y|Fit for Match|Fit for Match|.78
+Sergio Rodriguez|Y|Seriously Injured|Fit for Match|0
+Sergio Rodriguez|Y|Seriously Injured|Seriously Injured|1
+Sergio Rodriguez|Y|Seriously Injured|Slightly Injured|0
+Sergio Rodriguez|Y|Slightly Injured|Fit for Match|0
+Sergio Rodriguez|Y|Slightly Injured|Seriously Injured|.02
+Sergio Rodriguez|Y|Slightly Injured|Slightly Injured|.98
+Jerryd Bayless|N|Fit for Match|Fit for Match|1
+Jerryd Bayless|N|Fit for Match|Seriously Injured|0
+Jerryd Bayless|N|Fit for Match|Slightly Injured|0
+Jerryd Bayless|N|Seriously Injured|Fit for Match|.01
+Jerryd Bayless|N|Seriously Injured|Seriously Injured|.45
+Jerryd Bayless|N|Seriously Injured|Slightly Injured|.54
+Jerryd Bayless|N|Slightly Injured|Fit for Match|.47
+Jerryd Bayless|N|Slightly Injured|Seriously Injured|0
+Jerryd Bayless|N|Slightly Injured|Slightly Injured|.53
+Jerryd Bayless|Y|Fit for Match|Seriously Injured|.04
+Jerryd Bayless|Y|Fit for Match|Slightly Injured|.18
+Jerryd Bayless|Y|Fit for Match|Fit for Match|.78
+Jerryd Bayless|Y|Seriously Injured|Fit for Match|0
+Jerryd Bayless|Y|Seriously Injured|Seriously Injured|1
+Jerryd Bayless|Y|Seriously Injured|Slightly Injured|0
+Jerryd Bayless|Y|Slightly Injured|Fit for Match|0
+Jerryd Bayless|Y|Slightly Injured|Seriously Injured|.05
+Jerryd Bayless|Y|Slightly Injured|Slightly Injured|.95
+Channing Frye|N|Fit for Match|Fit for Match|1
+Channing Frye|N|Fit for Match|Seriously Injured|0
+Channing Frye|N|Fit for Match|Slightly Injured|0
+Channing Frye|N|Seriously Injured|Fit for Match|.08
+Channing Frye|N|Seriously Injured|Seriously Injured|.40
+Channing Frye|N|Seriously Injured|Slightly Injured|.52
+Channing Frye|N|Slightly Injured|Fit for Match|.14
+Channing Frye|N|Slightly Injured|Seriously Injured|0
+Channing Frye|N|Slightly Injured|Slightly Injured|.86
+Channing Frye|Y|Fit for Match|Seriously Injured|.02
+Channing Frye|Y|Fit for Match|Slightly Injured|.11
+Channing Frye|Y|Fit for Match|Fit for Match|.87
+Channing Frye|Y|Seriously Injured|Fit for Match|0
+Channing Frye|Y|Seriously Injured|Seriously Injured|1
+Channing Frye|Y|Seriously Injured|Slightly Injured|0
+Channing Frye|Y|Slightly Injured|Fit for Match|0
+Channing Frye|Y|Slightly Injured|Seriously Injured|.16
+Channing Frye|Y|Slightly Injured|Slightly Injured|.84
+Shavlik Randolph|N|Fit for Match|Fit for Match|1
+Shavlik Randolph|N|Fit for Match|Seriously Injured|0
+Shavlik Randolph|N|Fit for Match|Slightly Injured|0
+Shavlik Randolph|N|Seriously Injured|Fit for Match|.10
+Shavlik Randolph|N|Seriously Injured|Seriously Injured|.41
+Shavlik Randolph|N|Seriously Injured|Slightly Injured|.49
+Shavlik Randolph|N|Slightly Injured|Fit for Match|.67
+Shavlik Randolph|N|Slightly Injured|Seriously Injured|0
+Shavlik Randolph|N|Slightly Injured|Slightly Injured|.33
+Shavlik Randolph|Y|Fit for Match|Seriously Injured|.01
+Shavlik Randolph|Y|Fit for Match|Slightly Injured|.17
+Shavlik Randolph|Y|Fit for Match|Fit for Match|.82
+Shavlik Randolph|Y|Seriously Injured|Fit for Match|0
+Shavlik Randolph|Y|Seriously Injured|Seriously Injured|1
+Shavlik Randolph|Y|Seriously Injured|Slightly Injured|0
+Shavlik Randolph|Y|Slightly Injured|Fit for Match|0
+Shavlik Randolph|Y|Slightly Injured|Seriously Injured|.25
+Shavlik Randolph|Y|Slightly Injured|Slightly Injured|.75
+Danny Granger|N|Fit for Match|Fit for Match|1
+Danny Granger|N|Fit for Match|Seriously Injured|0
+Danny Granger|N|Fit for Match|Slightly Injured|0
+Danny Granger|N|Seriously Injured|Fit for Match|.05
+Danny Granger|N|Seriously Injured|Seriously Injured|.16
+Danny Granger|N|Seriously Injured|Slightly Injured|.79
+Danny Granger|N|Slightly Injured|Fit for Match|.68
+Danny Granger|N|Slightly Injured|Seriously Injured|0
+Danny Granger|N|Slightly Injured|Slightly Injured|.32
+Danny Granger|Y|Fit for Match|Seriously Injured|.03
+Danny Granger|Y|Fit for Match|Slightly Injured|.12
+Danny Granger|Y|Fit for Match|Fit for Match|.85
+Danny Granger|Y|Seriously Injured|Fit for Match|0
+Danny Granger|Y|Seriously Injured|Seriously Injured|1
+Danny Granger|Y|Seriously Injured|Slightly Injured|0
+Danny Granger|Y|Slightly Injured|Fit for Match|0
+Danny Granger|Y|Slightly Injured|Seriously Injured|.02
+Danny Granger|Y|Slightly Injured|Slightly Injured|.98
+Mike Dunleavy|N|Fit for Match|Fit for Match|1
+Mike Dunleavy|N|Fit for Match|Seriously Injured|0
+Mike Dunleavy|N|Fit for Match|Slightly Injured|0
+Mike Dunleavy|N|Seriously Injured|Fit for Match|.07
+Mike Dunleavy|N|Seriously Injured|Seriously Injured|.15
+Mike Dunleavy|N|Seriously Injured|Slightly Injured|.78
+Mike Dunleavy|N|Slightly Injured|Fit for Match|.15
+Mike Dunleavy|N|Slightly Injured|Seriously Injured|0
+Mike Dunleavy|N|Slightly Injured|Slightly Injured|.85
+Mike Dunleavy|Y|Fit for Match|Seriously Injured|.03
+Mike Dunleavy|Y|Fit for Match|Slightly Injured|.13
+Mike Dunleavy|Y|Fit for Match|Fit for Match|.84
+Mike Dunleavy|Y|Seriously Injured|Fit for Match|0
+Mike Dunleavy|Y|Seriously Injured|Seriously Injured|1
+Mike Dunleavy|Y|Seriously Injured|Slightly Injured|0
+Mike Dunleavy|Y|Slightly Injured|Fit for Match|0
+Mike Dunleavy|Y|Slightly Injured|Seriously Injured|.04
+Mike Dunleavy|Y|Slightly Injured|Slightly Injured|.96
+T.J. Ford|N|Fit for Match|Fit for Match|1
+T.J. Ford|N|Fit for Match|Seriously Injured|0
+T.J. Ford|N|Fit for Match|Slightly Injured|0
+T.J. Ford|N|Seriously Injured|Fit for Match|.06
+T.J. Ford|N|Seriously Injured|Seriously Injured|.12
+T.J. Ford|N|Seriously Injured|Slightly Injured|.82
+T.J. Ford|N|Slightly Injured|Fit for Match|.16
+T.J. Ford|N|Slightly Injured|Seriously Injured|0
+T.J. Ford|N|Slightly Injured|Slightly Injured|.84
+T.J. Ford|Y|Fit for Match|Seriously Injured|.01
+T.J. Ford|Y|Fit for Match|Slightly Injured|.07
+T.J. Ford|Y|Fit for Match|Fit for Match|.92
+T.J. Ford|Y|Seriously Injured|Fit for Match|0
+T.J. Ford|Y|Seriously Injured|Seriously Injured|1
+T.J. Ford|Y|Seriously Injured|Slightly Injured|0
+T.J. Ford|Y|Slightly Injured|Fit for Match|0
+T.J. Ford|Y|Slightly Injured|Seriously Injured|.19
+T.J. Ford|Y|Slightly Injured|Slightly Injured|.81
+Troy Murphy|N|Fit for Match|Fit for Match|1
+Troy Murphy|N|Fit for Match|Seriously Injured|0
+Troy Murphy|N|Fit for Match|Slightly Injured|0
+Troy Murphy|N|Seriously Injured|Fit for Match|.05
+Troy Murphy|N|Seriously Injured|Seriously Injured|.20
+Troy Murphy|N|Seriously Injured|Slightly Injured|.75
+Troy Murphy|N|Slightly Injured|Fit for Match|.55
+Troy Murphy|N|Slightly Injured|Seriously Injured|0
+Troy Murphy|N|Slightly Injured|Slightly Injured|.45
+Troy Murphy|Y|Fit for Match|Seriously Injured|.02
+Troy Murphy|Y|Fit for Match|Slightly Injured|.19
+Troy Murphy|Y|Fit for Match|Fit for Match|.79
+Troy Murphy|Y|Seriously Injured|Fit for Match|0
+Troy Murphy|Y|Seriously Injured|Seriously Injured|1
+Troy Murphy|Y|Seriously Injured|Slightly Injured|0
+Troy Murphy|Y|Slightly Injured|Fit for Match|0
+Troy Murphy|Y|Slightly Injured|Seriously Injured|.02
+Troy Murphy|Y|Slightly Injured|Slightly Injured|.98
+Marquis Daniels|N|Fit for Match|Fit for Match|1
+Marquis Daniels|N|Fit for Match|Seriously Injured|0
+Marquis Daniels|N|Fit for Match|Slightly Injured|0
+Marquis Daniels|N|Seriously Injured|Fit for Match|.10
+Marquis Daniels|N|Seriously Injured|Seriously Injured|.25
+Marquis Daniels|N|Seriously Injured|Slightly Injured|.65
+Marquis Daniels|N|Slightly Injured|Fit for Match|.14
+Marquis Daniels|N|Slightly Injured|Seriously Injured|0
+Marquis Daniels|N|Slightly Injured|Slightly Injured|.86
+Marquis Daniels|Y|Fit for Match|Seriously Injured|.05
+Marquis Daniels|Y|Fit for Match|Slightly Injured|.07
+Marquis Daniels|Y|Fit for Match|Fit for Match|.88
+Marquis Daniels|Y|Seriously Injured|Fit for Match|0
+Marquis Daniels|Y|Seriously Injured|Seriously Injured|1
+Marquis Daniels|Y|Seriously Injured|Slightly Injured|0
+Marquis Daniels|Y|Slightly Injured|Fit for Match|0
+Marquis Daniels|Y|Slightly Injured|Seriously Injured|.19
+Marquis Daniels|Y|Slightly Injured|Slightly Injured|.81
+Jarrett Jack|N|Fit for Match|Fit for Match|1
+Jarrett Jack|N|Fit for Match|Seriously Injured|0
+Jarrett Jack|N|Fit for Match|Slightly Injured|0
+Jarrett Jack|N|Seriously Injured|Fit for Match|.01
+Jarrett Jack|N|Seriously Injured|Seriously Injured|.37
+Jarrett Jack|N|Seriously Injured|Slightly Injured|.62
+Jarrett Jack|N|Slightly Injured|Fit for Match|.52
+Jarrett Jack|N|Slightly Injured|Seriously Injured|0
+Jarrett Jack|N|Slightly Injured|Slightly Injured|.48
+Jarrett Jack|Y|Fit for Match|Seriously Injured|.01
+Jarrett Jack|Y|Fit for Match|Slightly Injured|.09
+Jarrett Jack|Y|Fit for Match|Fit for Match|.90
+Jarrett Jack|Y|Seriously Injured|Fit for Match|0
+Jarrett Jack|Y|Seriously Injured|Seriously Injured|1
+Jarrett Jack|Y|Seriously Injured|Slightly Injured|0
+Jarrett Jack|Y|Slightly Injured|Fit for Match|0
+Jarrett Jack|Y|Slightly Injured|Seriously Injured|.11
+Jarrett Jack|Y|Slightly Injured|Slightly Injured|.89
+Brandon Rush|N|Fit for Match|Fit for Match|1
+Brandon Rush|N|Fit for Match|Seriously Injured|0
+Brandon Rush|N|Fit for Match|Slightly Injured|0
+Brandon Rush|N|Seriously Injured|Fit for Match|.09
+Brandon Rush|N|Seriously Injured|Seriously Injured|.39
+Brandon Rush|N|Seriously Injured|Slightly Injured|.52
+Brandon Rush|N|Slightly Injured|Fit for Match|.59
+Brandon Rush|N|Slightly Injured|Seriously Injured|0
+Brandon Rush|N|Slightly Injured|Slightly Injured|.41
+Brandon Rush|Y|Fit for Match|Seriously Injured|.01
+Brandon Rush|Y|Fit for Match|Slightly Injured|.11
+Brandon Rush|Y|Fit for Match|Fit for Match|.88
+Brandon Rush|Y|Seriously Injured|Fit for Match|0
+Brandon Rush|Y|Seriously Injured|Seriously Injured|1
+Brandon Rush|Y|Seriously Injured|Slightly Injured|0
+Brandon Rush|Y|Slightly Injured|Fit for Match|0
+Brandon Rush|Y|Slightly Injured|Seriously Injured|.03
+Brandon Rush|Y|Slightly Injured|Slightly Injured|.97
+Roy Hibbert|N|Fit for Match|Fit for Match|1
+Roy Hibbert|N|Fit for Match|Seriously Injured|0
+Roy Hibbert|N|Fit for Match|Slightly Injured|0
+Roy Hibbert|N|Seriously Injured|Fit for Match|.02
+Roy Hibbert|N|Seriously Injured|Seriously Injured|.31
+Roy Hibbert|N|Seriously Injured|Slightly Injured|.67
+Roy Hibbert|N|Slightly Injured|Fit for Match|.40
+Roy Hibbert|N|Slightly Injured|Seriously Injured|0
+Roy Hibbert|N|Slightly Injured|Slightly Injured|.60
+Roy Hibbert|Y|Fit for Match|Seriously Injured|.02
+Roy Hibbert|Y|Fit for Match|Slightly Injured|.08
+Roy Hibbert|Y|Fit for Match|Fit for Match|.90
+Roy Hibbert|Y|Seriously Injured|Fit for Match|0
+Roy Hibbert|Y|Seriously Injured|Seriously Injured|1
+Roy Hibbert|Y|Seriously Injured|Slightly Injured|0
+Roy Hibbert|Y|Slightly Injured|Fit for Match|0
+Roy Hibbert|Y|Slightly Injured|Seriously Injured|.26
+Roy Hibbert|Y|Slightly Injured|Slightly Injured|.74
+Rasho Nesterovic|N|Fit for Match|Fit for Match|1
+Rasho Nesterovic|N|Fit for Match|Seriously Injured|0
+Rasho Nesterovic|N|Fit for Match|Slightly Injured|0
+Rasho Nesterovic|N|Seriously Injured|Fit for Match|.01
+Rasho Nesterovic|N|Seriously Injured|Seriously Injured|.33
+Rasho Nesterovic|N|Seriously Injured|Slightly Injured|.66
+Rasho Nesterovic|N|Slightly Injured|Fit for Match|.60
+Rasho Nesterovic|N|Slightly Injured|Seriously Injured|0
+Rasho Nesterovic|N|Slightly Injured|Slightly Injured|.40
+Rasho Nesterovic|Y|Fit for Match|Seriously Injured|.04
+Rasho Nesterovic|Y|Fit for Match|Slightly Injured|.11
+Rasho Nesterovic|Y|Fit for Match|Fit for Match|.85
+Rasho Nesterovic|Y|Seriously Injured|Fit for Match|0
+Rasho Nesterovic|Y|Seriously Injured|Seriously Injured|1
+Rasho Nesterovic|Y|Seriously Injured|Slightly Injured|0
+Rasho Nesterovic|Y|Slightly Injured|Fit for Match|0
+Rasho Nesterovic|Y|Slightly Injured|Seriously Injured|.10
+Rasho Nesterovic|Y|Slightly Injured|Slightly Injured|.90
+Jeff Foster|N|Fit for Match|Fit for Match|1
+Jeff Foster|N|Fit for Match|Seriously Injured|0
+Jeff Foster|N|Fit for Match|Slightly Injured|0
+Jeff Foster|N|Seriously Injured|Fit for Match|.10
+Jeff Foster|N|Seriously Injured|Seriously Injured|.23
+Jeff Foster|N|Seriously Injured|Slightly Injured|.67
+Jeff Foster|N|Slightly Injured|Fit for Match|.25
+Jeff Foster|N|Slightly Injured|Seriously Injured|0
+Jeff Foster|N|Slightly Injured|Slightly Injured|.75
+Jeff Foster|Y|Fit for Match|Seriously Injured|.01
+Jeff Foster|Y|Fit for Match|Slightly Injured|.13
+Jeff Foster|Y|Fit for Match|Fit for Match|.86
+Jeff Foster|Y|Seriously Injured|Fit for Match|0
+Jeff Foster|Y|Seriously Injured|Seriously Injured|1
+Jeff Foster|Y|Seriously Injured|Slightly Injured|0
+Jeff Foster|Y|Slightly Injured|Fit for Match|0
+Jeff Foster|Y|Slightly Injured|Seriously Injured|.09
+Jeff Foster|Y|Slightly Injured|Slightly Injured|.91
+Stephen Graham|N|Fit for Match|Fit for Match|1
+Stephen Graham|N|Fit for Match|Seriously Injured|0
+Stephen Graham|N|Fit for Match|Slightly Injured|0
+Stephen Graham|N|Seriously Injured|Fit for Match|.04
+Stephen Graham|N|Seriously Injured|Seriously Injured|.17
+Stephen Graham|N|Seriously Injured|Slightly Injured|.79
+Stephen Graham|N|Slightly Injured|Fit for Match|.15
+Stephen Graham|N|Slightly Injured|Seriously Injured|0
+Stephen Graham|N|Slightly Injured|Slightly Injured|.85
+Stephen Graham|Y|Fit for Match|Seriously Injured|.03
+Stephen Graham|Y|Fit for Match|Slightly Injured|.20
+Stephen Graham|Y|Fit for Match|Fit for Match|.77
+Stephen Graham|Y|Seriously Injured|Fit for Match|0
+Stephen Graham|Y|Seriously Injured|Seriously Injured|1
+Stephen Graham|Y|Seriously Injured|Slightly Injured|0
+Stephen Graham|Y|Slightly Injured|Fit for Match|0
+Stephen Graham|Y|Slightly Injured|Seriously Injured|.25
+Stephen Graham|Y|Slightly Injured|Slightly Injured|.75
+Travis Diener|N|Fit for Match|Fit for Match|1
+Travis Diener|N|Fit for Match|Seriously Injured|0
+Travis Diener|N|Fit for Match|Slightly Injured|0
+Travis Diener|N|Seriously Injured|Fit for Match|.02
+Travis Diener|N|Seriously Injured|Seriously Injured|.31
+Travis Diener|N|Seriously Injured|Slightly Injured|.67
+Travis Diener|N|Slightly Injured|Fit for Match|.46
+Travis Diener|N|Slightly Injured|Seriously Injured|0
+Travis Diener|N|Slightly Injured|Slightly Injured|.54
+Travis Diener|Y|Fit for Match|Seriously Injured|.04
+Travis Diener|Y|Fit for Match|Slightly Injured|.12
+Travis Diener|Y|Fit for Match|Fit for Match|.84
+Travis Diener|Y|Seriously Injured|Fit for Match|0
+Travis Diener|Y|Seriously Injured|Seriously Injured|1
+Travis Diener|Y|Seriously Injured|Slightly Injured|0
+Travis Diener|Y|Slightly Injured|Fit for Match|0
+Travis Diener|Y|Slightly Injured|Seriously Injured|.30
+Travis Diener|Y|Slightly Injured|Slightly Injured|.70

@@ -1,0 +1,129 @@
+
+@import "layout.css";
+
+
+html, body, table th, table td {
+  font-family: Verdana, sans-serif;
+  font-size: 9pt;
+  color: #393939;
+  line-height: 1.7em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 170%;
+  margin-bottom: .5em;
+  padding-bottom: .35em;
+  border-bottom: 1px solid #BFC4CF;
+}
+
+h2 {
+  font-size: 160%;
+}
+
+h3 {
+  font-size: 140%;
+  font-weight: bold;
+  color: #505050;
+}
+
+h4 {
+  font-size: 140%;
+}
+
+h5 {
+  font-size: 130%;
+}
+
+h6 {
+  font-size: 120%;
+}
+
+/* links */
+
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4c89bb;
+}
+
+a:active, a.active {
+  color: #778899;
+}
+
+
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+
+
+
+/***********************
+*   layout styling
+***********************/
+
+body, #page, #front, #second {
+  padding: 0;
+  margin: 0;
+  background-color: #FDFEFF;
+}
+
+#container {
+  background-color: #F3F7FB;
+}
+
+#main {
+  background-color: #FDFEFF;
+  padding: 10px 20px 20px 20px;
+}
+
+
+
+
+
+/* node, content styles */
+
+.node {
+  margin-bottom:15px;
+  padding-bottom:15px;
+}
+
+
+.sticky {
+  border: 1px solid #DADCE0;
+  background-color: #F7FAFF;
+  padding: 8px 5px 8px 5px;
+}
+
+table.rel {
+	border-collapse: collapse;
+	border-width: 1px;
+	empty-cells: show;
+}
+
+table.rel td {
+	border-width: 1px;
+	margin: 0px;
+	padding: 0.1em 0.4em 0.1em 0.4em;
+}
+
+table.rel thead td {
+	background-color: #E9E9E9;
+	color: #000000;
+	font-weight: bold;
+}

@@ -1,0 +1,192 @@
+LA Lakers|Kobe Bryant|110|82
+LA Lakers|Pau Gasol|110|81
+LA Lakers|Andrew Bynum|110|50
+LA Lakers|Lamar Odom|110|78
+LA Lakers|Derek Fisher|110|82
+LA Lakers|Trevor Ariza|110|82
+LA Lakers|Jordan Farmar|110|65
+LA Lakers|Sasha Vujacic|110|80
+LA Lakers|Luke Walton|110|65
+LA Lakers|Josh Powell|110|60
+LA Lakers|Shannon Brown|110|48
+LA Lakers|Didier Ilunga-Mbenga|110|23
+Boston Celtics|Paul Pierce|110|81
+Boston Celtics|Ray Allen|110|79
+Boston Celtics|Kevin Garnett|110|57
+Boston Celtics|Rajon Rondo|110|80
+Boston Celtics|Eddie House|110|81
+Boston Celtics|Kendrick Perkins|110|76
+Boston Celtics|Tony Allen|110|46
+Boston Celtics|Leon Powe|110|70
+Boston Celtics|Glen Davis|110|76
+Boston Celtics|Mikki Moore|110|70
+Boston Celtics|Stephon Marbury|110|23
+Boston Celtics|Brian Scalabrine|110|39
+Dallas Mavericks|Dirk Nowitzki|110|81
+Dallas Mavericks|Jason Terry|110|74
+Dallas Mavericks|Josh Howard|110|52
+Dallas Mavericks|Jason Kidd|110|81
+Dallas Mavericks|Brandon Bass|110|81
+Dallas Mavericks|Jose Barea|110|79
+Dallas Mavericks|Antoine Wright|110|65
+Dallas Mavericks|Erick Dampier|110|80
+Dallas Mavericks|James Singleton|110|62
+Dallas Mavericks|Devean George|110|43
+Dallas Mavericks|Ryan Hollins|110|45
+Dallas Mavericks|Matt Carroll|110|55
+New Jersey Nets|Devin Harris|110|69
+New Jersey Nets|Vince Carter|110|80
+New Jersey Nets|Brook Lopez|110|82
+New Jersey Nets|Keyon Dooling|110|77
+New Jersey Nets|Jarvis Hayes|110|74
+New Jersey Nets|Yi Jianlian|110|61
+New Jersey Nets|Bobby Simmons|110|71
+New Jersey Nets|Ryan Anderson|110|66
+New Jersey Nets|Chris Douglas-Roberts|110|44
+New Jersey Nets|Josh Boone|110|62
+New Jersey Nets|Trenton Hassell|110|53
+New Jersey Nets|Eduardo Najera|110|27
+Houston Rockets|Yao Ming|110|77
+Houston Rockets|Ron Artest|110|69
+Houston Rockets|Tracy McGrady|110|35
+Houston Rockets|Luis Scola|110|82
+Houston Rockets|Aaron Brooks|110|80
+Houston Rockets|Von Wafer|110|63
+Houston Rockets|Carl Landry|110|69
+Houston Rockets|Kyle Lowry|110|77
+Houston Rockets|Shane Battier|110|60
+Houston Rockets|Brent Barry|110|56
+Houston Rockets|Brian Cook|110|30
+Houston Rockets|Chuck Hayes|110|71
+New York Knicks|Al Harrington|110|73
+New York Knicks|Nate Robinson|110|74
+New York Knicks|David Lee|110|81
+New York Knicks|Wilson Chandler|110|82
+New York Knicks|Larry Hughes|110|55
+New York Knicks|Chris Duhon|110|79
+New York Knicks|Quentin Richardson|110|72
+New York Knicks|Danilo Gallinari|110|28
+New York Knicks|Chris Wilcox|110|62
+New York Knicks|Jared Jeffries|110|56
+New York Knicks|Mouhamed Sene|110|6
+New York Knicks|Cheikh Samb|110|18
+Memphis Grizzlies|Rudy Gay|110|79
+Memphis Grizzlies|OJ Mayo|110|82
+Memphis Grizzlies|Marc Gasol|110|82
+Memphis Grizzlies|Hakim Warrick|110|82
+Memphis Grizzlies|Mike Conley|110|82
+Memphis Grizzlies|Darrell Arthur|110|76
+Memphis Grizzlies|Darko Milicic|110|61
+Memphis Grizzlies|Quinton Ross|110|68
+Memphis Grizzlies|Darius Miles|110|34
+Memphis Grizzlies|Marko Jaric|110|53
+Memphis Grizzlies|Greg Buckner|110|63
+Memphis Grizzlies|Hamed Haddadi|110|19
+Philadelphia 76ers|Andre Iguodala|110|82
+Philadelphia 76ers|Andre Miller|110|82
+Philadelphia 76ers|Thaddeus Young|110|75
+Philadelphia 76ers|Elton Brand|110|29
+Philadelphia 76ers|Louis Williams|110|81
+Philadelphia 76ers|Willie Green|110|81
+Philadelphia 76ers|Marreese Speights|110|79
+Philadelphia 76ers|Samuel Dalembert|110|82
+Philadelphia 76ers|Donyell Marshall|110|25
+Philadelphia 76ers|Reggie Evans|110|79
+Philadelphia 76ers|Royal Ivey|110|71
+Philadelphia 76ers|Theo Ratliff|110|46
+New Orleans Hornets|Chris Paul|110|78
+New Orleans Hornets|David West|110|76
+New Orleans Hornets|Predrag Stojakovic|110|61
+New Orleans Hornets|Rasual Butler|110|82
+New Orleans Hornets|James Posey|110|75
+New Orleans Hornets|Tyson Chandler|110|32
+New Orleans Hornets|Devin Brown|110|63
+New Orleans Hornets|Hilton Armstrong|110|70
+New Orleans Hornets|Julian Wright|110|54
+New Orleans Hornets|Morris Peterson|110|43
+New Orleans Hornets|Antonio Daniels|110|74
+New Orleans Hornets|Sean Marks|110|60
+San Antonio Spurs|Tony Parker|110|72
+San Antonio Spurs|Tim Duncan|110|75
+San Antonio Spurs|Manu Ginobili|110|44
+San Antonio Spurs|Roger Mason|110|82
+San Antonio Spurs|Drew Gooden|110|51
+San Antonio Spurs|Michael Finley|110|81
+San Antonio Spurs|Matt Bonner|110|81
+San Antonio Spurs|George Hill|110|77
+San Antonio Spurs|Ime Udoka|110|67
+San Antonio Spurs|Kurt Thomas|110|79
+San Antonio Spurs|Malik Hairston|110|15
+San Antonio Spurs|Bruce Bowen|110|80
+Chicago Bulls|Ben Gordon|110|82
+Chicago Bulls|John Salmons|110|79
+Chicago Bulls|Derrick Rose|110|81
+Chicago Bulls|Luol Deng|110|49
+Chicago Bulls|Brad Miller|110|70
+Chicago Bulls|Tyrus Thomas|110|79
+Chicago Bulls|Kirk Hinrich|110|51
+Chicago Bulls|Joakim Noah|110|80
+Chicago Bulls|Tim Thomas|110|64
+Chicago Bulls|Aaron Gray|110|56
+Chicago Bulls|Lindsey Hunter|110|28
+Chicago Bulls|Anthony Roberson|110|29
+Denver Nuggets|Carmelo Anthony|110|66
+Denver Nuggets|Chauncey Billups|110|79
+Denver Nuggets|JR Smith|110|81
+Denver Nuggets|Nene Nene|110|77
+Denver Nuggets|Kenyon Martin|110|66
+Denver Nuggets|Linas Kleiza|110|82
+Denver Nuggets|Chris Andersen|110|71
+Denver Nuggets|Dahntay Jones|110|79
+Denver Nuggets|Anthony Carter|110|78
+Denver Nuggets|Renaldo Balkman|110|53
+Denver Nuggets|Johan Petro|110|49
+Denver Nuggets|Jason Hart|110|39
+Minnesota Timberwolves|Al Jefferson|110|50
+Minnesota Timberwolves|Randy Foye|110|70
+Minnesota Timberwolves|Ryan Gomes|110|82
+Minnesota Timberwolves|Kevin Love|110|81
+Minnesota Timberwolves|Craig Smith|110|74
+Minnesota Timberwolves|Mike Miller|110|73
+Minnesota Timberwolves|Sebastian Telfair|110|75
+Minnesota Timberwolves|Rodney Carney|110|67
+Minnesota Timberwolves|Corey Brewer|110|15
+Minnesota Timberwolves|Bobby Brown|110|68
+Minnesota Timberwolves|Kevin Ollie|110|50
+Minnesota Timberwolves|Brian Cardinal|110|64
+Detroit Pistons|Richard Hamilton|110|67
+Detroit Pistons|Allen Iverson|110|57
+Detroit Pistons|Tayshaun Prince|110|82
+Detroit Pistons|Rodney Stuckey|110|79
+Detroit Pistons|Rasheed Wallace|110|66
+Detroit Pistons|Antonio McDyess|110|62
+Detroit Pistons|Will Bynum|110|57
+Detroit Pistons|Jason Maxiell|110|78
+Detroit Pistons|Arron Afflalo|110|74
+Detroit Pistons|Kwame Brown|110|58
+Detroit Pistons|Walter Herrmann|110|59
+Detroit Pistons|Amir Johnson|110|62
+Portland Trail Blazers|Brandon Roy|110|78
+Portland Trail Blazers|LaMarcus Aldridge|110|81
+Portland Trail Blazers|Travis Outlaw|110|81
+Portland Trail Blazers|Steve Blake|110|69
+Portland Trail Blazers|Rudy Fernandez|110|78
+Portland Trail Blazers|Greg Oden|110|61
+Portland Trail Blazers|Joel Przybilla|110|82
+Portland Trail Blazers|Nicolas Batum|110|79
+Portland Trail Blazers|Sergio Rodriguez|110|80
+Portland Trail Blazers|Jerryd Bayless|110|53
+Portland Trail Blazers|Channing Frye|110|63
+Portland Trail Blazers|Shavlik Randolph|110|10
+Indiana Pacers|Danny Granger|110|67
+Indiana Pacers|Mike Dunleavy|110|18
+Indiana Pacers|T.J. Ford|110|74
+Indiana Pacers|Troy Murphy|110|73
+Indiana Pacers|Marquis Daniels|110|54
+Indiana Pacers|Jarrett Jack|110|82
+Indiana Pacers|Brandon Rush|110|75
+Indiana Pacers|Roy Hibbert|110|70
+Indiana Pacers|Rasho Nesterovic|110|70
+Indiana Pacers|Jeff Foster|110|74
+Indiana Pacers|Stephen Graham|110|52
+Indiana Pacers|Travis Diener|110|55
