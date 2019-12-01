@@ -97,7 +97,7 @@ hashline_number(void)
 	{
 		char	   *line = mm_alloc(strlen("\n#line %d \"%s\"\n") + sizeof(int) * CHAR_BIT * 10 / 3 + strlen(input_filename));
 
-		sprintf(line, "\n#line %d \"%s\"\n", yylineno, input_filename);
+		sprintf(line, "\n#line %lu \"%s\"\n", yylineno, input_filename);
 
 		return line;
 	}
@@ -195,8 +195,8 @@ output_escaped_str(char *str, bool quoted)
 		else if (str[i] == '\\')
 		{
 			int j = i;
-			
-			/* check whether this is a continuation line 
+
+			/* check whether this is a continuation line
 			 * if it is, do not output anything because newlines are escaped anyway */
 
 			/* accept blanks after the '\' as some other compilers do too */

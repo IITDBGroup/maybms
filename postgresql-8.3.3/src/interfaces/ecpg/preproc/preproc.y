@@ -60,7 +60,7 @@ mmerror(int error_code, enum errortype type, char * error, ...)
 {
 	va_list ap;
 
-	fprintf(stderr, "%s:%d: ", input_filename, yylineno);
+	fprintf(stderr, "%s:%lu: ", input_filename, yylineno);
 
 	switch(type)
 	{
@@ -423,7 +423,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 	CACHE CALLED CASCADE CASCADED CASE CAST CHAIN CHAR_P
 	CHARACTER CHARACTERISTICS CHECK CHECKPOINT CLASS CLOSE
 	CLUSTER COALESCE COLLATE COLUMN COMMENT COMMIT
-	COMMITTED CONCURRENTLY CONFIGURATION CONNECTION CONSTRAINT CONSTRAINTS 
+	COMMITTED CONCURRENTLY CONFIGURATION CONNECTION CONSTRAINT CONSTRAINTS
 	CONTENT_P CONVERSION_P COPY COST CREATE CREATEDB
 	CREATEROLE CREATEUSER CROSS CSV CURRENT_P CURRENT_DATE CURRENT_ROLE
 	CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR CYCLE
@@ -480,7 +480,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 	STATISTICS STDIN STDOUT STORAGE STRICT_P STRIP_P SUBSTRING SUPERUSER_P
 	SYMMETRIC SYSID SYSTEM_P
 
-	TABLE TABLESPACE TEMP TEMPLATE TEMPORARY TEXT_P THEN TIME TIMESTAMP TO 
+	TABLE TABLESPACE TEMP TEMPLATE TEMPORARY TEXT_P THEN TIME TIMESTAMP TO
 	TRAILING TRANSACTION TREAT TRIGGER TRIM TRUE_P TRUNCATE TRUSTED TYPE_P
 
 	UNCOMMITTED UNENCRYPTED UNION UNIQUE UNKNOWN UNLISTEN UNTIL
@@ -586,7 +586,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 %type  <str>	RemoveOperStmt RenameStmt all_Op opt_trusted opt_lancompiler
 %type  <str>	VariableSetStmt var_value zone_value VariableShowStmt
 %type  <str>	VariableResetStmt AlterTableStmt from_list overlay_list
-%type  <str>	relation_name OptTableSpace LockStmt opt_lock 
+%type  <str>	relation_name OptTableSpace LockStmt opt_lock
 %type  <str>	CreateUserStmt AlterUserStmt CreateSeqStmt OptSeqList
 %type  <str>	OptSeqElem TriggerForSpec TriggerForOpt TriggerForType
 %type  <str>	DropTrigStmt TriggerOneEvent TriggerEvents RuleActionStmt
@@ -616,7 +616,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 %type  <str>	OptSchemaName OptSchemaEltList schema_stmt opt_drop_behavior
 %type  <str>	handler_name any_name_list any_name opt_as insert_column_list
 %type  <str>	columnref values_clause AllConstVar prep_type_clause ExecuteStmt
-%type  <str>	insert_column_item DropRuleStmt ctext_expr execute_param_clause 
+%type  <str>	insert_column_item DropRuleStmt ctext_expr execute_param_clause
 %type  <str>	createfunc_opt_item set_rest alter_rel_cmd
 %type  <str>	CreateFunctionStmt createfunc_opt_list func_table
 %type  <str>	DropUserStmt copy_from copy_opt_list copy_opt_item
@@ -647,7 +647,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 %type  <str>	ECPGGetDescriptorHeader ECPGColLabel SetResetClause AlterUserSetStmt
 %type  <str>	reserved_keyword unreserved_keyword ecpg_interval opt_ecpg_using
 %type  <str>	col_name_keyword precision opt_scale ECPGExecuteImmediateStmt
-%type  <str>	ECPGTypeName using_list ECPGColLabelCommon UsingConst 
+%type  <str>	ECPGTypeName using_list ECPGColLabelCommon UsingConst
 %type  <str>	using_descriptor into_descriptor opt_nulls_order opt_asc_desc
 %type  <str>	prepared_name struct_union_type_with_symbol OptConsTableSpace
 %type  <str>	ECPGunreserved ECPGunreserved_interval cvariable opt_bit_field
@@ -665,7 +665,7 @@ add_typedef(char *name, char * dimension, char * length, enum ECPGttype type_enu
 %type  <str>	opclass_drop_list opclass_drop DropOpFamilyStmt opt_opfamily
 %type  <str>	CreateOpFamilyStmt AlterOpFamilyStmt create_as_target
 %type  <str>	xml_attributes xml_attribute_list document_or_content xml_whitespace_option
-%type  <str>	opt_xml_root_standalone xml_root_version xml_attribute_el 
+%type  <str>	opt_xml_root_standalone xml_root_version xml_attribute_el
 %type  <str>	where_or_current_clause AlterTSConfigurationStmt AlterTSDictionaryStmt
 
 %type  <struct_union> s_struct_union_symbol
@@ -787,7 +787,7 @@ stmt:  AlterDatabaseStmt		{ output_statement($1, 0, ECPGst_normal); }
 		{
 			if (connection)
 				mmerror(PARSE_ERROR, ET_ERROR, "no at option for deallocate statement.\n");
-				
+
 			output_deallocate_prepare_statement($1);
 		}
 		| DeclareCursorStmt	{ output_simple_statement($1); }
@@ -819,15 +819,15 @@ stmt:  AlterDatabaseStmt		{ output_statement($1, 0, ECPGst_normal); }
 		| LoadStmt		{ output_statement($1, 0, ECPGst_normal); }
 		| LockStmt		{ output_statement($1, 0, ECPGst_normal); }
 		| NotifyStmt		{ output_statement($1, 0, ECPGst_normal); }
-		| PrepareStmt		{ 
+		| PrepareStmt		{
 						if ($1.type == NULL || strlen($1.type) == 0) /* use PQprepare without type parameters */
-							output_prepare_statement($1.name, $1.stmt);  
+							output_prepare_statement($1.name, $1.stmt);
 						else	/* use PQexec and let backend do its stuff */
 						{
 							char *txt = cat_str(5, make_str("prepare"), $1.name, $1.type, make_str("as"), $1.stmt);
 							output_statement(txt, 0, ECPGst_normal);
 						}
-					}		
+					}
 		| ReassignOwnedStmt	{ output_statement($1, 0, ECPGst_normal); }
 		| ReindexStmt		{ output_statement($1, 0, ECPGst_normal); }
 		| RemoveAggrStmt	{ output_statement($1, 0, ECPGst_normal); }
@@ -1500,14 +1500,14 @@ CopyStmt:  COPY opt_binary qualified_name opt_oids copy_from
 					mmerror(PARSE_ERROR, ET_ERROR, "copy from stdout not possible.\n");
 				else if (strcmp($5, "from") == 0 && strcmp($6, "stdin") == 0)
 					mmerror(PARSE_ERROR, ET_WARNING, "copy from stdin not implemented.\n");
-				
+
 				$$ = cat_str(9, make_str("copy"), $2, $3, $4, $5, $6, $7, $8, $9);
 			}
 		| COPY select_with_parens TO copy_file_name opt_with copy_opt_list
 			{
 				if (strcmp($4, "stdin") == 0)
 					mmerror(PARSE_ERROR, ET_ERROR, "copy to stdin not possible.\n");
-				
+
 				$$ = cat_str(6, make_str("copy"), $2, make_str("to"), $4, $5, $6);
 			}
 		;
@@ -2573,12 +2573,12 @@ opt_class:	any_name 	{ $$ = $1; }
 		;
 
 opt_asc_desc: 	ASC 		{ $$ = make_str("asc"); }
-		| DESC		{ $$ = make_str("desc"); } 
+		| DESC		{ $$ = make_str("desc"); }
 		| /*EMPTY*/	{ $$ = EMPTY; }
 		;
 
 opt_nulls_order: 	NULLS_FIRST 		{ $$ = make_str("nulls first"); }
-			| NULLS_LAST		{ $$ = make_str("nulls last"); } 
+			| NULLS_LAST		{ $$ = make_str("nulls last"); }
 			| /*EMPTY*/	{ $$ = EMPTY; }
 			;
 
@@ -3059,12 +3059,12 @@ ViewStmt:  CREATE OptTemp VIEW qualified_name opt_column_list AS SelectStmt opt_
  */
 opt_check_option:
                    WITH_CHECK OPTION
-		   { 
+		   {
 		   	mmerror(PARSE_ERROR, ET_ERROR, "WITH CHECK OPTION not implemented");
 			$$ = EMPTY;
 		   }
                    | WITH_CASCADED CHECK OPTION
-		   { 
+		   {
 		   	mmerror(PARSE_ERROR, ET_ERROR, "WITH CHECK OPTION not implemented");
 			$$ = EMPTY;
 		   }
@@ -3074,7 +3074,7 @@ opt_check_option:
 			$$ = EMPTY;
 		   }
 		   | /* EMPTY */
-		   { $$ = EMPTY; } 
+		   { $$ = EMPTY; }
 		   ;
 
 /*****************************************************************************
@@ -3377,7 +3377,7 @@ InsertStmt:  INSERT INTO qualified_name insert_rest returning_clause
 			{ $$ = cat_str(4, make_str("insert into"), $3, $4, $5); }
 		;
 
-insert_rest:  
+insert_rest:
 		SelectStmt
 			{ $$ = $1; }
 		| '(' insert_column_list ')' SelectStmt
@@ -3700,7 +3700,7 @@ for_locking_clause:
 		| FOR READ ONLY 	{ $$ = make_str("for read only");}
 		;
 
-opt_for_locking_clause:	
+opt_for_locking_clause:
 		for_locking_clause	{ $$ = $1; }
 		| /* EMPTY */   	{ $$ = EMPTY; }
 		;
@@ -3959,7 +3959,7 @@ GenericType:  	type_function_name opt_type_modifiers		{ $$ = cat2_str($1, $2); }
 opt_type_modifiers: '(' expr_list ')'	{ $$ = cat_str(3, make_str("("), $2, make_str(")")); }
 		| /* EMPTY */		{ $$ = EMPTY; }
 		;
-		
+
 /* SQL92 numeric data types
  * Check FLOAT() precision limits assuming IEEE floating types.
  * Provide real DECIMAL() and NUMERIC() implementations now - Jan 1998-12-30
@@ -4252,7 +4252,7 @@ a_expr:  c_expr
 			{ $$ = cat_str(4, $1, $2, $3, $4); }
 		| a_expr subquery_Op sub_type '(' a_expr ')' %prec Op
 			{ $$ = cat_str(6, $1, $2, $3, make_str("("), $5, make_str(")")); }
-		| UNIQUE select_with_parens 
+		| UNIQUE select_with_parens
 			{ $$ = cat2_str(make_str("unique"), $2); }
 		| a_expr IS DOCUMENT_P
 			{ $$ = cat2_str($1, make_str("is document")); }
@@ -4730,7 +4730,7 @@ update_target_list:  '(' inf_col_list ')' '=' '(' inf_val_list ')'
 					vals = cat_str( 3, vals, ptrv->val, make_str(")") );
 			}
 			$$ = cat_str( 3, cols, make_str("="), vals );
-		} 
+		}
 		;
 
 inf_col_list: ColId opt_indirection
@@ -4875,7 +4875,7 @@ Sconst:  SCONST
 		}
 	| DOLCONST
 		{
-			$$ = $1; 
+			$$ = $1;
 		}
 	;
 
@@ -5009,7 +5009,7 @@ connection_target: opt_database_name opt_server opt_port
 			/* old style: dbname[@server][:port] */
 			if (strlen($2) > 0 && *($2) != '@')
 				mmerror(PARSE_ERROR, ET_ERROR, "Expected '@', found '%s'", $2);
-			
+
 			/* C strings need to be handled differently */
 			if ($1[0] == '\"')
 				$$ = $1;
@@ -5221,7 +5221,7 @@ ECPGCursorStmt:  DECLARE name cursor_options CURSOR opt_hold FOR prepared_name
 		;
 
 ECPGExecuteImmediateStmt: EXECUTE IMMEDIATE execstring
-			{ 
+			{
 			  /* execute immediate means prepare the statement and
 			   * immediately execute it */
 			  $$ = $3;
@@ -5497,7 +5497,7 @@ var_type:	simple_type
 				$$.type_index = this->type->type_index;
 				if (this->type->type_sizeof && strlen(this->type->type_sizeof) != 0)
 					$$.type_sizeof = this->type->type_sizeof;
-				else 
+				else
 					$$.type_sizeof = cat_str(3, make_str("sizeof("), mm_strdup(this->name), make_str(")"));
 
 				struct_member_list[struct_level] = ECPGstruct_member_dup(this->struct_member_list);
@@ -5728,7 +5728,7 @@ variable: opt_pointer ECPGColLabel opt_array_bounds opt_bit_field opt_initialize
 						type = ECPGmake_simple_type(actual_type[struct_level].type_enum, length, yylineno);
 					else
 						type = ECPGmake_array_type(ECPGmake_simple_type(actual_type[struct_level].type_enum, length, yylineno), dimension);
-					
+
 					if (strcmp(dimension, "0") == 0 || abs(atoi(dimension)) == 1)
 							*dim = '\0';
 					else
@@ -5739,7 +5739,7 @@ variable: opt_pointer ECPGColLabel opt_array_bounds opt_bit_field opt_initialize
 
 					/* make sure varchar struct name is unique by adding linenumer of its definition */
 					vcn = (char *) mm_alloc(strlen($2) + sizeof(int) * CHAR_BIT * 10 / 3);
-					sprintf(vcn, "%s_%d", $2, yylineno);
+					sprintf(vcn, "%s_%lu", $2, yylineno);
 					if (strcmp(dimension, "0") == 0)
 						$$ = cat_str(7, make2_str(make_str(" struct varchar_"), vcn), make_str(" { int len; char arr["), mm_strdup(length), make_str("]; } *"), mm_strdup($2), $4, $5);
 					else
@@ -5839,7 +5839,7 @@ execstring: char_variable
 			{ $$ = make3_str(make_str("\""), $1, make_str("\"")); }
 		;
 
-prepared_name: name	 	{ 
+prepared_name: name	 	{
 					if ($1[0] == '\"' && $1[strlen($1)-1] == '\"') /* already quoted? */
 						$$ = $1;
 					else /* not quoted => convert to lowercase */

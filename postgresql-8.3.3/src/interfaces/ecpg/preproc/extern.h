@@ -36,9 +36,12 @@ extern char *yytext,
 		   *token_start;
 
 #ifdef YYDEBUG
-extern int	yydebug;
+extern int yydebug;
 #endif
-extern int	yylineno,
+#ifndef yy_size_t
+typedef size_t yy_size_t;
+#endif
+extern yy_size_t yylineno,
 			yyleng;
 extern FILE *yyin,
 		   *yyout;

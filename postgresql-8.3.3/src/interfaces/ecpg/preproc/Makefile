@@ -53,6 +53,8 @@ endif
 $(srcdir)/pgc.c: pgc.l
 ifdef FLEX
 	$(FLEX) $(FLEXFLAGS) -o'$@' $<
+	sed -i 's/int yylineno/yy_size_t yylineno/g' pgc.c
+	sed -i 's/int yyleng/yy_size_t yyleng/g' pgc.c
 else
 	@$(missing) flex $< $@
 endif
