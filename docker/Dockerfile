@@ -25,7 +25,7 @@ RUN apt-get -y update && apt-get install -y \
 ########################################
 # Clone Maybms repro
 ########################################
-RUN git config --global http.sslverify false && git clone https://gitlab.odin.cse.buffalo.edu/okennedy/MayBMS_Mirror.git /maybms
+RUN git clone https://github.com/IITDBGroup/maybms.git /maybms
 WORKDIR /maybms
 ########################################
 # Patch and build postgres
