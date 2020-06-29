@@ -1,12 +1,13 @@
 ########################################
 # Derived from ubuntu distribution
 ########################################
-FROM ubuntu:14.04
+FROM ubuntu:12.04
 
 ########################################
 # Install packages needed for building
 ########################################
 RUN apt-get -y update && apt-get install -y \
+    gcc \
 	autotools-dev \
 	autoconf \
 	bison \
@@ -35,12 +36,13 @@ RUN git clone https://github.com/IITDBGroup/maybms.git /home/maybms/src
 ########################################
 # Patch and build postgres
 ########################################
-RUN cd /home/maybms/src && ./pip_plugin/scripts/patch_postgres.sh
-RUN cd /home/maybms/src/postgresql-ctype \
+RUN cd /home/maybms/src \
+    && ./pip_plugin/scripts/patch_postgres.sh
+RUN cd /home/maybms/src/postgresql-8.3.3 \
     && ./configure --prefix=/home/maybms/install \
     && make -j16 \
     && make install \
-    && cp -r /home/maybms/src/postgresql-ctype/src/include/maybms /home/maybms/install/include/postgresql/server/maybms/
+    && cp -r /home/maybms/src/postgresql-8.3.3/src/include/maybms /home/maybms/install/include/postgresql/server/maybms/
 ########################################
 # Environment
 ########################################
@@ -57,9 +59,8 @@ RUN cd /home/maybms/src/pip_plugin && make && make install
 ########################################
 # Add datadir as volume to persist across container restarts
 ########################################
-VOLUME /home/maybms/data
-RUN mkdir /home/maybms/data
-RUN /home/maybms/install/bin/initdb -D /home/maybms/data
+RUN ["/home/maybms/src/docker/createDB.sh","maybms"]
+#RUN /home/maybms/install/bin/initdb -D /home/maybms/data
 ########################################
 # Per default start postgres
 ########################################
@@ -68,3 +69,4 @@ ENTRYPOINT ["/home/maybms/install/bin/postgres"]
 # Per default connect to the example cluster
 ########################################
 CMD ["-D", "/home/maybms/data"]
+VOLUME /home/maybms/data
