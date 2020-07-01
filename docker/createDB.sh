@@ -3,7 +3,7 @@ PGUSER=$1
 MAYBMSHOME=/home/maybms
 SRCDIR=${MAYBMSHOME}/src
 INSTALLBINDIR=${MAYBMSHOME}/install/bin
-DATADIR=${MAYBMSHOME}/data
+DATADIR=${MAYBMSHOME}/datadir
 ####################
 echo ---- Configure Maybms installation and create TestDatabase
 echo -- for user ${PGUSER} with INSTALLBINDIR=${INSTALLBINDIR} and DATADIR=${DATADIR}

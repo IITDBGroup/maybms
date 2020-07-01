@@ -46,7 +46,7 @@ RUN cd /home/maybms/src/postgresql-8.3.3 \
 ########################################
 # Environment
 ########################################
-ENV PGDATA /home/maybms/data
+ENV PGDATA /home/maybms/datadir
 ENV PATH /home/maybms/install/bin:$PATH
 ########################################
 # Expose postmaster port
@@ -60,7 +60,6 @@ RUN cd /home/maybms/src/pip_plugin && make && make install
 # Add datadir as volume to persist across container restarts
 ########################################
 RUN ["/home/maybms/src/docker/createDB.sh","maybms"]
-#RUN /home/maybms/install/bin/initdb -D /home/maybms/data
 ########################################
 # Per default start postgres
 ########################################
@@ -68,5 +67,5 @@ ENTRYPOINT ["/home/maybms/install/bin/postgres"]
 ########################################
 # Per default connect to the example cluster
 ########################################
-CMD ["-D", "/home/maybms/data"]
-VOLUME /home/maybms/data
+CMD ["-D", "/home/maybms/datadir"]
+VOLUME /home/maybms/datadir
