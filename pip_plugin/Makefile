@@ -24,7 +24,7 @@ OBJS =$(subst .c,.o,$(SOURCEFILES))
 PG_CONFIG=pg_config
 
 MODULE_big:= pip
-DATA_built:= pip.sql # install.test.sql install.sql uninstall.sql $(SCRIPTS)
+DATA_built:= pip.sql pip-noctype.sql pip-uninstall.sql pip-test.sql # install.test.sql install.sql uninstall.sql $(SCRIPTS)
 PIP_CFLAGS+= -I$(shell $(PG_CONFIG) --includedir) \
              -I$(shell $(PG_CONFIG) --includedir)/server \
              -Isrc/include
@@ -42,18 +42,17 @@ src/disttable.c: $(DISTRIBUTIONS) scripts/gen_disttable.sh
 src/dist/normal.dist: scripts/normal.rb
 	./scripts/normal.rb > src/dist/normal.dist
 
-install.sql: src/pip.source
-	rm -f $@; \
-	C=$(INSTALL_DIR); \
-	sed -e "s:_OBJWD_:$$C/libpip:g" < $< > $@
+pip.sql.in: src/pip.source
+	cat $< > $@
+
+pip-noctype.sql.in: src/pip.source
 	cat $@ | grep -v "HACKED_SQL_ONLY" > `basename $@ .sql`.noctype.sql
 
-install.test.sql: src/pip.source
+pip-test.sql.in: src/pip.source
 	rm -f $@; \
-	C=`pwd`; \
-	sed -e "s:_OBJWD_:$$C/libpip:g" < $< > $@
+	cat $< > $@
 
-uninstall.sql: src/pip.source scripts/gen_uninstall.sh
+pip-uninstall.sql.in: src/pip.source scripts/gen_uninstall.sh
 	./scripts/gen_uninstall.sh > $@
 
 # let postrgres extension build system install
