@@ -44,10 +44,22 @@ RUN cd /home/maybms/src/postgresql-8.3.3 \
     && make install \
     && cp -r /home/maybms/src/postgresql-8.3.3/src/include/maybms /home/maybms/install/include/postgresql/server/maybms/
 ########################################
+# Add datadir as volume to persist across container restarts
+########################################
+RUN ["/home/maybms/src/docker/createDB.sh","maybms"]
+########################################
+# Build patched version
+########################################
+RUN cd /home/maybms/src/postgresql-ctype \
+    && ./configure --prefix=/home/maybms/install-patched \
+    && make -j16 \
+    && make install \
+    && cp -r /home/maybms/src/postgresql-ctype/src/include/maybms /home/maybms/install-patched/include/postgresql/server/maybms/
+########################################
 # Environment
 ########################################
 ENV PGDATA /home/maybms/datadir
-ENV PATH /home/maybms/install/bin:$PATH
+ENV PATH /home/maybms/install-patched/bin:$PATH
 ########################################
 # Expose postmaster port
 ########################################
@@ -57,13 +69,13 @@ EXPOSE 5432
 ########################################
 RUN cd /home/maybms/src/pip_plugin && make && make install
 ########################################
-# Add datadir as volume to persist across container restarts
+# install pip functions
 ########################################
-RUN ["/home/maybms/src/docker/createDB.sh","maybms"]
+RUN ["/home/maybms/src/docker/installPipFuncs.sh","maybms"]
 ########################################
 # Per default start postgres
 ########################################
-ENTRYPOINT ["/home/maybms/install/bin/postgres"]
+ENTRYPOINT ["/home/maybms/install-patched/bin/postgres"]
 ########################################
 # Per default connect to the example cluster
 ########################################
