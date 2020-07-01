@@ -50,16 +50,16 @@ RUN ["/home/maybms/src/docker/createDB.sh","maybms"]
 ########################################
 # Build patched version
 ########################################
-RUN cd /home/maybms/src/postgresql-ctype \
-    && ./configure --prefix=/home/maybms/install-patched \
-    && make -j16 \
-    && make install \
-    && cp -r /home/maybms/src/postgresql-ctype/src/include/maybms /home/maybms/install-patched/include/postgresql/server/maybms/
+# RUN cd /home/maybms/src/postgresql-ctype \
+#     && ./configure --prefix=/home/maybms/install-patched \
+#     && make -j16 \
+#     && make install \
+#     && cp -r /home/maybms/src/postgresql-ctype/src/include/maybms /home/maybms/install-patched/include/postgresql/server/maybms/
 ########################################
 # Environment
 ########################################
 ENV PGDATA /home/maybms/datadir
-ENV PATH /home/maybms/install-patched/bin:$PATH
+ENV PATH /home/maybms/install/bin:$PATH
 ########################################
 # Expose postmaster port
 ########################################
@@ -75,7 +75,7 @@ RUN ["/home/maybms/src/docker/installPipFuncs.sh","maybms"]
 ########################################
 # Per default start postgres
 ########################################
-ENTRYPOINT ["/home/maybms/install-patched/bin/postgres"]
+ENTRYPOINT ["/home/maybms/install/bin/postgres"]
 ########################################
 # Per default connect to the example cluster
 ########################################
