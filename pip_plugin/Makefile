@@ -45,7 +45,7 @@ src/dist/normal.dist: scripts/normal.rb
 pip.sql.in: src/pip.source
 	cat $< > $@
 
-pip-noctype.sql.in: src/pip.source
+pip-noctype.sql: pip.sql
 	cat $< | grep -v "HACKED_SQL_ONLY" > $@
 
 pip-test.sql.in: src/pip.source
