@@ -46,7 +46,7 @@ pip.sql.in: src/pip.source
 	cat $< > $@
 
 pip-noctype.sql.in: src/pip.source
-	cat $@ | grep -v "HACKED_SQL_ONLY" > `basename $@ .sql`.noctype.sql
+	cat $< | grep -v "HACKED_SQL_ONLY" > `basename $@ .sql`.noctype.sql
 
 pip-test.sql.in: src/pip.source
 	rm -f $@; \
