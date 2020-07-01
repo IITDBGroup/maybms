@@ -49,7 +49,7 @@ $> initdb
 
 <h3><a name="installing_pip_plugin">Installing the PIP Library</a></h3>
 <ul>
-<li>Compile PIP.  
+<li>Compile PIP.
 <pre>
 $> cd pip_plugin
 $> make
@@ -78,12 +78,12 @@ $> psql template_1 -f install[.ctype].sql
 <p>For example:
 <pre>
 CREATE TABLE my_probabilistic_data(
-  name varchar(100), 
+  name varchar(100),
   data pip_eqn
 );
 INSERT INTO my_probabilistic_data
-  SELECT input.name, 
-         CREATE_VARIABLE("Normal", vector(input.mean, input.stddev))
+  SELECT input.name,
+         CREATE_VARIABLE("Normal", ROW(input.mean, input.stddev))
   FROM   input;
 </pre>
 This example creates a random variable by iterating over each row of the table 'input'.  The Normal distribution requires two parameters: a mean and a standard deviation, both of which are drawn from the corresponding row of the input table.<p>
@@ -194,23 +194,23 @@ FROM   results;</pre>
 <h2><a name="reference_dist_list">Reference: Predefined Distributions</a></h2>
 <dt>Zero</dt>
 <dd>A distribution that is always zero (i.e., the <a href="http://en.wikipedia.org/wiki/Dirac_delta">Dirac Delta</a> as a distribution).
-<pre>CREATE_VARIABLE("Zero", vector())</pre></dd>
+<pre>CREATE_VARIABLE("Zero", ROW())</pre></dd>
 
 <dt>Exponential</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Exponential_distribution">The Exponential Distribution</a>.  The Exponential Distribution takes one parameter, lambda: the <b>inverse</b> of the expectation of the variable being created.
-<pre>CREATE_VARIABLE("Exponential", vector(lambda))</pre></dd>
+<pre>CREATE_VARIABLE("Exponential", ROW(lambda))</pre></dd>
 
 <dt>Normal</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Normal_distribution">The Normal Distribution</a>.  The Normal Distribution takes two parameters, the mean, and the standard deviation of the variable being created.
-<pre>CREATE_VARIABLE("Normal", vector(mean, stddev))</pre></dd>
+<pre>CREATE_VARIABLE("Normal", ROW(mean, stddev))</pre></dd>
 
 <dt>Poisson</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Poisson_distribution">The Poisson Distribution</a>.  The Poisson distribution takes one parameter, lambda: the expectation of the variable being created.
-<pre>CREATE_VARIABLE("Poisson", vector(lambda))</pre></dd>
+<pre>CREATE_VARIABLE("Poisson", ROW(lambda))</pre></dd>
 
 <dt>Uniform</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Uniform_distribution_(continuous)">The Uniform Distribution</a>.  The uniform distribution takes two parameters, the endpoints of the distribution; The endpoints may be provided in any order.
-<pre>CREATE_VARIABLE("Uniform", vector(low, high))</pre></dd>
+<pre>CREATE_VARIABLE("Uniform", ROW(low, high))</pre></dd>
 </dl>
 
 <hr />
@@ -230,7 +230,7 @@ The components of a PIP distribution are as follows:
 <dt><code>init_fn</code></dt>
 <dd>A pointer to a constructor function for your distribution with the following schema:<pre>
 void init_fn(pip_var *var, HeapTupleHeader params)</pre>
-When your initializer is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>params</code> is a pointer to the postgres vector() of parameters.  See below for information on utility functions for parsing the parameter vector.</dd>
+When your initializer is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>params</code> is a pointer to the postgres ROW() of parameters.  See below for information on utility functions for parsing the parameter vector.</dd>
 
 <dt><code>gen_fn</code></dt>
 <dd>A pointer to a generator function for your distribution with the following schema: <pre>
@@ -262,7 +262,7 @@ When invoked, <code>str</code> will contain a pointer to a (large) allocated, bu
 <dt><code>input_fn</code></dt>
 <dd>NULL, or a pointer to a function for parsing a human-readable representation of the distribution's parameters, with the following schema:<pre>
 int input_fn(pip_var *var, char *str)</pre>
-When the input function is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>str</code> references a C string containing a human-readable representation of this distribution's parameters, as used in [output_fn].  The input function should parse this string (e.g., using sscanf) and initialize <code>var->group_state</code> in the same way as [init_fn].  <b>Note:</b> Although this function is optional, be aware that not including it will prevent users from being able to import data defined in terms of this distribution.  
+When the input function is invoked, <code>var</code> will contain a pointer to initialized pip variable.  <code>var->group_state</code> will contain a pointer to an allocated, but uninitialized block of [paramsize] bytes.  <code>str</code> references a C string containing a human-readable representation of this distribution's parameters, as used in [output_fn].  The input function should parse this string (e.g., using sscanf) and initialize <code>var->group_state</code> in the same way as [init_fn].  <b>Note:</b> Although this function is optional, be aware that not including it will prevent users from being able to import data defined in terms of this distribution.
 </dl>
 </p>
 <hr />
@@ -286,7 +286,7 @@ PIP includes a library of utility functions for use in defining distributions.  
 </dd>
 
 <dt><code>void pip_box_muller(float8 *X, float8 *Y, int64 *seed)</code></dt>
-<dd>Generate two random (but deterministic based on <code>seed</code>), independent, normally distributed floating point numbers (with mean of 0 and standard deviation of 1) using the <a href="http://en.wikipedia.org/wiki/Box-Muller_transform">Box-Muller method</a>.  The <b>independent</b> variables will be stored in <code>X</code> and <code>Y</code> -- either or both may be used.  The <code>seed</code> value is passed by reference, and is stepped to its next value automatically (note that the Box-Muller method requires two random numbers as input and as a consequence, <code>seed</code> is actually stepped twice). 
+<dd>Generate two random (but deterministic based on <code>seed</code>), independent, normally distributed floating point numbers (with mean of 0 and standard deviation of 1) using the <a href="http://en.wikipedia.org/wiki/Box-Muller_transform">Box-Muller method</a>.  The <b>independent</b> variables will be stored in <code>X</code> and <code>Y</code> -- either or both may be used.  The <code>seed</code> value is passed by reference, and is stepped to its next value automatically (note that the Box-Muller method requires two random numbers as input and as a consequence, <code>seed</code> is actually stepped twice).
 </dd>
 
 </body></html>
