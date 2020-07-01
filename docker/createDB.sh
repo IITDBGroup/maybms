@@ -3,7 +3,7 @@ PGUSER=$1
 MAYBMSHOME=/home/maybms
 SRCDIR=${MAYBMSHOME}/src
 INSTALLBINDIR=${MAYBMSHOME}/install/bin
-DATADIR=${MAYBMSHOME}/datadir
+DATADIR=${MAYBMSHOME}/data
 ####################
 echo ---- Configure Maybms installation and create TestDatabase
 echo -- for user ${PGUSER} with INSTALLBINDIR=${INSTALLBINDIR} and DATADIR=${DATADIR}
@@ -13,11 +13,10 @@ ${INSTALLBINDIR}/initdb -D ${DATADIR}
 ####################
 echo - start server
 ${INSTALLBINDIR}/pg_ctl -D ${DATADIR} -w start
+sleep 10
 ${INSTALLBINDIR}/psql -h localhost -p 5432 -U maybms -d template1 -c 'CREATE LANGUAGE plpgsql'
-${INSTALLBINDIR}/psql -h localhost -p 5432 -U maybms -d template1 -c '\i /home/maybms/src/contrib/xml2/pgxml.sql'
 ####################
-echo - create user and testdb
-${INSTALLBINDIR}/createuser -s -l -U $PGUSER maybms
+echo - create testdb
 ${INSTALLBINDIR}/createdb -U $PGUSER maybms
 ####################
 echo - shutdown server
