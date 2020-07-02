@@ -83,7 +83,7 @@ CREATE TABLE my_probabilistic_data(
 );
 INSERT INTO my_probabilistic_data
   SELECT input.name,
-         CREATE_VARIABLE("Normal", ROW(input.mean, input.stddev))
+         CREATE_VARIABLE('Normal', ROW(input.mean, input.stddev))
   FROM   input;
 </pre>
 This example creates a random variable by iterating over each row of the table 'input'.  The Normal distribution requires two parameters: a mean and a standard deviation, both of which are drawn from the corresponding row of the input table.<p>
@@ -194,23 +194,23 @@ FROM   results;</pre>
 <h2><a name="reference_dist_list">Reference: Predefined Distributions</a></h2>
 <dt>Zero</dt>
 <dd>A distribution that is always zero (i.e., the <a href="http://en.wikipedia.org/wiki/Dirac_delta">Dirac Delta</a> as a distribution).
-<pre>CREATE_VARIABLE("Zero", ROW())</pre></dd>
+<pre>CREATE_VARIABLE('Zero', ROW())</pre></dd>
 
 <dt>Exponential</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Exponential_distribution">The Exponential Distribution</a>.  The Exponential Distribution takes one parameter, lambda: the <b>inverse</b> of the expectation of the variable being created.
-<pre>CREATE_VARIABLE("Exponential", ROW(lambda))</pre></dd>
+<pre>CREATE_VARIABLE('Exponential', ROW(lambda))</pre></dd>
 
 <dt>Normal</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Normal_distribution">The Normal Distribution</a>.  The Normal Distribution takes two parameters, the mean, and the standard deviation of the variable being created.
-<pre>CREATE_VARIABLE("Normal", ROW(mean, stddev))</pre></dd>
+<pre>CREATE_VARIABLE('Normal', ROW(mean, stddev))</pre></dd>
 
 <dt>Poisson</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Poisson_distribution">The Poisson Distribution</a>.  The Poisson distribution takes one parameter, lambda: the expectation of the variable being created.
-<pre>CREATE_VARIABLE("Poisson", ROW(lambda))</pre></dd>
+<pre>CREATE_VARIABLE('Poisson', ROW(lambda))</pre></dd>
 
 <dt>Uniform</dt>
 <dd><a href="http://en.wikipedia.org/wiki/Uniform_distribution_(continuous)">The Uniform Distribution</a>.  The uniform distribution takes two parameters, the endpoints of the distribution; The endpoints may be provided in any order.
-<pre>CREATE_VARIABLE("Uniform", ROW(low, high))</pre></dd>
+<pre>CREATE_VARIABLE('Uniform', ROW(low, high))</pre></dd>
 </dl>
 
 <hr />
